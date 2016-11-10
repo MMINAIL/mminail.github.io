@@ -1,0 +1,12 @@
+/* The main .css file for the mminail.gihub.io Git repo */
+
+/* Set the font-face(s) for the Website */
+@font-face {
+font-family: ‘Trattatello’;
+src: url(‘fonts/trattatello.ttf’) format(‘truetype’);
+
+font-family: ‘Eurostyle’;
+src: url(‘fonts/eurostyle’) format(‘’);
+}
+
+/* next rule ... */
