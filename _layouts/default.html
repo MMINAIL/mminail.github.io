@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{{ page.title }}</title>
     <link href="../css/mminail.css" rel="stylesheet">
 </head>
@@ -10,8 +11,9 @@
 
 <header class="masthead">
     <h1>MMINAIL.GitHub.io Home Page Directory</h1>
+    {% include nav.htm %}
 </header>
-{% include nav.htm %}
+
 {{content}}
 <footer>
 <hr/>
