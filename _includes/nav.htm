@@ -1,0 +1,15 @@
+<nav>
+    <ul>
+        
+        <li><a href="/index.htm" class="currentlySelected" title="Clik to Jump To the Home Page" target="_self">Home Page</a></li>
+        <li><a href="../pages/pagetwo.htm" class="" title="Clik to Jump To the Page Two" target="_self">Page Two</a></li>
+        <hr />
+        <li><a href="/index.htm" class="" title="Clik to Jump To the Home Page" target="_self">Home Page</a></li>
+        <li><a href="../pages/pagetwo.htm" class="currentlySelected" title="Clik to Jump To the Page Two" target="_self">Page Two</a></li>
+        
+    </ul>
+</nav>
+
+{% if page.url == '/index.htm' % }
+{% elseif page.url == '../pages/pagetwo.htm'%}
+{% endif %}
