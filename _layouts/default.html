@@ -10,25 +10,24 @@
 <body>
 
 <header class="masthead">
-    <h1>MMINAIL.GitHub.io Home Page Directory</h1>
-    {% include nav.htm %}
+	<aside id="navigator">{% include nav.htm %}</aside>
+	<h1>MMINAIL.GitHub.io Directory</h1>
 </header>
 
-{{content}}
-<footer>
-<hr/>
-<!-- MMINAIL Copyright footertxt -->
-<div style="text-align: center; font-size: 11px">
-	<p>
-		<b>Copyright ©2016 <a href="http://cannabuds.us/" title="Clik to Jump To the Home Page of the MMINAIL" target="_blank">The Medical Marijuana Initiative of North America - International Limited</a>. All rights reserved.</b>
-	</p>
-	
-	<p>
-		<b>This Webpage is being hosted via:&nbsp;</b>
-		<a href="https://pages.github.com/" title="Clik to Jump To GitHub Pages" target="_blank">GitHub Pages</a> 
-	</p>
+<h2>{{ page.title }}</h2>
+	<hr />
+
+<div id="container">
+
+	<article id="main-article">
+		{{content}}
+	</article>
+
 </div>
-<!-- MMINAIL Copyright footertxt -->
+
+<footer>
+	{% include footer.htm %}
 </footer>
+
 </body>
 </html>
