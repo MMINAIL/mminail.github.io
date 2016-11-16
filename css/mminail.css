@@ -83,6 +83,7 @@ article#main-article {
 }
 
 aside#supporting-content {
+    text-align: left;
     /* float: right; */
     /* width: 20%; */
     background: rgb(155,155,204); /* Dark Gray */
