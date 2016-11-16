@@ -1,22 +1,93 @@
----
-
----
 /* The main .css file for the mminail.gihub.io Git repo */
 
-/* Set the font-face(s) for the Website 
+/* Set the font-face(s) for the Website */
+
 @font-face {
 font-family: ‘Trattatello’;
-src: url(‘fonts/trattatello.ttf’) format(‘truetype’);
+src: url(‘../fonts/trattatello.ttf’) format(‘truetype’);
+}
 
+@font-face {
 font-family: ‘Eurostyle’;
-src: url(‘fonts/eurostyle’) format(‘’);
-} */
+src: url(‘../fonts/eurostyle’) format(‘’);
+} 
+
+h1 {
+    text-align: center;
+}
 
 /* Set the html for the Website */
 html {
     margin: 0;
     padding: 0;
-    font: normal 100%/1.4 Georgia, serif;
+    /* font: normal 100%/1.4 Georgia, serif; */
+}
+
+body {
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(155,155,204);
+}
+
+/* Set the background color and image for the header masthead */
+.masthead {
+    padding-right: 0;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    padding-top: .5em;
+    background: rgb(155,155,204) url("../images/BNR-Painted-Desert-Moon-banner-720-x-120-px.png") no-repeat; /* center center */
+    background-size: contain; /* cover */
+    color: #000531;
+}
+
+aside#navigator {
+    float: right;
+    width: 25%;
+    background: rgb(155,155,204);
+    /* border-left: 2px solid #fff; */
+    padding: 1%;
+}
+
+/* Nav semantic container classes */
+.menu {
+    text-align: justify;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color : rgb(155,155,204); /* #33b5e5 */
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+    background-color: rgb(207,103,75); /* Indian Red */
+    /* Dodger Blue: #0099cc */
+}
+
+div#container {
+    background-color: rgb(255,255,229); /* light yellow */
+}
+
+article#main-article {
+    text-align: left;
+    width: 75%;
+    padding: 1%;
+    /* border-right: 2px solid #fff; */
+}
+
+aside#supporting-content {
+    /* float: right; */
+    /* width: 20%; */
+    background: rgb(155,155,204); /* Dark Gray */
+    padding: 1%;
+    /* border-left: 2px solid #fff; */
 }
 
 /* Set the background color for the currently selected Nav tab */
@@ -25,12 +96,8 @@ html {
     color: #fff;
 }
 
-/* Set the background color and image for the header masthead */
-.masthead {
-    padding: 1.5em;
-    background: #000531 url("../images/BNR-Painted-Desert-Moon-banner-720-x-120-px.png") no-repeat; /* center center */
-    background-size:contain; /* cover */
-    color: #000531;
+footer {
+    font-weight: 500;
 }
 
 /* next rule ... */

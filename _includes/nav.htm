@@ -1,13 +1,17 @@
-<nav>
+<nav class="menu">
+    <h3>Navigator</h3>
     <ul>
-        <li><a href="/index.htm" class="currentlySelected" title="Clik to Jump To the Home Page" target="_self">Home Page</a></li>
-        <li><a href="../pages/pagetwo.htm" class="" title="Clik to Jump To the Page Two" target="_self">Page Two</a></li>
-        <hr />
         <li><a href="/index.htm" class="" title="Clik to Jump To the Home Page" target="_self">Home Page</a></li>
-        <li><a href="../pages/pagetwo.htm" class="currentlySelected" title="Clik to Jump To the Page Two" target="_self">Page Two</a></li>
+        <li><a href="../pages/pagetwo.htm" class="" title="Clik to Jump To the Page Two" target="_self">Page Two</a></li>
+        <li><a href="../pages/pagethree.htm" class="" title="Clik to Jump To the Page Three" target="_self">Page Three</a></li>
+        <li><a href="../pages/pagefour.htm" class="" title="Clik to Jump To the Page Four" target="_self">Page Four</a></li>
+        {% if page.url == '/index.htm' % }
+        {% elseif page.url == '../pages/pagetwo.htm'%}
+        {% endif %}
     </ul>
-</nav>
 
-{% if page.url == '/index.htm' % }
-{% elseif page.url == '../pages/pagetwo.htm'%}
-{% endif %}
+    <aside id="supporting-content">
+		{% include aside.htm %}
+	</aside>
+
+</nav>
