@@ -1,12 +1,36 @@
+---
+
+---
 /* The main .css file for the mminail.gihub.io Git repo */
 
-/* Set the font-face(s) for the Website */
+/* Set the font-face(s) for the Website 
 @font-face {
 font-family: ‘Trattatello’;
 src: url(‘fonts/trattatello.ttf’) format(‘truetype’);
 
 font-family: ‘Eurostyle’;
 src: url(‘fonts/eurostyle’) format(‘’);
+} */
+
+/* Set the html for the Website */
+html {
+    margin: 0;
+    padding: 0;
+    font: normal 100%/1.4 Georgia, serif;
+}
+
+/* Set the background color for the currently selected Nav tab */
+.currentlySelected {
+    background-color: #000531;
+    color: #fff;
+}
+
+/* Set the background color and image for the header masthead */
+.masthead {
+    padding: 1.5em;
+    background: #000531 url("../images/BNR-Painted-Desert-Moon-banner-720-x-120-px.png") no-repeat; /* center center */
+    background-size:contain; /* cover */
+    color: #000531;
 }
 
 /* next rule ... */
