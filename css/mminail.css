@@ -102,6 +102,18 @@ aside#supporting-content {
     color: #fff;
 }
 
+/* Wordwrap the lines of code */
+
+code { 
+    background: hsl(220, 80%, 90%); 
+}
+
+pre {
+    white-space: pre-wrap;
+    background: hsl(30,80%,90%);
+}
+
+/* Set the footer for the Website */
 footer {
     font-weight: 500;
 }
