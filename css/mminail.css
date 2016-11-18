@@ -102,15 +102,19 @@ aside#supporting-content {
     color: #fff;
 }
 
-/* Wordwrap the lines of code */
+/* Wordwrap the lines of code  */
+pre {
+    white-space: pre-wrap;
+    /* white-space: pre; */
+    background-color: rgb(255,255,229); /* light yellow */
+    /* background: hsl(30,80%,90%); */
+    display: block;
+    font-family: monospace;
+    margin: 1em 0;
+}
 
 code { 
     background: hsl(220, 80%, 90%); 
-}
-
-pre {
-    white-space: pre-wrap;
-    background: hsl(30,80%,90%);
 }
 
 /* Set the footer for the Website */
