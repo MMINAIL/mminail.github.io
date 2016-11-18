@@ -48,7 +48,8 @@ h1 {
 aside#navigator {
     float: right;
     width: 25%;
-    background: rgb(155,155,204);
+    background: rgb(155,155,204); /* light gray */
+    /* Dodger Blue: #0099cc */
     /* border-left: 2px solid #fff; */
     padding: 1%;
 }
@@ -76,11 +77,11 @@ aside#navigator {
     /* Dodger Blue: #0099cc */
 }
 
-div#container {
+div.container {
     background-color: rgb(255,255,229); /* light yellow */
 }
 
-article#main-article {
+article.main-article {
     text-align: left;
     width: 75%;
     padding: 1%;
