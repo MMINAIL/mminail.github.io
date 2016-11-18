@@ -1,3 +1,5 @@
 baseurl: /
 exclude: ['README.md']
 markdown: redcarpet
+#timezone: America/Phoenix
+#gems: octopress-date-format
