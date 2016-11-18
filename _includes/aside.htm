@@ -25,10 +25,46 @@
 </p>
     <hr />
 <p>
-	<span>Here, a block of code may be displayed and Wordwrapped in real time ...</span>
+	<span>Here, a block of code may be displayed and Wordwrapped in real time using triple backticks and a code language qualifier embedded in a pre and code tag combo styled via css, as follows:</span>
 </p>
 	<hr/>
+<pre>
+<code>
+```python
+# Fibonacci series:
+# the sum of two elements defines the next
+a, b = 0, 1
+while b < 10:
+	print(b)
+	a, b = b, a+b
+```
+</code>
+</pre>
+	<hr />
+<pre>
+<code>
+```css
+/* Wordwrap and highlight the lines of code  */
+pre {
+    white-space: pre-wrap;
+    /* white-space: pre; */
+    background-color: rgb(255,255,229); /* light yellow */
+    /* background: hsl(30,80%,90%); */
+    display: block;
+    font-family: monospace;
+    margin: 1em 0;
+}
 
+code { 
+    background: hsl(220, 80%, 90%); 
+}
+```
+</code>
+</pre>
+	<hr />
+<p>
+	<span>The above solution ( triple backticks and a code language qualifier ) also renders a code block when commenting both before and after the review of a pull request at GitHub, both locally via GitHub for desktop, and at the GitHub remote repository.</span>
+</p>
 <!-- Comment Out: Pre n Code Lines
 <pre>
     <code class="language-markup">
@@ -51,7 +87,7 @@
 	</code>
 </pre>
 Comment Out: Pre n Code Lines -->
-
+	<hr />
 <p>
 	<span>Or, an Unordered List of Date - Time possibilities ...</span>
 </p>
