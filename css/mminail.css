@@ -103,7 +103,7 @@ aside#supporting-content {
     color: #fff;
 }
 
-/* Wordwrap the lines of code  */
+/* Wordwrap and highlight the lines of code  */
 pre {
     white-space: pre-wrap;
     /* white-space: pre; */
