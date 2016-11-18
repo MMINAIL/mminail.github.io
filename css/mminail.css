@@ -76,11 +76,11 @@ aside#navigator {
     /* Dodger Blue: #0099cc */
 }
 
-div#container {
+div.container {
     background-color: rgb(255,255,229); /* light yellow */
 }
 
-article#main-article {
+article.main-article {
     text-align: left;
     width: 75%;
     padding: 1%;
