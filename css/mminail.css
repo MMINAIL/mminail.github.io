@@ -71,7 +71,7 @@ i.largo {
 
 aside#navigator {
     float: right;
-    width: 25%;
+    width: 27%;
     background-color: rgb(155,155,204); /* light gray */
     /* border-left: 2px solid #fff; */
     padding: 1%;
@@ -79,27 +79,29 @@ aside#navigator {
 
 /* Nav semantic container classes */
 .menu {
-    text-align: justify;
+    text-align: left;
 }
 
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: justify;
+    text-align: left;
 }
 .menu li {
-    padding: 1%;
+    padding: 2%;
     margin-bottom: 1%;
+    display: inline-block;
+    /* max-width: 50%; /* limit width */
     background-color : rgb(155,155,204); /* #33b5e5 */
-    text-align: justify;
+    text-align: left;
     color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .menu li:hover {
     background-color: rgb(207,103,75); /* Indian Red */
-    text-align: justify;
+    text-align: left;
     /* background-color: #0099cc; /* Dodger Blue */
 }
 
@@ -113,8 +115,9 @@ div.container-fluid {
 
 article.main-article {
     text-align: left;
-    width: 75%;
+    width: 73%;
     background-color: rgb(255,255,229); /* light yellow */
+    /* background: hsl(220, 80%, 90%); /* sky blue */
     padding: 1%;
     /* border-right: 2px solid #fff; */
 }
@@ -139,7 +142,7 @@ pre {
     white-space: pre-wrap;
     /* white-space: pre; */
     background-color: rgb(255,255,229); /* light yellow */
-    /* background: hsl(30,80%,90%); */
+    background: hsl(30,80%,90%); /* full moon yellow */
     display: block;
     font-family: monospace;
     font-size: x-small;
@@ -147,7 +150,7 @@ pre {
 }
 
 code {
-    background: hsl(220, 80%, 90%); 
+    background: hsl(220, 80%, 90%); /* sky blue */
 }
 
 /* Set the footer for the Website */
