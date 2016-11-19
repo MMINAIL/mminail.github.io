@@ -2,14 +2,15 @@
 
 /* Set the font-face(s) for the Website */
 
+/* Comment out serif font 'trattatello' 
 @font-face {
-font-family: ‘Trattatello’;
+font-family: ‘trattatello’;
 src: url(‘../fonts/trattatello.ttf’) format(‘truetype’);
-}
+} */
 
 @font-face {
-font-family: ‘Eurostyle’;
-src: url(‘../fonts/eurostyle’) format(‘’);
+font-family: ‘eurostyle’;
+src: url(‘../css/fonts/eurostyle.ttf’) format(‘truetype’);
 } 
 
 /* Set the html for the Website */
@@ -39,12 +40,17 @@ hgroup {
     /* background-color: #0099cc; /* Dodger Blue */
 }
 
+/* Set the basic classes */
 .leftalign {
     text-align: left;
 }
 
 .centeralign {
     text-align: center;
+}
+
+.euro {
+    font: eurostyle;
 }
 
 /* Set the background color and image for the header masthead */
@@ -56,6 +62,11 @@ hgroup {
     background: rgb(155,155,204) url("../images/BNR-Painted-Desert-Moon-banner-720-x-120-px.png") no-repeat; /* center center */
     background-size: contain; /* cover */
     color: #000531;
+}
+
+/* Set the double-xx font size for the 'i' tag */
+i.largo {
+    font-size: xx-large;
 }
 
 aside#navigator {
