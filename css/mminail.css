@@ -89,9 +89,9 @@ aside#navigator {
     text-align: left;
 }
 .menu li {
-    padding: 2%;
+    padding: 1%;
     margin-bottom: 1%;
-    display: inline-block;
+    /* display: inline-block; */
     /* max-width: 50%; /* limit width */
     background-color : rgb(155,155,204); /* #33b5e5 */
     text-align: left;
