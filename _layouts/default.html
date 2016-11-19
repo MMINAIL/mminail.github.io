@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{{ page.title }}</title>
     <link href="../css/mminail.css" rel="stylesheet" />
+	<link href="../css/themes/bootstrap.min.css" rel="stylesheet" />
 	<!-- Comment Out: Prism css
 	<link href="../css/themes/prism.css" rel="stylesheet" /> -->
 	<link type="image/x-icon" href="/favicon.ico?" rel="shortcut icon" />
@@ -13,27 +14,43 @@
 <body>
 
 <header class="masthead">
+	
 	<aside id="navigator">{% include nav.htm %}</aside>
+	
 	<h1>MMINAIL.GitHub.io Directory</h1>
+	
 </header>
 
-<h2>{{ page.title }}</h2>
+<!-- <div class="container"> -->
+<!-- <div class="container-fluid"> -->
+<article class="main-article">
+
+<hgroup>
+	<h2>{{ page.title }}</h2>
+</hgroup>
+
 	<hr />
-
-<div class="container">
-
-	<article class="main-article">
-		{{content}}
-	</article>
-
-</div>
+	{{content}}
+</article>
 
 <footer>
 	{% include footer.htm %}
 </footer>
+
+<!-- Place all body scripts north of the body closing tag -->
+
 <!-- Comment Out: Prism body script
 <script src="../js/prism.js"</script>
 	Note: the switch 'data-manual'' may be added AFTER the src to invoke No highlight -->
+
+<!-- Comment Out: Jquery Remote script
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
+<!-- Comment Out: Jquery Local script -->
+<script src="../js/jquery.min.js"></script>
+
+<!-- Comment Out: Bootstrap -->
+<script src="../js/bootstrap.min.js"></script>
 </body>
 	
 </html>
