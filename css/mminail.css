@@ -34,6 +34,19 @@ h1 {
     text-align: center;
 }
 
+hgroup {
+    text-align: center;
+    /* background-color: #0099cc; /* Dodger Blue */
+}
+
+.leftalign {
+    text-align: left;
+}
+
+.centeralign {
+    text-align: center;
+}
+
 /* Set the background color and image for the header masthead */
 .masthead {
     padding-right: 0;
@@ -48,8 +61,7 @@ h1 {
 aside#navigator {
     float: right;
     width: 25%;
-    background: rgb(155,155,204); /* light gray */
-    /* Dodger Blue: #0099cc */
+    background-color: rgb(155,155,204); /* light gray */
     /* border-left: 2px solid #fff; */
     padding: 1%;
 }
@@ -63,27 +75,35 @@ aside#navigator {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: justify;
 }
 .menu li {
     padding: 1%;
     margin-bottom: 1%;
     background-color : rgb(155,155,204); /* #33b5e5 */
+    text-align: justify;
     color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .menu li:hover {
     background-color: rgb(207,103,75); /* Indian Red */
-    /* Dodger Blue: #0099cc */
+    text-align: justify;
+    /* background-color: #0099cc; /* Dodger Blue */
 }
 
 div.container {
-    background-color: rgb(255,255,229); /* light yellow */
+    background-color: #fff; /* White */
+}
+
+div.container-fluid {
+    background-color: #fff; /* White */
 }
 
 article.main-article {
     text-align: left;
     width: 75%;
+    background-color: rgb(255,255,229); /* light yellow */
     padding: 1%;
     /* border-right: 2px solid #fff; */
 }
@@ -111,16 +131,19 @@ pre {
     /* background: hsl(30,80%,90%); */
     display: block;
     font-family: monospace;
+    font-size: x-small;
     margin: 1em 0;
 }
 
-code { 
+code {
     background: hsl(220, 80%, 90%); 
 }
 
 /* Set the footer for the Website */
 footer {
     font-weight: 600;
+    text-align: center; font-size: small;
+    /* background-color: rgb(207,103,75); /* Indian Red */ 
 }
 
 /* next rule ... */
