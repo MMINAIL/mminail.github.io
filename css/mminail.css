@@ -25,6 +25,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(155,155,204);
+    /* opacity: 0.5; /* ¡Cuidado! Both the Background-color AND the Text color are affected by the opacity level! */
     padding: 1%;
     height: 100%;
     overflow: auto;
@@ -51,6 +52,10 @@ hgroup {
 
 .euro {
     font: eurostyle;
+}
+
+.panel-padding {
+    padding: 1%;
 }
 
 /* Set the background color and image for the header masthead */
