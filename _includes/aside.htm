@@ -1,5 +1,5 @@
 <hgroup class="centeralign">
-	<h3>Supporting Content</h3>
+	<h3>Supporting Content <i class="icon-large icon-eye-open"></i></h3>
 </hgroup>
 	<hr />
 
@@ -12,7 +12,7 @@
 </p>
 	<hr />
 <p>
-	<span>When residing 25 miles extant of a state legalized dispensary.</span>
+	<span>*** When residing 25 miles extant of a state legalized dispensary ***</span>
 </p>
 	<hr />
 <p>
@@ -27,14 +27,17 @@
 	<span>This is a placeholder paragraph (C).</span>
 </p>
     <hr />
+
 <p>
-	<span>Here, a block of code may be displayed and Wordwrapped in real time using triple backticks and a code language qualifier embedded in a pre and code tag combo styled via css, as follows:</span>
+	<span>Here, a block of Python code may be displayed and Wordwrapped in real time when enclosed in a liquid wrapper, as follows:</span>
 </p>
 	<hr/>
-<pre>
-<code>
-```python
 
+<!--
+<pre>
+<span>Highlighting Python code w Rouge</span>
+<code> -->
+{% highlight python linenos %}
 # Fibonacci Series:
 # The sum of two elements ...
 # Defines the next numeral ...
@@ -44,16 +47,49 @@ a, b = 0, 1
 while b < 10:
 	print(b)
 	a, b = b, a+b
-
-```
+{% endhighlight %}
+<!--
 </code>
 </pre>
+-->
 	<hr />
+
 <p>
-	<span>The css to wordwrap and highlight the lines of code from within a pre and code combo block ...</span>
+	<span>For html, enclose in a liquid wrapper with a language qualifier and a line marker, as follows:</span>
+</p>
+	<hr />
+
+{% highlight HTML linenos %}
+{\% highlight HTML linenos \%}
+<pre>
+Highlighting Html code ...
+with Rouge.
+<code>
+<p>
+The {\%liquid wrapper\%} ...
+shown here has been ...
+'defanged' with the ...
+back-slash key for ...
+illustration purposes only.
+</p>
+<p>
+To render simply the code ...
+remove the back-slashes from ...
+the liquid wrapper as above.
+</p>
+</code>
+</pre>
+{\% endhighlight \%}
+{% endhighlight %}
+
+	<hr />
+
+<p>
+	<span>Using triple backticks and a code language qualifier to wordwrap and highlight lines of css from within a pre and code combo block ...</span>
 </p>
 	<hr/>
 <pre>
+<span>Highlighting Css code w Rouge</span>
 <code>
 ```css
 

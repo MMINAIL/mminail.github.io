@@ -1,5 +1,16 @@
 baseurl: /
 exclude: ['README.md']
+highlighter: rouge
 markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      # type: "pages"
+    values:
+      layout: "default"
 #timezone: America/Phoenix
 #gems: octopress-date-format
