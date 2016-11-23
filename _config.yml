@@ -1,15 +1,16 @@
 baseurl: /
 exclude: ['README.md']
-highlighter: rouge
-markdown: kramdown
-kramdown:
-    input: GFM
-    syntax_highlighter: rouge
+#kramdown y rouge are now the default setting for markdown and highlighter respectively in Jekyll 3.0 and above
+#markdown: kramdown
+#highlighter: rouge
+#kramdown:
+    #input: GFM
+    #syntax_highlighter: rouge
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
-      # type: "pages"
+      path: "" # By placing an empty string here ALL of the files in the project will be served with the layout "default"
+      type: "pages" # The type attribute limits the files served with the layout "default" to "pages" only
     values:
       layout: "default"
 #timezone: America/Phoenix
