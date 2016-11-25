@@ -69,17 +69,29 @@ hgroup {
     color: #000531;
 }
 
-/* Set the double-xx font size for the 'i' tag */
+/* Set the double-xx font size for the Immediate tag */
 i.largo {
     font-size: xx-large;
+}
+
+/* Set the rule for the <hr> 'hard return' tag */
+.green-groove {
+    border: 1px groove green;
+}
+
+.small-caps {
+    font-variant: small-caps;
+    font-weight: 700;
 }
 
 aside#navigator {
     float: right;
     width: 27%;
+    /* min-width: 27%; */
     background-color: rgb(155,155,204); /* light gray */
     /* border-left: 2px solid #fff; */
     padding: 1%;
+    /* margin-left: 73%; */
 }
 
 /* Nav semantic container classes */
@@ -134,6 +146,8 @@ aside#supporting-content {
     background: rgb(155,155,204); /* Dark Gray */
     padding: 1%;
     /* border-left: 2px solid #fff; */
+    /* margin-right: auto; */
+    /* margin-left: auto; */
 }
 
 /* Set the background color for the currently selected Nav tab */
@@ -148,13 +162,17 @@ pre {
     /* white-space: pre; */
     background-color: rgb(255,255,229); /* light yellow */
     background: hsl(30,80%,90%); /* full moon yellow */
+    /* display: inline; */
     display: block;
-    font-family: monospace;
+    /* font-family: monospace; */
+    font-family: inherit;
     font-size: x-small;
+    /* height: 100%; */
     margin: 1em 0;
 }
 
 code {
+    /* height: 100%; */
     background: hsl(220, 80%, 90%); /* sky blue */
 }
 

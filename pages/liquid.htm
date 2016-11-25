@@ -1,0 +1,127 @@
+---
+layout: default
+title: Liquid Page | Carbon Free Footprint Project
+---
+<hgroup class="leftalign">
+	<h3>Liquid Statements</h3>
+</hgroup>
+	<hr class="green-groove" />
+	
+<p>
+	<span>Welcome! This is the Liquid page of the <b>Carbon Free Footprint</b> project.</span>
+</p>
+
+<p>
+	<span>More to come ...</span>
+</p>
+	<hr class="green-groove" />
+	
+<h4>Liquid Time</h4>
+<p>
+	<span>Intro to Liquid Time ...</span>
+</p>
+
+<p>
+	<span>Or, from an Unordered List of Date of Time possibilities ...</span>
+</p>
+
+<p>
+	<span>More to come ...</span>
+</p>
+	<hr class="green-groove" />
+
+<h5>Site dot time</h5>
+<p>
+	<span>The site dot time pipe date and time liquid statement accepts a set of short parameters, as follows:</span>
+</p>
+
+<p>
+	<span><b>Note</b>.</span>
+	<span>The double curly brace wrapper  \{\{&nbsp;...&nbsp;\}\} has been removed from the code statement to prevent execution.</span>
+</p>
+
+<pre>
+<span>Highlighting Liquid code w Rouge via Liquid ...</span>
+<code>
+{% highlight liquid linenos %}
+site.time | date: "Date: %a, %b %d, %Y<br />Time: %X %Z"
+{% endhighlight %}
+</code>
+<span lang="es" title="Sp. 'For Finish'">Finito!</span>&nbsp;...&nbsp;<i class="icon-large icon-flower"></i>
+</pre>
+
+<p>
+	<span>When rendered locally, the current local server ( machine ) date and 24 hour spot-time for the most recent rendition of this page ...</span>
+	<span>is based on a geo-location of ( GMT -7 ).</span>
+</p>
+
+<p>
+	<span>{{ site.time | date: "Date: %a, %b %d, %Y<br />Time: %X %Z" }}</span>
+</p>
+
+<p>
+	<span><b>Note</b>.</span>
+	<span>The time shown above is as of the moment of page rendering.</span>
+	<span>When rendered from a remote server to your local browser ...</span>
+	<span>The date, time, and deviation from Greenwich Mean Time (GMT) are based on the geo-location of the remote server.</span>
+</p>
+	<hr class="green-groove" />
+
+<h5>If Else Loop</h5>
+<p>
+	<span>An If Else Loop can be established within a Liquid tag, as follows:</span>
+</p>
+
+<p>
+	<span><b>Note</b>.</span>
+	<span>The single curly brace - single percentage wrapper \{\%&nbsp;...&nbsp;\%\} has been removed from the code statement to prevent execution.</span>
+</p>
+
+<pre>
+<span>Highlighting Liquid code w Rouge via Liquid ...</span>
+<code>
+{% highlight liquid linenos %}
+if page.url == '/index.htm'
+elseif page.url == '../pages/pagetwo.htm'
+endif
+{% endhighlight %}
+</code>
+<span lang="es" title="Sp. 'For Finish'">Finito!</span>&nbsp;...&nbsp;<i class="icon-large icon-flower"></i>
+</pre>
+	<hr class="green-groove" />
+
+<h5>Liquid Highlighting</h5>
+<p>
+	<span>For html, enclose in a liquid wrapper with a language qualifier and a line marker, as follows:</span>
+</p>
+
+<p>
+	<span><b>Note</b>.</span>
+	<span>The \{\%liquid wrapper\%\} shown here has been 'defanged' with the backslash key for illustration purposes only.</span>
+</p>
+
+<p>
+	<span>To render the code ... Simply remove the backslashes from the liquid wrapper.</span>
+</p>
+
+<pre>
+<span>Highlighting Html code with Rouge via Liquid</span>
+<code>
+{% highlight html linenos %}
+\{\% highlight html linenos \%\}
+```liquid
+
+<% comment %>
+	A Liquid comment tag using triple backticks and a language qualifier
+<% endcomment %>
+
+```
+\{\% endhighlight \%\}
+{% endhighlight %}
+</code>
+<span lang="es" title="Sp. 'For Finish'">Finito!</span>&nbsp;...&nbsp;<i class="icon-large icon-flower"></i>
+</pre>
+
+<footer>
+	{% include footer.htm %}
+</footer>
