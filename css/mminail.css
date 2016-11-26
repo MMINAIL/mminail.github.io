@@ -74,6 +74,11 @@ i.largo {
     font-size: xx-large;
 }
 
+.more-link {
+    display: inline-block;
+    margin-left: 10px;
+}
+
 /* Set the rule for the <hr> 'hard return' tag */
 .green-groove {
     border: 1px groove green;
