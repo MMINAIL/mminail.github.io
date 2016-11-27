@@ -48,7 +48,7 @@ title: MongoDB Page | Carbon Free Footprint Project
 
 <p>
     <span>Each subheading that follows represents a MongoDB command or an important function</span>
-    <span>with a little bit of explanation tossed in as a Javascript comment to whet the whistle of the fledgling reader.</span>
+    <span>with a little bit of explanation tossed in as a Javascript comment to whet the whistle of the database specialist.</span>
 </p>
 	<hr class="green-groove" />
 
@@ -58,7 +58,8 @@ title: MongoDB Page | Carbon Free Footprint Project
 </p>
 
 <p>
-	<span>More to come ...</span>
+	<span>Once you have successfully installed MongoDB on your machine you may open up a terminal window and type 'mongo'.</span>
+	<span>The command 'mongo' will connect a shell to your running server and the 'chevron' will appear.</span>
 </p>
 
 <!--
@@ -103,8 +104,12 @@ title: MongoDB Page | Carbon Free Footprint Project
 <span>Highlighting MongoDB code w Rouge via liquid</span>
 <code> -->
 {% highlight javascript linenos %}
-// where db is the wake-up command to the (MS) to provide the current 'version'' of the Mongo Server (MS)
+// where db is the wake-up command to the (MS) to provide the current 'version' of the Mongo Server (MS)
 db.version();
+// the (MS) returns the version number of your MongoDB install
+3.2.11
+// the 'chevron' prompt returns ready for your next command ( or, function )
+>;
 {% endhighlight %}
 <!--
 </code>
@@ -151,82 +156,13 @@ db.frame.help();
 -->
 	<hr class="green-groove" />
 
-<h4>Mongo Stats</h4>
-<p>
-	<span>Intro to the 'stats()' function ...</span>
-</p>
-
-<p>
-	<span>More to come ...</span>
-</p>
-
-<!--
-<pre>
-<span>Highlighting MongoDB code w Rouge via liquid</span>
-<code> -->
-{% highlight javascript linenos %}
-// where db is the wake-up command to the Mongo Server (MS) to provide stats
-db.stats();
-{% endhighlight %}
-<!--
-</code>
-</pre>
--->
-	<hr class="green-groove" />
-
-<h4>Mongo Count</h4>
-<p>
-	<span>Intro to the 'count()' function ...</span>
-</p>
-
-<p>
-	<span>The (MS) will provide a specific 'count' ...</span>
-</p>
-
-<!--
-<pre>
-<span>Highlighting MongoDB code w Rouge via liquid</span>
-<code> -->
-{% highlight javascript linenos %}
-// where 'frame' is the name of a collection of documents within the current working database
-db.frame.count();
-{% endhighlight %}
-<!--
-</code>
-</pre>
--->
-	<hr class="green-groove" />
-
-<h4>Mongo Status</h4>
-<p>
-	<span>Intro to the 'serverStatus()' function ...</span>
-</p>
-
-<p>
-	<span>More to come ...</span>
-</p>
-
-<!--
-<pre>
-<span>Highlighting MongoDB code w Rouge via liquid</span>
-<code> -->
-{% highlight javascript linenos %}
-// where db is the wake-up command to the (MS) to provide the current 'serverStatus' of the Mongo Server (MS)
-db.serverStatus();
-{% endhighlight %}
-<!--
-</code>
-</pre>
--->
-	<hr class="green-groove" />
-
 <h4>Mongo Use</h4>
 <p>
 	<span>Intro to the MongoDB 'use' command ...</span>
 </p>
 
 <p>
-	<span>More to come ...</span>
+	<span>How To Declare and Change the Working Database ...</span>
 </p>
 
 <!--
@@ -259,13 +195,13 @@ use cls;
 -->
 	<hr class="green-groove" />
 
-<h4>Mongo getCollectionNames()</h4>
+<h4>Mongo getCollectionNames() function</h4>
 <p>
 	<span>Intro to the MongoDB 'getCollectionNames()' function ...</span>
 </p>
 
 <p>
-    <span>Initially when performing this function on an empty 'collection', the prompt returns an empty array '[&nbsp;&nbsp;]', as follows:
+    <span>Initially, when performing this 'getCollectionNames()' function on a database void of any 'collection', the prompt returns an empty array '[&nbsp;&nbsp;]', as follows:
 </p>
 
 <!--
@@ -273,10 +209,29 @@ use cls;
 <span>Highlighting MongoDB code w Rouge via liquid</span>
 <code> -->
 {% highlight javascript linenos %}
-// where the result is initially an empty array, the function getCollectionNames() returns the symbol '[ ]'
+// where the result is initially an empty array of collections ...
+// the function getCollectionNames() returns the symbol '[ ]'
 db.getCollectionNames();
-[ ];
+>[ ];
 // then the 'chevron' prompt for the entering of the next command returns
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// where a database named 'learn' houses a single collection named 'unicorns' ...
+db.getCollectionNames();
+// the function returns an array of one
+[ "unicorns" ]
+// then the 'chevron' prompt revisits the terminal
 >;
 {% endhighlight %}
 <!--
@@ -291,7 +246,16 @@ db.getCollectionNames();
 </p>
 
 <p>
-    <span>To insert a single document into the 'frame' collection ...</span>
+    <span>To insert a single document into the 'frame' collection of the working database ...</span>
+</p>
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<p>
+	<span>Where the result is a single inserted document into the 'frame' collection ...</span>
+</p>
+
+<p>
+	<span>Where one or more 'key: value' sets of 'fields' within a single document are to be declared with the insert function.</span>
 </p>
 
 <!--
@@ -299,22 +263,23 @@ db.getCollectionNames();
 <span>Highlighting MongoDB code w Rouge via liquid</span>
 <code> -->
 {% highlight javascript linenos %}
-// where one or more 'key: value' sets of 'fields' within a single document are declared
+// When hitting the carriage return after typing this ...
 db.frame.insert({name: 'Aurora', gender: 'f', weight: 450});
+// the (MS) returns the following result
+WriteResult({ "nInserted" : 1 })
+// The result is a single document has been added to the collection 'frame'
 {% endhighlight %}
 <!--
 </code>
 </pre>
 -->
-<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+
 <!--
 <pre>
 <span>Highlighting MongoDB code w Rouge via liquid</span>
 <code> -->
 {% highlight javascript linenos %}
-// where the result is an single inserted document into the 'frame' collection
-WriteResult({ "nInserted" : 1 })
-// After the (MS) acknowledges the insert, the 'chevron' prompt for the entering of the next command returns
+// After the (MS) acknowledges the insert, the 'chevron' prompt for the entering of your next command returns
 >;
 {% endhighlight %}
 <!--
@@ -323,16 +288,20 @@ WriteResult({ "nInserted" : 1 })
 -->
 	<hr class="green-groove" />
 
-<h4>Mongo getCollectionNames()</h4>
+<h4>Mongo getCollectionNames() revisited</h4>
 <p>
 	<span>Revisiting the MongoDB 'getCollectionNames()' function ...</span>
 </p>
 
 <p>
 	<span>After inserting the single document into the 'frame' collection ...</span>
+</p>
+
+<p>
 	<span>When we pull the function 'getCollectionNames()' again</span>
 	<span>from the arsenal of functions available in MongoDB</span>
-	<span>we get an acknowledgement from the (MS) that a collection named 'frame' has been created, as follows:</span>
+	<span>we get an acknowledgement from the (MS) that a collection named 'frame'</span>
+	<span>has also been created where previously there was an empty array returned, as follows:</span>
 </p> 
 
 <!--
@@ -355,6 +324,188 @@ db.getCollectionNames()
 	<span>In effect, the collection was declared first, and then a document was inserted secondly into the working database.</span>
 	<span>Consequently, all of the fields ( key - value pairs ) of the now inserted document are house'd within the collection 'frame' of the working database.</span>
 </p>
+	<hr class="green-groove" />
+
+<h4>Simple Array</h4>
+<p>
+    <span>How To Insert a Simple Array Into the 'frame' Collection ...</span>
+</p>
+
+<p>
+	<span>A simple array is considered to be its own document, as well.</span>
+</p>
+
+<p>
+	<span>Remember, Simple Arrays appear within a [ set of brackets ] in Mongo.</span>
+</p>
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// If successful upon tapping the 'enter' key ...
+db.frame.insert({"fruits" : [
+"apple",
+"pear",
+"orange",
+"banana"]
+});
+// the (MS) returns the following result
+WriteResult({ "nInserted" : 1 })
+// And, the 'chevron' prompt revisits the terminal
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Here, try another array ...</span>
+</p>
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// If successful upon tapping the 'enter' key ...
+db.frame.insert({"autos" : [
+"chrysler",
+"bmw",
+"ford",
+"general motors",
+"volkswagen"]
+});
+// the (MS) returns the following result
+WriteResult({ "nInserted" : 1 })
+// And, the 'chevron' prompt revisits the terminal
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<h4>Embedded Document</h4>
+<p>
+    <span>How To Insert an Embedded Document Into the 'frame' Collection ...</span>
+</p>
+
+<p>
+	<span>An Embedded Document holds the key - value pairs of another document, as follows:</span>
+</p>
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// If, however, the insert is not successful ...
+db.frame.insert({"home" : "ejs26aa01a",
+"address" : {
+	"phone : "206-000-0000",
+	"correo" : "1423",
+	"street" : "Jerry",
+	"type" : "Rd",
+	"compass" : null,
+	"city" : "Seattle",
+	"state" : "WA",
+	"zip" :  "98109-5210"}
+});
+// the (MS) will return an error message, similar to the following ...
+SyntaxError: missing : after property id @(shell):3:9
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Here, the operator failed to close "quotes" in line 3, at character 9</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// Should be "phone" ... now, you're cook'n!
+WriteResult({ "nInserted" : 1 })
+// And, the 'chevron' prompt revisits the terminal
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Try another Embedded Document ...</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// This one looks accurate ...
+db.frame.insert({"person" : "20nov16ejs26aa01a",
+"name" : {
+	"last" : "Smith",
+	"first" : "Edward",
+	"mid" : "John",
+	"suffix" : null,
+	"dob" : "010177",
+	"bmi" : 30.05,
+	"email" : "jsmiwa@me.com",
+	"entity" : "Amazon Legal Dept",
+	"home" : "ejs26aa01a"}
+});
+// And it is!
+WriteResult({ "nInserted" : 1 })
+// the 'chevron' prompt revisits the terminal
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Notice how the accurate 'person' document holds a 'key - value' pair that corresponds to the 'entity' document below as well as the 'home' document above.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// This one looks accurate, too ...
+db.frame.insert({"entity" : "Amazon Legal Dept",
+"address" : {
+	"phone" : "206-266-4064",
+	"correo" : "410",
+	"street" : "Terry",
+	"type" : "Avenue",
+	"compass" : "North",
+	"city" : "Seattle",
+	"state" : "WA",
+	"zip" :  "98109-5210"}
+});
+// And it is!
+WriteResult({ "nInserted" : 1 })
+// the 'chevron' prompt revisits the terminal
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
 	<hr class="green-groove" />
 
 <h4>Mongo Find</h4>
@@ -522,6 +673,75 @@ mongoimport;
 </code>
 </pre>
 -->
+
+<h4>Mongo Stats</h4>
+<p>
+	<span>Intro to the 'stats()' function ...</span>
+</p>
+
+<p>
+	<span>More to come ...</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// where db is the wake-up command to the Mongo Server (MS) to provide stats
+db.stats();
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo Count</h4>
+<p>
+	<span>Intro to the 'count()' function ...</span>
+</p>
+
+<p>
+	<span>The (MS) will provide a specific 'count' ...</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// where 'frame' is the name of a collection of documents within the current working database
+db.frame.count();
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo Status</h4>
+<p>
+	<span>Intro to the 'serverStatus()' function ...</span>
+</p>
+
+<p>
+	<span>More to come ...</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// where db is the wake-up command to the (MS) to provide the current 'serverStatus' of the Mongo Server (MS)
+db.serverStatus();
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
 
 <footer>
     <p>

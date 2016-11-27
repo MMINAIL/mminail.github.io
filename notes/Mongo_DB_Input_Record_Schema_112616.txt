@@ -1,0 +1,61 @@
+//Simple Array #1
+db.frame.insert({"fruits" : [
+"apple",
+"pear",
+"orange",
+"banana"]
+});
+WriteResult({ "nInserted" : 1 })
+
+//Simple Array #2
+db.frame.insert({"autos" : [
+"chrysler",
+"bmw",
+"ford",
+"general motors",
+"volkswagen"]
+});
+WriteResult({ "nInserted" : 1 })
+
+//Embedded Document #1
+db.frame.insert({"person" : "20nov16ejs26aa01a",
+"name" : {
+	"last" : "Smith",
+	"first" : "Edward",
+	"mid" : "John",
+	"suffix" : null,
+	"dob" : "010177",
+	"bmi" : 30.05,
+	"email" : "jsmiwa@me.com",
+	"entity" : "Amazon Legal Dept",
+	"home" : "ejs26aa01a"}
+});
+WriteResult({ "nInserted" : 1 })
+
+//Embedded Document #2
+db.frame.insert({"entity" : "Amazon Legal Dept",
+"address" : {
+	"phone" : "206-266-4064",
+	"correo" : "410",
+	"street" : "Terry",
+	"type" : "Avenue",
+	"compass" : "North",
+	"city" : "Seattle",
+	"state" : "WA",
+	"zip" :  "98109-5210"}
+});
+WriteResult({ "nInserted" : 1 })
+
+Embedded Document #3
+db.frame.insert({"home" : "ejs26aa01a",
+"address" : {
+	"phone : "206-000-0000",
+	"correo" : "1423",
+	"street" : "Jerry",
+	"type" : "Rd",
+	"compass" : null,
+	"city" : "Seattle",
+	"state" : "WA",
+	"zip" :  "98109-5210"}
+});
+WriteResult({ "nInserted" : 1 })
