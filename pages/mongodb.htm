@@ -5,7 +5,7 @@ title: MongoDB Page | Carbon Free Footprint Project
 <hgroup class="leftalign">
 	<h3>MongoDB Commands and Functions</h3>
 </hgroup>
-	<hr />
+	<hr class="green-groove" />
 	
 <p>
 	<span>Welcome! This is the MongoDB Page of the <b>Carbon Free Footprint</b> project.</span>
@@ -30,12 +30,50 @@ title: MongoDB Page | Carbon Free Footprint Project
 </p>
 
 <p>
+    <span>Further, the lines of code shown within the code blocks are encased within a <a href="#" title="Clik to Jump To the Liquid repo at GitHub" target="_blank">Liquid</a> wrapper.</span>
+</p>
+
+	<span>To further faciliate reading the text of the code on a MacBook Pro ... breaks in the code have been set based on a laptop screen.
+</p>
+
+<p>
     <span>What follows, are some important MongoDB Shell commands and functions for the fledgling reader to master.</span>
 </p>
 
 <p>
-	<span>More to come ...</span>
+	<span>It is debatable whether or not we should render this repo for smaller screens ( or, conversely larger screens ) separately.</span>
 </p>
+
+	<span>When viewing this repo on a smart phone, for example, the responsiveness of the slide to lower dimensions begs reconfiguration.</span>
+</p>
+
+<p>
+	<span>This repo 'works' well when viewing from a MacBook Pro laptop screen ...</span>
+	<span>But, the author is open to tweaking the html and css to render effectively for other screens.</span>
+</p>
+
+<p>
+	<span>You know the drill ...</span>
+	<span>Fork it, and send me a pull request!</span>
+</p>
+
+<p>
+	<span>As you can see when digging into this repo, the GitHub pages engine will accept Bootstrap 3.0 ( and, Angular 2 ) enhancements.</span>
+</p>
+
+<p>
+	<span>But, connecting a MongoDB document database and then constructing forms to fill it ...?</span>
+</p>
+
+<p>
+	<span>No, there is no 'server-side' coding allowed via the GitHub pages engine ... at this time. </span>
+</p>
+
+<p>
+	<span>More to come ...</span>
+	<span>All client based.</span>
+</p>
+
 	<hr class="green-groove" />
 
 <h3>The Fun Begins Here</h3>
@@ -43,7 +81,7 @@ title: MongoDB Page | Carbon Free Footprint Project
 <p>
 	<span>Here, a block of code for the MongoDB Javascript shell may be displayed and wordwrapped in real time</span>
     <span>via <a href="https://pages.github.com/" title="Clik to Jump To GitHub Pages" target="_blank">GitHub Pages</a></span>
-    </span>when enclosed in a proper <a href="#" title="Clik to Jump To the Liquid repo at GitHub" target="_blank">Liquid</a> wrapper.</span>
+    </span>when enclosed in a proper Liquid</a> wrapper.</span>
 </p>
 
 <p>
@@ -108,7 +146,7 @@ title: MongoDB Page | Carbon Free Footprint Project
 db.version();
 // the (MS) returns the version number of your MongoDB install
 3.2.11
-// the 'chevron' prompt returns ready for your next command ( or, function )
+// the 'chevron' promptly returns ready for your next command ( or, function )
 >;
 {% endhighlight %}
 <!--
@@ -139,7 +177,7 @@ db.help();
 -->
 <h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
 <p>
-	<span>(MS) will provide specific 'help', too ...</span>
+	<span>(MS) will also provide detailed 'specific' help, too ...</span>
 	<span>Whenever a collection is specified within the 'help' function.</span>
 </p>
 <!--
@@ -227,7 +265,7 @@ db.getCollectionNames();
 <span>Highlighting MongoDB code w Rouge via liquid</span>
 <code> -->
 {% highlight javascript linenos %}
-// where a database named 'learn' houses a single collection named 'unicorns' ...
+// where a database named 'learn' holds a single collection named 'unicorns' ...
 db.getCollectionNames();
 // the function returns an array of one
 [ "unicorns" ]
@@ -482,7 +520,7 @@ WriteResult({ "nInserted" : 1 })
 </p>
 
 <p>
-	<span>A Dun and Bradstreet assigned number can substitute for the 'entity' value,</span>
+	<span>A Dun and Bradstreet assigned business number can substitute for the 'entity' value,</span>
 	<span>and a county parcel number can substitute for the value of the 'home' key.</span>
 </p>
 
@@ -522,7 +560,7 @@ WriteResult({ "nInserted" : 1 })
 </p>
 
 <p>
-	<span>More to come ...</span>
+	<span>How to find a document in a Mongo collection using dot notation via the 'db.collection.find()' function.</span>
 </p>
 
 <!--
@@ -530,13 +568,121 @@ WriteResult({ "nInserted" : 1 })
 <span>Highlighting MongoDB code w Rouge via liquid</span>
 <code> -->
 {% highlight javascript linenos %}
-// back to the 'chevron'
+// Set up your query in Terminal where 'frame' is the name of a collection in the working database
+db.frame.find({'address.street' : 'Jerry'})
+// The (MS) returns the entire document to the Terminal ...
+// including the identifying auto-generated 'hash' for the document
+{ "_id" : ObjectId("5839ef0545cc496e4f431110"), "home" : "ejs26aa01a",
+"address" : { "phone" : "206-000-0000", "correo" : "1423", "street" : "Jerry",
+"type" : "Rd", "compass" : null, "city" : "Seattle", "state" : "WA",
+"zip" : "98109-5210", "owner" : "Edward John Smith" }
+}
+// And, the 'chevron' now appears awaiting your next command or function
 >;
 {% endhighlight %}
 <!--
 </code>
 </pre>
 -->
+
+<p>
+	<span>Another way to perform this type of search ( find ) is to query the collection using the <a href="https://www.mongodb.com" title="Click to Visit the Download Page for the Mongo Compass" target="_blank">Mongo Compass</a> rather than via the Terminal.</span>
+</p>
+
+<p>
+	<span>The Mongo compass has an input line front and center on the 'Schema' tab where simply the query sans the function can be entered, as follows:</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// Set up your query via the 'Schema' tab of Mongo compass ...
+// where 'frame' is the name of a collection in the working database 
+{"address.street" : "Jerry"}
+// Notice the Mongo compass requires "double quotes" when entering the key - value pair ...
+// Whereas the Terminal function above will accept 'single quotes'
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>One of the really cool features of the Mongo compass is the ability to pick and choose the fields you wish to build your query upon by simply clicking the available elements shown.</span>
+</p>
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+
+<p>
+	<span>Let's say you wish to query a collection within the working database for the value 'banana'.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// Set up your query via the 'Schema' tab of Mongo compass ...
+// where 'frame' is the name of a collection in the working database 
+{"fruits":"banana"}
+// Notice that Mongo compass requires "double quotes" when entering the key - value pair
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Or, for the value 'btw' ...</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// Set up your query via the 'Schema' tab of Mongo compass ...
+// where 'frame' is the name of a collection in the working database 
+{"autos":"bmw"}
+// Notice the Mongo compass requires "double quotes" when entering the key - value pair
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Now, by clicking on the 'Documents' tab in Mongo compass ...</span>
+	<span>The document housing the inquiry value appears ( similar to the above Terminal result ), as follows:</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// Query returned 1 document.
+_id:ObjectID('5839eae645cc496e4f43110d')
+autos:Array[5]
+0:"chrysler"
+1:"bmw"
+2:"ford"
+3:"general motors"
+4:"volkswagen"
+// Notice the Mongo compass requires "double quotes" when entering the key - value pair
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Other than the continuing caveat to render your query with "double quotes" ...</span>
+	<span>The Terminal proves cumbersome when compared to the ability to query effectively through Mongo compass.</span>
+</p>
+
 	<hr class="green-groove" />
 
 <h4>Mongo Indexes</h4>
@@ -750,6 +896,43 @@ db.serverStatus();
 </pre>
 -->
 	<hr class="green-groove" />
+
+<h4>Mongo Test</h4>
+<p>
+	<span>More to come ...</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// back to the 'chevron'
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<p>
+	<span>More to come ...</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// back to the 'chevron'
+>;
+{% endhighlight %}
+<!--
+</code>
+<hr class="green-groove" />
+</pre>
+-->
 
 <footer>
     <p>
