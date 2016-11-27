@@ -408,7 +408,8 @@ WriteResult({ "nInserted" : 1 })
 // If, however, the insert is not successful ...
 db.frame.insert({"home" : "ejs26aa01a",
 "address" : {
-	"phone : "206-000-0000",
+	"owner : "Edward John Smith",
+	"phone" : "206-000-0000",
 	"correo" : "1423",
 	"street" : "Jerry",
 	"type" : "Rd",
@@ -434,7 +435,7 @@ SyntaxError: missing : after property id @(shell):3:9
 <span>Highlighting MongoDB code w Rouge via liquid</span>
 <code> -->
 {% highlight javascript linenos %}
-// Should be "phone" ... now, you're cook'n!
+// Should be "owner" ... now, you're cook'n!
 WriteResult({ "nInserted" : 1 })
 // And, the 'chevron' prompt revisits the terminal
 >;
@@ -463,7 +464,7 @@ db.frame.insert({"person" : "20nov16ejs26aa01a",
 	"dob" : "010177",
 	"bmi" : 30.05,
 	"email" : "jsmiwa@me.com",
-	"entity" : "Amazon Legal Dept",
+	"entity" : "206WA98109a1a001",
 	"home" : "ejs26aa01a"}
 });
 // And it is!
@@ -480,14 +481,20 @@ WriteResult({ "nInserted" : 1 })
 	<span>Notice how the accurate 'person' document holds a 'key - value' pair that corresponds to the 'entity' document below as well as the 'home' document above.</span>
 </p>
 
+<p>
+	<span>A Dun and Bradstreet assigned number can substitute for the 'entity' value,</span>
+	<span>and a county parcel number can substitute for the value of the 'home' key.</span>
+</p>
+
 <!--
 <pre>
 <span>Highlighting MongoDB code w Rouge via liquid</span>
 <code> -->
 {% highlight javascript linenos %}
 // This one looks accurate, too ...
-db.frame.insert({"entity" : "Amazon Legal Dept",
+db.frame.insert({"entity" : "206WA98109a1a001",
 "address" : {
+	“name” : “Amazon Legal Dept”,
 	"phone" : "206-266-4064",
 	"correo" : "410",
 	"street" : "Terry",
@@ -495,7 +502,8 @@ db.frame.insert({"entity" : "Amazon Legal Dept",
 	"compass" : "North",
 	"city" : "Seattle",
 	"state" : "WA",
-	"zip" :  "98109-5210"}
+	"zip" :  "98109-5210"
+	“credit” : “a1a”}
 });
 // And it is!
 WriteResult({ "nInserted" : 1 })
