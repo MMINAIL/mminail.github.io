@@ -18,6 +18,21 @@ db.frame.insert({"autos" : [
 WriteResult({ "nInserted" : 1 })
 
 //Embedded Document #1
+db.frame.insert({"home" : "ejs26aa01a",
+"address" : {
+	"owner": "Edward John Smith",
+	"phone" : "206-000-0000",
+	"correo" : "1423",
+	"street" : "Jerry",
+	"type" : "Rd",
+	"compass" : null,
+	"city" : "Seattle",
+	"state" : "WA",
+	"zip" :  "98109-5210"}
+});
+WriteResult({ "nInserted" : 1 })
+
+//Embedded Document #2
 db.frame.insert({"person" : "20nov16ejs26aa01a",
 "name" : {
 	"last" : "Smith",
@@ -27,14 +42,15 @@ db.frame.insert({"person" : "20nov16ejs26aa01a",
 	"dob" : "010177",
 	"bmi" : 30.05,
 	"email" : "jsmiwa@me.com",
-	"entity" : "Amazon Legal Dept",
+	"entity" : "206WA98109a1a001",
 	"home" : "ejs26aa01a"}
 });
 WriteResult({ "nInserted" : 1 })
 
-//Embedded Document #2
-db.frame.insert({"entity" : "Amazon Legal Dept",
+Embedded Document #3
+db.frame.insert({"entity" : "206WA98109a1a001",
 "address" : {
+	“name” : “Amazon Legal Dept”,
 	"phone" : "206-266-4064",
 	"correo" : "410",
 	"street" : "Terry",
@@ -42,20 +58,7 @@ db.frame.insert({"entity" : "Amazon Legal Dept",
 	"compass" : "North",
 	"city" : "Seattle",
 	"state" : "WA",
-	"zip" :  "98109-5210"}
-});
-WriteResult({ "nInserted" : 1 })
-
-Embedded Document #3
-db.frame.insert({"home" : "ejs26aa01a",
-"address" : {
-	"phone : "206-000-0000",
-	"correo" : "1423",
-	"street" : "Jerry",
-	"type" : "Rd",
-	"compass" : null,
-	"city" : "Seattle",
-	"state" : "WA",
-	"zip" :  "98109-5210"}
+	"zip" :  "98109-5210",
+	“credit” : “aa”}
 });
 WriteResult({ "nInserted" : 1 })
