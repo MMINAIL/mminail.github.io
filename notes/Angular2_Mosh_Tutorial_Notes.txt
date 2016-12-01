@@ -1,0 +1,46 @@
+Angular2 Notes from the Mosh Tutorial
+
+Components
+- Root ( View ) Components
+export class RatingComponent {
+	//Angular2 Components are TypeScript (.ts) classes
+	//There can be both properties and methods in TypeScript classes
+
+	//Variables are declared inside TypeScript (.ts) classes; Properties hold the data of the view
+	averageRating: number;
+
+	//Methods hold the behavior rules for the view
+	setRating(value) {
+		//some type of formula, or code goes inside a set of method curly braces
+	}
+}
+
+Directives
+- are built in helpers
+<input type="text" autoGrow />
+Routers
+Services
+
+<h4>Angular2 Forms</h4>
+<p>Autocomplete and Novalidate are two Html5 factions that deal with Form Validation.</p>
+<p>Please disable these two Html5 functions when dealing with the construction of forms in Angular2, as follows:</p>
+
+<form autocomplete="off" novalidate>
+	<fieldset>
+		<legend>Summary</legend>
+		<div class="form-field">
+			<label>Title:</label>
+			<input name="title" [(ngModel)]="lesson.title" required minlength="10">
+		//ngModel is a helper based on many Directives
+		//Here, the 'required' directive forces the user to input, and the 'minlength' forces validity of at least ten (10) typed characters by the end-user
+		</div>
+
+	</fieldset>
+</form>
+
+
+<h5>Bi-directional Data binding </h5>
+<p>Bi-directional Data binding can be as simple as plucking the data from a form after the user completes an input.</p>
+
+
+

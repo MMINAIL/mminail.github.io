@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="">
+<!-- Set the base language to English; Establish an Angular ( ng ) application ( app ) w data input validation ( data ) -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,6 +9,7 @@
 	<link href="../css/themes/zocial.css" rel="stylesheet" />
 	<link href="../css/themes/bootstrap.icon-large.min.css" rel="stylesheet" />
 	<link href="../css/themes/bootstrap.min.css" rel="stylesheet" />
+	<link href="../css/themes/flex-box.css" rel="stylesheet" />
 	<!-- Comment Out: Prism css
 	<link href="../css/themes/prism.css" rel="stylesheet" /> -->
 	<link type="image/x-icon" href="/favicon.ico?" rel="shortcut icon" />
@@ -20,7 +22,8 @@
 	<aside id="navigator">{% include nav.htm %}</aside>
 
 	<h1>MMINAIL.GitHub.io Directory</h1>
-	
+
+
 </header>
 
 <!-- <div class="container"> -->
@@ -32,21 +35,31 @@
 
 </article>
 </div>
+
+<footer class="site-footer">
 <!-- <footer class="panel-footer"> -->
-<footer>
-<!-- <hgroup class="panel-body"> -->
+
 <hgroup>
+<!-- <hgroup class="panel-body"> -->
 	<h2>{{ page.title }}</h2>
 	
 </hgroup>
-<p>Powered with <a href="https://www.glyphicons.com/" title="Click to Review Glyphicons" target="_blank">glyphicons<br /><br />
-<i class="icon-large icon-snowflake"></i></a></p>
+
+<p>
+	<span>Powered with</span>
+	<a href="https://www.glyphicons.com/" title="Click to Review Glyphicons" target="_blank">glyphicons<br /><br />	
+	<i class="icon-large icon-snowflake"></i></a>
+</p>
+
 </footer>
 
 <!-- Place all body scripts north of the </body> closing tag and after the closing </footer> tag  -->
 
+<!-- Comment Out: Angularjs library body script -->
+<script src="../js/angular.min.js"></script> 
+
 <!-- Comment Out: Square Me body script -->
-<script src="../js/scripts/squareme.js"></script> 
+<script src="../js/scripts/squareme.js"></script>
 
 <!-- Comment Out: Markdown library body script 
 <script src="../js/markdown.js"></script> -->
@@ -94,17 +107,17 @@
 <script src="../js/prism.js"</script>
 	Note: the switch 'data-manual'' may be added AFTER the src to invoke No highlight -->
 
-<!-- Comment Out: Jquery Local script
-<script src="../js/jquery.min.js"></script>  -->
+<!-- Comment Out: Jquery Local script -->
+<script src="../js/jquery.min.js"></script>  
 
-<!-- Comment Out: Jquery Remote script  -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Comment Out: Jquery Remote script  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 
-<!-- Comment Out: Bootstrap Local script 
-<script src="../js/bootstrap.min.js"></script> -->
+<!-- Comment Out: Bootstrap Local script -->
+<script src="../js/bootstrap.min.js"></script> 
 
-<!-- Comment Out: Bootstrap Remote script  -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+<!-- Comment Out: Bootstrap Remote script  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script> -->
 
 <!-- Comment Out: Tether Local script -->
 <script src="../js/tether.min.js"></script>  

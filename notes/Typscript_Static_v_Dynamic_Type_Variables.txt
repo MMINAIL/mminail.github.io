@@ -1,0 +1,7 @@
+Typescript: Static v Dynamic Type Variables
+
+var name: string = 'jen';
+
+var age: number =23;
+
+var flag: boolean = false;

@@ -8,6 +8,7 @@ font-family: ‘trattatello’;
 src: url(‘../fonts/trattatello.ttf’) format(‘truetype’);
 } */
 
+/* Include san-serif font 'eurostyle' */
 @font-face {
 font-family: ‘eurostyle’;
 src: url(‘../css/fonts/eurostyle.ttf’) format(‘truetype’);
@@ -24,7 +25,7 @@ html {
 /* Set the body for the page */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(155,155,204);
+    background-color: rgb(155,155,204);
     /* opacity: 0.5; /* ¡Cuidado! Both the Background-color AND the Text color are affected by the opacity level! */
     padding: 1%;
     height: 100%;
@@ -34,11 +35,11 @@ body {
 /* Set the header elements */
 h1 {
     text-align: center;
+    /* min-width: 480px; */
 }
 
 hgroup {
     text-align: center;
-    /* background-color: #0099cc; /* Dodger Blue */
 }
 
 /* Set the basic classes */
@@ -92,8 +93,8 @@ i.largo {
 aside#navigator {
     float: right;
     width: 27%;
-    /* min-width: 27%; */
-    background-color: rgb(155,155,204); /* light gray */
+    min-width: 160px;
+    background-color: rgb(155,155,204); /* medium purple */
     /* border-left: 2px solid #fff; */
     padding: 1%;
     /* margin-left: 73%; */
@@ -115,7 +116,8 @@ aside#navigator {
     margin-bottom: 1%;
     /* display: inline-block; */
     /* max-width: 50%; /* limit width */
-    background-color : rgb(155,155,204); /* #33b5e5 */
+    /* background-color: #33b5e5 */
+    background-color : rgb(155,155,204); 
     text-align: left;
     color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -132,14 +134,28 @@ div.container {
 }
 
 div.container-fluid {
-    background-color: #fff; /* White */
+    /* background-color: skyblue; */
+    background-color: powderblue;
+    /* padding-right: 1%; */
+    /* padding-left: 1%; */
+    padding: 1%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 article.main-article {
     text-align: left;
     width: 73%;
-    background-color: rgb(255,255,229); /* light yellow */
     /* background: hsl(220, 80%, 90%); /* sky blue */
+    /* background-color: cornsilk; */
+    /* background-color: lightyellow; */
+    /* background-color: rgb(254,254,205); /* full-moon yellow */
+    /* background-color: lightgoldenrodyellow; */
+    /* background-color: papayawhip; */
+    /* background-color: honeydew; */
+    /* background-color: palegoldenrod; */
+    /* background-color: linen; */
+    background-color:rgb(255,255,229); /* moonlight */
     padding: 1%;
     /* border-right: 2px solid #fff; */
 }
@@ -148,7 +164,7 @@ aside#supporting-content {
     text-align: left;
     /* float: right; */
     /* width: 20%; */
-    background: rgb(155,155,204); /* Dark Gray */
+    background-color: rgb(155,155,204); /* Medium Purple */
     padding: 1%;
     /* border-left: 2px solid #fff; */
     /* margin-right: auto; */
@@ -182,10 +198,56 @@ code {
 }
 
 /* Set the footer for the Website */
-footer {
+.page-footer {
+    display: block;
+    text-align: center;
+    font-size: small;
     font-weight: 700;
-    text-align: center; font-size: small;
-    /* background-color: rgb(207,103,75); /* Indian Red */ 
+    padding: 1%;
+    /* min-height: 180px; */
+    min-width: 220px;
+    /* background-color: #eebb55; /* orange-yellow */
+	/* background-color: #ffeebb; /* medium-wheat */
+    /* background-color: rgb(207,103,75); /* Indian Red */
+    background-color:rgb(255,255,229); /* moonlight */
+    /* background-color: linen; */
+    /* border-radius: 7pt; */
+    /* border: 1px solid rgb(155,155,204); /* Medium Purple */
+    
+}
+
+.site-footer {
+    text-align: center;
+    min-width: 220px;
 }
 
 /* next rule ... */
+
+/* Set the Media Queries ... */
+@media screen and (max-width: 360px) {
+    h1 {
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    max-width: 180px;
+    max-height: 1px;
+    font-size: x-small;
+    }
+
+    .page-footer {
+        min-height: 180px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h1 {
+    display: inline-block;
+    /* overflow: hidden; */
+    text-align: left;
+    /* max-width: 180px; */
+    }
+
+    .page-footer {
+        min-height: 180px;
+    }
+}

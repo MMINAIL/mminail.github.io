@@ -1,0 +1,96 @@
+/* The Flex Box */
+/* Screen too narrow to support a three-column display? Solution: Media Query */
+
+@media all and
+	(max-width: 640px) {
+		
+	div#main-body {
+		flex-flow: column;
+		-webkit-flex-flow: column;
+		flex-direction: column;	
+		}
+
+	div#page {
+		flex-flow: column;
+		-webkit-flex-flow: column;
+		flex-direction: column;	
+	}
+	
+	div#main-body > article, div#main-body > nav, div#main-body > aside {
+		/* Return to document order */
+		-webkit-order: 0;
+		order: 0;
+		}
+		
+	div#main-body > nav, div#main-body > aside, header, footer {
+		min-height: 50px;
+		max-height: 50px;
+		}
+}
+
+/* Do not use empty rule sets -->
+/* body { */
+	/* font: 24px helvetica; */
+	/* background: #999; */
+	/* } */
+	
+div#main-body {
+	min-height: 800px;
+	padding: 0;
+	border: none;
+	margin: 0;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row;
+	-webkit-flex-flow: row;
+	}
+
+div#main-body > nav {
+	padding: 5px;
+	margin: 4px;
+	/* border: 1px solid #8888bb; */
+	border: 1px solid rgb(155,155,204); /* Medium Purple */
+	border-radius: 7pt;
+	/* background-color: #ccccff; */
+	background-color: rgb(207,103,75); /* Indian Red */
+	-webkit-flex: 1 6 20%;
+	flex: 1 6 20%;
+	-webkit-order: 1;
+	order: 1;
+	}
+
+div#main-body > article {
+	background-color: hsl(220, 80%, 90%); /* sky blue */
+	padding: 5px;
+	margin: 4px;
+	outline: 1px dotted red;
+	/* border: 1px solid #cccc33; */
+	border: 1px solid rgb(155,155,204); /* Medium Purple */
+	border-radius: 7pt;
+	flex: 3 1 60%;
+	-webkit-flex: 3 1 60%;
+	order: 2;
+	-webkit-order: 2;
+	}
+	
+div#main-body > aside {
+	padding: 5px;
+	margin: 4px;
+	/* border: 1px solid #8888bb; */
+	border: 1px solid rgb(155,155,204); /* Medium Purple */
+	border-radius: 7pt;
+	/* background-color: #ccccff; */
+	background-color: #0099cc; /* Dodger Blue */
+	-webkit-flex: 1 6 20%;
+	flex: 1 6 20%;
+	-webkit-order: 3;
+	order: 3;
+	}
+	
+/* Do not use empty rule sets -->
+/* header, footer { */
+	/* min-height: 100px; */
+	/* padding: 5px; */
+	/* margin: 4px; */
+	/* } */
+	
