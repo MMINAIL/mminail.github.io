@@ -10,6 +10,7 @@ title: Liquid Angular Page | Carbon Free Footprint Project
 <p>
 	<span>Welcome! This is the 'Liquid Angular' page of the <b>Carbon Free Footprint</b> project.</span>
 </p>
+	<hr class="green-groove" />
 
 <p>
 	<span>As both Liquid and Angular dot js share the double-curly brace enclosure for the separate Directives of each language ...</span>
@@ -25,10 +26,6 @@ title: Liquid Angular Page | Carbon Free Footprint Project
 	<span>Or, from an Unordered List of Date - Time possibilities ...</span>
 </p>
 
-<p>
-	<span>More to come ...</span>
-</p>
-
 <h5>Site dot time</h5>
 <p>
 	<span>The Liquid site dot time pipe date and time liquid statement accepts a set of short parameters, as follows:</span>
@@ -40,7 +37,7 @@ title: Liquid Angular Page | Carbon Free Footprint Project
 </p>
 
 <pre>
-<span>Highlighting Liquid code w Rouge via Liquid ...</span>
+<span>Liquid Site dot Time pipe Date ...</span>
 <code>
 {% highlight liquid linenos %}
 site.time | date: "Date: %a, %b %d, %Y
@@ -63,7 +60,13 @@ Time: %X %Z"
 <p>
 	<span><b>Note</b>.</span>
 	<span>The time shown above is as of the moment of page rendering.</span>
+</p>
+
+<p>
 	<span>When rendered from a remote server to your local browser ...</span>
+</p>
+
+<p>
 	<span>The date, time, and deviation from Greenwich Mean Time (GMT) are based on the geo-location of the remote server.</span>
 </p>
 	<hr class="green-groove" />
@@ -72,14 +75,14 @@ Time: %X %Z"
 <p>
 	<span>An If Else Loop can be established within a Liquid tag, as follows:</span>
 </p>
-
+	<hr class="green-groove" />
 <p>
 	<span><b>Note</b>.</span>
-	<span>The single curly brace - single percentage wrapper \{\%&nbsp;...&nbsp;\%\} has been removed from the code statement to prevent execution.</span>
+	<span>The single curly brace - single percentage wrapper &#0123;\%&nbsp;...&nbsp;\%&#0125; has been removed from the code statement to prevent execution.</span>
 </p>
 
 <pre>
-<span>Highlighting Liquid code w Rouge via Liquid ...</span>
+<span>If Else Loop via Liquid ...</span>
 <code>
 {% highlight liquid linenos %}
 if page.url == '/index.htm'
@@ -98,18 +101,18 @@ endif
 
 <p>
 	<span><b>Note</b>.</span>
-	<span>The \{\%liquid wrapper\%\} shown here has been 'defanged' with the backslash key for illustration purposes only.</span>
+	<span>The &#0123;/%liquid wrapper/%&#0125; shown here has been 'defanged' with the back-slash key and corresponding unicode for illustration purposes only.</span>
 </p>
 
 <p>
-	<span>To render the code ... Simply remove the backslashes from the liquid wrapper.</span>
+	<span>To render the code ... Simply remove the back-slash from the liquid wrapper.</span>
 </p>
 
 <pre>
 <span>Highlighting Html code with Rouge via Liquid</span>
 <code>
 {% highlight html linenos %}
-\{\% highlight html linenos \%\}
+&#0123;\% highlight html linenos \%&#0125;
 ```liquid
 
 <% comment %>
@@ -117,7 +120,7 @@ endif
 <% endcomment %>
 
 ```
-\{\% endhighlight \%\}
+&#0123;\% endhighlight \%&#0125;
 {% endhighlight %}
 </code>
 <span lang="es" title="Sp. 'For Finish'">Finito!</span>&nbsp;...&nbsp;<i class="icon-large icon-flower"></i>
@@ -129,6 +132,7 @@ endif
 <p>
 	<span>Are Angular dot js Directives allowed within a Liquid model when served w Jekyll?</span>
 </p>
+	<hr class="green-groove" />
 
 <h5>Data-ng-model</h5>
 
@@ -161,6 +165,7 @@ endif
 <p>
 	<span>Intro to the Angular dot js 'data-ng-init' Directive ...</span>
 </p>
+	<hr class="green-groove" />
 
 <p>
 	</span>The 'data-ng-init' is a primitive way to establish data on an Html page using Angular dot js.</span>
