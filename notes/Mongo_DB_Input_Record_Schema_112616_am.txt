@@ -1,3 +1,4 @@
+
 //Simple Array #1
 db.frame.insert({"fruits" : [
 "apple",

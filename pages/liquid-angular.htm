@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Liquid Page | Carbon Free Footprint Project
+title: Liquid Angular Page | Carbon Free Footprint Project
 ---
 <hgroup class="leftalign">
-	<h3>Liquid Statements</h3>
+	<h3>Liquid Angular</h3>
 </hgroup>
 	<hr class="green-groove" />
 	
 <p>
-	<span>Welcome! This is the Liquid page of the <b>Carbon Free Footprint</b> project.</span>
+	<span>Welcome! This is the 'Liquid Angular' page of the <b>Carbon Free Footprint</b> project.</span>
 </p>
 
 <p>
-	<span>More to come ...</span>
+	<span>As both Liquid and Angular dot js share the double-curly brace enclosure for the separate Directives of each language ...</span>
 </p>
 	<hr class="green-groove" />
 	
@@ -22,29 +22,30 @@ title: Liquid Page | Carbon Free Footprint Project
 </p>
 
 <p>
-	<span>Or, from an Unordered List of Date of Time possibilities ...</span>
+	<span>Or, from an Unordered List of Date - Time possibilities ...</span>
 </p>
 
 <p>
 	<span>More to come ...</span>
 </p>
-	<hr class="green-groove" />
 
 <h5>Site dot time</h5>
 <p>
-	<span>The site dot time pipe date and time liquid statement accepts a set of short parameters, as follows:</span>
+	<span>The Liquid site dot time pipe date and time liquid statement accepts a set of short parameters, as follows:</span>
 </p>
 
 <p>
 	<span><b>Note</b>.</span>
-	<span>The double curly brace wrapper  \{\{&nbsp;...&nbsp;\}\} has been removed from the code statement to prevent execution.</span>
+	<span>The double ( open curly brace 'U+007b' character ) &#0123;{&nbsp;...&nbsp;}&#0125; ( closing curly brace 'U+007b' character ) Liquid wrapper has been removed from the following code statement to prevent execution.</span>
 </p>
 
 <pre>
 <span>Highlighting Liquid code w Rouge via Liquid ...</span>
 <code>
 {% highlight liquid linenos %}
-site.time | date: "Date: %a, %b %d, %Y<br />Time: %X %Z"
+site.time | date: "Date: %a, %b %d, %Y
+<br />
+Time: %X %Z"
 {% endhighlight %}
 </code>
 <span lang="es" title="Sp. 'For Finish'">Finito!</span>&nbsp;...&nbsp;<i class="icon-large icon-flower"></i>
@@ -121,7 +122,74 @@ endif
 </code>
 <span lang="es" title="Sp. 'For Finish'">Finito!</span>&nbsp;...&nbsp;<i class="icon-large icon-flower"></i>
 </pre>
+	<hr class="green-groove" />
 
-<footer>
+<h4>Liquid Angular</h4>
+
+<p>
+	<span>Are Angular dot js Directives allowed within a Liquid model when served w Jekyll?</span>
+</p>
+
+<h5>Data-ng-model</h5>
+
+<p>
+	<span>Intro to the Angular dot js 'data-ng-model' Directive ...</span>
+</p>
+
+<div class="container-fluid">
+	
+	<p>
+		<span><b>Name</b>:</span>
+		<input type="text" data-ng-model="personaname" />
+		<span>{{ personaname }}</span>
+	</p>
+
+	<ul>
+		<li>open_li</li>
+	</ul>
+
+	<p>
+		<span>More to come ...</span>
+	</p>
+
+</div>
+
+	<hr class="green-groove" />
+
+<h5>Data-ng-model</h5>
+
+<p>
+	<span>Intro to the Angular dot js 'data-ng-init' Directive ...</span>
+</p>
+
+<p>
+	</span>The 'data-ng-init' is a primitive way to establish data on an Html page using Angular dot js.</span>
+</p>
+
+<div class="container-fluid"
+	data-ng-init="customers=[{name:"Dave"},{name:"Napur"},{name:"Heedy"},{name:"Shriva"}]">
+
+	<p>
+		<span><b>Customer</b>:</span>
+		<input type="text" data-ng-model="cust" />
+		<span>{{ cust }}</span>
+	</p>
+
+	<ul>
+		<li>open_li</li>
+		<li data-ng-repeat="cust in customers">{{ cust.name }}</li>
+	</ul>
+
+	<p>
+		<span>More to come ...</span>
+	</p>
+	
+</div>
+	<hr class="green-groove" />
+
+<footer class="page-footer">
+	<p>
+        <span>The code snippets for this article have been extracted ( and, spruced up a little bit ) from <a href="http://weblogs.asp.net/dwahlin" title="Click to Review the Angular dot js in 60 Minutes eBook by Dan Wahlin" target="_blank">Angular dot js in 60 Minutes</a> by Dan Wahlin</span>
+    </p>
 	{% include footer.htm %}
 </footer>
