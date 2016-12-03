@@ -1,0 +1,12 @@
+<h4>Local Storage</h4>
+
+<ul>
+<li>cookies</li>
+<li>localStorage</li>
+<li>sessionStorage</li>
+</ul>
+
+<h5>Por Ejemplo</h5>
+
+sessionStorage.username = "James"
+document.write("Welcome back + sessionStorage.username);
