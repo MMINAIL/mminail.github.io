@@ -1,0 +1,13 @@
+<?xml version="1.0"?><rss version="2.0"><channel>
+<h3>RSS ( Really Simple Syndication )</h3>
+<h4>Channel Information</h4>
+<title>Carbon Free Footprint Project</title><description>Articles about the Carbon Free Footprint Project</description><link>https://mminail.github.io/rss/feed.xml</link>
+<h4>How to construct a RSS 'item'</h4>
+<item>
+// First, lay down a title for the article
+<title>Nokia 3650 Combines Phone And Photos</title>
+// Second, give a short description of the article<description>Place a short description of the article here ...</description>
+// Thirdly, where is the hyperlink to the document?<link>http://cannabuds.tumblr.com/</link>
+</item>
+</channel>
+</rss>
