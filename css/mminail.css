@@ -43,11 +43,11 @@ hgroup {
 }
 
 /* Set the basic classes */
-.leftalign {
+.text-left {
     text-align: left;
 }
 
-.centeralign {
+.text-center {
     text-align: center;
 }
 
@@ -68,6 +68,8 @@ hgroup {
     background: rgb(155,155,204) url("../images/BNR-Painted-Desert-Moon-banner-720-x-120-px.png") no-repeat; /* center center */
     background-size: contain; /* cover */
     color: #000531;
+    min-height: 120px;
+    /* min-width: 200px; */
 }
 
 /* Set the double-xx font size for the Immediate tag */
@@ -102,7 +104,7 @@ aside#navigator {
 
 /* Nav semantic container classes */
 .menu {
-    text-align: left;
+    text-align: center;
 }
 
 .menu ul {
@@ -117,16 +119,21 @@ aside#navigator {
     /* display: inline-block; */
     /* max-width: 50%; /* limit width */
     /* background-color: #33b5e5 */
-    background-color : rgb(155,155,204); 
-    text-align: left;
+    background-color : rgb(155,155,204); /* Medium Purple */
+    /* text-align: left; */
     color: #fff;
+    /* color: dodgerblue; */
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .menu li:hover {
     background-color: rgb(207,103,75); /* Indian Red */
-    text-align: left;
+    /* text-align: left; */
     /* background-color: #0099cc; /* Dodger Blue */
+}
+
+.dropdown-menu {
+    text-align: center;
 }
 
 div.container {
@@ -157,6 +164,7 @@ article.main-article {
     /* background-color: linen; */
     background-color:rgb(255,255,229); /* moonlight */
     padding: 1%;
+    /* min-width: 200px; */
     /* border-right: 2px solid #fff; */
 }
 
@@ -197,6 +205,31 @@ code {
     background: hsl(220, 80%, 90%); /* sky blue */
 }
 
+mark,
+.mark {
+  /* padding: .2em; */
+  background-color: lime;
+}
+
+/* Set an alternative to default button 'medium' */
+.btn-med,
+.btn-group-med > .btn {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.3333333;
+    color: rgb(51,122,183); /* dark blue */
+    background-color: rgb(155,155,204); /* Medium Purple */
+    /* padding: 10px 16px; */
+    padding: 1%;
+    /* border-radius: 6px; */
+    border-radius: 4px;
+}
+
+/* Set the collapsable Responsive Image 'min-width' */
+img {
+    min-width: 340px;
+}
+
 /* Set the footer for the Website */
 .page-footer {
     display: block;
@@ -205,7 +238,7 @@ code {
     font-weight: 700;
     padding: 1%;
     /* min-height: 180px; */
-    min-width: 220px;
+    min-width: 340px;
     /* background-color: #eebb55; /* orange-yellow */
 	/* background-color: #ffeebb; /* medium-wheat */
     /* background-color: rgb(207,103,75); /* Indian Red */
@@ -218,21 +251,21 @@ code {
 
 .site-footer {
     text-align: center;
-    min-width: 220px;
+    min-width: 340px;
 }
 
 /* next rule ... */
 
 /* Set the Media Queries ... */
 @media screen and (max-width: 360px) {
-    h1 {
+    /* h1 {
     display: inline-block;
     overflow: hidden;
     text-align: left;
     max-width: 180px;
     max-height: 1px;
     font-size: x-small;
-    }
+    /* } */
 
     .page-footer {
         min-height: 180px;
@@ -240,12 +273,12 @@ code {
 }
 
 @media screen and (max-width: 640px) {
-    h1 {
-    display: inline-block;
+    /* h1 {
+    /* display: inline-block; */
     /* overflow: hidden; */
-    text-align: left;
+    /* text-align: left; */
     /* max-width: 180px; */
-    }
+    /* } */
 
     .page-footer {
         min-height: 180px;
