@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{{ page.title }}</title>
-    <link href="../css/mminail.css" rel="stylesheet" />
-	<link href="../css/themes/zocial.css" rel="stylesheet" />
-	<link href="../css/themes/bootstrap.icon-large.min.css" rel="stylesheet" />
 	<link href="../css/themes/bootstrap.min.css" rel="stylesheet" />
+	<link href="../css/themes/bootstrap.icon-large.min.css" rel="stylesheet" />
 	<link href="../css/themes/flex-box.css" rel="stylesheet" />
+	<link href="../css/themes/zocial.css" rel="stylesheet" />
+	<link href="../css/mminail.css" rel="stylesheet" />
 	<!-- Comment Out: Prism css
 	<link href="../css/themes/prism.css" rel="stylesheet" /> -->
 	<link type="image/x-icon" href="/favicon.ico?" rel="shortcut icon" />
@@ -30,7 +30,7 @@
 
 <!-- <div class="container"> -->
 <!-- <div class="container-fluid"> -->
-<div class="panel panel-primary panel-padding">
+<!-- <div class="panel panel-primary panel-padding"> -->
 <article class="main-article">
 
 	{{content}}
@@ -44,7 +44,6 @@
 <hgroup>
 <!-- <hgroup class="panel-body"> -->
 	<h2>{{ page.title }}</h2>
-	
 </hgroup>
 
 <p>
@@ -55,93 +54,91 @@
 
 </footer>
 
-<!-- Place all Javascript Library packages north of the </body> closing tag first ...
-		after the closing </footer> tag  -->
+<!-- Place all Javascript Library packages north of the </body> closing tag and after the closing </footer> tag in order of execution -->
 
-<!-- Comment Out: Markdown library body script 
-<script src="../js/markdown.js"></script> -->
+<!-- Comment Out: Angularjs Library Local script 
+<script src="../js/angular.min.js"></script> -->
 
-<!-- Comment Out: Form Validate library body script 
-<script src="../js/validate.js"></script> -->
+<!-- Comment Out: Angularjs Library remote script -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script> 
 
-<!-- Comment Out: Mask Input library body script 
-<script src="../js/jquery.maskedinput.js"></script> -->
+<!-- Comment Out: Jquery Library Local script 
+<script src="../js/jquery.min.js"></script> -->
 
-<!-- Comment Out: QR Code library body script 
-<script src="../js/jquery.qrcode-0.2.min.js"></script> -->
+<!-- Comment Out: Jquery Library remote script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
 
-<!-- Comment Out: Animated Enhanced library body script 
-<script src="../js/jquery.animate-enhanced.js"></script> -->
-
-<!-- Comment Out: Color library body script 
-<script src="../js/jquery.color.js"></script> -->
-
-<!-- Comment Out: Cookie storage library body script 
-<script src="../js/jquery.cookie.js"></script> -->
-
-<!-- Comment Out: Indexed DB library body script 
-<script src="../js/db.js"></script> -->
-
-<!-- Comment Out: Class programming library body script 
-<script src="../js/class.js"></script> -->
-
-<!-- Comment Out: Underscore data library body script 
-<script src="../js/underscore-min.js"></script> -->
-
-<!-- Comment Out: Moment time library body script 
-<script src="../js/moment.min.js"></script> -->
-
-<!-- Comment Out: Modernizr library body script 
-<script src="../js/modernizr.min.js"></script> -->
-
-<!-- Comment Out: Readmore body script 
-<script src="../js/readmore.js"></script> -->
-
-<!-- Comment Out: Jquery Cookie Local script
-<script src="../js/jquery.cookie.js"></script> -->
-
-<!-- Comment Out: Prism body script
-<script src="../js/prism.js"</script>
-	Note: the switch 'data-manual'' may be added AFTER the src to invoke No highlight -->
-
-<!-- Comment Out: Angularjs library body script -->
-<script src="../js/angular.min.js"></script> 
-
-<!-- Comment Out: Angularjs library remote script 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script> -->
-
-<!-- Comment Out: Jquery Local script -->
-<script src="../js/jquery.min.js"></script> 
-
-<!-- Comment Out: Jquery Remote script 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-
-<!-- Comment Out: Jquery Mobile local script 
+<!-- Comment Out: Jquery Mobile Library Local script 
 <script src="../js/jquery.mobile.min.js"></script> -->
 
-<!-- Comment Out: Jquery Remote script 
+<!-- Comment Out: Jquery Mobile Library remote script 
 <script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> -->
 
-<!-- Comment Out: Bootstrap Local script -->
-<script src="../js/bootstrap.min.js"></script> 
+<!-- Comment Out: Tether Library Local script 
+<script src="../js/tether.min.js"></script> -->
 
-<!-- Comment Out: Bootstrap Remote script 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script> -->
+<!-- Comment Out: Tether Library remote script -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.3.1/js/tether.min.js"></script> 
 
-<!-- Comment Out: Tether Local script -->
-<script src="../js/tether.min.js"></script> 
+<!-- Comment Out: Bootstrap Library Local script 
+<script src="../js/bootstrap.min.js"></script> -->
 
-<!-- Comment Out: Tether Remote script 
-<script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.3.1/js/tether.min.js"></script> -->
+<!-- Comment Out: Bootstrap Library remote script -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 
-<!-- Comment Out: Head dot js remote script 
+<!-- Comment Out: Markdown Library Local script 
+<script src="../js/markdown.js"></script> -->
+
+<!-- Comment Out: Form Validate Library Local script 
+<script src="../js/validate.js"></script> -->
+
+<!-- Comment Out: Mask Input library Local script 
+<script src="../js/jquery.maskedinput.js"></script> -->
+
+<!-- Comment Out: QR Code library Local script 
+<script src="../js/jquery.qrcode-0.2.min.js"></script> -->
+
+<!-- Comment Out: Animated Enhanced library Local script 
+<script src="../js/jquery.animate-enhanced.js"></script> -->
+
+<!-- Comment Out: Color Library Local script 
+<script src="../js/jquery.color.js"></script> -->
+
+<!-- Comment Out: Indexed DB library Local script 
+<script src="../js/db.js"></script> -->
+
+<!-- Comment Out: Class ( programming ) Library Local script 
+<script src="../js/class.js"></script> -->
+
+<!-- Comment Out: Underscore ( data ) Library Local script 
+<script src="../js/underscore-min.js"></script> -->
+
+<!-- Comment Out: Moment ( time ) library Local script 
+<script src="../js/moment.min.js"></script> -->
+
+<!-- Comment Out: Modernizr library Local script 
+<script src="../js/modernizr.min.js"></script> -->
+
+<!-- Comment Out: Readmore Local script 
+<script src="../js/readmore.js"></script> -->
+
+<!-- Comment Out: Jquery Cookie Library Local script
+<script src="../js/jquery.cookie.js"></script> -->
+
+<!-- Comment Out: Jquery Cookie Library remote script 
+<script src="#"></script> -->
+
+<!-- Comment Out: Prism Library Local script
+<script src="../js/prism.js"</script> -->
+
+<!-- Comment Out: Prism Library remote script 
+<script src="#"></script> -->
+
+<!-- Comment Out: Head Library Local script
+<script src="../js/head.js"></script> -->
+
+<!-- Comment Out: Head Libary remote script 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/headjs/0.99/head.load.min.js"></script> -->
-
-<!-- Place all written Javascripts north of the </body> closing tag second ...
-		after the closing </footer> tag  -->
-
-<!-- Comment Out: Square Me body script 
-<script src="../js/scripts/square-me.js"></script> -->
 
 </body>
 </html>
