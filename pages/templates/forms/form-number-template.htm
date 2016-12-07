@@ -1,25 +1,3 @@
----
-layout: default
-title: Square Me Page | Carbon Free Footprint Project
----
-<div class="container-fluid">
-	<div class="row-fluid">
-
-<hgroup class="text-left">
-	<h3>Square Me Article</h3>
-</hgroup>
-	<hr class="green-groove" />
-
-<p>
-	<span>Welcome! This is the Square Me page of the <b>Carbon Free Footprint</b> project.</span>
-</p>
-	<hr class="green-groove" />
-
-<p>
-	<span>More to come ...</span>
-</p>
-	<hr class="green-groove" />
-
 <h4>Square Me Form</h4>
 <p>
 	<span>The Square Me form allows the end-user to enter a whole number.</span>
@@ -48,16 +26,16 @@ title: Square Me Page | Carbon Free Footprint Project
 
 <div class="control group">
 	<label class="control-label">Number Input</label>
-<div class="controls">
-	
+	<div class="controls">
 <form>
 	<fieldset>
 		<legend>Square Me</legend>
 
 			<label class="label-success">Square Me</label>
 			<input type="number" placeholder="Enter a whole number ..." autofocus tabindex="1" />
+
 			<span class="help-block">What numeral do you wish to square?</span>
-			
+
 			<label for="slider-flp-m">Ready?</label>
 			<select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true" autofocus tabindex="2">
 				<option value="off">No</option>
@@ -66,24 +44,11 @@ title: Square Me Page | Carbon Free Footprint Project
 
 			<label class="checkbox"></label>
 			<input type="checkbox" autofocus tabindex="3" />
-
-			<button type="submit" class="btn" name="testFunctionButton" value="Press" onclick="javascript:square-me.js();">Submit</button>
+			
+			<button type="submit" class="btn" onclick="">Submit</button>
 
 	</fieldset>
 </form>
 	</div>
 </div>
 	<hr class="green-groove" />
-
-<footer class="page-footer center-block">
-	{% include footer.htm %}
-</footer>
-	<hr class="green-groove" />
-
-	</div>
-</div>
-
-<!-- Place all written Javascripts for this page north of the </body> closing tag and after the closing </footer> tag  -->
-
-<!-- Comment Out: Square Me written body script  -->
-<script src="../js/scripts/square-me.js"></script>
