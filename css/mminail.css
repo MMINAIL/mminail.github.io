@@ -227,7 +227,8 @@ mark,
 
 /* Set the collapsable Responsive Image 'min-width' */
 img {
-    min-width: 340px;
+    /* min-width: 340px; */
+    border: 1px solid red;
 }
 
 /* Set the footer for the Website */
@@ -250,6 +251,7 @@ img {
 }
 
 .site-footer {
+    margin: 0 0 0 1%;
     text-align: center;
     min-width: 340px;
 }
