@@ -1,17 +1,34 @@
-// Javascript Call The Square of X
-$(document).ready(function() {
-    var x = 5;
+"use strict";
+// Program 'Square Me Onclick'
 
-    function square(x) {
-      return x * x;
+function squareMeOnclick(){
+    
+    // Declare the global variables for this function
+    var b = document.getElementById("testarama");
+    var x;
+    var y;
+    
+    // Declare the child function 'square of x'
+    function square(x){
+        
+        // Execute a while - otherwise - if code block
+        while x !== NaN {
+            y = x * x;
+        
+        otherwise
+            
+        if x == NaN {
+            alert("The 'x' entered is not a number!")
+        }
+        
+        // Declare the methods for this function
+        return y;
     }
-  }
-);
-
-// JQuery Onclick
-$("#1").click(function() {
-    // declare variables
-
-    // write methods
-  }
-);
+    
+    // Javascript: Callback the function 'square of x' onclick
+    b.addEventListener("click", square);
+    
+    // Alert the new value of 'y' to the user
+    alert(y);
+    
+}

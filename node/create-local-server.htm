@@ -1,0 +1,109 @@
+---
+layout: default
+title: Node Create Server Page | Carbon Free Footprint Project
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+		
+<hgroup class="text-left">
+	<h3>Node Create Local Server</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>Welcome! This is the Node Create Local Server page of the <b>Carbon Free Footprint</b> project.</span>
+</p>
+
+<p>
+	<span>Did you know it takes but six (6) lines of Javascript to create a local 'node server' on your MacBook Pro with Node?</span>
+</p>
+	
+<p>
+	<span>Follow the trail of logic from your local Mac OSX machine after successfully loading the Node Package Manager (npm) and Node via Macports using the global -g switch.</span>
+</p>
+	<hr class="green-groove" />
+
+<h4>Creating a 'node server' with Node</h4>
+
+<p>
+	<span>The module 'http' is a required part of the 'node server' engine and can be found in the Node arsenal upon install.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+    <span><b>Hint</b>.</span>
+	<span>Use the constant 'const' keyword to create an immutable variable in ES6.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+    <span>The constant 'http' now calls the 'createServer' method on Line 2 below thus obligating the callback objects of 'request' and 'response' to manage incoming rendering requests from the browser via the newly designated constant 'server'.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+    <span>The 'response' object then on demand uses the 'writeHead' method to open up a return message consisting of a page header that includes both the status code and the content type of the return message.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+    <span>Next, the 'response' object uses the 'end' method to close the message and to render the given string to the browser window.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+    <span>The function parenthesis and internal arrow curly brace block are now closed in Line 5.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+    <span>Finally, the server is set to listen asynchronistically for incoming traffic requests on port 8000 via the 'listen' method, as follows:</span>
+</p>
+
+<pre>
+<span>How to create a local 'node server' with Node</span>
+<!-- <code> is used inline whereas <pre> is used for code blocks -->
+{% highlight javascript linenos %}
+const http = require('http')
+const server = http.createServer((request, response) => {
+response.writeHead(200, {'Content-Type': 'text/plain'})
+response.end("Hello There Webpage!")
+})
+server.listen(8000)
+{% endhighlight %}
+<!-- </code>  -->
+</pre>
+
+<h4>Engaging a 'node server' with Node via Terminal</h4>
+	<hr class="green-groove" />
+
+<p>
+	<span>Type the following command into a Terminal window prompt '$' opened to your desktop folder where the subject script file should now reside in order to engage the newly created node server.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+	<span>Then, open up a local browser window to 'localhost:8000' and observe the immediate rendering.</span>
+</p>
+
+<pre>
+<span>How to engage a 'node server' with Node via Terminal</span>
+<!-- <code> is used inline whereas <pre> is used for code blocks -->
+{% highlight javascript %}
+$ node test-node.js
+{% endhighlight %}
+<!-- </code>  -->
+<span><b>Note</b>.</span><span>To close the node server at the Terminal simply type 'Control-C' from your Mac OSX keyboard.</span>
+<span lang="es" title="Sp. 'For Finish'">Finito!</span>&nbsp;...&nbsp;<i class="icon-large icon-flower"></i>
+</pre>
+    <hr class="green-groove" />
+
+<footer class="page-footer center-block">
+	<p>
+        <span>The code snippets for this article have been extracted ( and, spruced up a little bit ) from <a href="http://www.syncfusion.com" title="Click to Review the Node js Succinctly eBook by Emanuele Bono" target="_blank">Node js Succinctly</a> by Emanuele Bono</span>
+    </p>
+	{% include footer.htm %}
+</footer>
+
+</div>
+</div>
