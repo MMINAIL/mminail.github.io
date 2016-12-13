@@ -9,7 +9,7 @@
 	<link href="../css/themes/bootstrap.icon-large.min.css" rel="stylesheet" />
 	<link href="../css/themes/jquery.mobile.min.css" rel="stylesheet" />
 	<link href="../css/themes/jquery.mobile.icons.min.css" rel="stylesheet" />
-	<link href="../css/themes/flex-box.css" rel="stylesheet" />
+	<!-- <link href="../css/themes/flex-box.css" rel="stylesheet" /> -->
 	<link href="../css/themes/zocial.css" rel="stylesheet" />
 	<link href="../css/mminail.css" rel="stylesheet" />
 	<!-- Comment Out: Prism css
@@ -23,14 +23,18 @@
 
 	<aside id="navigator">{% include nav.htm %}</aside>
 
-	<h1 class="hidden-xs visible-sm visible-md visible-lg">MMINAIL.GitHub.io<br /><small>Directory</small></h1>
+	<h1 class="visible-xs visible-sm visible-md visible-lg">MMINAIL.GitHub.io<br /><small>Directory</small></h1>
 	<!-- If you wish to split the <h1> tag 50/50 Large/Small ...
 			<small>Carbon Free Footprint Project</small> -->
 
 </header>
 
+<!-- <div class="container-fluid"> -->
+<!-- <div class="row-fluid"> -->
+
 <!-- <div class="container"> -->
 <!-- <div class="panel panel-primary panel-padding"> -->
+	
 <article class="main-article">
 
 	{{content}}
@@ -43,7 +47,7 @@
 
 <hgroup>
 <!-- <hgroup class="panel-body"> -->
-	<h2>{{ page.title }}</h2>
+	<h2 class="visible-xs visible-sm visible-md visible-lg">{{ page.title }}</h2>
 </hgroup>
 
 <p>
@@ -61,6 +65,12 @@
 
 <!-- Comment Out: Angularjs Library remote script -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script> 
+
+<!-- Comment Out: Modernizr library Local script -->
+<script src="../js/modernizr.min.js"></script> 
+
+<!-- Comment Out: Modernizr Libary remote script 
+<script src="#"></script> -->
 
 <!-- Comment Out: Jquery Library Local script 
 <script src="../js/jquery.min.js"></script> -->
@@ -86,6 +96,18 @@
 <!-- Comment Out: Bootstrap Library remote script -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script> 
 
+<!-- Comment Out: Moment ( time ) library Local script 
+<script src="../js/moment.min.js"></script> -->
+
+<!-- Comment Out: Moment ( time ) Libary remote script 
+<script src="#"></script> -->
+
+<!-- Comment Out: Underscore ( data ) Library Local script 
+<script src="../js/underscore.min.js"></script> -->
+
+<!-- Comment Out: Underscore ( data ) Libary remote script 
+<script src="#"></script> -->
+
 <!-- Comment Out: Markdown Library Local script 
 <script src="../js/markdown.js"></script> -->
 
@@ -110,15 +132,6 @@
 <!-- Comment Out: Class ( programming ) Library Local script 
 <script src="../js/class.js"></script> -->
 
-<!-- Comment Out: Underscore ( data ) Library Local script 
-<script src="../js/underscore-min.js"></script> -->
-
-<!-- Comment Out: Moment ( time ) library Local script 
-<script src="../js/moment.min.js"></script> -->
-
-<!-- Comment Out: Modernizr library Local script 
-<script src="../js/modernizr.min.js"></script> -->
-
 <!-- Comment Out: Readmore Local script 
 <script src="../js/readmore.js"></script> -->
 
@@ -139,12 +152,6 @@
 
 <!-- Comment Out: Head Libary remote script 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/headjs/0.99/head.load.min.js"></script> -->
-
-<!-- Comment Out: Underscore Library Local script
-<script src="../js/underscore.min.js"></script> -->
-
-<!-- Comment Out: Underscore Library remote script 
-<script src="#"></script> -->
 
 </body>
 </html>
