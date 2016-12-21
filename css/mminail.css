@@ -284,7 +284,8 @@ img {
     font-weight: 700;
     padding: 1%;
     margin: 1% 1% 1% 1%;
-    max-width: 570px;
+    width: calc(100% - 20px);
+    /* max-width: 570px; /*
     /* 1% from the top ... */
     /* 27% from the right ... */
     /* Zero from the bottom ... */
@@ -312,6 +313,7 @@ h1 {
 @media screen and (max-width: 640px) {
 
 h1 {
+    width: calc(100% - 20px);
     max-width: 70%;
     /* display: inline-block; */
     /* overflow: hidden; */
@@ -336,6 +338,7 @@ aside#navigator {
 
 .site-footer {
     margin: 1% 1% 1% 1%;
+    width: calc(100% - 20px);
     max-width: 630px;
     }
 }
@@ -343,6 +346,7 @@ aside#navigator {
 @media screen and (max-width: 360px) {
 
 h1 {
+    width: calc(100% - 20px);
     max-width: 56%;
     /* 200px / 360px */
     /* display: inline-block; */
@@ -368,6 +372,7 @@ aside#navigator {
     }
 
 .img-responsive {
+    width: calc(100% - 20px);
     max-width: 210px;
     }
 
@@ -380,6 +385,7 @@ aside#navigator {
 
 .site-footer {
     margin: 1% 1% 1% 1%;
+    width: calc(100% - 20px);
     max-width: 350px;
     }
 }
