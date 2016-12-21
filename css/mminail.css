@@ -283,8 +283,9 @@ img {
     font-size: small;
     font-weight: 700;
     padding: 1%;
-    margin: 1% 1% 1% 1%;
+    margin: 1% 30% 1% 1%;
     width: calc(100% - 20px);
+    max-width: 630px;
     /* max-width: 570px; /*
     /* 1% from the top ... */
     /* 27% from the right ... */
@@ -337,7 +338,7 @@ aside#navigator {
     }
 
 .site-footer {
-    margin: 1% 1% 1% 1%;
+    margin: 1% 30% 1% 1%;
     width: calc(100% - 20px);
     max-width: 630px;
     }
