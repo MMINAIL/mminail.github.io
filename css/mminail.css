@@ -283,7 +283,8 @@ img {
     font-size: small;
     font-weight: 700;
     padding: 1%;
-    margin: 1% 27% 0 0;
+    margin: 1% 1% 1% 1%;
+    max-width: 570px;
     /* 1% from the top ... */
     /* 27% from the right ... */
     /* Zero from the bottom ... */
@@ -311,12 +312,31 @@ h1 {
 @media screen and (max-width: 640px) {
 
 h1 {
+    max-width: 70%;
     /* display: inline-block; */
     /* overflow: hidden; */
     text-align: left;
-    max-width: 73%;
     /* max-width: 180px; */
     font-size: x-large;
+    }
+
+article.main-article {
+    width: 70%;
+    }
+
+aside#navigator {
+    width: 30%;
+    position: relative;
+    min-width: 140px;
+    }
+
+.btn-med, .btn-group-med > .btn {
+    text-align: left;
+    }
+
+.site-footer {
+    margin: 1% 1% 1% 1%;
+    max-width: 630px;
     }
 }
 
@@ -330,6 +350,35 @@ h1 {
     text-align: left;
     /* max-width: 180px; */
     /* max-height: 1px; */
-    font-size: medium;
+    font-size: large;
+    }
+
+article.main-article {
+    width: 65%;
+    }
+
+aside#navigator {
+    width: 35%;
+    min-width: 120px;
+    position: relative;
+    }
+
+.btn-med, .btn-group-med > .btn {
+    text-align: left;
+    }
+
+.img-responsive {
+    max-width: 210px;
+    }
+
+.page-footer {
+    max-width: 210px;
+    min-width: 210px;
+    left: 0;
+    right: 0;
+    }
+
+.site-footer {
+    margin: 1% 1% 1% 1%;
     }
 }
