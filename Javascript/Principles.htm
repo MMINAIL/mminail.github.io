@@ -1,0 +1,102 @@
+---
+layout: default
+title: Javascript Principles Page | Carbon Free Footprint Project
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+
+<hgroup class="text-left">
+	<h3>Javascript Principles</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>Welcome! This is the Javascript Principles page of the <b>Carbon Free Footprint</b> project.</span>
+</p>
+	<hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Local Scope</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+<span><b>Issue</b>.</span>
+<span>Is the <b>Local Scope</b> of a declared function expandable?</span>
+</p>
+
+<p>
+<span><b>Rule</b>.</span>
+<span>Parameters and variables declared within the curly braces of a function are local to that function.</span>
+</p>
+
+<p>
+<span><b>Analysis</b>.</span>
+<span>Outside functions generally do NOT have access to the parameters and variables declared within even their own (child) functions, unless exposed.</span>
+</p>
+
+<p>
+<span>Functions (child) declared within another function (parent) have access to the outer (parent) local scope.</span>
+</p>
+
+<p>
+<span>However, reciprocity between (child) and (parent) as in the natural world does not exist in the world of computer programming between separate functions.<span>
+</p>
+
+<p>
+<span>In the programming world, (child) functions can borrow parameters and variables declared within the (parent) local scope.</span>
+</p>
+
+<p>
+<span>But, alas as in real life (parent) functions cannot access the parameters and variables of the (child).</span>
+</p>
+
+<p>
+	<span><b>Conclusion</b>.</span>
+	<span>Under ECMA-Script-Six (6) guidelines, variables declared using the 'var' keyword are visible (local) to the enclosing function.</span>
+</p>
+
+<p>
+	<span>Whereas, variables declared using the keyword 'let' are visible locally only through the scope of the enclosing block.</span>
+</p>
+
+<p>
+	<span>In the case of a (parent) - (child) relationship, only the (child) function has access to the variables delcared within the scope of the (parent), in addition to the (parent) function, of course.</span>
+</p>
+
+<p>
+	<span>But, try to get a (parent) function to attempt a call against a (child) declared variable or function and you will end up with a programming error.</span>
+</p>
+
+<p>
+	<span><b>The bottom line</b>.</span>
+	<span>Parents ... You-a stop-a trying to meddle in your child's affairs.</span>
+</p>
+
+<p>
+	<span>Not only is the intervention counter to the good health of the child, it is also a programming error!</span>
+</p>
+
+<p>
+	<span>Think rather to equip the child with the capability to properly form his or her own functions and variables.</span>
+</p>
+
+<p>
+	<span>Ya can't penetrate those curly braces, anyway, without triggering a parental error.</span>
+
+<footer class="page-footer center-block">
+
+	<p>
+		<span><b>Source</b>:</span>
+    	<a href="#" title="Click to Review Eloquent Javascript A Modern Introduction To Programming, 2nd Edition by Marijn Haverbeke" target="_blank">Eloquent Javascript: A Modern Introduction To Programming, 2nd Edition by Marijn Haverbeke</a>
+	</p>
+
+	<p>
+    	<span>Original Copyright 2000 Marijn Haverbeke, City, NY</span>
+	</p>
+
+	{% include footer.htm %}
+</footer>
+
+</div>
+</div>
