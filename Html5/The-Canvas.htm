@@ -1,0 +1,90 @@
+---
+layout: default
+title: Html 5 Canvas Page | Carbon Free Footprint Project
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+
+<main>
+<article>
+
+<hgroup class="text-left">
+	<h3>Html 5 Canvas</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>Welcome! This is the Html 5 Canvas page of the <b>Carbon Free Footprint</b> project.</span>
+</p>
+	<hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Canvas Subtitle Blocks</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>The following subtitle uses the <code>&lt;canvas&gt;</code> element plus a simple javascript function to render a scaleable block of "made-on-the-fly" text.</span>
+</p>
+	<hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>SVG Pictures</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>After the rendering of the subtitle ( bordered in red ), a Scaleable Vector Graphic (SVG) image is displayed using an embedded <code>&lt;img&gt;</code> tag within a <code>&lt;picture&gt;</code> element.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+	<span>The result is the following rendition of the Arizona Cannabis Dispensary Logo Badge tested for responsiveness on a virtual Galaxy S5 smartphone emulator via Google's <a href="#" title="Click to Review Google's Chrome Developer Tools" target="_blank">Chrome Developer Tools</a>.</span>
+</p>
+	<hr class="green-groove" />
+
+<canvas id="CanvasAcd" class="canvas-text"  width="320" height="20"></canvas>
+<script>
+(function() {
+var canvas = document.getElementById('CanvasAcd');
+if (canvas.getContext){
+var ctx = canvas.getContext('2d');
+ctx.font ="16px Eurostyle";
+ctx.fillStyle ="darkblue";
+ctx.fillText("Arizona Cannabis Dispensary - Logo Badge",5,15);
+}
+})();
+</script>
+
+<picture>
+	<img class="img-responsive img-circle" src="../images/ACD-Logo-Badge-320-x-320-x-96.svg" alt="Arizona Cannabis Dispensary Logo" />
+</picture>
+	<hr class="green-groove" />
+
+<p>
+	<span>More to come ...</span>
+</p>
+
+<footer class="page-footer center-block">
+
+	<p>
+		<span><b>Source</b>:</span>
+		<span><a href="http://amzn.to/2khUFqp" title="Click to Review the Jump Start Html 5 eBook by Tiffany B. Brown, Kerry Butters, and Sandeep Panda" target="_blank">978-0-9924612-0-1</a></span>
+	</p>
+
+	<p>
+		<span>See: <a href="#" title="Click to Review the Jump Start Html 5 eBook by Tiffany B. Brown, Kerry Butters, and Sandeep Panda" target="_blank">Jump Start Html 5</a> by by Tiffany B. Brown, Kerry Butters, and Sandeep Panda.</span>
+	</p>
+
+	<p>
+    	<span>Original Copyright 2014 Sitepoint, Collingwood, Australia</span>
+	</p>
+
+	{% include footer.htm %}
+</footer>
+
+</article>
+</main>
+
+</div>
+</div>

@@ -27,6 +27,34 @@ h2 {
     font-size: large;
 }
 
+.oblique-text {
+    font-style: oblique;
+}
+
+.right-justify {
+    text-align: right;
+}
+
+.script-text {
+    font-style: italic;
+    font-family: cursive;
+}
+
+.canvas-text {
+    position: relative;
+    /* font-size: x-large; */
+    /* color: darkblue; */
+    /* text-align: center; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border: 5px red groove;
+}
+
 .euro {
     font-family: 'eurostyle';
 }

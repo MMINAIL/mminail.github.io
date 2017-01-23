@@ -1,0 +1,1029 @@
+---
+layout: default
+title: MongoDB Page | Carbon Free Footprint Project
+---
+<hgroup class="text-left">
+	<h3>MongoDB Commands and Functions</h3>
+</hgroup>
+	<hr class="green-groove" />
+	
+<p>
+	<span>Welcome! This is the MongoDB Page of the <b>Carbon Free Footprint</b> project.</span>
+</p>
+
+<p>
+    <span>The code snippets for this article have been extracted ( and, spruced up a little bit ) from the</span>
+	<a href="http://github.com/karlseguin/the-little-mongodb-book" title="Click to Review the Little MongoDB eBook by Karl Seguin" onclick="javaScript:this.target='_blank';">Little MongoDB eBook</a> by Karl Seguin</span>
+</p>
+
+<h4>Getting Started</h4>
+<p>
+	<span>To install the Mongo DB database software in Mac OSX using MacPorts visit this repo on GitHub ...</span>
+</p>
+
+<p>
+	<a href="https://medmj.us/MongoMacPort" title="Clik to Jump To the Macports - MongoDB repo at GitHub" target="_blank">How To Install Mongo DB On Mac OSX With MacPorts via GitHub</a>
+</p>
+	
+<p>
+    <span>Because the Mongo Server (MS) shell is written in Javascript ...</span>
+    <span>( the parenthesis ) are very important!</span>
+</p>
+
+<p>
+    <span>Semi-colons are shown here and there throughout the code samples to illustrate a line ending.</span>
+    <span>But, are not needed in the Javascript shell of MongoDB to execute a command line.</span>
+</p>
+
+<p>
+    <span>Further, the lines of code shown within the code blocks are encased within a <a href="#" title="Clik to Jump To the Liquid repo at GitHub" target="_blank">Liquid</a> wrapper.</span>
+</p>
+
+	<span>To further faciliate reading the text of the code on a MacBook Pro ... breaks in the code have been set based on a laptop screen.
+</p>
+
+<p>
+    <span>What follows, are some important MongoDB Shell commands and functions for the fledgling reader to master.</span>
+</p>
+
+<p>
+	<span>It is debatable whether or not we should render this repo for smaller screens ( or, conversely larger screens ) separately.</span>
+</p>
+
+	<span>When viewing this repo on a smart phone, for example, the responsiveness of the slide to lower dimensions begs reconfiguration.</span>
+</p>
+
+<p>
+	<span>This repo 'works' well when viewing from a MacBook Pro laptop screen ...</span>
+	<span>But, the author is open to tweaking the html and css to render effectively for other screens.</span>
+</p>
+
+<p>
+	<span>You know the drill ...</span>
+	<span>Fork it, and send me a pull request!</span>
+</p>
+
+<p>
+	<span>As you can see when digging into this repo, the GitHub pages engine will accept Bootstrap 3.0 ( and, Angular 2 ) enhancements.</span>
+</p>
+
+<p>
+	<span>But, connecting a MongoDB document database and then constructing forms to fill it ...?</span>
+</p>
+
+<p>
+	<span>No, there is no 'server-side' coding allowed via the GitHub pages engine ... at this time. </span>
+</p>
+
+<p>
+	<span>More to come ...</span>
+	<span>All client based.</span>
+</p>
+	<hr class="green-groove" />
+
+<h3>The Fun Begins Here</h3>
+
+<p>
+	<span>Here, a block of code for the MongoDB Javascript shell may be displayed and wordwrapped in real time</span>
+    <span>via <a href="https://pages.github.com/" title="Clik to Jump To GitHub Pages" target="_blank">GitHub Pages</a></span>
+    </span>when enclosed in a proper Liquid</a> wrapper.</span>
+</p>
+
+<p>
+    <span>Each subheading that follows represents a MongoDB command or an important function</span>
+    <span>with a little bit of explanation tossed in as a Javascript comment to whet the whistle of the database specialist.</span>
+</p>
+	<hr class="green-groove" />
+
+<h4>Mongo Chevron</h4>
+<p>
+	<span>Intro to the Chevron ...</span>
+</p>
+
+<p>
+	<span>Once you have successfully installed MongoDB on your machine you may open up a terminal window and type 'mongo'.</span>
+	<span>The command 'mongo' will connect a shell to your running server and the 'chevron' will appear.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// where the Mongo Server (MS) accepts commands
+// a.k.a the 'chevron'
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// Enter your command here at the 'chevron' prompt
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo Version</h4>
+<p>
+	<span>Intro to the 'version()' function ...</span>
+</p>
+
+<p>
+	<span>Where 'db' is the wake-up command to the (MS) to provide the current 'version' of the Mongo Server (MS).</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function
+db.version();
+//The (MS) returns the version number
+//of your MongoDB install
+3.2.11
+//The 'chevron' promptly returns ready
+//for your next command ( or, function )
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo Help</h4>
+<p>
+	<span>Intro to the 'help()' function ...</span>
+</p>
+
+<p>
+	<span>Where 'db' is the wake-up command to the Mongo Server (MS) to provide general 'help'.</span>
+</p>
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function
+db.help();
+//The (MS) returns a list of general help items
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<p>
+	<span>(MS) will also provide detailed 'specific' help, too ...</span>
+	<span>Whenever a collection is specified within the 'help' function.</span>
+</p>
+
+<p>
+	<span>Where 'frame' is the name of a collection of documents within the current working database.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function 
+db.frame.help();
+//The (MS) returns a list of specific help items
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo Use</h4>
+<p>
+	<span>Intro to the MongoDB 'use' command ...</span>
+</p>
+
+<p>
+	<span>How To Declare and Change the Working Database ...</span>
+</p>
+
+<p>
+	<span>Where the command 'use' asks the (MS) to switch to the database named 'cls'...</span>
+	<span>Even if the database has not yet been created!</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function 
+use cls;
+//The (MS) responds
+>switched to db cls
+// then the 'chevron' prompt returns
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>The response from the (MS) whereby the Mongo Server (MS) basically says 'the switch is in effect' to the database 'cls' ...</span>
+	<span>Stays in effect until changed once again by the 'use' command.</span>
+</p>	
+
+<p>
+	<span>The opening default of the (MS) is towards the built-in 'test' database.</span>
+</p>
+
+<p>
+	<span>So, the first thing a user performs after typing the command to start the mongo shell ( 'mongo') is to type the command 'use' in order to orient the (MS) towards the correct base of data.</span>
+</p>
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Start the shell
+mongo;
+//Switch to the working database
+use learn;
+>switched to db learn
+// then the 'chevron' prompt returns
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo getCollectionNames() function</h4>
+<p>
+	<span>Intro to the MongoDB 'getCollectionNames()' function ...</span>
+</p>
+
+<p>
+    <span>Initially, when performing this 'getCollectionNames()' function on a database void of any 'collection', the prompt returns an empty array '[&nbsp;&nbsp;]', as follows:
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//where the result is an empty array of collections
+//the function returns the symbol '[ ]'
+//Type the following function 
+db.getCollectionNames();
+//The (MS) responds
+>[ ];
+//Then the 'chevron' prompt returns
+//for the entering of the next command
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+
+<p><span>Where a database named 'learn' holds a single collection named 'unicorns'.</span></p>
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function
+db.getCollectionNames();
+//the function returns an array of one
+[ "unicorns" ]
+//Then the 'chevron' prompt revisits the terminal
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo Insert</h4>
+<p>
+	<span>Intro to the MongoDB 'insert()' function ...</span>
+</p>
+
+<p>
+    <span>How To Insert a Single Document Into the 'frame' Collection of the Working Database?</span>
+</p>
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<p>
+	<span>Where the result is a single inserted document into the 'frame' collection ...</span>
+</p>
+
+<p>
+	<span>Where one or more 'key: value' sets of 'fields' within a single document are to be declared with the insert function.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// When hitting the carriage return after typing ...
+db.frame.insert({
+	name: 'Aurora',
+	gender: 'f',
+	weight: 450
+});
+// the (MS) returns the following result
+WriteResult({ "nInserted" : 1 })
+//The result is a single document
+//has been added to the collection 'frame'
+>;
+//After the (MS) acknowledges the insert ...
+//the 'chevron' prompt returns
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo getCollectionNames() revisited</h4>
+<p>
+	<span>Revisiting the MongoDB 'getCollectionNames()' function ...</span>
+</p>
+
+<p>
+	<span>After inserting the single document into the 'frame' collection ...</span>
+</p>
+
+<p>
+	<span>When we pull the function 'getCollectionNames()' again</span>
+	<span>from the arsenal of functions available in MongoDB</span>
+	<span>we get an acknowledgement from the (MS) that a collection named 'frame'</span>
+	<span>has also been created where previously there was an 'empty array' returned, as follows:</span>
+</p> 
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function
+db.getCollectionNames()
+>[ "frame" ]
+//where a collection named 'frame'
+//is now resident in the working database
+//Then the 'chevron' prompt returns
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>In effect, the collection was declared first, and then a document was inserted secondly into the working database.</span>
+	<span>Consequently, all of the fields ( key - value pairs ) of the now inserted document are house'd within the collection 'frame' of the working database.</span>
+</p>
+	<hr class="green-groove" />
+
+<h4>Simple Array</h4>
+<p>
+    <span>How To Insert a Simple Array Into the 'frame' Collection ...</span>
+</p>
+
+<p>
+	<span>A simple array is considered to be its own document, as well.</span>
+</p>
+
+<p>
+	<span>Remember, Simple Arrays appear within a [ set of brackets ] in Mongo.</span>
+</p>
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// If successful upon tapping the 'enter' key ...
+db.frame.insert({"fruits" : [
+"apple",
+"pear",
+"orange",
+"banana"]
+});
+// the (MS) returns the following result
+WriteResult({ "nInserted" : 1 })
+// And, the 'chevron' prompt revisits the terminal
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Here, try another array ...</span>
+</p>
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// If successful upon tapping the 'enter' key ...
+db.frame.insert({"autos" : [
+"chrysler",
+"bmw",
+"ford",
+"general motors",
+"volkswagen"]
+});
+// the (MS) returns the following result
+WriteResult({ "nInserted" : 1 })
+// And, the 'chevron' prompt revisits the terminal
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<h4>Embedded Document</h4>
+<p>
+    <span>How To Insert an Embedded Document Into the 'frame' Collection ...</span>
+</p>
+
+<p>
+	<span>An Embedded Document holds the key - value pairs of another document.</span>
+</p>
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// If, however, the insert is not successful ...
+db.frame.insert({"home" : "ejs26aa01a",
+"address" : {
+	"owner : "Edward John Smith",
+	"phone" : "206-000-0000",
+	"correo" : "1423",
+	"street" : "Jerry",
+	"type" : "Rd",
+	"compass" : null,
+	"city" : "Seattle",
+	"state" : "WA",
+	"zip" :  "98109-5210"}
+});
+//the (MS) will return an error message
+//similar to the following ...
+SyntaxError: missing :
+after property id @(shell):3:9
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Here, the operator failed to close "quotes" in line 3, at character 9</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// Should be "owner" ... now, you're cook'n!
+WriteResult({ "nInserted" : 1 })
+// And, the 'chevron' prompt revisits the terminal
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Try another Embedded Document ...</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// This one looks accurate ...
+db.frame.insert({"person" : "20nov16ejs26aa01a",
+"name" : {
+	"last" : "Smith",
+	"first" : "Edward",
+	"mid" : "John",
+	"suffix" : null,
+	"dob" : "010177",
+	"bmi" : 30.05,
+	"email" : "jsmiwa@me.com",
+	"entity" : "206WA98109a1a001",
+	"home" : "ejs26aa01a"}
+});
+// And it is!
+WriteResult({ "nInserted" : 1 })
+// the 'chevron' prompt revisits the terminal
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Notice how the accurate 'person' document holds a 'key - value' pair that corresponds to the 'entity' document below as well as the 'home' document above.</span>
+</p>
+
+<p>
+	<span>A Dun and Bradstreet assigned business number can substitute for the 'entity' value,</span>
+	<span>and a county parcel number can substitute for the value of the 'home' key.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// This one looks accurate, too ...
+db.frame.insert({"entity" : "206WA98109a1a001",
+"address" : {
+	“name” : “Amazon Legal Dept”,
+	"phone" : "206-266-4064",
+	"correo" : "410",
+	"street" : "Terry",
+	"type" : "Avenue",
+	"compass" : "North",
+	"city" : "Seattle",
+	"state" : "WA",
+	"zip" :  "98109-5210"
+	“credit” : “a1a”}
+});
+// And it is!
+WriteResult({ "nInserted" : 1 })
+// the 'chevron' prompt revisits the terminal
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo Find</h4>
+<p>
+	<span>Intro to the MongoDB 'find()' function ...</span>
+</p>
+
+<p>
+	<span>How to find a document in a Mongo collection using dot notation via the 'db.collection.find()' function.</span>
+</p>
+
+<p>
+	<span>Set up your query in Terminal where 'frame' is the name of a collection in the working database.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function
+db.frame.find({'address.street' : 'Jerry'})
+//The (MS) returns the entire document ...
+//To the Terminal window
+//Including the identifying ...
+//auto-generated 'hash' for the document
+{ "_id" : ObjectId("5839ef0545cc496e4f431110"),
+"home" : "ejs26aa01a",
+"address" : {
+	"phone" : "206-000-0000",
+	"correo" : "1423",
+	"street" : "Jerry",
+	"type" : "Rd",
+	"compass" : null,
+	"city" : "Seattle",
+	"state" : "WA",
+	"zip" : "98109-5210",
+	"owner" : "Edward John Smith"
+	}
+}
+// And, the 'chevron' now appears
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Another way to perform this type of search ( find ) is to query the collection using the <a href="https://www.mongodb.com/download-center?jmp=hero#compass" title="Click to Visit the Download Page for the Mongo Compass" target="_blank">Mongo Compass</a> rather than via the Terminal.</span>
+</p>
+
+<p>
+	<span>The Mongo compass has an input line front and center on the 'Schema' tab where simply the query sans the function can be entered, as follows:</span>
+</p>
+
+<p>
+	<span>Set up your query via the 'Schema' tab of Mongo compass where 'frame' is the name of a collection in the working database.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following query in Mongo compass
+{"address.street" : "Jerry"}
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Notice the Mongo compass requires "double quotes" when entering the key - value pair whereas the Terminal function will accept 'single quotes'.</span>
+</p>
+
+<p>
+	<span>One of the really cool features of the Mongo compass is the ability to pick and choose the 'fields' you wish to build your query upon by simply clicking the available elements shown.</span>
+</p>
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+
+<p>
+	<span>Let's say you wish to query a collection within the working database for the value 'banana'...</span>
+</p>
+
+<p>
+	<span>Set up your query via the 'Schema' tab of Mongo compass where 'frame' is the name of a collection in the working database.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following query in Mongo compass
+{"fruits":"banana"}
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Or, for the value 'btw' ...</span>
+</p>
+
+<p>
+	<span>Remember, the Mongo compass requires "double quotes" when entering the key - value pair.</span>
+</p>
+
+<p>
+	<span>Set up your query via the 'Schema' tab of Mongo compass where 'frame' is the name of a collection in the working database.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following query in Mongo compass
+{"autos":"bmw"}
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span>Now, by clicking on the 'Documents' tab in Mongo compass ...</span>
+</p>
+
+<p>
+	<span>The document housing the inquiry value appears ( similar to the above Terminal result ), as follows:</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+// Query returned 1 document.
+_id:ObjectID('5839eae645cc496e4f43110d')
+autos:Array[5]
+0:"chrysler"
+1:"bmw"
+2:"ford"
+3:"general motors"
+4:"volkswagen"
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+	<span><b>Conclusion</b>.</span>
+	<span>Other than the continuing caveat to render your query with "double quotes" ...</span>
+</p>
+
+<p>
+	<span>The Terminal proves cumbersome when compared to the ability to query effectively through Mongo compass.</span>
+</p>
+
+	<hr class="green-groove" />
+
+<h4>Mongo Indexes</h4>
+<p>
+	<span>Intro to the MongoDB 'getIndexes()' function ...</span>
+</p>
+
+<p>
+	<span>When we pull the function 'getIndexes()' from the arsenal of functions available in MongoDB ...</span>
+</p>
+
+<p>
+	<span>Where 'frame' is a collection in the working database.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function
+db.frame.getIndexes();
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo Remove</h4>
+<p>
+	<span>Intro to the MongoDB 'remove() function ...</span>
+</p>
+
+<p>
+    <span>To wipe a collection clean ...</span>
+</p>
+
+<p>
+    <span>Invoke the simplest of JSON objects ( which is the Empty Object ) denoted by a vacant set of curly braces '{&nbsp;&nbsp;}'.</span>
+</p>
+    <span>Here, the Empty Object '{&nbsp;&nbsp;}' matches the term 'All Documents'.</span>
+</p>
+
+<p><span>To remove all of the documents currently stored in the collection 'frame' invoke the following ...</span></p>
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function
+db.frame.remove({ })
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+	
+<h4>Mongo Export</h4>
+<p>
+	<span>Intro to the MongoDB 'mongoexport' command ...<span>
+</p>
+
+<p>		
+    </span>Where an 'export' data command to a (.json) or a (.csv) file may be excuted.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following helper command
+mongoexport;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+    <span>JSON is the default format used by MongoDB when exporting data ( fields ) from a collection within a database.</span>
+</p>
+
+<p>
+    <span>A data output in JSON format can be rendered by the (MS), as follows:</span>
+</p>
+
+<p>
+	<span>Where 'yourdata' is the name of a MongoDB database, and 'frame' is the name of a collection of documents within your MongoDB database.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following helper command
+mongoexport --db yourdata --collection frame
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<p>
+    <span>MongoDB can also export data ( fields ) into the standard (.csv) format, as well.</span>
+</p>
+
+<p>
+    <span>Here, the (MS) exports the (.csv) fields of name, weight, and gender from the 'frame' collection within the database named 'yourdata'.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following helper command
+mongoexport --db yourdata --collection frame
+--csv --fields name,weight,gender
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo Import</h4>
+
+<p>
+	<span>Intro to the 'mongoimport' command ...<span>
+</p>
+
+<p>		
+    </span>Where an import data command from a (.json) or a (.csv) file may be excuted.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following command
+mongoimport;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<h4>Mongo Stats</h4>
+<p>
+	<span>Intro to the 'stats()' function ...</span>
+</p>
+
+<p>
+	<span>Where 'db' is the wake-up command to the Mongo Server (MS) to provide 'stats'.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function
+db.stats();
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo Count</h4>
+<p>
+	<span>Intro to the 'count()' function ...</span>
+</p>
+
+<p>
+	<span>The (MS) will provide a specific 'count' where 'frame' is the name of a collection of documents within the current working database.</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function
+db.frame.count();
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo Status</h4>
+<p>
+	<span>Intro to the 'serverStatus()' function ...</span>
+</p>
+
+<p>
+	<span>Where 'db' is the wake-up command to the (MS) to provide the current 'serverStatus' of the Mongo Server (MS).</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function
+db.serverStatus();
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+	<hr class="green-groove" />
+
+<h4>Mongo Test</h4>
+<p>
+	<span>More to come ...</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function
+>;
+//Back to the 'chevron'
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<h5>For Example ( <span lang="es" title="For Example">Por Ejemplo</span> ) ...</h5>
+<p>
+	<span>More to come ...</span>
+</p>
+
+<!--
+<pre>
+<span>Highlighting MongoDB code w Rouge via liquid</span>
+<code> -->
+{% highlight javascript linenos %}
+//Type the following function
+>;
+//Back to the 'chevron'
+>;
+{% endhighlight %}
+<!--
+</code>
+</pre>
+-->
+
+<footer class="page-footer">
+    
+	{% include footer.htm %}
+</footer>
