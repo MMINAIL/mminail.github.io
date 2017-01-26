@@ -1,0 +1,140 @@
+---
+layout: default
+title: Convert To SVG Page | Carbon Free Footprint Project
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+
+<main>
+<article>
+
+<hgroup class="text-left">
+	<h3>Converting Photos To SVG</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>Welcome! This is the Convert To SVG page of the <b>Carbon Free Footprint</b> project.</span>
+</p>
+	<hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>How To Convert a (.png) To an (.svg) via ( AI ) Adobe Illustrator </h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+    <span>Adobe Illustrator CS6 has a "save as" feature whereby a fully loaded (.png) can be translated directly into a compressed (.svgz) file.</span>
+</p>
+
+<p>
+	<span>However, I prefer to first load the (.png) or other lossy or lossless photo into GIMP and then change the size of the image to suit a desktop screen rendering.</span>
+</p>
+
+<p>
+	<span>Next, I export the file from GIMP as as an Adobe Photoshop (.psd) file.</span>
+</p>
+
+<p>
+	<span>From there, I can now open the (.psd) in Adobe Illustrator (AI) by converting all layers to objects, if any, and then invoking the Adobe Illustrator CS6 transparency grid to ensure no background noise has been rendered during the import.</span>
+</p>
+
+<p>
+	<span>Finally, after selecting "save as" (.svg), a browser-viewable image-text file renders that I can now point to regular way whenever a standard image is called for.</span>
+</p>
+
+<p>
+	<span>For example, the following result is a rendition of the Medical Marijuana Initiative of North America - International Limited USPTO Registered Logo Badge tested for responsiveness on a virtual Galaxy S5 smartphone emulator via Google's <a href="https://developer.chrome.com/devtools" title="Click to Review Google's Chrome Developer Tools" target="_blank">Chrome Developer Tools</a>.</span>
+</p>
+	<hr class="green-groove" />
+
+<canvas id="CanvasMminail" class="canvas-text"  width="320" height="50"></canvas>
+<script>
+(function() {
+var canvas = document.getElementById('CanvasMminail');
+if (canvas.getContext){
+var ctx = canvas.getContext('2d');
+ctx.font ="16px Eurostyle";
+ctx.fillStyle ="darkblue";
+ctx.fillText("Medical Marijuana Initiative of North America",5,15);
+ctx.fillText("- International Limited",5,30);
+ctx.fillText("- USPTO Registered Logo Badge",5,45);
+
+}
+})();
+</script>
+
+<picture>
+	<img class="img-responsive img-circle" src="../images/MMINAIL-Logo-Badge-Original-Registered-Transparent-320-x-320-px.svg" alt="Medical Marijuana Initiative of North America - International Limited USPTO Registered Logo Badge" />
+</picture>
+	<hr class="green-groove" />
+
+<p>
+	<span>The code to render the above drawn subtitle and SVG image is, as follows:</span>
+</p>
+
+<pre>
+<span>Establishing the canvas ...</span>
+{% highlight html %}
+<canvas id="CanvasMminail" class="canvas-text"
+	width="320" height="50"></canvas>
+{% endhighlight %}
+</pre>
+
+<pre>
+<span>Drawing on the fly w Javascript ...</span>
+{% highlight html %}
+<script>
+(function() {
+var canvas = document.getElementById('CanvasMminail');
+if (canvas.getContext){
+var ctx = canvas.getContext('2d');
+ctx.font ="16px Eurostyle";
+ctx.fillStyle ="darkblue";
+ctx.fillText("Medical Marijuana Initiative of North America",5,15);
+ctx.fillText("- International Limited",5,30);
+ctx.fillText("- USPTO Registered Logo Badge",5,45);
+}
+})();
+</script>
+{% endhighlight %}
+</pre>
+
+<pre>
+<span>Calling the SVG image ...</span>
+{% highlight html %}
+<picture>
+<img class="img-responsive img-circle"
+src="../images/MMINAIL-Logo-Badge-Original-Registered-Transparent-320-x-320-px.svg"
+alt="Medical Marijuana Initiative of North America
+- International Limited USPTO Registered Logo Badge" />
+</picture>
+{% endhighlight %}
+<span lang="es" title="Sp. 'For Finish'">Finito!</span>&nbsp;...&nbsp;<i class="icon-large icon-flower"></i>
+</pre>
+
+<footer class="page-footer center-block">
+<br />
+	<p>
+		<span><b>Source #1</b>:</span>
+    	<span>Adobe Illustrator.</span>
+		<span>See: <a href="https://helpx.adobe.com/illustrator/how-to/export-svg.html" title="Click to Review Adobe Illustrator" target="_blank">CS6</a></span>
+	</p>
+		<hr class="green-groove" />
+
+	<p>
+		<span><b>Source #2</b>:</span>
+		<span>Jumpstart Html 5.</span>
+		<br />
+		<span>See: <a href="http://amzn.to/2khUFqp" title="Click to Review the Jump Start Html 5 eBook by Tiffany B. Brown, Kerry Butters, and Sandeep Panda" target="_blank">eBook</a> by Tiffany B. Brown, Kerry Butters, and Sandeep Panda.</span>
+	</p>
+		<hr class="green-groove" />
+
+	{% include footer.htm %}
+</footer>
+
+</article>
+</main>
+
+</div>
+</div>
