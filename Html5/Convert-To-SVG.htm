@@ -82,7 +82,7 @@ ctx.fillText("- USPTO Registered Logo Badge",5,45);
 </pre>
 
 <pre>
-<span>Creating the css ...</span>
+<span>Creating the css for the canvas ...</span>
 {% highlight css %}
 .canvas-text {
     position: relative;
@@ -98,6 +98,28 @@ ctx.fillText("- USPTO Registered Logo Badge",5,45);
     height: 100%;
     border: 5px red groove;
 }
+{% endhighlight %}
+</pre>
+
+<pre>
+<span>Creating the css for a standard image ...</span>
+{% highlight css %}
+/* Set the collapsable Responsive Image 'min-width' */
+img {
+    /* min-width: 340px; */
+    border: 1px solid red;
+    max-width: 100%;
+    height: auto;
+}
+{% endhighlight %}
+</pre>
+
+<pre>
+<span>Creating the css for a responsive image ...</span>
+.img-responsive {
+    width: calc(100% - 20px);
+    max-width: 210px;
+    }
 {% endhighlight %}
 </pre>
 
