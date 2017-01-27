@@ -6,7 +6,9 @@ title: Glyphicons Page | Carbon Free Footprint Project
 	<div class="row-fluid">
 
 <div class="bs-docs-section">
-  <h1 id="glyphicons" class="page-header">Glyphicons</h1>
+
+<main>
+<article>
 
 <hgroup class="text-left">
 	<h3>Glyphicons Article</h3>
@@ -16,72 +18,180 @@ title: Glyphicons Page | Carbon Free Footprint Project
 <p>
 	<span>Welcome! This is the Glyphicons page of the <b>Carbon Free Footprint</b> project.</span>
 </p>
+  <hr class="green-groove" />
 
-  <h2 id="glyphicons-glyphs">Available glyphs</h2>
-  <p>Includes 200 glyphs in font format from the Glyphicon Halflings set. <a href="http://glyphicons.com/">Glyphicons</a> Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you include a link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever possible.</p>
-  <div class="bs-glyphicons">
-    <ul class="bs-glyphicons-list">
-      {% for iconClassName in site.data.glyphicons %}
-        <li>
-          <span class="glyphicon {{ iconClassName }}"></span>
-          <span class="glyphicon-class">glyphicon {{ iconClassName }}</span>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+<p>
+	<span>More to come ...</span>
+</p>
+	<hr class="green-groove" />
 
-  <h2 id="glyphicons-how-to-use">How to use</h2>
-  <p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
-  <div class="bs-callout bs-callout-danger">
-    <h4>Don't mix with other components</h4>
-    <p>Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested <code>&lt;span&gt;</code> and apply the icon classes to the <code>&lt;span&gt;</code>.</p>
-  </div>
-  <div class="bs-callout bs-callout-danger">
-    <h4>Only for use on empty elements</h4>
-    <p>Icon classes should only be used on elements that contain no text content and have no child elements.</p>
-  </div>
-  <div class="bs-callout bs-callout-info">
-    <h4>Changing the icon font location</h4>
-    <p>Bootstrap assumes icon font files will be located in the <code>../fonts/</code> directory, relative to the compiled CSS files. Moving or renaming those font files means updating the CSS in one of three ways:</p>
-    <ul>
-      <li>Change the <code>@icon-font-path</code> and/or <code>@icon-font-name</code> variables in the source Less files.</li>
-      <li>Utilize the <a href="http://lesscss.org/usage/#command-line-usage-relative-urls">relative URLs option</a> provided by the Less compiler.</li>
-      <li>Change the <code>url()</code> paths in the compiled CSS.</li>
-    </ul>
-    <p>Use whatever option best suits your specific development setup.</p>
-  </div>
+<hgroup class="text-left">
+	<h4 id="glyphicons-glyphs">Available glyphs</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>More to come ...</span>
+</p>
+  <hr class="green-groove" />
+
+<p>
+  <span>Includes 200 glyphs in font format from the Glyphicon Halflings set.</span>
+</p>
+  <hr class="green-groove" />
+
+<p>
+  <span><b>See</b>:</span>
+  <a href="http://glyphicons.com/">Glyphicons</a>
+  <span>Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost.</span>
+</p>
+
+<p>
+  <span>As a thank you, we only ask that you include a link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever possible.</span>
+</p>
+  <hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4 id="glyphicons-how-to-use">How to use ...</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<div class="bs-glyphicons">
+  <ul class="bs-glyphicons-list">
+  {% for iconClassName in site.data.glyphicons %}
+    <li>
+      <span class="glyphicon {{ iconClassName }}"></span>
+      <span class="glyphicon-class">glyphicon {{ iconClassName }}</span>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+
+<p>
+  <span>For performance reasons, all icons require a base class and individual icon class.</span>
+</p>
+
+<p>
+  <span>To use, place the following code just about anywhere.</span>
+  <span>Be sure to leave a space between the icon and text for proper padding.</span>
+</p>
+  <hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Don't mix with other components ...</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<div class="bs-callout bs-callout-danger">
+  <p>
+    <span>Icon classes cannot be directly combined with other components.</span>
+    <span>They should not be used along with other classes on the same element.</span>
+    <span>Instead, add a nested <code>&lt;span&gt;</code> and apply the icon classes to the <code>&lt;span&gt;</code>.</span>
+  </p>
+</div>
+  <hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Only for use on empty elements ...</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<div class="bs-callout bs-callout-danger">
+  <p>
+    <span>Icon classes should only be used on elements that contain no text content and have no child elements.</span>
+  </p>
+</div>
+  <hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Changing the icon font location ...</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<div class="bs-callout bs-callout-info">
+  <p>
+    <span>Bootstrap assumes icon font files will be located in the <code>../fonts/</code> directory, relative to the compiled CSS files.</span>
+  </p>
+
+  <p>
+    <span>Moving or renaming those font files means updating the CSS in one of three ways:</span>
+  </p>
+
+  <ul>
+    <li>Change the <code>@icon-font-path</code> and/or <code>@icon-font-name</code> variables in the source Less files.</li>
+    <li>Utilize the <a href="http://lesscss.org/usage/#command-line-usage-relative-urls">relative URLs option</a> provided by the Less compiler.</li>
+    <li>Change the <code>url()</code> paths in the compiled CSS.</li>
+  </ul>
+
+  <p>
+    <span>Use whatever option best suits your specific development setup.</span>
+  </p>
+</div>
+
+<pre>
 {% highlight html %}
 <span class="glyphicon glyphicon-search"></span>
 {% endhighlight %}
+</pre>
 
-  <h2 id="glyphicons-examples">Examples</h2>
-  <p>Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.</p>
-  <div class="bs-example">
-    <div class="btn-toolbar" role="toolbar">
-      <div class="btn-group">
-        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-left"></span></button>
-        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-center"></span></button>
-        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-right"></span></button>
-        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-justify"></span></button>
-      </div>
+<hgroup class="text-left">
+	<h4 id="glyphicons-examples">Examples ...</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+  <span>Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs.</span>
+</p>
+
+<div class="bs-example">
+  <div class="btn-toolbar" role="toolbar">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-left"></span></button>
+      <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-center"></span></button>
+      <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-right"></span></button>
+      <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-justify"></span></button>
     </div>
-    <div class="btn-toolbar" role="toolbar">
+  </div>
+
+  <div class="btn-toolbar" role="toolbar">
+    <div class="btn-group">
       <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-star"></span> Star</button>
       <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-star"></span> Star</button>
       <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-star"></span> Star</button>
       <button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star"></span> Star</button>
     </div>
   </div>
+
 {% highlight html %}
 <button type="button" class="btn btn-default btn-lg">
   <span class="glyphicon glyphicon-star"></span> Star
 </button>
 {% endhighlight %}
+
 </div>
 
 <footer class="page-footer center-block">
+
+	<p>
+		<span><b>Source</b>:</span>
+    	<span>Place title here ...</span>
+	</p>
+
+	<p>
+		<span>See: <a href="#" title="Click to Review Place Title Here" target="_blank">Pages 00 - 00</a></span>
+	</p>
+
+	<p>
+    	<span>Original Copyright 2000 Publisher, City, NY</span>
+	</p>
+
 	{% include footer.htm %}
 </footer>
+
+</article>
+</main>
+
+</div>
 
 </div>
 </div>
