@@ -9,8 +9,7 @@ let SQ = (nbr) => {
   var sq = nbr * nbr;
   /* where sq = square of the number */
   //Alert the result to the end-user
-  window.alert("The square of the number " ➡️ 
-  + nbr + " given is " + sq);
+  window.alert("The square of the number " + nbr + " given is " + sq);
   //Return and archive the result at the console
   return("The square of the input " + nbr + " = " + sq);
 };
