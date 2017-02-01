@@ -1,0 +1,127 @@
+---
+layout: default
+title: Visual Studio Code for Mac - User Snippets Page | Carbon Free Footprint Project
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+
+<main>
+<article>
+
+<hgroup class="text-left">
+	<h3>Visual Studio Code for Mac - User Snippets</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>Welcome! This is the Visual Studio Code - User Snippets page of the <b>Carbon Free Footprint</b> project.</span>
+</p>
+
+<p>
+	<span>To engage the Visual Studio Code editor for the purpose of editing the internal User Snippets (.json) page, simply ...</span>
+</p>
+
+<ol type="i">
+	<li>Click the <code>Code</code> tab in the upper left hand, top menu border of a <a href="#" title="Click To Visit the MacBook Pro page at Apple dot com" target="_blank">MacBook Pro</a></li>
+	<li>The Preferences tab will appear ... Hover over the Preferences tab.</li>
+	<li>Click User Snippets.</li>
+</ol>
+	<hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Code, Preferences, User Snippets</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>Now that we have the User Snippets (.json.) file engaged, its time to go to work!</span>
+</p>
+
+<p>
+	<span><b>Optional</b>.</span>
+	<span>Use $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables.</span>
+</p>
+
+<p>
+	<span><b>Note</b>.</span>
+	<span>Variables with the same <code>id</code> are connected.</span>
+</p>
+
+<p>
+	<span>Notice the (.json) page block opens <code>{</code> with a set of curly braces that also closes <code>}</code> at the tail-end of the code block.</span>
+</p>
+
+<p>
+	<span>In between go each individual user snippet, as follows:</span>
+</p>
+
+<p>
+<span><b>Note</b>.</span>
+<span>Be sure to place a comma <code>,</code> after each user block snippet.</span>
+</p>
+
+<pre>
+<span>Remember, inside double quotes, single quotes must be used ...</span>
+{% highlight html %}
+{
+"Print to console example": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+
+"Basic Hyperlink": {
+		"prefix": "hyp-basic",
+		"body": [
+			"<a href='' title='' target=''>"
+		],
+		"description": "Create Basic Hyperlink"
+	},
+
+"Bitly Hyperlink": {
+		"prefix": "hyp-bit",
+		"body": [
+			"<span><a href='https://app.bitly.com/default/bitlinks/2jzw0ZP' title='Click to Review the Bitly hyperlink service' target='_blank'>Bitly</a> hyperlink service.</span>"
+		],
+		"description": "Create Bitly Hyperlink"
+	}
+}
+{% endhighlight %}
+<span lang="es" title="Sp. 'For Finish'">Finito!</span>&nbsp;...&nbsp;<i class="icon-large icon-flower"></i>
+</pre>
+
+<p>
+	<span>More to come ...</span>
+</p>
+
+<footer class="page-footer center-block">
+	<br />
+	<p>
+		<span><b>Source</b>:</span>
+    	<a href="https://code.visualstudio.com/Docs/customization/userdefinedsnippets" title="Click to Review Visual Studio Code User Snippets by Microsoft dot com" target="_blank">Visual Studio Code User Snippets for Mac</a>
+	</p>
+
+	<p>
+		<span>See: <a href="https://code.visualstudio.com/" title="Click to Review Visual Studio Code by Microsoft dot com" target="_blank">Download</a>
+		<span>by</span>
+		<a href="https://code.visualstudio.com/" title="Click to Download Microsoft Visual Studio Code" target="_blank">Visual Studio Code for Mac</a>
+	</p>
+
+	<p>
+		<span>Original Copyright 2017 Microsoft, Inc.</span>
+		<br />
+		<span>Redmond, WA</span>
+	</p>
+		<hr class="green-groove" />
+		
+	{% include footer.htm %}
+</footer>
+
+</article>
+</main>
+
+</div>
+</div>
