@@ -34,6 +34,9 @@ title: Flex Box Page | Carbon Free Footprint Project
 <p>
 	<span><b>Note</b>.</span>
 	<span>When configuring the flex box along the main axis ( as opposed to the 'cross axis') ...</span>
+</p>
+
+<p>
 	<span>The flex items ( elements ) of the flex container will line up horizontally, one after the other in perfect succession across the main axis ( horizontal ) of the flex container when the flex-direction is switched to 'row' in the css.</span>
 </p>
 
@@ -48,9 +51,9 @@ title: Flex Box Page | Carbon Free Footprint Project
 pre {
 	display: block;
 	font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    white-space: pre-wrap;
-    margin: 1em 0;
+	font-size: small;
+	white-space: pre-wrap;
+	margin: 1em 0;
 	background-color: rgb(255,255,229); /* light yellow */
 }
 /* Configure the flex box along the cross axis */
@@ -59,9 +62,9 @@ pre.flex-box {
     flex-direction: column;
 }
 {% endhighlight %}
-
+<span>Discarding other Flex Box Container options</span>
 {% highlight css linenos %}
-/* Discards */
+/* Discards: The parent pre container */
 pre {
 	/* display: inline; */
 	/* font-family: monospace; */
@@ -69,25 +72,23 @@ pre {
 	/* height: 100%; */
 	/* background: hsl(30,80%,90%); /* full moon yellow */
 }
-
+/* Discards: Configuring the flex box */
 pre.flex-box {
-	/* flex-direction: row;
-    - where the default option is 'row' */
-
-    /* flex-direction: row-reverse; */
+	/* flex-direction: row; where the default option is 'row' */
+	/* flex-direction: row-reverse; */
 	/* flex-direction: column-reverse; */
 
 	/* -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap; */
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap; */
 
-    /* -webkit-flex-flow: row;
-        -ms-flex-flow: row;
-	        flex-flow: row; */
+	/* -webkit-flex-flow: row;
+	-ms-flex-flow: row;
+	flex-flow: row; */
 
-    /* margin-right: -0.625rem;
-    	margin-bottom: 0.75rem;
-    	margin-left: -0.625rem; */
+	/* margin-right: -0.625rem;
+	margin-bottom: 0.75rem;
+	margin-left: -0.625rem; */
 }
 {% endhighlight %}
 <span lang="es" title="Sp. 'For Finish'">Finito!</span>&nbsp;...&nbsp;<i class="icon-large icon-flower"></i>
@@ -120,19 +121,20 @@ pre.flex-box {
 	<br />
 	<p>
 		<span><b>Source</b>:</span>
-    	<a href="#" title="Click to Review Understanding Flexbox by Ohans Emmanuel" target="_blank">Understanding Flexbox</a>
+    	<a href="https://medium.freecodecamp.com/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af#.7vemfl7i2" title="Click to Review Understanding Flexbox by Ohans Emmanuel" target="_blank">Understanding Flexbox</a>
 	</p>
 
 	<p>
-		<span>See: <a href="#" title="Click to Review Understanding Flexbox by Ohans Emmanuel" target="_blank">eBook</a>
+		<span>See: <a href="https://github.com/ohansemmanuel/ohansemmanuel.github.io/tree/master/assets/pdf" title="Click to Download the Understanding Flexbox by Ohans Emmanuel (.pdf)" target="_blank">eBook</a>
 		<span>by</span>
-		<a href="#" title="Click to Review the author Ohans Emmanuel" target="_blank">Ohans Emmanuel</a>
+		<a href="https://twitter.com/ohansemmanuel" title="Click to Visit the Twitter account of the Author Ohans Emmanuel" target="_blank">Ohans Emmanuel</a>
 	</p>
 
 	<p>
-		<span>Original Copyright 2000 Publisher,</span>
+		<span>Original Copyright 2016 <a href="https://medium.com/@ohansemmanuel" title="Click To Review the Medium account of the Author Ohans Emmanuel" target="_blank">The Medium Corporation</a>,</span>
+		
 		<br />
-		<span>City, NY</span>
+		<span>Planet, EARTH</span>
 	</p>
 		<hr class="green-groove" />
 		
