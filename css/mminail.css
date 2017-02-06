@@ -255,6 +255,27 @@ pre {
     margin: 1em 0;
 }
 
+pre.flex-box {
+    display: flex;
+    /* flex-direction: row;
+    - where the default option is 'row' */
+    /* flex-direction: row-reverse; */
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+
+    /* -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; */
+
+    /* -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+	        flex-flow: row; */
+
+    /* margin-right: -0.625rem;
+    margin-bottom: 0.75rem;
+    margin-left: -0.625rem; */
+}
+
 code {
     /* height: 100%; */
     background: hsl(220, 80%, 90%); /* sky blue */
