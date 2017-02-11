@@ -1,0 +1,85 @@
+Unicode encoding
+
+Note: Example from the 'private use' area of the unicode map aka 'custom gyphs' or 'vector artwork' in fonts.
+
+Lynda dot com
+
+Unicode encoding
+
+=========================================
+Html
+=========================================
+
+<p class="icon-heart">
+	<span>I love icons!</span>
+</p>
+
+=========================================
+Css
+=========================================
+
+.icon-heart:before {
+	font-family: "The namespace of your personal icon font";
+	content: "\2661";
+	display: inline-block
+}
+
+.icon {
+	float: left;
+	margin-right: 1em;
+}
+
+=========================================
+
+Icon font editors (generation tools)
+
+=========================================
+
+C=> http://Icomoon.io (to manipulate font sets)
+
+C=> http://fontello.com (to purchase or download free icon sets plus icon generator)
+
+C=> http://pictos.cc (to manipulate font sets)
+
+C=> http://icomatic.io (to manipulate 'multi-colored' font sets)
+
+C=> http://glyphsapp.com (to create glyph sets)
+
+C=> http://fontsquirrel.com (convert (.otf) open type fonts to workable webfonts w web font generator)
+
+C=> http://css-tricks.com/flat-icons-icon-fonts/
+
+C=> http://css-tricks.com/html-for-icon-font-usage/
+
+C=> http://birdfont.org
+
+Adobe Illustrator (for 'vector graphics')
+
+=========================================
+
+Glyph attributes
+
+=========================================
+
+em height
+em width
+cap height (height for capital, or upper case letters)
+x height (height for lower case letters)
+baseline
+ascender (relative to the baseline ... the highest point of the glyph)
+descender (relative to the baseline ... the lowest point of the glyph)
+UPM = True Type Fonts (2048)
+UPM = (Units Per 'em') Open Type Fonts (1000)
+
+=========================================
+
+A font 'em' is simply the measurement of one vertical side a square box drawn around the initial letter (glyph) of the font-set (ie. A)
+
+When calculating the height and width of all future glyphs, an 'em' of '1em' corresponds to One-times X The initial letter's font-box vertical side.
+
+An 'em' of '2em' would simply be double the measurement of one vertical side a square box drawn around the initial letter (glyph) of the font-set.
+
+So, 'em' is a relative measurement of an actual measurement of one vertical side a square box drawn around the initial letter (glyph) of the font-set.
+
+These are called the 'boundaries' of the glyph.
+
