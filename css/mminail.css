@@ -118,7 +118,7 @@ hgroup {
     padding-bottom: .5em;
     padding-left: .5em;
     padding-top: .5em;
-    background: rgb(155,155,204) url("../images/BNR-Painted-Desert-Moon-banner-720-x-120-px.png") no-repeat; /* center center */
+    background: rgb(155,155,204) url("../images/png/BNR-Painted-Desert-Moon-banner-720-x-120-px.png") no-repeat; /* center center */
     background-size: cover; /* contain */
     color: #000531;
     min-height: 120px;

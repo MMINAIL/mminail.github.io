@@ -1,5 +1,6 @@
-//Square It
+//Square It Program
 "use strict";
+
 //Declare and assign the arrow function to accept one argument
 let SQ = (nbr) => {
   //Set the input variable locally within the function
@@ -14,6 +15,13 @@ let SQ = (nbr) => {
   return("The square of the input " + nbr + " = " + sq);
 };
 
+//Declare the global timer
+var programTimer; {
+console.log("We shall now select ( cntrl-a ), copy ( cntrl-c ), and paste ( cntrl-v ) the entire 'Square It' program code into the Firefox - Web console, and hit Enter ... ");
+console.time(programTimer,"Square It Time");
 //The execution command for the SQ function
 SQ();
 /* Notice the open argument accepts the prompt nbr */
+console.log("The time for the end-user and machine to execute this program is = ");
+console.timeEnd(programTimer,"Square It Time");
+};
