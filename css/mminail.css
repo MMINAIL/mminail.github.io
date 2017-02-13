@@ -132,7 +132,7 @@ hgroup {
     background-size: cover; /* contain */
     color: #000531; 
     /* color: black; */
-    /* min-height: 230px; */
+    min-height: 230px;
     /* max-width: 70%; */
     /* min-width: 200px; */
 }
@@ -439,11 +439,11 @@ h1 {
     /* 200px / 360px */
     /* display: inline-block; */
     /* overflow: hidden; */
-    text-align: left;
+    text-align: center;
     /* max-width: 180px; */
     /* max-height: 1px; */
     font-size: large;
-    margin-top: 100 px;
+    /* margin-top: 100 px; */
     }
 
 article.main-article {
