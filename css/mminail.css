@@ -21,6 +21,11 @@ h1 {
     /* min-width: 480px; */
     width: calc(100% - 20px);
     font-size: x-large;
+    margin-top: 0px;
+}
+
+.text-neon {
+    color:lime;
 }
 
 h2 {
@@ -88,7 +93,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(155,155,204);
     /* opacity: 0.5; /* ¡Cuidado! Both the Background-color AND the Text color are affected by the opacity level! */
-    padding: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
     height: 100%;
     overflow: auto;
 }
@@ -114,14 +121,19 @@ hgroup {
 
 /* Set the background color and image for the header masthead */
 .masthead {
-    padding-right: .5em;
-    padding-bottom: .5em;
-    padding-left: .5em;
-    padding-top: .5em;
-    background: rgb(155,155,204) url("../images/svg/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-1500-x-400.svg") no-repeat; /* center center */
+    width: calc(100% - 0px);
+    /* max-width: 70%; */
+    max-width: 100%;
+    /* padding-right: .5em; */
+    /* padding-bottom: .5em; */
+    /* padding-left: .5em; */
+    padding-top: .25em;
+    background: rgb(155,155,204) url("../images/svg/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-680-x-220.svg") no-repeat; /* center center */
     background-size: cover; /* contain */
-    color: #000531;
-    min-height: 120px;
+    color: #000531; 
+    /* color: black; */
+    min-height: 230px;
+    /* max-width: 70%; */
     /* min-width: 200px; */
 }
 
@@ -218,7 +230,10 @@ article.main-article {
     /* background-color: palegoldenrod; */
     /* background-color: linen; */
     background-color:rgb(255,255,229); /* moonlight */
-    padding: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-top: 1%;
     min-width: 200px;
     /* border-right: 2px solid #fff; */
 }
@@ -360,13 +375,17 @@ h1 {
     /* display: inline-block; */
     /* overflow: hidden; */
     text-align: center;
-    width: calc(100% - 20px);
+    width: calc(100% - 00px);
     font-size: x-large;
     }
 
 h2 {
     font-size: large;
     }
+
+.masthead {
+    min-height: 220px;
+}
 
 .site-footer  {
     margin: 1% 35% 1% 0;
@@ -382,9 +401,10 @@ h1 {
     max-width: 70%;
     /* display: inline-block; */
     /* overflow: hidden; */
-    text-align: left;
+    text-align: center;
     /* max-width: 180px; */
     font-size: x-large;
+    /* margin-left: 250px; */
     }
 
 article.main-article {
@@ -396,6 +416,9 @@ aside#navigator {
     position: relative;
     min-width: 140px;
     }
+.masthead {
+    min-height: 220px;
+}
 
 .btn-med, .btn-group-med > .btn {
     text-align: left;
@@ -416,7 +439,7 @@ h1 {
     /* 200px / 360px */
     /* display: inline-block; */
     /* overflow: hidden; */
-    text-align: left;
+    text-align: center;
     /* max-width: 180px; */
     /* max-height: 1px; */
     font-size: large;
