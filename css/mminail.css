@@ -434,15 +434,16 @@ aside#navigator {
 @media screen and (max-width: 360px) {
 
 h1 {
-    width: calc(100% - 20px);
-    max-width: 56%;
+    width: calc(100% - 10px);
+    max-width: 70%;
     /* 200px / 360px */
     /* display: inline-block; */
     /* overflow: hidden; */
-    text-align: center;
+    text-align: left;
     /* max-width: 180px; */
     /* max-height: 1px; */
     font-size: large;
+    margin-top: 100 px;
     }
 
 article.main-article {
