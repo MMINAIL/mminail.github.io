@@ -461,7 +461,7 @@ aside#navigator {
     }
 
 .img-responsive {
-    width: calc(100% - 20px);
+    width: calc(100% - 0px);
     max-width: 210px;
     }
 
