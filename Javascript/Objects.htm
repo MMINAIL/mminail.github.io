@@ -1,0 +1,558 @@
+---
+layout: default
+title: Javascript Objects | MMINAIL
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+
+<main>
+<article>
+
+<hgroup class="text-left">
+	<h3>Javascript Objects</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p class="lead">
+	<span>Welcome! This is the Javascript Objects page of the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr>.</span>
+</p>
+	<hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Object-objects</h4>
+</hgroup>
+	<hr class="green-groove" />
+	
+<p>
+	<span>The first thing we must do in this exercise is to delare an Javascript object using the Object-object constructor and then assign the new object to a variable.</span>
+</p>
+	<hr class="green-groove" />
+
+<pre class="flex-box">
+<span>Declare a new object with the Object-object constructor</span>
+{% highlight html linenos %}
+new Object();
+{% endhighlight %}
+<span>Assign the new constructor to the variable 'hot-dog' ...</span>
+<span>Add: Nothing to the argument of the Object() at this time</span>
+{% highlight html linenos %}
+var hotDog = new Object();
+{% endhighlight %}
+</pre>
+    <hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Object-constructors</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+    <span>Next, we must declare a new string with the Object-string constructor, a member of the class of Object-constructors available for use in Javascript.</span>
+</p>
+    <hr class="green-groove" />
+
+<pre class="flex-box">
+<span>Declare a new string with the Object-string constructor</span>
+{% highlight html linenos %}
+new String();
+{% endhighlight %}
+<span>Assign the new constructor to the variable 'hot-string' ...</span>
+<span>Add: Some text to the argument of the String() at this time</span>
+{% highlight html linenos %}
+var hotString = new String('This is a very hot dog!');
+{% endhighlight %}
+</pre>
+    <hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Object-properties</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+    <span>Now, let's add some properties to our new 'hot-dog' object</span>
+</p>
+    <hr class="green-groove" />
+
+<pre class="flex-box">
+<span>Declare hotDog Object properties using 'dot' notation</span>
+{% highlight html linenos %}
+hotDog.degree = 'Fahrenheit';
+hotDog.temperature = 99;
+hotDog.cooked = true;
+{% endhighlight %}
+</pre>
+    <hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Function Objects</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+    <span>Time to add a function that will compile the values of the elements of our hotDog Object.</span>
+</p>
+    <hr class="green-groove" />
+
+<pre class="flex-box">
+<span>Declare a Function Object ...</span>
+{% highlight html linenos %}
+function() {};
+{% endhighlight %}
+</pre>
+
+<pre class="flex-box">
+<span>Assign the new function Object to 'fetchElements' using 'dot' notation ...</span>
+<span>Create a method within the curly braces { ... } of the function.</span>
+{% highlight html linenos %}
+hotDog.fetchElements = function() {
+    let Sam = ' Sensing the temperature in ' + 
+    hotDog.degree + ', ' + 
+    'I notice the hot-dog reads ' + 
+    hotDog.temperature + ' degrees. ' + 
+    'Therefore, the question of whether or not ' +
+    'the hot-dog is cooked is undeniably ' + 
+    hotDog.cooked + '!';
+    return Sam;
+};
+{% endhighlight %}
+<span>Notice the keywords 'let' and 'return' ...</span> 
+<span>Represent the 'alpha' and the 'omega' of the method of the function.</span>
+</pre>
+    <hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Extraction</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+    <span>The final step in the process is figuring out how to render the creation in a browser console window.</span>
+</p>
+    <hr class='green-groove' />
+
+<pre class="flex-box">
+<span>Concatenate the Object-string with the Object-function ...</span>
+{% highlight html linenos %}
+console.log(hotString + hotDog.fetchElements());
+{% endhighlight %}
+<span>Note. The console.log method is a built-in function of Javascript ...</span>
+<span>The console.log method prints a log statement to the browser console window.</span>
+</pre>
+    <hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Rendering the Paragraph</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>Hey! We've made a program!</span>
+</p>
+    <hr class="green-groove" />
+
+<p>
+	<span>Let's compile and run the program in the Firefox Web-console.</span>
+</p>
+    <hr class="green-groove" />
+
+<pre class="flex-box">
+<span>Compiling the program for simple copy and paste ...</span>
+{% highlight html %}
+var hotDog = new Object();
+var hotString = new String('This is a very hot dog!');
+hotDog.degree = 'Fahrenheit';
+hotDog.temperature = 99;
+hotDog.cooked = true;
+hotDog.fetchElements = function() {
+    let Sam = ' Sensing the temperature in ' + 
+    hotDog.degree + ', ' + 
+    'I notice the hot-dog reads ' + 
+    hotDog.temperature + ' degrees. ' + 
+    'Therefore, the question of whether or not ' +
+    'the hot-dog is cooked is undeniably ' + 
+    hotDog.cooked + '!';
+    return Sam;
+};
+console.log(hotString + hotDog.fetchElements());
+{% endhighlight %}
+<span>Copy and paste the above code block into the Firefox Web-console ...</span>
+<span>Then, hit the Enter key.</span>
+</pre>
+    <hr class="green-groove" />
+
+<p>
+<span><b>Note</b>.</span>
+<span>You can clear the Firefox Web-console by clicking on the trash-can icon.</span>
+<span>Be sure to also purge the browser memory prior to execution by re-setting ( re-loading ) the browser window.</span>
+<p>
+    <hr class="green-groove" />
+
+<pre class="flex-box">
+<span lang="es" title="Sp. for 'Finish'">Finito! <i class="icon-large icon-flower"></i>( Interlude )</span>
+</pre>
+    <hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Custom Constructor Functions</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+    <span>Now that we know how to construct a simple Object-object from the built-in Object constructor ...</span>
+</p>
+    <hr class='green-groove' />
+
+<p>
+    <span>Let's build a more complex <b>Custom Constructor Function</b> ...</span>
+</p>
+
+<p>
+    <span>From which we may choose to unleash a fleet of instantiated Like-objects upon the unsuspecting world.</span>
+</p>
+    <hr class='green-groove' />
+
+<p>
+<span>To create a new Custom-object constructor we must first declare, as above, a Function Object.</span>
+</p>
+    <hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Declare the Function Object ...</span>
+{% highlight html linenos %}
+function() {};
+{% endhighlight %}
+<span>Looks familiar, heh?</span>
+</pre>
+    <hr class='green-groove' />
+
+<p>
+    <span>Next, we assign the Function Object to the name of our new class of Like-objects.</span> 
+    <span>In this case, assign the Function Object to the Variable 'machinea' thus creating a Custom-object constructor template.</span>
+</p>
+    <hr class='green-groove' />
+    
+<pre class='flex-box'>
+<span>Assign the Function Object ...</span>
+{% highlight html linenos %}
+var Machinea = function() {};
+{% endhighlight %}
+<span>We are not quite ready to unleash ...</span>
+<span lang="es" title="Sp. future tense for 'We will need'">Necesitaremos some properties and methods.</span>
+</pre>
+    <hr class='green-groove' />
+
+<hgroup class="text-left">
+	<h4>Custom-object Constructors</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>To fill in the blanks of our Custom-object constructor template ...</span>
+</p>
+
+<p>
+    <span>We must think of the properties and methods of our new class of Like-objects.</span>
+</p>
+
+<p>
+    <span>For example, our 'Machinea' can fly, specifically they can 'hover'.</span>
+</p>
+
+<p>
+	<span>Therefore, we can add the 'hover' method to our Custom-object constructor template, as follows:</span>
+</p>
+    <hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Add the 'hover' method to the Custom-object constructor template using 'this-dot' notation ...</span>
+{% highlight html linenos %}
+var Machinea = function() {
+    this.hover = function() {
+        let Blue = 'I can hover like a bee ..., ' +
+        'and, sting like one, too!';
+        return Blue;
+    };
+};
+{% endhighlight %}
+<span>We've discovered another method ... to 'Sting'!</span>
+</pre>
+    <hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Add the 'sting' method to the Custom-object constructor template using 'this-dot' notation ...</span>
+{% highlight html linenos %}
+var Machinea = function() {
+    this.hover = function() {
+        let Blue = 'I can hover like a bee ..., ' +
+        'and, sting like one, too!';
+        return Blue;
+    };
+
+    this.sting = function() {
+        let Red = ' Does that hurt? ...! ';
+        return Red;
+    };
+};
+{% endhighlight %}
+<span>Now, let's work on the properties of 'Machinea'.</span>
+</pre>
+    <hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Add some properties to the argument of the Custom-object constructor template ...</span>
+<span>Describe each property using 'this-dot' notation ...</span>
+{% highlight html linenos %}
+var Machinea = function(count, size, color, tentacles, lazer) {
+    this.count = count;
+    this.size = size;
+    this.color = color;
+    this.tentacles = tentacles;
+    this.lazer = lazer;
+
+    this.hover = function() {
+        let Blue = 'I can hover like a bee ..., ' +
+        'and, sting like one, too!';
+        return Blue;
+    };
+
+    this.sting = function() {
+        let Red = ' Does that hurt? ...! ';
+        return Red;
+    };
+};
+{% endhighlight %}
+<span>Next, Add the 'fetchElements' method to the Custom-object constructor template.</span>
+</pre>
+    <hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Add the 'fetchElements' method to the Custom-object constructor template using 'this-dot' notation ...</span>
+{% highlight html linenos %}
+var Machinea = function(count, size, color, tentacles, lazer) {
+    this.count = count;
+    this.size = size;
+    this.color = color;
+    this.tentacles = tentacles;
+    this.lazer = lazer;
+
+    this.hover = function() {
+        let Blue = 'I can hover like a bee ..., ' +
+        'and, sting like one, too!';
+        return Blue;
+    };
+
+    this.sting = function() {
+        let Red = ' Does that hurt? ...! ';
+        return Red;
+    };
+
+    this.fetchElements = function() {
+        let Green = 'Reporting the citing of ' + 
+        '(' + this.count + ') ' +
+        this.size + ' count, ' + this.color + 
+        ' Machinea with ' + '(' + this.tentacles + ')' +
+        ' tentacles each and ' + lazer + 
+        ' lazer capabilities.';
+        return Green;
+    };
+};
+{% endhighlight %}
+<span>Explain further ...</span>
+</pre>
+    <hr class='green-groove' />
+
+<hgroup class="text-left">
+	<h4>Instantiate an Object</h4>
+</hgroup>
+	<hr class="green-groove" />
+<p>
+	<span>Using our new template, we can instantiate a new Object of the Machinea class.</span>
+</p>
+    <hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Create a new report of the Machinea class ...</span>
+{% highlight html linenos %}
+var reportOne = new Machinea(100, large, black, 30, true);
+{% endhighlight %}
+<span>The Machinea class facilitates multiple reports of citings.</span>
+</pre>
+<hr class='green-groove' />
+
+<hgroup class="text-left">
+	<h4>Rendering the Elements Report</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>Hey! We've made another program!</span>
+</p>
+    <hr class="green-groove" />
+
+<p>
+	<span>Let's compile and run the program in the Firefox Web-console.</span>
+    <span>Initially, let's compile the program for a return accouting of the elements of the new instance 'reportOne'.</span> 
+</p>
+    <hr class="green-groove" />
+
+<pre class="flex-box">
+<span>Compiling an Elements Report for both Properties and Methods ...</span>
+{% highlight html %}
+var Machinea = function(count, size, color, tentacles, lazer) {
+    this.count = count;
+    this.size = size;
+    this.color = color;
+    this.tentacles = tentacles;
+    this.lazer = lazer;
+
+    this.hover = function() {
+        let Blue = 'I can hover like a bee ..., ' +
+        'and, sting like one, too!';
+        return Blue;
+    };
+
+    this.sting = function() {
+        let Red = ' Does that hurt? ...! ';
+        return Red;
+    };
+
+    this.fetchElements = function() {
+        let Green = 'Reporting the citing of ' + 
+        '(' + this.count + ') ' +
+        this.size + ' count, ' + this.color + 
+        ' Machinea with ' + '(' + this.tentacles + ')' +
+        ' tentacles each and ' + lazer + 
+        ' lazer capabilities.';
+        return Green;
+    };
+};
+var reportOne = new Machinea(100, 'large', 'black', 30, true);
+console.log(reportOne);
+{% endhighlight %}
+<span>Copy and paste the above code block into the Firefox Web-console ...</span>
+<span>Then, hit the Enter key.</span>
+</pre>
+    <hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Rendering the Results of the Internal Methods of the Instance</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>Can we render the results of the methods inside the template, as well?</span>
+</p>
+
+<p>
+    <span><b>Answer</b>.</span>
+    <span>Yes, we can ... with a little transformation, as follows:</span>
+</p>
+    <hr class='green-groove' />
+
+<pre class="flex-box">
+<span>Concatenate the three methods of the Custom-object constructor template ...</span>
+{% highlight html linenos %}
+console.log(this.hover() + this.sting() + this.fetchElements());
+{% endhighlight %}
+<span>Note. The methods inside the Instance template must now be rendered ...</span>
+<span>Relative to the new instance 'reportOne'.</span>
+</pre>
+    <hr class="green-groove" />
+
+<p>
+    <span>The internal methods are now transformed from the template 'this' to the instance 'reportOne'.</span>
+</p>
+    <hr class="green-groove" />
+
+<pre class='flex-box'>
+<span>Rendering the results of the Internal methods ...</span>
+{% highlight html linenos %}
+console.log(reportOne.hover() + reportOne.sting() + reportOne.fetchElements());
+{% endhighlight %}
+<span>Add this additional console line below the Elements Report line.</span>
+</pre>
+<hr class='green-groove' />
+
+<pre class="flex-box">
+<span>Compiling an Elements Report for both Properties and Methods ...</span>
+<span>Plus, the result of the Internal methods.</span>
+{% highlight html %}
+var Machinea = function(count, size, color, tentacles, lazer) {
+    this.count = count;
+    this.size = size;
+    this.color = color;
+    this.tentacles = tentacles;
+    this.lazer = lazer;
+
+    this.hover = function() {
+        let Blue = 'I can hover like a bee ..., ' +
+        'and, sting like one, too!';
+        return Blue;
+    };
+
+    this.sting = function() {
+        let Red = ' Does that hurt? ...! ';
+        return Red;
+    };
+
+    this.fetchElements = function() {
+        let Green = 'Reporting the citing of ' + 
+        '(' + this.count + ') ' +
+        this.size + ' count, ' + this.color + 
+        ' Machinea with ' + '(' + this.tentacles + ')' +
+        ' tentacles each and ' + lazer + 
+        ' lazer capabilities.';
+        return Green;
+    };
+};
+var reportOne = new Machinea(100, 'large', 'black', 30, true);
+console.log(reportOne);
+console.log(reportOne.hover() + reportOne.sting() + 
+reportOne.fetchElements());
+{% endhighlight %}
+<span>Copy and paste the above code block into the Firefox Web-console ...</span>
+<span>Then, hit the Enter key.</span>
+</pre>
+    <hr class="green-groove" />
+
+<pre class='flex-box'>
+    <span lang='es' title='Sp. for 'Finish''>Finito! <i class='icon-large icon-flower'></i></span>
+</pre>
+    <hr class='green-groove' />
+
+<footer class="page-footer center-block">
+	<br />
+	<p>
+		<span><b>Source</b>:</span>
+    	<span><a href="#"
+        title="Click to Review Javascript Succinctly by Cody Lindley"
+        target="_blank">Javascript Succinctly</a></span>
+	</p>
+
+	<p>
+		<span>See: The </span>
+        <span><a href="#"
+        title="Click to Review Javascript Succinctly by Cody Lindley"
+        target="_blank">eBook</a>
+		<span>by</span>
+		<a href="#"
+        title="Click to Review the Author Cody Lindley"
+        target="_blank">Cody Lindley</a></span>
+	</p>
+
+	<p>
+		<span>Original Copyright 2012 Syncfusion, Inc. | Technology Resource Portal</span>
+		<br />
+		<span>Morrisville, NC USA</span>
+	</p>
+		<hr class="green-groove" />
+		
+	{% include footer.htm %}
+</footer>
+
+</article>
+</main>
+
+</div>
+</div>
