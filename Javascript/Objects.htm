@@ -305,14 +305,14 @@ var Machinea = function() {
 {% endhighlight %}
 <span>Now, let's work on the properties of 'Machinea'.</span>
 </pre>
-    <hr class='green-groove' />
 
 <pre class='flex-box'>
 <span>Add some properties to the argument of</span>
 <span>the Custom-object constructor template ...</span>
 <span>Describe each property using 'this-dot' notation ...</span>
 {% highlight html linenos %}
-var Machinea = function(count, size, color, tentacles, lazer) {
+var Machinea = function(count, size, color,
+    tentacles, lazer) {
     this.count = count;
     this.size = size;
     this.color = color;
@@ -340,7 +340,8 @@ var Machinea = function(count, size, color, tentacles, lazer) {
 <span>Custom-object constructor template using</span>
 <span>'this-dot' notation ...</span>
 {% highlight html linenos %}
-var Machinea = function(count, size, color, tentacles, lazer) {
+var Machinea = function(count, size, color,
+    tentacles, lazer) {
     this.count = count;
     this.size = size;
     this.color = color;
@@ -385,7 +386,8 @@ var Machinea = function(count, size, color, tentacles, lazer) {
 <pre class='flex-box'>
 <span>Create a new report of the Machinea class ...</span>
 {% highlight html linenos %}
-var reportOne = new Machinea(100, large, black, 30, true);
+var reportOne = new Machinea(100, large, black,
+    30, true);
 {% endhighlight %}
 <span>The Machinea class facilitates multiple reports of citings.</span>
 </pre>
@@ -411,7 +413,8 @@ var reportOne = new Machinea(100, large, black, 30, true);
 <span>Compiling an Elements Report for both</span> 
 <span>Properties and Methods ...</span>
 {% highlight html linenos %}
-var Machinea = function(count, size, color, tentacles, lazer) {
+var Machinea = function(count, size, color,
+    tentacles, lazer) {
     this.count = count;
     this.size = size;
     this.color = color;
@@ -439,7 +442,8 @@ var Machinea = function(count, size, color, tentacles, lazer) {
         return Green;
     };
 };
-var reportOne = new Machinea(100, 'large', 'black', 30, true);
+var reportOne = new Machinea(100, 'large', 'black',
+    30, true);
 console.log(reportOne);
 {% endhighlight %}
 <span>Copy and paste the above code block</span> 
@@ -467,7 +471,8 @@ console.log(reportOne);
 <span>Concatenate the three methods of the</span> 
 <span>Custom-object constructor template ...</span>
 {% highlight html linenos %}
-console.log(this.hover() + this.sting() + this.fetchElements());
+console.log(this.hover() + this.sting() + 
+    this.fetchElements());
 {% endhighlight %}
 <span>Note. The methods inside the Instance template</span> 
 <span>must now be rendered relative to the</span> 
@@ -483,7 +488,8 @@ console.log(this.hover() + this.sting() + this.fetchElements());
 <pre class='flex-box'>
 <span>Rendering the results of the Internal methods ...</span>
 {% highlight html linenos %}
-console.log(reportOne.hover() + reportOne.sting() + reportOne.fetchElements());
+console.log(reportOne.hover() + reportOne.sting() +
+    reportOne.fetchElements());
 {% endhighlight %}
 <span>Add this additional console line below</span>
 <span>the Elements Report line.</span>
@@ -494,7 +500,8 @@ console.log(reportOne.hover() + reportOne.sting() + reportOne.fetchElements());
 <span>Properties and Methods ...</span>
 <span>Plus, the result of the Internal methods.</span>
 {% highlight html linenos %}
-var Machinea = function(count, size, color, tentacles, lazer) {
+var Machinea = function(count, size, color,
+    tentacles, lazer) {
     this.count = count;
     this.size = size;
     this.color = color;
@@ -522,10 +529,11 @@ var Machinea = function(count, size, color, tentacles, lazer) {
         return Green;
     };
 };
-var reportOne = new Machinea(100, 'large', 'black', 30, true);
+var reportOne = new Machinea(100, 'large', 'black',
+    30, true);
 console.log(reportOne);
 console.log(reportOne.hover() + reportOne.sting() + 
-reportOne.fetchElements());
+    reportOne.fetchElements());
 {% endhighlight %}
 <span>Copy and paste the above code block</span> 
 <span>into the Firefox Web-console ...</span>
@@ -559,7 +567,8 @@ reportOne.fetchElements());
 	</p>
 
 	<p>
-		<span>Original Copyright 2012 Syncfusion, Inc. | Technology Resource Portal</span>
+		<span>Original Copyright 2012 Syncfusion, Inc.</span>
+        <span>| Technology Resource Portal |</span>
 		<br />
 		<span>Morrisville, NC USA</span>
 	</p>
