@@ -102,8 +102,10 @@ function() {};
 </pre>
 
 <pre class="flex-box">
-<span>Assign the new function Object to 'fetchElements' using 'dot' notation ...</span>
-<span>Create a method within the curly braces { ... } of the function.</span>
+<span>Assign the new function Object to 'fetchElements'</span>
+<span>using 'dot' notation ...</span>
+<span>Create a method within the curly braces { ... }</span> 
+<span>of the function.</span>
 {% highlight html linenos %}
 hotDog.fetchElements = function() {
     let Sam = ' Sensing the temperature in ' + 
@@ -116,8 +118,9 @@ hotDog.fetchElements = function() {
     return Sam;
 };
 {% endhighlight %}
-<span>Notice the keywords 'let' and 'return' ...</span> 
-<span>Represent the 'alpha' and the 'omega' of the method of the function.</span>
+<span>Notice the reserved keywords 'let' and 'return' ...</span> 
+<span>They represent the 'alpha' and the 'omega' of the</span> 
+<span>method of the function.</span>
 </pre>
     <hr class="green-groove" />
 
@@ -136,8 +139,10 @@ hotDog.fetchElements = function() {
 {% highlight html linenos %}
 console.log(hotString + hotDog.fetchElements());
 {% endhighlight %}
-<span>Note. The console.log method is a built-in function of Javascript ...</span>
-<span>The console.log method prints a log statement to the browser console window.</span>
+<span>Note. The console.log method is a built-in</span>
+<span>function of Javascript ...</span>
+<span>The console.log method prints a log statement</span> 
+<span>to the browser console window.</span>
 </pre>
     <hr class="green-groove" />
 
@@ -176,7 +181,8 @@ hotDog.fetchElements = function() {
 };
 console.log(hotString + hotDog.fetchElements());
 {% endhighlight %}
-<span>Copy and paste the above code block into the Firefox Web-console ...</span>
+<span>Copy and paste the above code block into</span> 
+<span>the Firefox Web-console ...</span>
 <span>Then, hit the Enter key.</span>
 </pre>
     <hr class="green-groove" />
@@ -265,7 +271,8 @@ var Machinea = function() {};
     <hr class='green-groove' />
 
 <pre class='flex-box'>
-<span>Add the 'hover' method to the Custom-object constructor template using 'this-dot' notation ...</span>
+<span>Add the 'hover' method to the Custom-object</span> 
+<span>constructor template using 'this-dot' notation ...</span>
 {% highlight html linenos %}
 var Machinea = function() {
     this.hover = function() {
@@ -280,7 +287,8 @@ var Machinea = function() {
     <hr class='green-groove' />
 
 <pre class='flex-box'>
-<span>Add the 'sting' method to the Custom-object constructor template using 'this-dot' notation ...</span>
+<span>Add the 'sting' method to the Custom-object</span> 
+<span>constructor template using 'this-dot' notation ...</span>
 {% highlight html linenos %}
 var Machinea = function() {
     this.hover = function() {
@@ -300,7 +308,8 @@ var Machinea = function() {
     <hr class='green-groove' />
 
 <pre class='flex-box'>
-<span>Add some properties to the argument of the Custom-object constructor template ...</span>
+<span>Add some properties to the argument of</span>
+<span>the Custom-object constructor template ...</span>
 <span>Describe each property using 'this-dot' notation ...</span>
 {% highlight html linenos %}
 var Machinea = function(count, size, color, tentacles, lazer) {
@@ -322,12 +331,14 @@ var Machinea = function(count, size, color, tentacles, lazer) {
     };
 };
 {% endhighlight %}
-<span>Next, Add the 'fetchElements' method to the Custom-object constructor template.</span>
+<span>Next, Add the 'fetchElements' method to</span> 
+<span>the Custom-object constructor template.</span>
 </pre>
-    <hr class='green-groove' />
 
 <pre class='flex-box'>
-<span>Add the 'fetchElements' method to the Custom-object constructor template using 'this-dot' notation ...</span>
+<span>Add the 'fetchElements' method to the</span> 
+<span>Custom-object constructor template using</span>
+<span>'this-dot' notation ...</span>
 {% highlight html linenos %}
 var Machinea = function(count, size, color, tentacles, lazer) {
     this.count = count;
@@ -397,7 +408,8 @@ var reportOne = new Machinea(100, large, black, 30, true);
     <hr class="green-groove" />
 
 <pre class="flex-box">
-<span>Compiling an Elements Report for both Properties and Methods ...</span>
+<span>Compiling an Elements Report for both</span> 
+<span>Properties and Methods ...</span>
 {% highlight html linenos %}
 var Machinea = function(count, size, color, tentacles, lazer) {
     this.count = count;
@@ -430,7 +442,8 @@ var Machinea = function(count, size, color, tentacles, lazer) {
 var reportOne = new Machinea(100, 'large', 'black', 30, true);
 console.log(reportOne);
 {% endhighlight %}
-<span>Copy and paste the above code block into the Firefox Web-console ...</span>
+<span>Copy and paste the above code block</span> 
+<span>into the Firefox Web-console ...</span>
 <span>Then, hit the Enter key.</span>
 </pre>
     <hr class="green-groove" />
@@ -451,12 +464,14 @@ console.log(reportOne);
     <hr class='green-groove' />
 
 <pre class="flex-box">
-<span>Concatenate the three methods of the Custom-object constructor template ...</span>
+<span>Concatenate the three methods of the</span> 
+<span>Custom-object constructor template ...</span>
 {% highlight html linenos %}
 console.log(this.hover() + this.sting() + this.fetchElements());
 {% endhighlight %}
-<span>Note. The methods inside the Instance template must now be rendered ...</span>
-<span>Relative to the new instance 'reportOne'.</span>
+<span>Note. The methods inside the Instance template</span> 
+<span>must now be rendered relative to the</span> 
+<span>new instance 'reportOne'.</span>
 </pre>
     <hr class="green-groove" />
 
@@ -470,12 +485,13 @@ console.log(this.hover() + this.sting() + this.fetchElements());
 {% highlight html linenos %}
 console.log(reportOne.hover() + reportOne.sting() + reportOne.fetchElements());
 {% endhighlight %}
-<span>Add this additional console line below the Elements Report line.</span>
+<span>Add this additional console line below</span>
+<span>the Elements Report line.</span>
 </pre>
-<hr class='green-groove' />
 
 <pre class="flex-box">
-<span>Compiling an Elements Report for both Properties and Methods ...</span>
+<span>Compiling an Elements Report for both</span> 
+<span>Properties and Methods ...</span>
 <span>Plus, the result of the Internal methods.</span>
 {% highlight html linenos %}
 var Machinea = function(count, size, color, tentacles, lazer) {
@@ -511,7 +527,8 @@ console.log(reportOne);
 console.log(reportOne.hover() + reportOne.sting() + 
 reportOne.fetchElements());
 {% endhighlight %}
-<span>Copy and paste the above code block into the Firefox Web-console ...</span>
+<span>Copy and paste the above code block</span> 
+<span>into the Firefox Web-console ...</span>
 <span>Then, hit the Enter key.</span>
 </pre>
     <hr class="green-groove" />
