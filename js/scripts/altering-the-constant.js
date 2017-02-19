@@ -1,5 +1,6 @@
 //Altering the Constant
 "use strict";
+
 //Set the constants
 const TAX_RATE = 0.25; /* where TAX_RATE is a decimal percentage */
 const SHARES = 10000; /* where issued and outstanding SHARES are expressed in number of voting units */

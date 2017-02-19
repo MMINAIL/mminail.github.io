@@ -27,35 +27,29 @@ title: Square It! in Javascript | MMINAIL
 	<span>The following code block represents the current version of the subject program written in Javascript by the author(s) at the <a href="https://github.com/rwebaz/" title="Click To Review the Rwebaz repos" target="_blank">rwebaz</a> repos.</span>
 </p>
 
-<p>
-	<span><b>Note</b>.</span>
-	<span>Carriage returns ' ➡️ ' have been added to the code lines when needed to faciliate viewing in a landscape mode on smaller viewports such as smartphones and tablets.</span>
-</p>
-
-<pre>
-<span>The program as originally written in Javascript, as is ...</span>
-{% highlight javascript %}
+<pre class="flex-box">
+<span>The program as originally written in (.js)</span>
+{% highlight javascript linenos %}
 //Square It
 "use strict";
-//Declare and assign the arrow function ➡️ 
-//to accept one argument
+//Declare and assign the arrow function
+/* This arrow function accepts one argument */
 let SQ = (nbr) => {
-  //Set the input variable locally ➡️ 
-  //within the function
+  //Set the input variable interally
   var nbr = prompt("Please enter an integer ...")
   /* where nbr = any whole integer */
-  //Assign the calculation ➡️ 
-  //to a local variable
+  //Assign the calculation to a local variable
   var sq = nbr * nbr;
   /* where sq = square of the number */
   //Alert the result to the end-user
-  window.alert("The square of the ➡️ 
-  number " + nbr + " given is " + sq);
+  window.alert("The square of the number "
+  + nbr + " given is " + sq);
   //Return and archive the result at the console
-  return("The square of the input " ➡️ 
+  return("The square of the input "
   + nbr + " = " + sq);
 };
 {% endhighlight %}
+<span>Time to execute!</span>
 </pre>
 	<hr class="green-groove" />
 
@@ -66,88 +60,85 @@ let SQ = (nbr) => {
 <p>
     <span>Ok ... it's time to give this program a whirl!</span>
 </p>
+	<hr class="green-groove" />
+
+{% include firefox.htm %}
+
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Strict Math</h4>
+</hgroup>
+    <hr class='green-groove' />
 
 <p>
-	<span>Open up a new window in the <a href="https://www.mozilla.org/en-US/firefox/new/" title="Click to Download the Current Version of the Firefox Browser" target="_blank">Firefox</a> browser and click on ...</span>
+    <span>So far, everything appears to work fine!</span>
+    <span>But, how will the code execute in Strict Mode?</span>
+    <span>One way to find out is to transfer our code to a (<a href="../js/scripts/square-it.js" title="Click To Review the Original Javascript file" target="_blank">.js</a>) page and invoke 'Strict Mode'' at the top of the program.</span>
 </p>
 
-<p>
-	<span>The 'open menu' aka the 'three-bars icon' to the far right of the now unpopulated 'search or enter an address' bar.</span>
-</p>
-
-<p>
-    <span>Next, select the category 'Developer'.</span>
-</p>
-
-<p>
-    <span>Finally, select the Web Developer tools submenu by clicking 'Web Console'.</span>
-</p>
-
-<p>
-	<span>You will now wish to go ahead and copy and paste the above code into the program entry line at the bottom of the console after removing the illegal right-arrow <code>➡️ </code> carriage returns from the code, if any.</span> 
-</p>
-
-<p>
-	<span>Or ...</span>
-</p>
-
-<p>
-    <span><b>Note</b>.</span>
-    <span>You can also alternatively simply copy and paste the code from the original (.<a href="../js/scripts/square-it.js" title="Click to Review the Original Javascript program file 'square-it'" target="_blank">js</a>) program file, as well!</span>
-</p>
-
-<pre>
-<span>When entered, the program initially returns ...</span>
-{% highlight javascript %}
-￩ "use strict"
+<pre class='flex-box'>
+<span>Invoke Strict Mode ...</span>
+{% highlight html linenos %}
+//Square It
+'use strict';
 {% endhighlight %}
+<span>Place at the top of program.</span>
 </pre>
+<hr class='green-groove' />
+
+<p>
+    <span>Let's try that.</span>
+</p>
 
 <p>
 	<span>Not to worry ... We are using <a href="http://es6-features.org/" title="Click to Review the Changes in EcmaScript 6" target="_blank">EcmaScript 6</a> 'strict mode'.</span>
 </p>
 
 <p>
-	<span>So, thank you to the Javascript engine for rendering the "use strict" reminder text in the console window!</span>
+	<span>So, thank you to the Javascript engine for rendering the "use strict" reminder text in the console window at the pause!</span>
 </p>
 
 <p>
-    <span>By now, it is time to type the command needed into the Web Console entry line ( at the bottom of the console ) in order to execute our function SQ in the console window.</span>
+    <span>By now, it is time to type the command needed into the Web-console entry line ( at the bottom of the console ) in order to execute our function SQ in the console window.</span>
 </p>
 
-<pre>
+<pre class="flex-box">
 <span>Execute the function SQ with an open argument ...</span>
 {% highlight javascript %}
-//The execution command for the ➡️ 
-//SQ function is ...
+//The SQ function execution command
 SQ();
-/* Notice the open argument accepts ➡️ 
-the prompt nbr */
 {% endhighlight %}
+<span>Click the Enter key.</span>
 </pre>
 
 <p>
-	<span>Upon excution, a prompt-box pops up to show the end-user where to enter his or her subject squarable digit(s).</span>
+	<span>Upon execution, a prompt-box pops up to show the end-user where to enter his or her subject squarable digits ie.) the real number that will be squared by the method within the function.</span>
 </p>
 
 <p>
-	<span>ie.) The real number that will be squared by the end-user within the function.</span>
-</p>
-
-<p>
-	<span>Upon <code>enter</code>, secondly ... an alert-box pops up to show the end-user what the result of the calculation is!</span>
+	<span>Secondly, an alert-box pops up to show the end-user what the result of the calculation is!</span>
 </p>
 
 <p>
     <span>Finally, to end the function, the result of the calculation is returned to the console as an archive of the activity.</span>
 </p>
 
-<pre>
-<span>The archive of the activity; where input = 100</span>
+<p>
+	<span><b>Tip</b>.</span>
+	<span>When running the method, the open argument of the function accepts the prompt var (nbr).</span>
+</p>
+
+<pre class="flex-box">
+<span>The archive of the activity ...</span>
 {% highlight javascript %}
 ￩ "The square of the input 100 = 10000"
 {% endhighlight %}
-<span lang="es" title="Sp. 'For Finish'">Finito!</span>&nbsp;...&nbsp;<i class="icon-large icon-flower"></i>
+<span>Where input = 100.</span>
+</pre>
+
+<pre class='flex-box'>
+    <span lang='es' title='Sp. for 'Finish''>Finito! <i class='icon-large icon-flower'></i></span>
 </pre>
 
 <p>
@@ -156,15 +147,23 @@ the prompt nbr */
 </p>
 
 <p>
-	<span>To compile one article at the <a href="https://mminail.github.io" title="Click to Review the MMINAIL - GitHub directory" target="_blank">MMINAIL</a> directory located at <a href="https://pages.github.com/" title="Click to Review GitHub Pages" target="_blank">GitHub Pages</a>.</span>
+	<span>To compile one article at the</span> 
+	<span><a href='/index.htm' title='Click to Jump To the Home Page of the MMINAIL Central Live Repo (CLR)' target='_self'>MMINAIL</a> Central Live Repo (CLR).</span>
 </p>
 
 <p>
-	<span>If you find this article interesting and would like to help fund the day-to-day operations of the <a href="http://cannabuds.us" title="Click to Review the MMINAIL website" target="_blank">MMINAIL</a> on a nominal basis ...</span>
+	</a>You can find our Central Working Repo (CWR) at</span> 
+	<a href="https://pages.github.com/" title="Click to Review GitHub Pages" target="_blank">GitHub Pages</a> 
+	<span> under the <a href='https://github.com/MMINAIL/mminail.github.io' title='Click To Fork the MMINAIL Central Working Repo (CWR) at GitHub' target='_blank'>MMINAIL</a> Central Working Repo (CWR).</span>
 </p>
 
 <p>
-	<span>Then, please visit our <a href="https://cash.me/$MMINAIL" title="Click to Donate to the MMINAL" target="_blank">Donate Page</a> at the <a href="https://cash.me/$MMINAIL" title="Click to Donate to the MMINAL" target="_blank">Square Up - Cash Me</a> donation portal.</span>
+	<span>If you find this article interesting and would like to help fund the day-to-day operations of the</span> 
+	<span><a href='/index.htm' title='Click to Jump To the Home Page of the MMINAIL Central Live Repo (CLR)' target='_self'>MMINAIL</a> Central Live Repo (CLR) on a nominal basis ...</span> 
+</p>
+
+<p>
+	<span>Then, please visit our <a href="https://cash.me/$MMINAIL" title="Click to Donate to the MMINAL" target="_blank">Donation Page</a> at the <a href="https://cash.me/$MMINAIL" title="Click to Donate to the MMINAL" target="_blank">Square Up - Cash Me</a> portal.</span>
 </p>
 
 <p>
@@ -172,8 +171,21 @@ the prompt nbr */
 </p>
 
 <p>
-	<span>Thank you for your efforts to help bring medicinal access to all patients globally who are suffering from maladies receptive to <a href="https://www.leafly.com/" title="Click to Review the Leafly website" target="_blank">Cannabis</a>.</span>
+	<span>Thank you for your efforts to help bring medicinal access to all patients globally who are suffering from maladies receptive to</span> 
+	<a href="https://www.leafly.com/" title="Click to Review the Leafly website" target="_blank">Cannabis</a> 
+	<span>and other herbal plants such as</span> 
+	<a href="../Landraces/basil.htm" title="Click to Jump To the Basil Page of the MMINAIL Central Live Repo (CLR)" target="_self">Basil</a>.</span>
 </p>
+
+<p>
+	<span class="script-text">The Management</span>
+</p>
+
+<picture>
+<a href='https://mminail.github.io' title='Click To Review the Home page of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation' target='_blank'>
+<img class='img-responsive img-circle' src='../images/svg/MMINAIL-Logo-Badge-Original-Registered-Transparent-320-x-320.svg' alt='Medical Marijuana Initiative of North America - International Limited USPTO Registered Logo Badge' /></a>
+</picture>
+<br />
 
 <footer class="page-footer center-block">
 	<br />
@@ -196,7 +208,9 @@ the prompt nbr */
 	</p>
 
 	<p>
-        <span>Original Copyright 2016 Syncfusion, Inc. | Technology Resource Portal</span>
+        <span>Original Copyright 2016 Syncfusion, Inc.<span>
+		<br />
+		<span>| Technology Resource Portal |</span>
         <br />
         <span>Morrisville, NC USA</span>
 	</p>
