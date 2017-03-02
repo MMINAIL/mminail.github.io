@@ -1,0 +1,181 @@
+---
+layout: default
+title: Unicode Code Points | MMINAIL
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+
+<main>
+<article>
+
+<hgroup class="text-left">
+	<h3>Unicode Code Points</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p class="lead">
+	<span>Welcome! This is the Unicode Code Point (<abbr class='oblique-text' title='Uniform Code Point'>UCP</abbr> ) page of the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr>.</span>
+</p>
+	<hr class="green-groove" />
+	
+<p>
+    <span>A Unicode Code Point or <abbr class='oblique-text' title='Unicode Code Point'>UCP</abbr> may be used to render a symbol ie.) '\u{1F600}' or 'regular expression' to the window ( screen ) or console in Javascript.</span>
+</p>
+
+<p>
+    <span>Using the 'escape-u' <kbd>\u</kbd> flag and a <abbr class='oblique-text' title='Uniform Code Point'>UCP</abbr> enclosed in curly braces <kbd>{ucpxx}</kbd>, a regular expression can be forced into the special Unicode mode.</span>
+</p>
+	<hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Rendering Unicode Code Points</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+    <span>In the following code block, the <abbr class='oblique-text' title='Uniform Code Point'>UCP</abbr> for a 'colorful rocket ship'' is assigned to the variable 'codept'.</span>
+</p>
+
+<p>
+    <span>Next, a function is created to house both the rendering of the symbol within an window alert box, as well as the return of the symbol to the console upon user acceptance.</span>
+</p>
+    <hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Return a Unicode code point to the console ...</span>
+{% highlight javascript linenos %}
+//Set the global variable
+var codept = "\u{1F680}";
+//Create the fuction
+let uni = function() {
+    //Write the global variable to the screen
+    window.alert("Code point = " + codept);
+    //Return the Code point to the console
+    return codept;
+}
+//Execute the function
+uni();
+{% endhighlight %}
+<span>Copy n paste the above code to a Javascript console</span>
+</pre>
+    <hr class='green-groove' />
+
+<p>
+	<span>From the Uniform Character Code (<abbr class='oblique-text' title='Uniform Character Code'>UCC</abbr>) database, we see the block 1F680..1F6FF is reserved for 'Transport And Map Symbols'.</span>
+    <span>Hence, the first character shown is the 'colorful rocket ship'.</span>
+</p>
+
+<p>
+    <span>Let's try another <abbr class='oblique-text' title='Uniform Character Code'>UCC</abbr> block ...this time we'll work with the 'Emoticons'.</span>
+    <span>Here, we can render the 'universal smiley face' from the first entry of the block 1F600..1F64F</span>
+</p>
+
+<pre class='flex-box'>
+<span>Return a Unicode code point to the console ...</span>
+{% highlight javascript linenos %}
+//Set the global variable
+var codept = "\u{1F600}";
+//Create the fuction
+let uni = function() {
+    //Write the global variable to the screen
+    window.alert("Code point = " + codept);
+    //Return the Code point to the console
+    return codept;
+}
+//Execute the function
+uni();
+{% endhighlight %}
+<span>Copy n paste the above code to a Javascript console</span>
+</pre>
+    <hr class='green-groove' />
+
+<p>
+    <span>Now that you can see how easy it is to render a</span> 
+    <abbr class='oblique-text' title='Uniform Code Point'>UCP</abbr> into your Javascript programs,</span> 
+    <span>a prompt will now take your personal selection and then render the</span> 
+    <abbr class='oblique-text' title='Uniform Code Point'>UCP</abbr> to the Web-console.</span>
+</p>
+
+<p>
+    <span><b>Note</b>.</span>
+    <span>This time, we'll use 'strict mode' when running the program through the Web-console,</span> 
+    <span>and we'll invoke the EcmaScript 6 'Arrow' function format to receive the input from the end-user via a simple prompt.</span>
+</p>
+
+<p>
+    <span>In addition, we'll also invoke String literal 'back-ticks' to accommodate the rendering of each step along the way.</span>
+</p>
+    <hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Prompt for a Unicode code point ...</span>
+{% highlight javascript linenos %}
+//Uniform Code Points
+"use strict";
+//Declare and assign the arrow function
+/* This arrow function accepts one argument */
+let uni = (codept) => {
+    //Set the input variable interally
+    var codept = prompt("Please enter an UCP ...")
+    /* where codept = any valid Uniform Code Point */
+    //Alert back to the user the entry now entered
+    window.alert("The UCP entered is " + codept);
+    //Assign the now formatted entry internally
+    let symbl = { body: "{" + codept + "}" };
+    //Alert back to the user the upgrade #1
+    window.alert(`The UCP now enveloped in curly braces is ${symbl.body}`);
+    //Write the completed code point to the screen
+    window.alert(`The completed valid Code point format = "\\u${symbl.body}"`);
+    //Assign the original entry internally
+    let real = "\u{1F600}";
+    //Return the real code point to the console
+    return real;
+}
+//Execute the function
+uni();
+{% endhighlight %}
+<span>Copy n paste the above code to a Javascript console</span>
+</pre>
+    <hr class='green-groove' />
+
+<p>
+    <span>More to come ...</span>
+</p>
+
+<footer class="page-footer center-block">
+	<br />
+    <p>
+		<span><b>Source</b>:</span>
+		<span><a href="https://www.syncfusion.com/resources/techportal/details/ebooks/ECMAScript_6_Succinctly" 
+		title="Click to Review EcmaScript 6 Succinctly by Matthew Duffield" 
+		target="_blank">EcmaScript 6 Succinctly</a></span>
+	</p>
+
+	<p>
+		<span>See: The </span>
+		<span><a href="https://www.syncfusion.com/resources/techportal/details/ebooks/ECMAScript_6_Succinctly"
+		title="Click to Review EcmaScript 6 Succinctly by Matthew Duffield"
+        target="_blank">eBook</a>
+		<span>by</span>
+		<a href="https://www.youtube.com/watch?v=XyQ8Llzd6Tw"
+		title="Click to Review the Author Matthew Duffield"
+		target="_blank">Matthew Duffield</a></span>
+	</p>
+
+	<p>
+        <span>Original Copyright 2016 Syncfusion, Inc.<span>
+		<br />
+		<span>| Technology Resource Portal |</span>
+        <br />
+        <span>Morrisville, NC USA</span>
+	</p>
+		<hr class="green-groove" />
+	
+	{% include footer.htm %}
+</footer>
+
+</article>
+</main>
+
+</div>
+</div>
