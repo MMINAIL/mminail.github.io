@@ -104,7 +104,9 @@ uni();
 </p>
 
 <p>
-    <span>In addition, we'll also invoke String literal 'back-ticks' to accommodate the rendering of each step along the way.</span>
+    <span>In addition, we'll also invoke String literal 'back-ticks' to accommodate the rendering of each step along the way when applicable,</span>
+    <span>and we'll invoke the <abbr class='oblique-text' title='Uniform Code Point'>UCP</abbr> code of '1F600' representing the</span> 
+    <span>'universal smiley face' emoticon as default in the event the end-user fails to enter a <abbr class='oblique-text' title='Uniform Code Point'>UCP</abbr> value at the prompt.</span>
 </p>
     <hr class='green-groove' />
 
@@ -119,6 +121,8 @@ let uni = (codept) => {
     //Set the input variable interally
     var codept = prompt("Please enter an UCP ...")
     /* where codept = any valid Uniform Code Point */
+    //Set a default value if none entered
+    codept = codept || "1F600";
     //Alert back to the user the entry now entered
     window.alert("The UCP entered is " + codept);
     //Assign the now formatted entry internally
@@ -127,7 +131,7 @@ let uni = (codept) => {
     window.alert(`The UCP now enveloped in curly braces is ${symbl.body}`);
     //Write the completed code point to the screen
     window.alert(`The completed valid Code point format = "\\u${symbl.body}"`);
-    //Assign the original entry internally
+    //Assign the completed code point internally
     let real = "\u{1F600}";
     //Return the real code point to the console
     return real;
