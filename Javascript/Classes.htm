@@ -52,7 +52,8 @@ class Donor {
 <span>Set the class constructor ...</span>
 {% highlight javascript linenos %}
 class Donor {
-    constructor(firstName, lastName, eMailHandle, eMailDomain, eMotiCon) {
+    constructor(firstName, lastName, eMailHandle, 
+    eMailDomain, eMotiCon) {
     //Assign all properties to the 'this' variable
     }
 }
@@ -74,7 +75,8 @@ class Donor {
 <span>Assign the class properties ...</span>
 {% highlight javascript linenos %}
 class Donor {
-    constructor(firstName, lastName, eMailHandle, eMailDomain, eMotiCon) {
+    constructor(firstName, lastName, eMailHandle, 
+    eMailDomain, eMotiCon) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.eMailHandle = eMailHandle;
@@ -100,7 +102,8 @@ class Donor {
 <span>Set the class methods ...</span>
 {% highlight javascript linenos %}
 class Donor {
-    constructor(firstName, lastName, eMailHandle, eMailDomain, eMotiCon) {
+    constructor(firstName, lastName, eMailHandle, 
+    eMailDomain, eMotiCon) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.eMailHandle = eMailHandle;
@@ -109,21 +112,23 @@ class Donor {
     }
 
     displayback() {
-        return `The console will now reveal a message via the alert box ...
+        return `The console will now reveal a message 
+        via the alert box ...
 
-        Given. The key to a proper donor record is the capture of 
-        a valid electronic mail address.
+        Given. The key to a proper donor record is 
+        the capture of a valid electronic mail address.
         
         Dialoque
 
-        A valid email address is comprised of a valid handle, 
-        such as '${this.eMailHandle}' and a valid domain, 
-        such as '${this.eMailDomain}'.
+        A valid email address is comprised of a valid 
+        handle, such as '${this.eMailHandle}' and a 
+        valid domain, such as '${this.eMailDomain}'.
         
-        Though the importance of the capture of the donor's first name, 
-        for example ... '${this.firstName}' and the capture of the 
-        donor's last name, for example ... '${this.lastName}' 
-        is readily apparant ...
+        Though the importance of the capture of the 
+        donor's first name, for example ... 
+        '${this.firstName}' and the capture of the 
+        donor's last name, for example ... 
+        '${this.lastName}' is readily apparant ...
         
         The concatenation of the donor's email address 
         including the email handle '${this.eMailHandle}' 
@@ -132,8 +137,8 @@ class Donor {
         Plus, the domain name '${this.eMailDomain}' 
         is of critical importance to the donation puzzle.
         
-        How else to broadcast the monthly newsletter without a set of valid, 
-        opt-in email addresses?
+        How else to broadcast the monthly newsletter 
+        without a set of valid, opt-in email addresses?
 
         ${this.eMotiCon}
         
@@ -159,8 +164,9 @@ class Donor {
 </p>
 
 <pre class='flex-box'>
-<span>Instantiate a new instance ...</span>
-<span>Given. Constructor(firstName, lastName, eMailHandle, eMailDomain, eMotiCon)</span>
+<span>Instantiate a new instance ... Given.</span>
+<span>Constructor(firstName, lastName, eMailHandle,</span>
+<span>eMailDomain, eMotiCon)</span>
 {% highlight javascript linenos %}
 var author = new Donor("Adam", "Webber", 
     "cannabuds", "live.com", 
@@ -229,13 +235,18 @@ window.alert(author.displayback());
 	<br />
 	<p>
 		<span><b>Source</b>:</span>
-    	<a href="https://www.cash.me/$MMINAIL" title="Click to Donate to The Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation via Square Up -  Cash Me" target="_blank">What You Need To Know About Javascript</a>
+    	<a href="https://medmj.us/KnowJavaScript" 
+        title="Click to Review 'What You Need To Know About Javascript' by Gabriel Cánepa via Packt Pub" 
+        target="_blank">What You Need To Know About Javascript</a>
 	</p>
 
 	<p>
-		<span>See: <a href="https://www.cash.me/$MMINAIL" title="Click to Donate to The Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation via Square Up -  Cash Me" target="_blank">eBook</a>
+		<span>See: <a href="https://medmj.us/KnowJavaScript" 
+        title="Click to Review 'What You Need To Know About Javascript' by Gabriel Cánepa via Packt Pub" 
+        target="_blank">eBook</a>
 		<span>by</span>
-		<a href="https://www.cash.me/$MMINAIL" title="Click to Donate to The Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation via Square Up -  Cash Me" target="_blank">Gabriel Cánepa</a>
+		<a href="https://www.linkedin.com/in/gacanepa/" 
+        title="Click to Review the Linked In Page of Author Gabriel Cánepa" target="_blank">Gabriel Cánepa</a>
 	</p>
 		<hr class="green-groove" />
 	
