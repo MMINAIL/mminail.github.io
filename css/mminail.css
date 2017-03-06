@@ -25,7 +25,8 @@ h1 {
 }
 
 .text-neon {
-    color:lime;
+    /* color:lime; */
+    color: #004B23; /* Forest Green */
 }
 
 h2 {
