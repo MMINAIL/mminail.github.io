@@ -125,7 +125,7 @@ title: Footer VS | MMINAIL
 
 <p>
 	<span>Why?</span> 
-	<span>Because the Javascript statements of your corresponding (<a href='../js/scripts/javas-script-file.js' title='Click To Review the the complimentary Javascript file for this partitioned Worksheet' target='_blank'>.js</a>) file</span> 
+	<span>Because the Javascript statements of your corresponding (<a href='../js/scripts/resume-builder.js' title='Click To Review the the complimentary Javascript file for this partitioned Worksheet' target='_blank'>.js</a>) file</span> 
 	</span>would be loaded BEFORE the methods of the jQuery library would have a chance to work their magic upon the <code>&lt;html&gt;</code>.</span>
 </p>
 	<hr class='green-groove' />
@@ -379,17 +379,18 @@ var jKey = jQuery.noConflict();
 <hr class='green-groove' />
 
 <pre class='flex-box'>
-<span>Set Ur append functions ...</span>
+<span>Append a String</span>
 {% highlight javascript linenos %}
 jKey(function($) {
-    //Append String to the parent tag of the id
-    jKey('#test').append("The Author");
+    //Declare and initialize the var target id
+    var test = jKey('#test');
+	/* where id = "test" is the targeted wrapper set */
+	test.append("The Author");
+	//Append String to the end of the parent tag
+	/* where 'parent tag' is of the targeted wrapper set */
 });
-/* Where the id = "test" is targeted 
-appending the string 'The Author' to 
-the end of the parent tag */
 {% endhighlight %}
-<span>via the append method</span>
+<span>The var is now available</span>
 </pre>
 <hr class='green-groove' />
 

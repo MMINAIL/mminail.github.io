@@ -1,0 +1,87 @@
+---
+layout: default
+title: Parse-a-URL Page | MMINAIL
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+
+<main>
+<article>
+
+<hgroup class="text-left">
+	<h3>Parse-a-URL</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p class="lead">
+	<span>Welcome! This is the Parse-a-URL page of the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr>.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+    <span><b>Note</b>.</span>
+	<span>This page has explicit access to the local jQuery library as well as to a local complimentary working (<a href="../js/scripts/parse-a-URL.js" title="Click To Review the complimentary Javascript file for this partitioned Worksheet" target="_blank">.js</a>) file.</span> 
+</p>
+	<hr class='green-groove' />
+
+<hgroup class="text-left">
+	<h4>Focus on the 'a' Element</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<pre class='flex-box'>
+<span>Parsing a URL ...</span>
+{% highlight javascript linenos %}
+//Parse-a-URL
+'use strict';
+//Test for DOM readiness
+jQuery(function($) {
+    window.alert(`¡El DOM está listo!`);
+});
+//Declare a No Conflict method
+var jKey = jQuery.noConflict();
+//Decalre a new jKey function
+jKey(function($) {
+    var url = 'http://tutorialzine.com/books/jquery-trickshots?trick=12#comments';
+    var a = $('<a>',{ href: url });
+    window.alert('Host name: ' + a.prop('hostname'));
+    window.alert('Path: ' + a.prop('pathname'));
+    window.alert('Query: ' + a.prop('search'));
+    window.alert('Protocol: ' + a.prop('protocol'));
+    window.alert('Hash: ' + a.prop('hash'));
+});
+{% endhighlight %}
+<span>Watch those alerts for the breakdown</span>
+</pre>
+    <hr class='green-groove' />
+
+<pre class='flex-box'>
+    <span lang='es' title='Sp. for 'Finish''>Finito! <i class='icon-large icon-flower'></i></span>
+</pre>
+    <hr class='green-groove' />
+
+<footer class="page-footer center-block">
+	<br />
+	<p>
+		<span><b>Source</b>:</span>
+    	<a href="https://tutorialzine.com/books/jquery-trickshots" title="Click to Dowload the ePub 'jQuery Trickshots' by Tutorialzine" target="_blank">jQuery Trickshots</a>
+	</p>
+
+	<p>
+		<span>See: <a href="https://www.cash.me/$MMINAIL" title="Click to Dowload the ePub 'jQuery Trickshots' by Tutorialzine" target="_blank">ePub</a>
+		<span>by</span>
+		<a href="https://www.tutorialzine.com" title="Click to Dowload the ePub 'jQuery Trickshots' by Tutorialzine" target="_blank">Tutoralzine</a>
+	</p>
+		<hr class="green-groove" />
+	
+	{% include footer.htm %}
+</footer>
+
+</article>
+</main>
+
+</div>
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/scripts/parse-a-url.js"></script>
