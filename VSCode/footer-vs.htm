@@ -13,8 +13,9 @@ title: Footer VS | MMINAIL
 </hgroup>
 	<hr class="green-groove" />
 
-<p class="lead">
+<p id="test" class="lead">
 	<span>Welcome! This is the Footer VS page of the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr>.</span>
+	<span>~</span>
 </p>
 	<hr class="green-groove" />
 
@@ -72,7 +73,7 @@ title: Footer VS | MMINAIL
 </hgroup>
 	<hr class="green-groove" />
 
-<p id="test">
+<p id="rht">
 	<span>"Everything from here to the <code>&lt;script&gt;</code> tag below is 'The Skeleton' of a Working <code>&lt;html&gt;</code> template."</span>
 	<span>~</span>
 </p>
@@ -326,6 +327,141 @@ title: Footer VS | MMINAIL
 <p>
 	<span>Uncomment the 'maps dot google api(s)' <code>&lt;script&gt;</code> tag at the bottom of this page when you are ready to add an interactive Google Map to your <code>&lt;html&gt;</code> template.</span>
 </p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>Manipulating the DOM</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>Ok ... Let's have some fun.</span>
+</p>
+
+<p>
+	<span>Witness the updated (<a href='../js/scripts/resume-builder.js' title='Click To Review the the complimentary Javascript file for this partitioned Worksheet' target='_blank'>.js</a>) file ...</span>
+</p>
+
+<pre class='flex-box'>
+<span>Invoke a strict environment ...</span>
+{% highlight javascript linenos %}
+//Resume Builder Program
+'use strict';
+{% endhighlight %}
+<span>Keep-a Ur code compliant</span>
+</pre>
+<hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Test for DOM readiness ...</span>
+{% highlight javascript linenos %}
+//En español ... 'The DOM is ready' if true
+jQuery(function($) {
+	window.alert(`¡El DOM está listo!`);
+	/* Where the anonymous function
+	passed the argument of the '$' function
+	aka the jQuery document dot ready function
+	returns an alert if true. */
+});
+{% endhighlight %}
+<span>Use window dot alerts to convey messages to the end user</span>
+</pre>
+<hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Declare and initialize the method No Conflict ...</span>
+{% highlight javascript linenos %}
+//to the global variable jKey
+var jKey = jQuery.noConflict();
+{% endhighlight %}
+<span>var 'jKey' replaces term 'jQuery'</span>
+</pre>
+<hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Set Ur append functions ...</span>
+{% highlight javascript linenos %}
+jKey(function($) {
+    //Append String to the parent tag of the id
+    jKey('#test').append("The Author");
+});
+/* Where the id = "test" is targeted 
+appending the string 'The Author' to 
+the end of the parent tag */
+{% endhighlight %}
+<span>via the append method</span>
+</pre>
+<hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Declare and initialize the String ...</span>
+{% highlight javascript linenos %}
+jKey(function($) {
+	//to the global variable author
+	var author = "Robert Hempaz, PhD Trichometry";
+	//Append author to the parent tag of the id
+	jKey('#rht').append(`${author}`);
+});
+/* Where the id = "rht" is targeted 
+appending the contents of the variable 
+'author' to the end of the parent tag */
+{% endhighlight %}
+<span>via the append method</span>
+</pre>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>Build a URL</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Build a URL programatically ...</span>
+{% highlight javascript linenos %}
+jKey(function($) {
+	jKey('#mminail')
+	.createElement('a')
+	.addClass('neon-text')
+	.text('MMINAIL')
+	.attr('href', 'http://cannabuds.us')
+	.appendTo('span');
+	/* jQuery: Target the id, create an 'a' tag,
+	add a 'class', initialize the 'text',
+	initialize the 'attribute(s)' via
+	implicit iteration, append the result 
+	to the given 'span' tag */
+});
+{% endhighlight %}
+<span>Render next to tilde ...</span>
+</pre>
+	<hr class='green-groove' />
+
+<p id="mminail">
+	<span>~</span>
+</p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>All Assets</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span><b>Note</b>.</span>
+	<span>A lot of functions can be invoked prior to the actual loading of assets by simply invoking the quicker loading <abbr class='oblique-text' title='Document Object Module'>DOM</abbr>.</span>
+</p>
+	<hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Check to see if all assets have been loaded ...</span>
+{% highlight javascript linenos %}
+jKey('window').load(function() {
+	alert(`All of the assets are loaded.`);
+});
+{% endhighlight %}
+<span>The page is now complete if true</span>
+</pre>
+	<hr class='green-groove' />
 
 <p>
 	<span>More to come ...</span>
