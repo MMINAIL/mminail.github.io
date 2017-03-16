@@ -357,14 +357,22 @@ title: Footer VS | MMINAIL
 {% highlight javascript linenos %}
 //En español ... 'The DOM is ready' if true
 jQuery(function($) {
-	window.alert(`¡El DOM está listo!`);
-	/* Where the anonymous function
+	var date = new Date();
+	window.alert(`¡El DOM está listo! 
+	The current session between 
+	client and server has begun on: 
+	${date}`);
+	/* Where the 'anonymous function''
 	passed the argument of the '$' function
-	aka the jQuery document dot ready function
-	returns an alert if true. */
+	aka the 'jQuery document dot ready' 
+	function returns an alert if true. */
+	/* Where the current date  time is passed 
+	to the built-in 'toString()' method of 
+	the built-in Date object representing 
+	the current date n time. */
 });
 {% endhighlight %}
-<span>Use window dot alerts to convey messages to the end user</span>
+<span>Show current date n time</span>
 </pre>
 <hr class='green-groove' />
 
@@ -420,22 +428,22 @@ appending the contents of the variable
 <span>Build a URL programatically ...</span>
 {% highlight javascript linenos %}
 jKey(function($) {
-	jKey('#mminail')
-	.createElement('a')
-	.addClass('neon-text')
+	var mminail = jKey('#mminail');
+	mminail.add('').addClass('neon-text')
 	.text('MMINAIL')
 	.attr('href', 'http://cannabuds.us')
-	.appendTo('span');
-	/* jQuery: Target the id, create an 'a' tag,
-	add a 'class', initialize the 'text',
-	initialize the 'attribute(s)' via
-	implicit iteration, append the result 
+	.appendTo('');
+	/* jQuery: Target the id, create a wrapper set, 
+	assign the wrapper set to the var 'mminail', 
+	add an 'a' tag, add a 'class', 
+	initialize the 'text' of the url, 
+	initialize the 'attribute(s)' of the url 
+	via implicit iteration, append the result 
 	to the given 'span' tag */
 });
 {% endhighlight %}
-<span>Render next to tilde ...</span>
+<span>Render next to the 'tilde', as follows:</span>
 </pre>
-	<hr class='green-groove' />
 
 <p id="mminail">
 	<span>~</span>
@@ -443,21 +451,48 @@ jKey(function($) {
 	<hr class='green-groove' />
 
 <hgroup class='text-left'>
-	<h4>All Assets</h4>
+	<h4>The DOM</h4>
 </hgroup>
 	<hr class='green-groove' />
 
 <p>
+	<span>A lot of functions can be invoked prior to the actual loading of all page assets by simply invoking the quicker loading</span> 
+	<abbr class='oblique-text' title='Document Object Module'>DOM</abbr>.</span>
+</p>
+
+<p>
 	<span><b>Note</b>.</span>
-	<span>A lot of functions can be invoked prior to the actual loading of assets by simply invoking the quicker loading <abbr class='oblique-text' title='Document Object Module'>DOM</abbr>.</span>
+	<span>On the other hand, the property of 'document' is actually an object of the global 'window', or <abbr class='oblique-text' title='Browser Object Model'>BOM</abbr> subset.</span> 
+</p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>The BOM</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>The Browser Object Model, or <abbr class='oblique-text' title='Browser Object Model'>BOM</abbr></span> 
+	<span>is based on the global object 'window'</span> 
+	<span>The <abbr class='oblique-text' title='Browser Object Model'>BOM</abbr> ie.) objects that interact with the computer screen and the browser.</span></span>
+</p>
+
+<p>
+	<span>Whereas, the Document Object Model, or <abbr class='oblique-text' title='Document Object Module'>DOM</abbr> is based on a universal API.</span> 
+</p>
+
+<p>
+	<span>Here, we are attempting to decipher the status of all assets.</span> 
+	<span>Have all assets loaded, or not?</span>
 </p>
 	<hr class='green-groove' />
 
 <pre class='flex-box'>
 <span>Check to see if all assets have been loaded ...</span>
 {% highlight javascript linenos %}
-jKey('window').load(function() {
-	alert(`All of the assets are loaded.`);
+jKey(function($) {
+    var document = jKey('#document');
+    document.load.alert(`All of the assets are now loaded.`);
 });
 {% endhighlight %}
 <span>The page is now complete if true</span>

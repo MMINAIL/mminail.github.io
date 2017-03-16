@@ -1,0 +1,101 @@
+---
+layout: default
+title: Construct-A-Donor | MMINAIL
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+
+<main>
+<article>
+
+<hgroup class="text-left">
+	<h3>Construct-A-Donor</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p class="lead">
+	<span>Welcome! This is the Construct-A-Donor page of the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr>.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+    <span><b>Note</b>.</span>
+	<span>This page has explicit access to the local jQuery library as well as to a local complimentary working (<a href="../js/scripts/class-donor-constructor.js" title="Click To Review the complimentary Javascript file for this partitioned Worksheet" target="_blank">.js</a>) file.</span> 
+</p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Class Construction</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+	<span>Constructing a class is a static excercise. Once created, how do you amend or append to a class?</span>
+</p>
+	<hr class="green-groove" />
+
+<pre class='flex-box'>
+<span>Creating a class ...</span>
+{% highlight javascript linenos %}
+//Construct-A-Donor
+'use strict';
+//Create the class ( properties and methods )
+class Donor {
+    constructor(firstName, lastName, eMailHandle, eMailDomain, eMotiCon) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.eMailHandle = eMailHandle;
+        this.eMailDomain = eMailDomain;
+        this.eMotiCon = eMotiCon;
+        this.displayback = function() {
+        return `The console will now reveal a message via the alert box ...`;
+        };
+    }
+}
+{% endhighlight %}
+<span>How to amend or append the class?</span>
+</pre>
+    <hr class='green-groove' />
+
+<hgroup class="text-left">
+	<h4>Prototype Construction</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>A developer can amend or append a class via the Javascrpt Prototype object.</span>
+	<span>In addtion, immutable and reusable methods may be shared via the Prototype chain.</span>
+</p>
+    <hr class="green-groove" />
+
+<p>
+    <span>More to come ...</span>
+</p>
+
+<footer class="page-footer center-block">
+	<br />
+	<p>
+		<span><b>Source</b>:</span>
+    	<a href="https://www.cash.me/$MMINAIL" title="Click to Review Object-Oriented Javascript, 2nd Edition via Packt Pub" target="_blank">Object-Oriented Javascript, 2nd Edition</a>
+	</p>
+
+	<p>
+		<span>See: <a href="https://www.cash.me/$MMINAIL" title="Click to Download Object-Oriented Javascript, 2nd Edition via Packt Pub" target="_blank">eBook</a>
+		<span>by</span>
+		<a href="https://www.cash.me/$MMINAIL" title="Click to Review the Author Stoyan Stefanov" target="_blank">Stoyan Stefanov</a>
+        <span>by</span>
+        <a href="https://www.cash.me/$MMINAIL" title="Click to Review the Author Kumar Chetan Sharma" target="_blank">Kumar Chetan Sharma</a>
+	</p>
+		<hr class="green-groove" />
+	
+	{% include footer.htm %}
+</footer>
+
+</article>
+</main>
+
+</div>
+</div>
+
+<script src='../js/jquery.min.js'></script>
+<script src='../js/scripts/class-donor-constructor.js'></script>

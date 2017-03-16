@@ -1,4 +1,4 @@
-//Display Back Program
+//Construct-A-Donor
 'use strict';
 //Create the class
 class Donor {
@@ -8,9 +8,7 @@ class Donor {
         this.eMailHandle = eMailHandle;
         this.eMailDomain = eMailDomain;
         this.eMotiCon = eMotiCon;
-    }
-
-    displayback() {
+        this.displayback = function() {
         return `The console will now reveal a message via the alert box ...
 
         Given. The key to a proper donor record is the capture of a valid electronic mail address.
@@ -33,9 +31,10 @@ class Donor {
         ${this.eMotiCon}
         
         The Management`;
+        };
     }
 }
-//Instantiate an instance
+//Instantiate an instance of the Donor class
 var author = new Donor("Adam", "Webber", "cannabuds", "live.com", "\u{1F600}");
 //Execute the subject method
 window.alert(author.displayback());
