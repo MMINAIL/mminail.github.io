@@ -54,7 +54,7 @@ jKey(function($) {
 }); */
 
 //Check to see if all of the page assets have been loaded
-jKey(function($) {
+jKey.addEventListener("click", function($) {
     //Declare and initialize the var target id wrapper set
     var document = jKey('#document');
     document.load.alert(`All of the assets are now loaded.`);
