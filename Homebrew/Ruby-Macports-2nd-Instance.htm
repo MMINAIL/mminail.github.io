@@ -1,0 +1,787 @@
+---
+layout: default
+title: Ruby Macports | MMINAIL
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+
+<main>
+<article>
+
+<hgroup class="text-left">
+	<h3>Ruby Macports</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p class="lead">
+	<span>Welcome! This is the Ruby Macports page of the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr>.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+    <span><b>Note</b>.</span>
+	<span>This page has explicit access to the local jQuery library as well as to a local complimentary working (<a href="../js/scripts/javascript-file.js" title="Click To Review the complimentary Javascript file for this partitioned Worksheet" target="_blank">.js</a>) file.</span> 
+</p>
+	<hr class='green-groove' />
+	
+<p>
+	<span>More to come ...</span>
+</p>
+	<hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Ruby Macports 2nd Instance</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>So, ya wanna upgrade Ur system Ruby AND learn a little Homebrew, heh?</span>
+</p>
+    <hr class="green-groove" />
+
+<p>
+    <span>Via Jekyl, no doubt.</span>
+</p>
+
+<p>
+    <span>This is a very sensitive area of juxposition for the Internet, the Coding Community, and for Global Intelligence in general.</span>
+</p>
+
+<p>
+    <span>"¡<span lang="es" title="Careful ...! En Inglés">Cuidado</span>!</span> 
+    <span>You must tread lightly, and carry a big Unix stick! ~ Steve Jobs"</span>
+</p>
+
+<p>
+    <span>Especially when working with your 'fixed-in-concrete' system Ruby and the dreaded entrenched Macports.</span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Binary Archives (.tbz2)</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>Macports pre-compiles Port(s) into Binary Archives (BA), or Port files called MacPort BA(s) and then stores the finished products on a <a href="http://packages.macports.org/" title="" target="">remote server</a>.</span>
+</p>
+
+<p>
+    <span>The finished MacPort BA(s) are then tagged eligible for download via <a href="https://guide.macports.org/" title="" target="">Macports dot org</a>.</span>
+</p>
+
+<p>
+    <span>In addition, MacPort BA(s) are also created both locally and automatically in the <code>/var/macports/software/</code> subdirectory of your Macports install whenever port installs a Port file.</span>
+</p>
+
+<p>
+    <span><b>Caveat</b>.</span>
+    <span>The MacPort BA(s) can only be used on a target system running Macports.</span>
+</p>
+
+<p>
+    <span>For example, a MacPort BA cannot be installed on a system that relies solely upon Homebrew, or Fink.</span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Build Phase</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>The build phase of an install is usually the phase that takes the longest amount of time to run in terms of milliseconds.</span>
+</p>
+
+<p>
+    <span>Macports allows a MacPort BA and an accompanying set of utilities to skip the build phase of an install and to begin installation of an application right after the 'destroot' phase.</span>
+</p>
+
+<p>
+    <span>As a result, applications need not be compiled when installing to on a target system capable of handling MacPort BA(s).</span>
+</p>
+
+<p>
+    <span>For this capability, the administrator must download and install Macports onto the development machine.</span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Destroot Phase</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>More to come ...</span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Binary Packages (.pkg)</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>Binary Packages, or BP are stand-alone Binary installers that are pre-compiled.</scan>
+</p>
+
+<p>
+    <span>And, as such ... do NOT require an accompanying set of Macports utilities.</span> 
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Separate Install of Macports</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>A 2nd install of Macports on your development machine will give you the capability of locally creating BP ...</span> 
+    <span>For distribution (if licensed).</span>
+</p>
+
+<p>
+    <span>And, thereby avoiding conflicts with Port files on systems that already have an initial default copy of Macports installed.</span> 
+</p>
+
+<p>
+    <span>In addition, a utility exists via Macports should you wish to distribute your software via (.dmg) rather than (.pkg) formats.</span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Performance</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>To perform a 2nd install of Macports on your development machine that is separate from the initial default <code>/opt/local/</code> install, focus on the following two (2) command switches.</span> 
+</p>
+
+<pre class='flex-box'>
+<span>Create a second App trigger ...</span>
+{% highlight html linenos %}
+--with-applications-dir
+{% endhighlight %}
+<span>In the Applications folder.</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span>And,</span>
+</p>
+
+<pre class='flex-box'>
+<span>Create an Alt directory ...</span>
+{% highlight html linenos %}
+--prefix
+{% endhighlight %}
+<span>To Install Into.</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span><b>Note</b>.</span>
+    <span>The <code>--prefix</code> switch accommodates the alternative directory.</span>
+</p>
+
+<p>
+    <span>Whereas, the <code>--with-applications-dir</code> switch avoids conflict with your already existing local Applications/MacPorts folder.</span> 
+</p>
+
+<p>
+    <span><b>Rule</b>.</span>
+    <span>Stay with the opt directory of your machine root, and build a 2nd install of Macports in an alternative subdirectory.</span>
+</p>
+
+<p>
+    <span>For example, <code>/opt/Macports241/</code>.</span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>The Issue</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>Why fuss with another instance of Macports?</span>
+</p>
+
+<p>
+    <span><b>Analysis</b>.</span>
+    <span>When the issue of solving why your local Jekyll server hangs when given the previous accurate start command of ...</span>
+</p>
+
+<pre class='flex-box'>
+<span>Jekyll Start Command ...</span>
+{% highlight html linenos %}
+jekyll serve --watch --baseurl ""
+{% endhighlight %}
+<span>Was working fine!</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span>Prior to the attempted upgrade to Ruby 2.4.0 via Homebrew ...</span>
+</p>
+
+<p>
+    <span><b>Conclusion</b>.</span>
+    <span>The "fuss" Becomes paramount to further development.</span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Download and Unpack</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>Navigate via the Finder to the location of your preferred and separate 2nd install of Macports ie.) <code>/opt/Macports241/</code>.</span> 
+</p>
+
+<p>
+    <span>When you have arrived at your destination, right-click over the subdirectory name in order to expose the Services tab.</span> 
+</p>
+
+<p>
+    <span>Now, select a 'new Terminal window at folder' to open up the Terminal program.</span>
+</p>
+
+<p>
+    <span>Before the administrative instant User can unpack a Port file ...</span>
+    <span>( In this case Macports base ver 2.4.1 ),</span> 
+    <span>the BA must be downloaded.</span>
+</p>
+
+<p>
+    <span>The following code must be executed in the Terminal in order to download the requested Port file from Macports, as follows:</span>
+</p>
+
+<pre class='flex-box'>
+<span>Download Macports base ver 2.4.1</span>
+{% highlight html linenos %}
+curl -O https://distfiles.macports.org/MacPorts/MacPorts-2.4.1.tar.bz2
+{% endhighlight %}
+<span>Programatically!</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span>Next, unpack the BA file with the following Terminal command ...</span>
+</p>
+
+<pre class='flex-box'>
+<span>Unpack n Un-b-zip! ...</span>
+{% highlight html linenos %}
+tar xf MacPorts-2.4.1.tar.bz2
+{% endhighlight %}
+<span>Pronto! Andele!</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    </span>This places an exploded subdirectory of name same ie.) MacPorts-2.4.1 in the <code>/opt/Macports241/</code> folder.</span>
+</p>
+    <hr class='green-groove' />
+
+<pre class='flex-box'>
+    <span lang='es' title='Sp. for '¡Whoosh!''>Whoosh! <i class='icon-large icon-flower'></i>( Interlude )</span>
+</pre>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Interlude</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>Before we can start building a 2nd instance of Macports on your local development machine ...</span>
+</p>
+
+<p>
+    <span>We must perform something that appears to be counter-intuitive, but once achieved illuminates the pathway to the success of all of your many hours (and, days?) of learning, expanding, and troubleshooting.</span>
+</p>
+
+<p>
+    <span><b>¡<span lang="es" title="Remember! - en Inglés">Recuerde</span>!</b>.</span>
+    <span>In order to pull this off, we must depart from our standard working User and become an administrative instant User ... on the same machine!</span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Binary Path(s)</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>The binary path(s) of the initial install <code>/opt/local/bin:/opt/local/sbin:</code> must be commented out from the instant User $PATH variable.</span>
+</p>
+
+<p>
+    <span>Why?</span>
+    <span>Because the locations the export statements represent must not be present during the Build of the 2nd instance of Macports.</span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Destination Known</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>Once we make it to a successful install of a 2nd instance of Macports, we can then upgrade both Ruby to version 2.4.0 and Rubygems to 2.6.11 via another separate Build of a BA, and a call via upgraded gem.</span> 
+</p>
+
+<p>
+    <span>Rather than attempting to install another copy of Ruby through Macports ( this is what hung the local Jekyll server in the first place! )</span> 
+</p>
+
+<p>
+    <span>Or, through Homebrew ( does Homebrew even have their Ruby-24 BA back on the bottle rack again? )</span> 
+</p>
+
+<p>
+    <span>Or, through RVM ...</span> 
+    <span>Who was, by the way, feeding off of the error codes generate by Homebrew!</span>
+</p>
+
+<p>
+    <span>A conspiracy to rig the market in favor of Homebrew?</span>
+    <span>Naw, the RVM boys were just being cautious.</span> 
+    <span>Short of allowing the install, the RVM bots were quite accommodative.</span> 
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Fight Fear w More Fear?</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>Ya know ...</span> 
+    <span>Macports has already countered with a scare claim of their own against the <code>/usr/local/</code> subdirectory at their <a href='https://guide.macports.org/ ' title='Click To Review the Macports dot org Documentation Guide' target='_blank'>online documentation</a> site.</span> 
+</p>
+
+<p>
+    <span>( As opposed to the Macports preferred subdirectory of choice ... <code>/opt/local/</code> ).</span> 
+</p>
+
+<p>
+    <span>Yep!</span> 
+    <span>Created a whole sub-section at their menu of directions to house the scare claim against <code>/usr/local/</code>.</span>
+</p>
+
+<p>
+    <span>What? Are you all Trump voters?</span> 
+    <span>Or, something?</span> 
+    <span>Out there in coding land?<span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Back In Black</h4>
+</hgroup>
+    <hr class='green-groove' />
+    
+<p>
+    <span>Back to the Binary Paths!</span>
+    <span>We've got more work to do there!</span>
+</p>
+
+<p>
+    <span>Simply <kbd>right-click</kbd> over the hidden dot bash underscore profile file located in the root directory of the instant administrative User ...</span> 
+    <span>And, open the file for editing in TextEdit.</span> 
+</p>
+
+<p>
+    <span>Once open, simply prepend the export statement that contains a reference to the above Macports binary path(s) with a keyboard 'hash' symbol, or <kbd>#</kbd>.</span> 
+</p>
+
+<p>
+    <span><b>Note</b>.</span>
+    <span>The export statement was originally placed in the dot bash underscore profile file at the time of the initial install of Macports.</span>
+</p>
+
+<p>
+    <span>After placing the 'hash' symbol, or <kbd>#</kbd> appropriately at the front of the export statement ...</span> 
+    <span>( in order to comment the export statement out ),</span> 
+    <span>save and close TextEdit.</span>
+</p>
+
+<p>
+    <span>Now that the instant administrative User's dot bash underscore profile file has been corrected, we must now rebuild the $PATH variable.</span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Rebuilding The $PATH Variable</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>First, after editing the the hidden dot bash underscore profile file ...</span> 
+    <span>The Terminal program must be 'rebooted'.</span>
+</p>
+
+<ul>
+    <li>Close the Terminal Window,</li> 
+    <li>Close the Terminal Program,</li>
+    <li>Re-open the Terminal Program.</li>
+</ul>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>The path_helper Command</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>To perform a rebuild of the $PATH variable, at the Terminal prompt enter the 'path_helper' command, as follows:</span>
+</p>
+
+<pre class='flex-box'>
+<span>The path_helper Command ...</span>
+{% highlight html linenos %}
+/usr/libexec/path_helper
+{% endhighlight %}
+<span>Use the full path to the command.</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span>A subsequent echo of the $PATH variable should now reveal an absence of any 'opt' type subdirectories in the administrative instant User path.</span>
+</p>
+    <hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Look for opt(s) ...</span>
+{% highlight html linenos %}
+echo $PATH
+{% endhighlight %}
+<span>No opt(s) allowed!</span>
+</pre>
+<hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Configure Time</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>Be sure you have navigated via the Finder to the location of your unpacked tbz2 copy of Macports ver 2.4.1.</span>
+</p>
+
+<p>
+    <span>Now right-click over the accepted subdirectory to open up the Services tab, a new Terminal window at folder.</span>
+</p>
+
+<p>
+    <span>Have Macports set the directory of your --prefix switch to the target destination of your 2nd instance with the following Terminal statement.</span>
+</p>
+
+<pre class='flex-box'>
+<span>The Target Destnation</span>
+{% highlight html linenos %}
+MP_PREFIX=/opt/Macports241
+{% endhighlight %}
+<span>Configure, Make, Install</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span>Have Macports set your machine's Applications folder to receive a separate, 2nd Macports install folder named 'Macports241'.</span>
+</p>
+
+<p>
+    <span><b>Note</b>.</span>
+    <span>Because this command statement will also start the configuration process of the 2nd instance ...</span> 
+    <span>You will need to perform this step as a super-user.</span>
+</p>
+    <span>Please have your administrative instant User password ready.</span> 
+</p>
+
+<pre class='flex-box'>
+<span>Compiling The Code ...</span>
+{% highlight html linenos %}
+sudo ./configure --prefix=$MP_PREFIX  ➡️  
+    --with-applications-dir=$MP_PREFIX/Applications
+{% endhighlight %}
+<span>Follow along w the machine ...</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span>A verbose, line-by-line and blow-by-blow compilation will be printing to the Terminal window.</span>
+</p>
+
+<p>
+    <span>For example, here is an unusual looking line from the compile timeline ...</span>
+</p>
+
+<pre class='flex-box'>
+<span>GNU Step Foundation Library</span>
+{% highlight html linenos %}
+configure: WARNING: GNUSTEP_SYSTEM_ROOT ➡️ 
+    is not defined in your environment, ➡️  
+    preventing the use of ➡️  
+    GNUstep's Foundation library
+{% endhighlight %}
+<span>Sub Apple Foundation Library</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span>Until you realize the GNU Foundation Library closely resembles Apple's Cocoa (formerly NeXT's OpenStep) API.</span>
+</p>
+
+<p>
+    <span>And, now you see the compilation process opted for the Mac OSX Sierra Xcode Command Line Tools ver 8.3 default to the Apple Foundation Library.</span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Make It Happen</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+<span>Next, we must 'make' the now compiled 2nd instance by simply typing the command make at the Terminal window as a super user.
+
+<pre class='flex-box'>
+<span>Only super-users make ...</span>
+{% highlight html linenos %}
+sudo make
+{% endhighlight %}
+<span>Be a super-user!</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span><b>Note</b>.</span>
+    <span>There were (50) warnings during the make with basically the same message.</span>
+</p>
+
+<p> 
+    <span>RE: SysCall deprecated ... Please use a supported interface</span>
+</p>
+
+<p>
+    <span>For more information, including the Terminal report of the make section in question ...</span> 
+    <span>See the <a href='https://gist.github.com/rwebaz/b71f520970c456745b4a93842a02bbe4' title='Click To Review private GIST located at GitHub' target='_blank'>private GIST</a> located at GitHub.</span> 
+</p>
+
+<p>
+    <span><b>Note of Direction</b>.</span>
+    <span>Be sure to press the RAW button at the GitHubGist in order to view the text with original Terminal spacing.</span> 
+</p>
+
+<p>
+    <span>Press the RAW button and a new page will open with the RAW data for you to view.</span>
+</p>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Time To Install</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>Ok, it's time to install what we've made with the following command statement.</span>
+<p>
+
+<p>
+    <span>From the Terminal,</span>
+</p>
+
+<pre class='flex-box'>
+<span>Install the Make</span>
+{% highlight html linenos %}
+sudo make install
+{% endhighlight %}
+<span>Local admin su doer</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span>Finally, after a successful build, add the location to the 2nd instance bin ie.) <code>/opt/Macports241/bin</code> to your administrative instant User dot $PATH variable by opening the bash underscore profile file once again.</span> 
+</p>
+
+<p>
+    <span>Include the following export statement in the file ...</span>
+</p>
+
+<pre class='flex-box'>
+<span>Add a new line</span>
+{% highlight html linenos %}
+export PATH="/opt/Macports241/bin:$PATH"
+{% endhighlight %}
+<span>Save and close</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span>Keep the original two binary paths from the initial install of Macports commented out by the keyboard 'hash' symbol, or <kbd>#</kbd>.</span>
+</p>
+
+<p>
+    <span>Now that we have changed the administrative instant User dot bash underscore profile file for a second time ...</span>
+</p>
+
+<p>
+    <span>Once again, we must reboot the terminal for the changes to take effect.
+</p>
+
+<ul>
+    <li>Close the Terminal Window,</li> 
+    <li>Close the Terminal Program,</li>
+    <li>Re-open the Terminal Program.</li>
+</ul>
+    <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Rebuild The $PATH</h4>
+</hgroup>
+    <hr class='green-groove' />
+
+<p>
+    <span>Recall to perform a rebuild of the $PATH variable ...</span>
+</p>
+
+<p>
+    <span>Remember to enter the following line of code at the Terminal prompt.</span>
+</p>
+
+<p>
+    <span>Enter the path_helper command, as follows.</span>
+</p>
+
+<pre class='flex-box'>
+<span>Use every time after an edit</span>
+{% highlight html linenos %}
+/usr/libexec/path_helper
+{% endhighlight %}
+<span>To rebuild the $PATH variable</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span>Similar to before ...</span>
+</p>
+
+<p>
+    <span>A subsequent echo of the $PATH variable should now reveal the inclusion of a single 'opt' type subdirectory ie.) <code>/opt/Macports241/bin</code> in the administrative instant User path.</span>
+</p>
+
+<p>
+    <span>Congratulations!</span> 
+    <span>You have successfully installed a 2nd instance of the MacPorts system!</span>
+</p>
+
+<p>
+    <span>To get the accompanyng Port file(s), if any ...</span> 
+    <span>And, to update the system, run the following line of code ...</span>
+</p>
+
+<pre class='flex-box'>
+<span>Ensure Macports is fully functional</span>
+{% highlight html linenos %}
+sudo port -v selfupdate
+{% endhighlight %}
+<span>Under this instance.</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span>Returns,</span>
+</p>
+
+<p>
+    <span>MacPorts base is already the latest version ...</span>
+</p>
+
+<p>
+    <span>The ports tree has been updated.</span>
+</p>
+
+<p>
+    <span>To ensure all installed Port files have been upgraded to the Macports max ...</span>
+</p>
+
+<p>
+    <span>Run the following command from the Terminal prompt as a super-user, as follows:</span>
+</p>
+
+<pre class='flex-box'>
+<span>Upgrade all Port files.</span>
+{% highlight html linenos %}
+sudo port upgrade outdated
+{% endhighlight %}
+<span>aka Binary Archives</span>
+</pre>
+<hr class='green-groove' />
+
+<p>
+    <span>Returns,</span>
+</p>
+
+<p>
+    <span>More to come ...</span>
+</p>
+
+<p>
+    <span>Nothing to upgrade.</span>
+</p>
+
+<p>
+    <span>machinemessiah:</span>
+</p>
+
+<p>
+    <span>For further review,</span>
+</p>
+
+<p>
+    <span>Please read "man port", the MacPorts guide at the following <a href="https://guide.macports.org/" title="Click to Review the Macports Online Guide" target="https://guide.macports.org/">URL</a>.</span>
+</p>
+
+<p>
+    <span>Also, please read the <a href="https://trac.macports.org/" title="Click to Review the Macports Wiki" target="https://trac.macports.org/">Macports Wiki</a> at the addtional following</span>
+    <a href="https://trac.macports.org/" title="Click to Review the Macports Wiki" target="https://trac.macports.org/">URL</a>, as well.</span>
+</p>
+
+<p>
+    <span>More to come ...</span>
+</p>
+
+<pre class='flex-box'>
+    <span lang='es' title='Sp. for 'Finish''>Finito! <i class='icon-large icon-flower'></i></span>
+</pre>
+    <hr class='green-groove' />
+
+<footer class="page-footer center-block">
+	<br />
+	<p>
+		<span><b>Source</b>:</span>
+    	<a href="https://www.cash.me/$MMINAIL" title="Click to Donate to The Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation via Square Up -  Cash Me" target="_blank">Square Up</a>
+	</p>
+
+	<p>
+		<span>See: <a href="https://www.cash.me/$MMINAIL" title="Click to Donate to The Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation via Square Up -  Cash Me" target="_blank">Cash Me</a>
+		<span>by</span>
+		<a href="https://www.cash.me/$MMINAIL" title="Click to Donate to The Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation via Square Up -  Cash Me" target="_blank">Today</a>
+	</p>
+		<hr class="green-groove" />
+	
+	{% include footer.htm %}
+</footer>
+
+</article>
+</main>
+
+</div>
+</div>
+<!--
+<script src='../js/jquery.min.js'></script>
+<script src='../js/scripts/unknown.js'></script> -->
