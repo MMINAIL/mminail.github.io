@@ -16,24 +16,3 @@ jKey(function($) {
     window.alert('Protocol: ' + a.prop('protocol'));
     window.alert('Hash: ' + a.prop('hash'));
 });
-//Declare an Object
-var url = {
-    hostname: 'tutorialzine.com',
-    pathname: 'books/jquery-trickshots',
-    search: '?trick=12',
-    protocol: 'http',
-    hash: '#comments'
-}
-
-//Declare an Object within an Object
-var donation = {
-    amount: '100,000',
-    contributor: {
-        firstName: 'Adam',
-        lastName: 'Webber'
-    },
-    year: '2016',
-    protocol: 'email',
-    handle: 'cannabuds',
-    hostname: 'live.com'
-};

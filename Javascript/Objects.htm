@@ -603,10 +603,50 @@ console.log(reportOne.hover() + reportOne.sting() +
     <span>Copy and paste the contents of the entire (<a href='../js/scripts/strict-objects.js' title='Click To Review the Original Javascript file' target='_blank'>.js</a>) file into the Firefox Web-console ...</span>
     <span>Then, hit the <kbd>Enter</kbd> key.</span>
 </p>
+     <hr class='green-groove' />
+
+<hgroup class='text-left'>
+    <h4>Examples of Objects</h4>
+</hgroup>
+    <hr class='green-groove' />
 
 <pre class='flex-box'>
-    <span lang='es' title='Sp. for 'Finish''>Finito! <i class='icon-large icon-flower'></i></span>
+<span>Declare an Object</span>
+{% highlight javascript linenos %}
+var url = {
+    hostname: 'tutorialzine.com',
+    pathname: 'books/jquery-trickshots',
+    search: '?trick=12',
+    protocol: 'http',
+    hash: '#comments'
+}
+{% endhighlight %}
+<span>The attrbutes of a URL</span>
 </pre>
+<hr class='green-groove' />
+
+<pre class='flex-box'>
+<span>Declare an Object within an Object</span>
+{% highlight javascript linenos %}
+var donation = {
+    amount: '100,000',
+    contributor: {
+        firstName: 'Adam',
+        lastName: 'Webber'
+    },
+    year: '2016',
+    protocol: 'email',
+    handle: 'cannabuds',
+    hostname: 'live.com'
+};
+{% endhighlight %}
+<span>Contrbutor is an embedded object</span>
+</pre>
+    <hr class='green-groove' />
+
+<p>
+    <span>More to come ...</span>
+</p>
 
 <footer class="page-footer center-block">
 	<br />
