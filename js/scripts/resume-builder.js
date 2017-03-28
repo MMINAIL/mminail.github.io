@@ -32,6 +32,11 @@ jKey(function($) {
     //Append author to the parent tag of the id
     rht.append(`${author}`);
 });
+
+jKey(window).load(function($) { 
+    window.alert(`All of the assets are now loaded.`);
+});
+
 //Build a URL programatically #1
 jKey(function($) {
     //Declare and initialize the var target id wrapper set
@@ -54,6 +59,7 @@ jKey(function($) {
 }); */
 
 //Check to see if all of the page assets have been loaded
-jKey.addEventListener("load", function($) {
+/* jKey.addEventListener("load", function($) {
     window.alert(`All of the assets are now loaded.`);
-});
+}); */
+
