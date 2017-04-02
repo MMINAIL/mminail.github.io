@@ -261,17 +261,35 @@ aside#supporting-content {
 
 /* Wordwrap and highlight the lines of code  */
 pre {
+    /* height: 100%; */
+    display: block;
+    /* display: inline; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: monospace; */
+    font-size: small;
+    margin: 1em 0;
+    /* Is the text-wrap selector now deprecated? */
+    /* text-wrap: normal; */
+    /* text-wrap: none; */
+    /* text-wrap: avoid; */
     white-space: pre-wrap;
+    /* white-space: normal; */
+    /* white-space: nowrap; */
     /* white-space: pre; */
+    /* white-space: pre-line; */
+    word-break: keep-all;
+    /* word-break: break-all; */
+    word-wrap: normal;
+    /* word-wrap: break-word; */
+    overflow-wrap: normal; /* hyphenate */
+    /* overflow-wrap: break-word; */
+    overflow: hidden;
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    text-overflow:  ellipsis;
+    /* text-overflow: clip; */
     background-color: rgb(255,255,229); /* light yellow */
     /* background: hsl(30,80%,90%); /* full moon yellow */
-    /* display: inline; */
-    display: block;
-    /* font-family: monospace; */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    /* height: 100%; */
-    margin: 1em 0;
 }
 
 pre.flex-box {
@@ -297,6 +315,35 @@ pre.flex-box {
 
 code {
     /* height: 100%; */
+    /* text-justify: auto */
+    /* text-justify: initial */
+    /* text-justify: inter-word; */
+    /* text-justify: inter-cluster; */
+    /* text-justify: inter-ideograph; */
+    /* text-justify: distribute */
+    /* text-justify: kashida; */
+    /* text-justify: trim */
+    text-align: left;
+    /* Is the text-wrap selector deprecated? */
+    /* text-wrap: normal; */
+    /* text-wrap: none; */
+    /* text-wrap: avoid; */
+    white-space: nowrap;
+    /* white-space: normal; */
+    /* white-space: pre; */
+    /* white-space: pre-line; */
+    /* white-space: pre-wrap; */
+    word-break: keep-all;
+    /* word-break: break-all; */
+    word-wrap: normal;
+    /* word-wrap: break-word; */
+    overflow-wrap: normal; /* hyphenate */
+    /* overflow-wrap: break-word; */
+    overflow: hidden;
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    text-overflow:  ellipsis;
+    /* text-overflow: clip; */
     background: hsl(220, 80%, 90%); /* sky blue */
 }
 
