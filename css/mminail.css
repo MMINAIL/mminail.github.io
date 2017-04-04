@@ -16,6 +16,18 @@ font-family: ‘eurostyle’;
 src: url(‘../fonts/euro/eurostyle.ttf’) format(‘truetype’);
 }
 
+a {
+    text-decoration: none;
+}
+
+a[href^="https:"] {
+    color: #004B23; /* Forest Green */ 
+}
+
+a[href^="http:"] {
+    color: rgb(207,103,75); /* Indian Red */ 
+}
+
 h1 {
     text-align: center;
     /* min-width: 480px; */
