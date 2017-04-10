@@ -1,0 +1,329 @@
+---
+layout: default
+title: Liquid Wrappers | MMINAIL
+cupcakes:
+- chocolate
+- lemon
+- strawberry
+- blueberry
+- vanilla
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+
+<main>
+<article>
+
+<hgroup class="text-left">
+	<h3>Liquid Wrappers</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p class="lead">
+	<span>Welcome! This is the Liquid Wrappers page of the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr>.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+	<span><b>Note</b>.</span>
+	<span>This page has explicit access to the local jQuery library as well as a local complimentary working (<a href="../js/scripts/corresponding-javascript-file.js" title="Click To Review the complimentary Javascript file for this partitioned Worksheet" target="_blank">.js</a>) file.</span> 
+</p>
+	<hr class='green-groove' />
+	
+<p>
+	<span>More to come ...</span>
+</p>
+	<hr class="green-groove" />
+
+<hgroup class='text-left'>
+	<h4>Two Ways To Highlight Code</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>Here are two methods to highlight a code block when invoking the Jekyll server inside an Html 5 page.</span>
+</p>
+	<hr class='green-groove' />
+
+<p>
+	<span>The first way uses a 'Liquid Tag Markup' <code>wrapper</code>, as follows:</span>
+</p>
+
+{% highlight liquid linenos %}
+...
+{% endhighlight %}
+
+<p>
+	<span>A 'Liquid Tag Markup' <code>wrapper</code> utilizes two sets of braces ...</span>
+	<span>One, a set of external <code>&#123;...&#125;</code> curly braces, the other a set of internal <code>&#37;...&#37;</code> percentage braces.</span>
+</p>
+
+<p>
+	<span>Nested together, they form the 'Liquid Tag Markup' <code>wrapper</code>, using the following commands ...</span>
+</p>
+
+<ul>
+	<li>Highlight the block ➡️ <code class='html'>highlight</code>,</li> 
+	<li>Declare the language ➡️ <code class='html'>css</code>,</li> 
+	<li>Enable/Disable Line Numbers ➡️ <code class='html'>linenos</code></li>
+</ul>
+</code>
+
+<p>
+	<span>As follows:</span>
+</p>
+
+<pre class='flex-box'>
+&#123;&#37; highlight css linenos &#37;&#125;
+/* A block of code ...
+	Placed Inside a Liquid Wrapper */
+&#123;&#37; endhighlight &#37;&#125;
+</pre>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>Live Rendition: Highlighting a Liquid Tag Markup Wrapper</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>Here is an example of a live rendition of a 'Liquid Tag Markup' <code>wrapper</code> in action ... </span>
+</p>
+
+<p>
+	<span>The following highlighted multi-line 'Liquid Tag Markup' <code>wrapper</code> is set to the language of css w line numbers enabled.</span> 
+</p>
+	<hr class='green-groove' />
+
+{% highlight css linenos %}
+/* Css Code Block ...
+	Placed Inside a Liquid Wrapper */
+@font-face {
+	font-family: 'Eurostyle';
+}
+{% endhighlight %}
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>Highlighting a Code n Pre Block</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>The second method to highlight code uses a standard 'Html 5' <code>&lt;pre&gt;</code> block wrapped inside a set of inline <code>&lt;code&gt;</code> blocks.</span>
+</p>
+	<hr class='green-groove' />
+
+<p>
+	<span>Here is a multi-line <code>&lt;pre&gt;</code> block enveloped in two inline <code>&lt;code&gt;</code> blocks ...</span> 
+	<span>One north y one south.</span>
+</p>
+	<hr class='green-groove' />
+
+<code class='html'>Start Instructions Here ...</code>
+<pre class='flex-box'>
+Code Block w White    Space
+	y Indents Preserved
+</pre>
+<code class='html'>Finish Instructions Here.</code>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+  <h4>Else if Logic Statements</h4>
+</hgroup>
+  <hr class='green-groove' />
+
+<p>
+  <span>You may also use a 'Liquid Tag Markup' <code>wrapper</code> to render Else if Logical Code Statments, as follows: </span>
+</p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>'Liquid Tag Markup' Wrapper Template For Else if Statement</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<pre class='flex-box'>
+&#123;&#37;&nbsp;if&nbsp;&#37;&#125;
+&lt;span&gt;&#123;&#123; ... &#125;&#125;&lt;/span&gt;
+&#123;&#37;&nbsp;elsif&nbsp;&#37;&#125;
+&lt;span&gt;...&lt;/span&gt;
+&#123;&#37;&nbsp;else&nbsp;&#37;&#125;
+&lt;span&gt;...&lt;/span&gt;
+&#123;&#37;&nbsp;endif&nbsp;&#37;&#125;
+</pre>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>How To Set Up A For Loop Using Liquid Tag Markup And Liquid Output In Jekyll</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span><b>Note</b>.</span>
+	<span>This example will display the name of each element within an array.</span>
+</p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>For Loop Template</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<pre class='flex-box'>
+&lt;ul&gt;
+&#123;&#37;&nbsp;for element in page.array&nbsp;&#37;&#125;
+;where the array and its elements are listed in the front matter section of the page
+&lt;li&gt;&#123;&#123;&nbsp;element&nbsp;&#125;&#125;&lt;/li&gt;
+&#123;&#37;&nbsp;endfor&nbsp;&#37;&#125;
+&lt;/ul&gt;
+</pre>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>Page Front Matter</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>Similar to the front matter area of a cshtml page, the Liquid templating language allows for the declaration of variables and arrays via the front matter section of the page.</span>
+</p>
+
+<p>
+	<span>The front matter section of a page is located at the very top of the page situated between a set of triple hash, or <kbd>---</kbd>.</span>
+</p>
+	<hr class='green-groove' />
+
+<p>
+	<span>In this example, we will be placing a cupcakes array populated with a set of five (5) cupcake within the front matter section of the page ie.) at the top of the page ...</span> 
+</p>
+
+<p>
+	<span>And, then rendering the names of each cupcake to the screen using an unordered list.</span>
+</p>
+
+<p>
+	<span>It's as simple as A, B, C ...!</span>
+</p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+<h4>Setting The Array</h4>
+	</hgroup>
+<hr class='green-groove' />
+
+<ol type="A">
+<li>
+	<span>Set up the liquid array of cupcakes in the front matter of the page.</span> 
+	<span>Be sure to use triple hash, or <kbd>&#45;&#45;&#45;</kbd> to partition the front matter area, as follows:</li>
+</ol>
+	<hr class='green-groove' />
+
+<kbd>&#45;&#45;&#45;</kbd>
+{% highlight liquid %}
+cupcakes:
+- chocolate
+- lemon
+- strawberry
+- blueberry
+- vanilla
+{% endhighlight %}
+<kbd>&#45;&#45;&#45;</kbd>
+	<hr class='green-groove' />
+
+<p>
+	<span><b>Note</b>.</span>
+	<span>When constructing a brief array using the Liquid templating language, a JSON-like semi-colon separates the name of the array with the names of each element within the array.</span>
+</p>
+
+<p>
+	<span>In addition, notice also the use of a single pre-fixing hash, or <kbd>&#45;</kbd> when declaring each element of the array.</span>
+</p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>Liquid For Loop</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>We will now use a Liquid For Loop to extract and display the cupcake names from the array by ...</span>
+</p>
+
+<ol type="A" start="2">
+<li>Programmatically iterating over each element of the array,</li>
+</ol>
+
+<ul class="none">
+	<li>And by,</li>
+</ul>
+
+<ol type="A" start="3">
+<li>Outputing the variable cupcake at each iteration of the loop.</li>
+</ol>
+	<hr class='green-groove' />
+
+<p>
+	<span>As follows:</span>
+</p>
+
+<pre class='flex-box'>
+&lt;ul&gt;
+&#123;&#37;&nbsp;for cupcake in page.cupcakes&nbsp;&#37;&#125;
+;where the array cupcakes 
+	and the elements cupcake
+		are declared in the front matter of the page
+&lt;li&gt;&#123;&#123;&nbsp;cupcake&nbsp;&#125;&#125;&lt;/li&gt;
+&#123;&#37;&nbsp;endfor&nbsp;&#37;&#125;
+&lt;/ul&gt;
+</pre>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>The Rendering</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>When the page is refreshed, the names of the cupcakes now appear in the following unordered list ...</span>
+</p>
+
+<ul>
+{% for cupcake in page.cupcakes %}
+<li>{{cupcake}}</li>
+{% endfor %}
+</ul>
+		<hr class='green-groove' />
+
+<pre class='flex-box'>
+	<span lang='es' title='Sp. for 'Finish''>Finito! <i class='icon-large icon-flower'></i></span>
+</pre>
+
+<footer class="page-footer center-block">
+	<br />
+	<p>
+		<span><b>Source</b>:</span>
+    	<a href="https://learn.cloudcannon.com/jekyll/introduction-to-liquid/" 
+      title="Click to Review Cloud Cannon: Jekyll Tips ... Intro To Liquid" target="_blank">Intro To Liquid</a>
+	</p>
+
+	<p>
+		<span>See: <a href="https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-front-matter/" 
+    title="Click to Review Cloud Cannon: Jekyll Tips" target="_blank">Tutorials</a>
+		<span>by</span>
+		<a href="https://learn.cloudcannon.com/" 
+    title="Click to Review the Cloud Cannon Home Page" target="_blank">Cloud Cannon</a>
+	</p>
+		<hr class="green-groove" />
+	
+	{% include footer.htm %}
+</footer>
+
+</article>
+</main>
+
+</div>
+</div>
+
+<script src='../js/jquery.min.js'></script>
+<script src='../js/scripts/corresponding-javascript-file.js'></script>
