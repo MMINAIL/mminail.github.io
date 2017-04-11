@@ -1,0 +1,207 @@
+---
+layout: default
+title: Rendering Objects | MMINAIL
+# Favorite Accessions
+accessions:
+- name: White Widow
+  landrace: indica
+  thcas: 25%
+- name: Super Lemon Haze
+  landrace: sativa
+  thcas: 18%
+- name: Auto Devil
+  landrace: ruderalis
+  thcas: 21%
+# Favorite Data
+data: |
+  There once was a man from Beijing!
+  Who got on a bus to Darjeeling.
+    It said on the door ...
+    "Please don't litter the floor"
+  So, he carefully looked at the ceiling.
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+
+<main>
+<article>
+
+<hgroup class="text-left">
+	<h3>Rendering Objects</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p class="lead">
+	<span>Welcome! This is the Rendering Objects page of the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr>.</span>
+</p>
+	<hr class="green-groove" />
+
+<p>
+	<span><b>Note</b>.</span>
+	<span>This page has explicit access to the local jQuery library as well as a local complimentary working (<a href="../js/scripts/corresponding-javascript-file.js" title="Click To Review the complimentary Javascript file for this partitioned Worksheet" target="_blank">.js</a>) file.</span> 
+</p>
+	<hr class='green-groove' />
+	
+<p>
+	<span>More to come ...</span>
+</p>
+	<hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>Rendering Objects Topic</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>More to come ...</span>
+</p>
+  <hr class="green-groove" />
+
+<hgroup class='text-left'>
+	<h4>Rendering Objects</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>Simple Objects can also be rendered effectively through the use of YAML Front Matter, Liquid Tag Markup and Liquid Output statements.</span>
+</p>
+
+<p>
+	<span>In the front matter of the page, a key: value set of objects are declared and entered, as follows:</span>
+</p>
+
+<kbd>&#45;&#45;&#45;</kbd>
+{% highlight liquid %}
+accensions:
+- name: White Widow
+  landrace: indica
+  thcas: 25%
+- name: Super Lemon Haze
+  landrace: sativa
+  thcas: 18%
+- name: Auto Devil
+  landrace: ruderalis
+  thcas: 21%
+{% endhighlight %}
+<kbd>&#45;&#45;&#45;</kbd>
+	<hr class='green-groove' />
+
+<p>
+	<span><b>Note</b>.</span>
+	<span>When constructing a set of key: value pair objects using the Liquid templating language, a JSON-like (YAML) semi-colon separates the name of the object from the names of each key: value pair within the object.</span>
+</p>
+
+<p>
+	<span>In addition, notice also the use again of a single pre-fixing dash symbol, or <kbd>&#45;</kbd> when declaring each element of the object.</span>
+</p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>Liquid For Loop #2</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>We will now use a Liquid For Loop to extract and display the accession names and other elements of the accessions object by ...</span>
+</p>
+
+<ol type="A" start="1">
+<li>Programmatically iterating over each key: value pair of the object,</li>
+</ol>
+
+<ul class="none">
+	<li>And by,</li>
+</ul>
+
+<ol type="A" start="3">
+<li>Outputing the variable accession at each iteration of the loop.</li>
+</ol>
+	<hr class='green-groove' />
+
+<p>
+	<span>As follows:</span>
+</p>
+
+<pre class='flex-box'>
+&lt;ul&gt;
+&#123;&#37;&nbsp;for accession in page.accessions&nbsp;&#37;&#125;
+;where the object accessions 
+	and the key: value pairs of accession
+		are declared in the front matter of the page
+Name: &lt;li&gt;&#123;&#123;"&#123;&#123;&nbsp;accession.name "&nbsp;&#125;&#125;&#125;&#125;&lt;/li&gt;,
+Landrace: &lt;li&gt;&#123;&#123;"&#123;&#123;&nbsp;accession.landrace "&nbsp;&#125;&#125;&#125;&#125;&lt;/li&gt;,
+THCAS: &lt;li&gt;&#123;&#123;"&#123;&#123;&nbsp;accession.thcas "&nbsp;&#125;&#125;&#125;&#125;&lt;/li&gt;
+&#123;&#37;&nbsp;endfor&nbsp;&#37;&#125;
+&lt;/ul&gt;
+</pre>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>The Object Rendering</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>When the page is refreshed, the names, landraces, and level of thcas of the accessions now appear in the following unordered list ...</span>
+</p>
+
+<ul>
+{% for accession in page.accessions %}
+<li>
+	<label>Name:</label> {{accession.name}}, 
+	<label>Landrace:</label> {{accession.landrace}}, 
+	<label>THCAS:</label> {{accession.thcas}}</li>
+{% endfor %}
+</ul>
+		<hr class='green-groove' />
+
+<hgroup class='text-left'>
+  <h4>Preserving White Space In Data</h4>
+</hgroup>
+  <hr class='green-groove' />
+
+
+
+<hgroup class='text-left'>
+  <h4>Data Lists</h4>
+</hgroup>
+  <hr class='green-groove' />
+
+<dl>
+      <dt>Text:</dt>
+      <dd>{{data}}</dd>
+</dl>
+
+<pre class='flex-box'>
+  <span lang='es' title='Sp. for 'Finish''>Finito! <i class='icon-large icon-flower'></i></span>
+</pre>
+  <hr class='green-groove' />
+
+<footer class="page-footer center-block">
+	<br />
+	<p>
+		<span><b>Source</b>:</span>
+    	<a href="https://learn.cloudcannon.com/jekyll/introduction-to-liquid/" 
+      title="Click to Review Cloud Cannon: Jekyll Tips ... Intro To Liquid" target="_blank">Intro To Liquid</a>
+	</p>
+
+	<p>
+		<span>See: <a href="https://learn.cloudcannon.com/jekyll/introduction-to-jekyll-front-matter/" 
+    title="Click to Review Cloud Cannon: Jekyll Tips" target="_blank">Tutorials</a>
+		<span>by</span>
+		<a href="https://learn.cloudcannon.com/" 
+    title="Click to Review the Cloud Cannon Home Page" target="_blank">Cloud Cannon</a>
+	</p>
+		<hr class="green-groove" />
+	
+	{% include footer.htm %}
+</footer>
+
+</article>
+</main>
+
+</div>
+</div>
+
+<script src='../js/jquery.min.js'></script>
+<script src='../js/scripts/corresponding-javascript-file.js'></script>
