@@ -107,14 +107,29 @@ h2 {
     border: 5px red groove;
 }
 
-.euro {
-    font-family: 'eurostyle';
+/* Color Text Classes */
+.forest-green-text {
+    color: #004B23; /* Forest Green */
 }
 
 .neon-text {
     color:lime; /* Neon Green */
 }
 
+/* Typeface Classes */
+.euro {
+    font-family: 'eurostyle';
+}
+
+.text-euro {
+    font-family: 'eurostyle';
+}
+
+.text-trat {
+    font-family: 'trattatello';
+}
+
+/* Other Classes */
 .oblique-text {
     font-style: oblique;
 }
@@ -136,20 +151,8 @@ h2 {
     font-family: 'fontawesome';
 }
 
-.text-euro {
-    font-family: 'eurostyle';
-}
-
 .text-glyph {
     font-family: 'glyphicon-halflings-regular';
-}
-
-.text-neon {
-    color: #004B23; /* Forest Green */
-}
-
-.text-trat {
-    font-family: 'trattatello';
 }
 
 /* Set the header elements */
@@ -418,9 +421,10 @@ mark,
 /* Set the collapsable Responsive Image 'min-width' */
 img {
     /* min-width: 340px; */
-    border: 1px solid red;
     max-width: 100%;
     height: auto;
+    border: 1px solid transparent;
+    /* border: 1px solid red; */
 }
 
 /* Set the page-footer for the Website */
