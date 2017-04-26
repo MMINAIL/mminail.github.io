@@ -144,6 +144,8 @@ h2 {
     font-size: 1.25em;
     color: #CC6600; /* Ashley Gold */
     /* border: 2px black groove; */
+    letter-spacing: 1px;
+    /* letter-spacing: normal; /* zero length */
 }
 
 .script-text {
