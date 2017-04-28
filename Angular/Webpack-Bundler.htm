@@ -100,7 +100,7 @@ npm install --save-dev webpack
 </pre>
 
 <p>
-	<span>Or, as a distributed app without the development flags.</span>
+	<span>Or, as a distributed app without the development flag.</span>
 </p>
 
 <pre class='flex-box'>
@@ -113,10 +113,180 @@ npm install --save webpack
 </pre>
 	<hr class='green-groove' />
 
+<hgroup class='text-left'>
+	<h4>Decisions, Decisions!</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>So, now that you have been shown two flag configurations to the solution, which one do you use?</span>
+</p>
+  <hr class='green-groove' />
+
+<hgroup class='text-left'>
+  <h4>Respuesta</h4>
+</hgroup>
+  <hr class='green-groove' />
+
+<p>
+	<span>That all depends upon where in the package dot json file you wish to house your dependency.</span>
+</p>
+
+<p>
+	<span>Your choices are simple 'dependencies' or 'dev' dependencies.</span>
+</p>
+
+<p>
+	<span>Which of the above two choices corrolates to the install flag <code>--save-dev</code> and which one corrolates to the install flag <code>--save</code>?</span>
+</p>
+
+<p>
+	<span>If you guessed 'dev' dependencies corrolate with the install flag <code>--save-dev</code> you are correct!</span>
+</p>
+
+<p>
+	<span>Therefore, by extension, simple 'dependencies' corrolates to the install flag <code>--save</code>.</span>
+</p>
+
+<p>
+	<span>Each flag directs traffic to a specifc spot in the package dot json file.</span>
+</p>
+
+<p>
+	<span>As the following excerpt shows, it's the simple 'dependencies' first, the 'dev' dependencies second when installing a separate app to your Angular 4 project.</span>
+</p>
+
 <pre class='flex-box'>
-<span lang='es' title='Sp. for 'Finish''>Finito! <i class='icon-large icon-flower'></i></span>
+<p>
+<span>From the package.json file ...</span>
+</p>
+{% highlight html %}
+"dependencies": {
+    "@angular/common": "4.0.1",
+    "@angular/compiler": "4.0.1",
+    "@angular/core": "4.1.0",
+    "@angular/forms": "4.0.3",
+    "@angular/http": "4.0.3",
+    "@angular/platform-browser": "4.0.3",
+    "@angular/platform-browser-dynamic": "4.0.3",
+    "@angular/router": "4.0.3",
+    "bootstrap": "3.3.7",
+    "core-js": "2.4.1",
+    "font-awesome": "4.7.0",
+    "jquery": "3.2.1",
+    "jquery-mobile": "1.5.0-alpha.1",
+    "rxjs": "5.3.0",
+    "tether": "1.4.0",
+    "zone.js": "0.8.9"
+  },
+  "devDependencies": {
+    "@angular/cli": "1.0.1",
+    "@angular/compiler-cli": "4.0.3",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "6.0.70",
+    "codelyzer": "2.0.1",
+    "jasmine-core": "2.5.2",
+    "jasmine-spec-reporter": "3.2.0",
+    "karma": "1.4.1",
+    "karma-chrome-launcher": "2.0.0",
+    "karma-cli": "1.0.1",
+    "karma-coverage-istanbul-reporter": "0.2.3",
+    "karma-jasmine": "1.1.0",
+    "karma-jasmine-html-reporter": "0.2.2",
+    "protractor": "5.1.1",
+    "ts-node": "2.0.0",
+    "tslint": "4.5.1",
+    "typescript": "2.2.2",
+    "webpack": "2.4.1",
+    "webpack-dev-server": "~2.4.2",
+    "autoprefixer": "^6.5.3",
+    "css-loader": "^0.27.3",
+    "cssnano": "^3.10.0",
+    "exports-loader": "^0.6.3",
+    "file-loader": "^0.10.0",
+    "json-loader": "^0.5.4",
+    "karma-sourcemap-loader": "^0.3.7",
+    "less-loader": "^4.0.2",
+    "postcss-loader": "^1.3.3",
+    "postcss-url": "^5.1.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.3",
+    "script-loader": "^0.7.0",
+    "source-map-loader": "^0.1.5",
+    "istanbul-instrumenter-loader": "^2.0.0",
+    "style-loader": "^0.13.1",
+    "stylus-loader": "^3.0.1",
+    "url-loader": "^0.5.7"
+  }
+{% endhighlight %}
 </pre>
-<hr class='green-groove' />
+
+<p>
+	<span>What you may ask is a 'simple' dependency as opposed to a 'dev' dependency?</span>
+</p>
+
+<p>
+	<span>Well, as the title suggests, the 'dev' dependency points to a separate app your Angular 4 project may require to compile itself during development.</span>
+</p>
+
+<p>
+	<span>Yet, the separate app gets tossed aside never making it into the final output dist of your <code>ng build --prod</code> command.</span>
+</p>
+
+<p>
+	<span>Whereas, the separate app(s) tag'd with 'simple' dependencies get bundled at the end with the production copy.</span>
+</p>
+
+<p>
+	<span>So, which dependency is what type?</span>
+</p>
+  <hr class='green-groove' />
+
+<hgroup class='text-left'>
+  <h4>Da Rule</h4>
+</hgroup>
+  <hr class='green-groove' />
+
+<p>
+	<span><b>Rule</b>.</span>
+	<span>If the dependency in question is required to render a component within the production copy of your Angular 4 project ...</span>
+</p>
+
+<p>
+  <span>Then, include the separate app as a 'simple' dependency and use the simple <code>install --save</code> flag configuration.</span>
+</p>
+
+<p>
+	<span>If, on the other hand, the dependency in question is required only for the mechanical final building of your Angular 4 production project ...</span>
+</p>
+
+<p>
+  <span>Then, be sure to use the <code>install --save-dep</code> flag to continue to segregate within the package dot json file those separate apps that are deemed 'user friendly' and those separate apps that are deemed 'machine friendly'.</span>
+</p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>The Angular CLI</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>Usually, but not always, the pertinent instructional data page for any separate app house'd at the Node Package Manager, or <abbr class='oblique-text' title='Node Package Manager'>NPM</abbr> should include which flavor of flag to be used at npm install.</span>
+</p>
+
+<p>
+	<span>But, not always!</span>
+</p>
+
+<p>
+	<span>As a guide, when tweaking the Angular Command Line Interface, or <abbr class='oblique-text' title='Command Line Interface'>CLI</abbr>, for example ...</span> 
+  <span>First venture into the package dot json file to see how the original install of the Angular CLI for your project did indeed segregate the various separate apps and modules at the point of each app's or module's respective time of install.</span>
+</p>
+
+<pre class='flex-box'>
+	<span lang='es' title='Sp. for 'Finish''>Finito! <i class='icon-large icon-flower'></i></span>
+</pre>
+	<hr class='green-groove' />
 
 <footer class="page-footer center-block">
 	<br />
