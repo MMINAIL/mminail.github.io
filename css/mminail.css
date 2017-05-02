@@ -71,7 +71,10 @@ a {
 }
 
 a[href^="https:"] {
-    color: #004B23; /* Forest Green */ 
+    font-family: 'eurostyle';
+    font-size: 1.25em;
+    color: #004B23; /* Forest Green */
+    letter-spacing: 1px;
 }
 
 a[href^="http:"] {
