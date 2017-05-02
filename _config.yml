@@ -1,11 +1,11 @@
 baseurl: /
 exclude: ['README.md']
 #kramdown y rouge are now the default setting for markdown and highlighter respectively in Jekyll 3.0 and above
-#markdown: kramdown
-#highlighter: rouge
-#kramdown:
-    #input: GFM
-    #syntax_highlighter: rouge
+markdown: kramdown
+highlighter: rouge
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
 defaults:
   -
     scope:
@@ -13,5 +13,5 @@ defaults:
       type: "pages" # The type attribute limits the files served with the layout "default" to "pages" only
     values:
       layout: "default"
-#timezone: America/Phoenix
+timezone: America/Phoenix
 #gems: octopress-date-format
