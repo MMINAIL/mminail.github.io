@@ -19,57 +19,82 @@ title: DOM Property Binding | MMINAIL
 	<hr class="green-groove" />
 
 <hgroup class="text-left">
-	<h4>How To Render the DOM tree - <br />In Angular js to Angular 2 to Angular 4 In Mac Os Sierra</h4>
+	<h4>How To Render the DOM tree - <br />In Angular js to Angular 2 to Angular 4 - <br /> In Mac Os Sierra</h4>
 </hgroup>
 	<hr class="green-groove" />
+
+<hgroup class='text-left'>
+	<h4>Definition</h4>
+</hgroup>
+	<hr class='green-groove' />
 
 <p>
 	<span>When a browser receives a page of <code>&lt;html&gt;...&lt;/html&gt;</code> it reads the attributes of the Hypertext Markup Language, or <abbr class='oblique-text' title='Hypertext Markup Language'>Html</abbr>, converts it ( normally one-to-one ) into a Document Object Model, or <abbr class='oblique-text' title='Document Object Module'>DOM</abbr> tree, and then renders the page to the screen AS THE AUTHORS intended.</span>
 </p>
+	<hr class='green-groove' />
 
 <p>
-	<span><b>Rule</b>.</span>
-	<span>If you hold the page of <code>&lt;html&gt;...&lt;/html&gt;</code> up with your left hand and then also raise a visual screen ( smartphone-tablet-laptop ) with your right hand, each "attribute" of the Html on your left hand should map to a DOM tree counterpart, or "property" on your right.</span>
+	<span>Rule</span>
 </p>
+	<hr class='green-groove' />
+
+<p>
+	<span>If you hold the page of <code>&lt;html&gt;...&lt;/html&gt;</code> up with your left hand and then also raise a visual screen ( smartphone-tablet-laptop ) with your right hand, each "attribute" of the <abbr class='oblique-text' title='Hypertext Markup Language'>Html</abbr> on your left hand should map to a <abbr class='oblique-text' title='Document Object Module'>DOM</abbr> tree counterpart, or "property" on your right.</span>
+</p>
+	<hr class='green-groove' />
 
 <p>
 	<span>The key word in this rule is the word "should".</span>
 </p>
+	<hr class='green-groove' />
 
 <p>
-	<span>Because most of the time, a normal one-to-one relationship between the Html and the DOM tree exists.</span>
+	<span>Because most of the time, a normal one-to-one relationship between the <abbr class='oblique-text' title='Hypertext Markup Language'>Html</abbr> and the <abbr class='oblique-text' title='Document Object Module'>DOM</abbr> tree does exist.</span>
+</p>
+	<hr class='green-groove' />
+
+<p>
+	<span>Most of the time ... But, not always!</span>
+</p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>Exceptions</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>One of these exceptions can be seen with the default 'hidden' attribute of an <code>&lt;html&gt;...&lt;/html&gt;</code> page that gets mapped to the <abbr class='oblique-text' title='Document Object Module'>DOM</abbr> tree as the 'property' hidden, and then rendered to the screen.</span>
 </p>
 
 <p>
-	<span>Most of the times ... But, not always!</span>
+	<span>Yes! That is correct ... The screen that you are holding in your right hand is "indirectly" rendered from the <abbr class='oblique-text' title='Document Object Module'>DOM</abbr> tree, NOT directly by the <code>&lt;html&gt;...&lt;/html&gt;</code> page as most of you may expect.</span>
 </p>
 
 <p>
-	<span>One of these exceptions can be seen with the default 'hidden' attribute of an Html page that gets mapped to the DOM tree as the property 'hidden', and then rendered to the screen.</span>
+	<span>This is an essential key to understanding the rendering of <abbr class='oblique-text' title='Hypertext Markup Language'>Html</abbr> pages.</span>
 </p>
 
 <p>
-	<span>Yes! My dear students ... The screen that you are holding in your right hand is "indirectly" rendered from the DOM tree, NOT directly by the Html page as most of you may expect.</span>
-</p>
-
-<p>
-	<span>This is an essential key to understanding the rendering of Html pages.</span>
-</p>
-
-<p>
-	<span>Now that we know the DOM tree is key ...</span>
+	<span>Now that we know the <abbr class='oblique-text' title='Document Object Module'>DOM</abbr> tree is key ...</span>
 </p>
 
 <p>
 	<span>How may we manipulate the <abbr class='oblique-text' title='Document Object Module'>DOM</abbr>?</span>
 </p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>Discussion</h4>
+</hgroup>
+	<hr class='green-groove' />
 
 <p>
-	<span>When we place the attribute hidden in an underlying element upon a page of Html, and then send the page to a browser ...</span>
+	<span>When we place the attribute 'hidden' in an underlying element upon a page of <code>&lt;html&gt;...&lt;/html&gt;</code>, and then send the page to a browser ...</span>
 </p>
 
 <p>
-	<span>When quickly building the DOM tree the browser correspondingly creates a property named hidden that can be remotely set to either one of two boolean states ... true or false.</span>
+	<span>The browser quickly builds the <abbr class='oblique-text' title='Document Object Module'>DOM</abbr> tree and correspondingly creates a 'property' named hidden that can be remotely set to either one of two boolean states ... true or false.</span>
 </p>
 
 <p>
@@ -81,27 +106,53 @@ title: DOM Property Binding | MMINAIL
 </p>
 
 <p>
-	<span>But, as far as the hidden Html attribute is considered, the hidden attribute always remains "engaged", or true ie.) hidden.</span>
+	<span>But, as far as the 'hidden' <abbr class='oblique-text' title='Hypertext Markup Language'>Html</abbr> attribute is considered, the 'hidden' attribute always remains "engaged", or true ie.) hidden.</span>
 </p>
 
 <p>
-	<span>In other words, there is no way to switch-on, switch-off the hidden attribute in Html.</span>
+	<span>In other words, there is no way to switch-on, switch-off the 'hidden' attribute via a <code>&lt;html&gt;...&lt;/html&gt;</code> page.</span>
 </p>
 
 <p>
-	<span>So, the browser ( when building the DOM tree ) takes this normally staid hidden Html attribute and creates a dynamic, on-off switch type corresponding property.</span>
+	<span>So, the browser ( when building the <abbr class='oblique-text' title='Document Object Module'>DOM</abbr> tree ) takes this normally staid 'hidden' <abbr class='oblique-text' title='Hypertext Markup Language'>Html</abbr> attribute and creates a dynamic, on-off switch type corresponding 'property' also named hidden.</span>
 </p>
 
 <p>
-	<span>For savvy programmers like you and I to manipulate!</span>
+	<span>Armed with such fancy knowledge, savvy programmers like you and I can now manipulate the <abbr class='oblique-text' title='Document Object Module'>DOM</abbr> tree!</span>
+</p>
+	<hr class="green-groove" />
+
+<hgroup class='text-left'>
+	<h4 lang="en" title="Jugando Él Titiritero ... en Inglés">Playing Puppeteer</h4>
+</hgroup>
+<hr class='green-groove' />
+
+
+<p>
+	<span>Given the programmer 'god-like' powers over what the end-user will ultimately see in his or her right-hand screen ...</span> 
+</p>
+
+<p>	
+	<span>Based on the end-user's interactions with the program ...</span>
+</p>
+
+<p>	
+	<span>How can programmers stay in control of the <abbr class='oblique-text' title='User Interface Experience'>UX</abbr>, commonly known as the 'User Interface Experience' ...</span> 
+	<span>From afar?</span>
+</p>
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4 lang="es" title="For Example ... in Spanish">Por Ejemplo</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>How about we turn the hidden feature "off" when the user clicks a button, and then keep the hidden feature "on" otherwise?</span>
 </p>
 
 <p>
-	<span>How about we turn the hidden feature "off" when the user clicks a button, and keep the hidden feature "on" otherwise?</span>
-</p>
-
-<p>
-	<span>First, we must bind the boolean value true to the DOM tree property hidden.</span>
+	<span>First, we must bind the boolean value true to the <abbr class='oblique-text' title='Document Object Module'>DOM</abbr> tree 'property' hidden.</span>
 </p>
 	<hr class="green-groove" />
   
@@ -134,13 +185,13 @@ title: DOM Property Binding | MMINAIL
 	<br />
 	<p>
 		<span><b>Source</b>:</span>
-    	<a href="https://www.cash.me/$MMINAIL" title="Click to Review Angular 4 From Theory To Practice" target="_blank">Angular 4 From Theory To Practice</a>
+    	<a href="https://codecraft.tv/courses/angular/" title="Click to Review Angular 4 From Theory To Practice" target="_blank">Angular 4 From Theory To Practice</a>
 	</p>
 
 	<p>
-		<span>See: <a href="https://www.cash.me/$MMINAIL" title="Click to Review Angular 4 From Theory To Practice" target="_blank">eBook</a>
+		<span>See: <a href="https://astore.amazon.com/cannabuds-2011-20/detail/B01N9S0CZN" title="Click to Review Angular 4 From Theory To Practice" target="_blank">eBook</a>
 		<span>by</span>
-		<a href="https://www.cash.me/$MMINAIL" title="Click to Visit the Twitter account of Asim Hussain" target="_blank">Asim Hussain</a>
+		<a href="https://www.udemy.com/user/asimhussain/" title="Click to Visit the Udemy account of Asim Hussain" target="_blank">Asim Hussain</a>
 	</p>
 		<hr class="green-groove" />
 	
