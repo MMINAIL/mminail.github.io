@@ -1,0 +1,157 @@
+---
+layout: default
+title: DOM Property Binding | MMINAIL
+---
+<div class="container-fluid">
+	<div class="row-fluid">
+
+<main>
+<article>
+
+<hgroup class="text-left">
+	<h3>DOM Property Binding</h3>
+</hgroup>
+	<hr class="green-groove" />
+
+<p class="lead">
+	<span>Welcome! This is the DOM Property Binding page of the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr>.</span>
+</p>
+	<hr class="green-groove" />
+
+<hgroup class="text-left">
+	<h4>How To Render the DOM tree - <br />In Angular js to Angular 2 to Angular 4 In Mac Os Sierra</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<p>
+	<span>When a browser receives a page of <code>&lt;html&gt;...&lt;/html&gt;</code> it reads the attributes of the Hypertext Markup Language, or <abbr class='oblique-text' title='Hypertext Markup Language'>Html</abbr>, converts it ( normally one-to-one ) into a Document Object Model, or <abbr class='oblique-text' title='Document Object Module'>DOM</abbr> tree, and then renders the page to the screen AS THE AUTHORS intended.</span>
+</p>
+
+<p>
+	<span><b>Rule</b>.</span>
+	<span>If you hold the page of <code>&lt;html&gt;...&lt;/html&gt;</code> up with your left hand and then also raise a visual screen ( smartphone-tablet-laptop ) with your right hand, each "attribute" of the Html on your left hand should map to a DOM tree counterpart, or "property" on your right.</span>
+</p>
+
+<p>
+	<span>The key word in this rule is the word "should".</span>
+</p>
+
+<p>
+	<span>Because most of the time, a normal one-to-one relationship between the Html and the DOM tree exists.</span>
+</p>
+
+<p>
+	<span>Most of the times ... But, not always!</span>
+</p>
+
+<p>
+	<span>One of these exceptions can be seen with the default 'hidden' attribute of an Html page that gets mapped to the DOM tree as the property 'hidden', and then rendered to the screen.</span>
+</p>
+
+<p>
+	<span>Yes! My dear students ... The screen that you are holding in your right hand is "indirectly" rendered from the DOM tree, NOT directly by the Html page as most of you may expect.</span>
+</p>
+
+<p>
+	<span>This is an essential key to understanding the rendering of Html pages.</span>
+</p>
+
+<p>
+	<span>Now that we know the DOM tree is key ...</span>
+</p>
+
+<p>
+	<span>How may we manipulate the <abbr class='oblique-text' title='Document Object Module'>DOM</abbr>?</span>
+</p>
+
+<p>
+	<span>When we place the attribute hidden in an underlying element upon a page of Html, and then send the page to a browser ...</span>
+</p>
+
+<p>
+	<span>When quickly building the DOM tree the browser correspondingly creates a property named hidden that can be remotely set to either one of two boolean states ... true or false.</span>
+</p>
+
+<p>
+	<span>True hides the underlying element ( the hidden feature is engaged ) and false makes the underlying element appear.</span>
+</p>
+
+<p>
+	<span>Kinda like an on-off switch.</span>
+</p>
+
+<p>
+	<span>But, as far as the hidden Html attribute is considered, the hidden attribute always remains "engaged", or true ie.) hidden.</span>
+</p>
+
+<p>
+	<span>In other words, there is no way to switch-on, switch-off the hidden attribute in Html.</span>
+</p>
+
+<p>
+	<span>So, the browser ( when building the DOM tree ) takes this normally staid hidden Html attribute and creates a dynamic, on-off switch type corresponding property.</span>
+</p>
+
+<p>
+	<span>For savvy programmers like you and I to manipulate!</span>
+</p>
+
+<p>
+	<span>How about we turn the hidden feature "off" when the user clicks a button, and keep the hidden feature "on" otherwise?</span>
+</p>
+
+<p>
+	<span>First, we must bind the boolean value true to the DOM tree property hidden.</span>
+</p>
+	<hr class="green-groove" />
+  
+<pre class='flex-box'>
+<p>
+<span>From the ...</span>
+</p>
+{% highlight html %}
+<p [hidden]="true"></p>
+<a class="btn btn-primary">Show Me</a>
+{% endhighlight %}
+<p>
+  <span>; where the Css class "btn btn-primary" is a Twitter bootstrap js configuration</span>
+</p>
+</pre>
+	<hr class="green-groove" />
+
+<p>
+	<span>More to come ...</span>
+</p>
+  <hr class='green-groove' />
+
+<p>
+	<span><b>Note</b>.</span>
+	<span>This page has explicit access to the local jQuery library as well as a local complimentary working (<a href="../js/scripts/corresponding-javascript-file.js" title="Click To Review the complimentary Javascript file for this partitioned Worksheet" target="_blank">.js</a>) file.</span> 
+</p>
+	<hr class='green-groove' />
+
+<footer class="page-footer center-block">
+	<br />
+	<p>
+		<span><b>Source</b>:</span>
+    	<a href="https://www.cash.me/$MMINAIL" title="Click to Review Angular 4 From Theory To Practice" target="_blank">Angular 4 From Theory To Practice</a>
+	</p>
+
+	<p>
+		<span>See: <a href="https://www.cash.me/$MMINAIL" title="Click to Review Angular 4 From Theory To Practice" target="_blank">eBook</a>
+		<span>by</span>
+		<a href="https://www.cash.me/$MMINAIL" title="Click to Visit the Twitter account of Asim Hussain" target="_blank">Asim Hussain</a>
+	</p>
+		<hr class="green-groove" />
+	
+	{% include footer.htm %}
+</footer>
+
+</article>
+</main>
+
+</div>
+</div>
+
+<script src='../js/jquery.min.js'></script>
+<script src='../js/scripts/corresponding-javascript-file.js'></script>
