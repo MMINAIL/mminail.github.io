@@ -1,5 +1,55 @@
-/* Set the Media Queries for the Flex Boxes ... */
-@media screen and (min-width: 1121px) {
+/* Set the Properties for the Flex Boxes ... */
+div#main-body {
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row;
+	flex-flow: row;
+    flex-direction: row;
+    }
+
+/* Give the flex item and inflow-child 'aside-navigator' of the parent body element a position in the 'main-body' flex container */
+aside#navigator {
+	-webkit-flex: 1 2 50%;
+	flex: 1 2 50%; /* Three values: flex-grow | flex-shrink | flex-basis */
+	-webkit-order: 1;
+	order: 1;
+	}
+
+/* Give the flex item and inflow-child 'article-main-article' of the parent body element a position in the 'body' flex container */
+article.main-article {
+    -webkit-flex: 2 1 100%;
+	flex: 2 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis */
+	-webkit-order: 2;
+	order: 2;
+    }
+
+/* Give the flex item and inflow-child 'aside-supporting-content' of the parent body element a position in the 'body' flex container */
+aside#supporting-content {
+    -webkit-flex: 1 2 50%; 
+	flex: 1 2 50%; /* Three values: flex-grow | flex-shrink | flex-basis */
+	-webkit-order: 3;
+	order: 3;
+    }
+
+/* Give the flex item and inflow-child 'footer-page-footer' of the parent body element a position in the 'body' flex container */
+footer.page-footer {
+	-webkit-flex: 2 1 100%;
+	flex: 2 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis */
+	-webkit-order: 4;
+	order: 4;
+    }
+
+/* Give the flex item and inflow-child 'site-page-footer' of the parent body element a position in the 'body' flex container */
+footer.site-footer {
+	-webkit-flex: 2 1 100%;
+	flex: 2 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis */
+	-webkit-order: 5;
+	order: 5;
+    }
+
+/* MEDIA QUERY SECTION */
+
+@media screen and (min-width: 801px), (max-width: 1200px) {
 
 div#main-body {
     display: -webkit-flex;
@@ -50,7 +100,7 @@ footer.site-footer {
     }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (min-width: 641px), (max-width: 800px) {
 
 div#main-body {
     display: -webkit-flex;
@@ -80,7 +130,7 @@ div#main-body {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 341px), (max-width: 640px) {
 
 div#main-body {
     display: -webkit-flex;
@@ -141,3 +191,5 @@ div#main-body {
         /* height: calc(100% - 20px); */
     }
 }
+
+/* SMALLEST MEDIA QUERY END */
