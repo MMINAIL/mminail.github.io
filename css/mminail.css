@@ -121,7 +121,8 @@ h2 {
 }
 
 h3 {
-    font-size: medium;
+    /* font-size: medium; */
+    font-size: 24pt;
 }
 
 h4 {
