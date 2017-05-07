@@ -50,20 +50,22 @@
 html {
     margin: 0;
     padding: 0;
+    width: calc(100% - 0px);
     height: 100%;
-    /* font: normal 100%/1.4 Georgia, serif; */
 }
 
 /* Set the body for the page */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    /* font: normal 100%/1.4 Georgia, serif; */
     background-color: rgb(155,155,204);
     /* opacity: 0.5; /* ¡Cuidado! Both the Background-color AND the Text color are affected by the opacity level! */
     padding-right: 1%;
     padding-left: 1%;
     padding-bottom: 1%;
+    width: calc(100% - 0px);
     height: 100%;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 a {
@@ -81,6 +83,24 @@ a[href^="http:"] {
     color: rgb(207,103,75); /* Indian Red */ 
 }
 
+/* Set the background color and image for the header masthead */
+.masthead {
+    min-height: 230px;
+    max-height: 230px;
+    /* max-width: 100%; */
+    width: calc(100% - 0px); 
+    /* padding-right: .5em; */
+    /* padding-bottom: .5em; */
+    /* padding-left: .5em; */
+    padding-top: .25em;
+    /* color: black; */
+    color: #000531; 
+    background: rgb(155,155,204) url("../images/svg/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-two-1400-x-230.svg") no-repeat; /* center center */
+    background-size: cover;
+    /* background-size: contain; */
+}
+
+/* Titles */
 h1 {
     text-align: center;
     /* min-width: 480px; */
@@ -89,8 +109,31 @@ h1 {
     margin-top: 0px;
 }
 
+/* Set the double-xx font size for the Immediate tag */
+i.largo {
+    font-size: xx-large;
+}
+
+/* Subtitles */
+
 h2 {
     font-size: large;
+}
+
+h3 {
+    font-size: medium;
+}
+
+h4 {
+    font-size: small;
+}
+
+h5 {
+    font-size: x-small;
+}
+
+h6 {
+    font-size: xx-small;
 }
 
 /* Direct Classes */
@@ -132,6 +175,10 @@ h2 {
     font-family: 'glyphicon-halflings-regular';
 }
 
+.text-glyph {
+    font-family: 'glyphicon-halflings-regular';
+}
+
 .text-euro {
     font-family: 'eurostyle';
 }
@@ -157,12 +204,16 @@ h2 {
 }
 
 /* Directional Text Classes */
-.right-justify {
-    text-align: right;
+.text-left {
+    text-align: left;
 }
 
-.text-glyph {
-    font-family: 'glyphicon-halflings-regular';
+.text-center {
+    text-align: center;
+}
+
+.right-justify {
+    text-align: right;
 }
 
 /* Set the header elements */
@@ -172,39 +223,9 @@ hgroup {
 }
 
 /* Set the basic classes */
-.text-left {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
 
 .panel-padding {
     padding: 1%;
-}
-
-/* Set the background color and image for the header masthead */
-.masthead {
-    width: calc(100% - 0px);
-    /* max-width: 70%; */
-    max-width: 100%;
-    /* padding-right: .5em; */
-    /* padding-bottom: .5em; */
-    /* padding-left: .5em; */
-    padding-top: .25em;
-    background: rgb(155,155,204) url("../images/svg/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-two-1400-x-230.svg") no-repeat; /* center center */
-    background-size: cover; /* contain */
-    color: #000531; 
-    /* color: black; */
-    min-height: 230px;
-    /* max-width: 70%; */
-    /* min-width: 200px; */
-}
-
-/* Set the double-xx font size for the Immediate tag */
-i.largo {
-    font-size: xx-large;
 }
 
 .more-link {
@@ -222,18 +243,6 @@ i.largo {
     font-weight: 700;
 }
 
-aside#navigator {
-    float: right;
-    width: 27%;
-    position: absolute;
-    right: 0;
-    min-width: 160px;
-    background-color: rgb(155,155,204); /* medium purple */
-    /* border-left: 2px solid #fff; */
-    padding: 1%;
-    /* margin-left: 73%; */
-}
-
 /* Nav semantic container classes */
 .menu {
     text-align: center;
@@ -244,6 +253,7 @@ aside#navigator {
     margin: 0;
     padding: 0;
     text-align: left;
+    max-width: 100%;
 }
 .menu li {
     padding: 1%;
@@ -283,8 +293,14 @@ div.container-fluid {
 }
 
 article.main-article {
+    position: relative;
     text-align: left;
-    width: 73%;
+    /* min-width: 200px; */
+    width: calc(85% - 0px);
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-top: 1%;
     /* background: hsl(220, 80%, 90%); /* sky blue */
     /* background-color: cornsilk; */
     /* background-color: lightyellow; */
@@ -295,12 +311,20 @@ article.main-article {
     /* background-color: palegoldenrod; */
     /* background-color: linen; */
     background-color:rgb(255,255,229); /* moonlight */
-    padding-right: 1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
-    padding-top: 1%;
-    min-width: 200px;
     /* border-right: 2px solid #fff; */
+}
+
+aside#navigator {
+    right: 0;
+    /* margin-left: 73%; */
+    position: absolute;
+    float: right;
+    /* max-width: 27%; */
+    width: calc(15% - 0px);
+    /* min-width: 160px; */
+    padding: 1%;
+    background-color: rgb(155,155,204); /* medium purple */
+    /* border-left: 2px solid #fff; */
 }
 
 aside#supporting-content {
@@ -431,13 +455,24 @@ mark,
 /* Set the collapsable Responsive Image 'min-width' */
 img {
     /* min-width: 340px; */
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
     border: 1px solid transparent;
     /* border: 1px solid red; */
 }
 
-/* Set the page-footer for the Website */
+.img-responsive {
+    width: calc(100% - 0px);
+    max-width: 210px;
+    }
+
+ul.none {
+    list-style-type: none;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+/* Set the page-footer template for each page */
 .page-footer {
     display: block;
     text-align: center;
@@ -458,37 +493,37 @@ img {
     border: 1px solid rgb(155,155,204); /* Medium Purple */
     }
 
+/* Set the global site-footer for the Website */
 .site-footer {
+    position: relative;
+    /* position: absolute; */
     display: block;
     text-align: center;
     font-size: small;
     font-weight: 700;
     padding: 1%;
-    margin: 1% 35% 1% 0;
-    width: calc(73%);
-    /* max-width: 570px; */
-    max-width: 620px;
-    /* max-width: 570px; /*
-    /* 1% from the top ... */
-    /* 27% from the right ... */
-    /* Zero from the bottom ... */
-    /* Zero from the left ... */
-    /* min-width: 340px; */
-    z-index: 10;
-    /* position: absolute; */
+    margin: 1% 0% 0% 0%;
     /* bottom: 1%; */
+    width: calc(69% - 0px);
+    /* width: calc(100% - 20px); */
+    /* max-width: 350px; */
+    /* max-width: 630px; */
     /* background-color: linen; */
+    z-index: 10;
     border-radius: 7pt;
     border: 1px solid rgb(207,103,75); /* Indian Red */
     }
 
-ul.none {
-    list-style-type: none;
-    /* margin: 0; */
-    /* padding: 0; */
-}
+/* MEDIA QUERY SECTION */
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 801px), (max-width: 1200px) {
+
+.masthead {
+    min-height: 230px;
+    max-height: 230px;
+    /* max-width: 100%; */
+    width: calc(100% - 0px);
+    }
 
 h1 {
     /* display: inline-block; */
@@ -502,18 +537,75 @@ h2 {
     font-size: large;
     }
 
-.masthead {
-    min-height: 220px;
-}
+article.main-article {
+    width: calc(80% - 0px);
+    }
 
-.site-footer  {
-    margin: 1% 35% 1% 0;
-    width: calc(73%);
-    max-width: 620px;
+aside#navigator {
+    /* position: relative; */
+    /* max-width: 35%; */
+    width: calc(20% - 0px);
+    /* min-width: 120px; */
+    }
+
+.site-footer {
+    position: relative;
+    margin: 1% 0% 0% 0%;
+    /* width: calc(100% - 20px); */
+    width: calc(69% - 0px);
+    /* max-width: 350px; */
+    /* max-width: 630px; */
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 641px), (max-width: 800px) {
+
+.masthead {
+    min-height: 230px; 
+    /* max-width: 100%; */
+    width: calc(100% - 0px);
+    }
+
+h1 {
+    /* display: inline-block; */
+    /* overflow: hidden; */
+    text-align: center;
+    width: calc(100% - 00px);
+    font-size: x-large;
+    }
+
+h2 {
+    font-size: large;
+    }
+
+article.main-article {
+    width: calc(70% - 0px);
+    }
+
+aside#navigator {
+    /* position: relative; */
+    /* max-width: 35%; */
+    width: calc(30% - 0px);
+    /* min-width: 120px; */
+    }
+
+.site-footer {
+    position: relative;
+    margin: 2% 0% 0% 0%;
+    /* width: calc(100% - 20px); */
+    width: calc(69% - 0px);
+    /* max-width: 350px; */
+    /* max-width: 620px; */
+    }
+}
+
+@media screen and (min-width: 341px), (max-width: 640px) {
+
+.masthead {
+    min-height: 230px; 
+    /* max-width: 100%; */
+    width: calc(100% - 0px);
+    }
 
 h1 {
     width: calc(100% - 20px);
@@ -527,30 +619,37 @@ h1 {
     }
 
 article.main-article {
-    width: 70%;
+    width: calc(70% - 0px);
     }
 
 aside#navigator {
-    width: 30%;
-    position: relative;
-    min-width: 140px;
+    /* position: relative; */
+    /* max-width: 30%; */
+    width: calc(30% - 0px);
+    /* min-width: 140px; */
     }
-.masthead {
-    min-height: 220px;
-}
 
 .btn-med, .btn-group-med > .btn {
     text-align: left;
     }
 
 .site-footer {
-    margin: 1% 35% 1% 1%;
-    width: calc(100% - 20px);
-    max-width: 630px;
+    position: relative;
+    margin: 3% 0% 0% 0%;
+    /* width: calc(100% - 20px); */
+    width: calc(69% - 0px);
+    /* max-width: 350px; */
+    /* max-width: 630px; */
     }
 }
 
 @media screen and (max-width: 360px) {
+
+.masthead {
+    min-height: 230px; 
+    /* max-width: 100%; */
+    width: calc(100% - 0px);
+    }
 
 h1 {
     width: calc(100% - 10px);
@@ -565,14 +664,19 @@ h1 {
     /* margin-top: 100 px; */
     }
 
+h3 {
+    font-size: medium;
+    }
+
 article.main-article {
-    width: 65%;
+    width: calc(70% - 0px);
     }
 
 aside#navigator {
-    width: 35%;
-    min-width: 120px;
-    position: relative;
+    /* position: relative; */
+    /* max-width: 35%; */
+    width: calc(30% - 0px);
+    /* min-width: 120px; */
     }
 
 .btn-med, .btn-group-med > .btn {
@@ -581,233 +685,46 @@ aside#navigator {
 
 .img-responsive {
     width: calc(100% - 0px);
-    max-width: 210px;
+    max-width: 100%;
     }
 
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    max-width: 100%;
+}
+
+.menu li {
+    max-width: 100%;
+    padding: 1%;
+    margin-bottom: 1%;
+    /* display: inline-block; */
+    /* max-width: 50%; /* limit width */
+    /* background-color: #33b5e5 */
+    background-color : rgb(155,155,204); /* Medium Purple */
+    /* text-align: left; */
+    color: #fff;
+    /* color: dodgerblue; */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
 .page-footer {
-    max-width: 210px;
-    min-width: 210px;
     left: 0;
     right: 0;
+    max-width: 210px;
+    min-width: 210px;
     }
 
 .site-footer {
-    margin: 1% 1% 1% 1%;
-    width: calc(100% - 20px);
-    max-width: 350px;
+    position: relative;
+    margin: 5% 0% 0% 0%;
+    /* width: calc(100% - 20px); */
+    width: calc(69% - 0px);
+    /* max-width: 350px; */
+    /* max-width: 630px; */
     }
 }
 
-/* This set of Css instructions are for the VS-Footer lesson
-
-h6 {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-.clear-fix {
-  overflow: auto;
-}
-
-.education-entry,
-.work-entry,
-.project-entry {
-  padding: 0 5%;
-}
-
-h1 {
-  font-size: 40px;
-  color: #f5a623;
-  line-height: 48px;
-  display: inline;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999;
-  line-height: 29px;
-  padding: 10px;
-}
-
-h3 {
-  font-style: italic;
-  font-size: 20px;
-  color: #000;
-  line-height: 22px;
-}
-
-h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px;
-}
-
-h2,
-h3,
-h4,
-h5 {
-  padding: 10px 5%;
-
-}
-
-
-.date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: left;
-}
-
-.location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: right;
-
-}
-
-p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px;
-}
-
-a {
-  color: #1199c3;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
-}
-
-.welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
-  line-height: 28px;
-}
-
-#skills-h3 {
-  color: #f5ae23;
-  display: none;
-}
-
-.orange {
-  background-color: #f5ae23;
-}
-
-.orange-text {
-  color: #f5ae23;
-}
-
-.white-text {
-  font-weight: bold;
-  color: #fff;
-}
-
-.gray {
-  background-color: #f3f3f3;
-  padding-bottom: 10px;
-  clear: both;
-}
-
-.dark-gray {
-  background-color: #4a4a4a;
-}
-
-/* TODO: Replace with image later
-#header {
-  background-color: #484848;
-}
-
-.flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 10px;
-}
-
-.center-content {
-  padding: 2.5% 5%;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
-  display: none;
-}
-
-img {
-  padding: 10px;
-}
-
-span {
-  padding: 5px;
-}
-
-#lets-connect {
-  text-align: center;
-}
-
-/* Media queries to handle various device widths
-
-@media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
-  }
-}
-
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
-}
-
-#map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
-}
-
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
-}
-
-@media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
-  }
-} */
+/* SMALLEST MEDIA QUERY END */
