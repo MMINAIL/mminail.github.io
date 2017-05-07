@@ -538,6 +538,10 @@ h2 {
     font-size: large;
     }
 
+h3 {
+    font-size: 20px;
+    }
+
 article.main-article {
     width: calc(80% - 0px);
     }
@@ -579,6 +583,10 @@ h2 {
     font-size: large;
     }
 
+h3 {
+    font-size: 18px;
+    }
+
 article.main-article {
     width: calc(70% - 0px);
     }
@@ -617,6 +625,14 @@ h1 {
     /* max-width: 180px; */
     font-size: x-large;
     /* margin-left: 250px; */
+    }
+
+h2 {
+    font-size: large;
+    }
+
+h3 {
+    font-size: 16px;
     }
 
 article.main-article {
@@ -663,6 +679,10 @@ h1 {
     /* max-height: 1px; */
     font-size: large;
     /* margin-top: 100 px; */
+    }
+
+h2 {
+    font-size: large;
     }
 
 h3 {
