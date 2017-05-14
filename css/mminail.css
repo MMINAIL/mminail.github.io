@@ -126,14 +126,18 @@ h3 {
 }
 
 h4 {
-    font-size: small;
+    font-size: 18px;
 }
 
 h5 {
-    font-size: x-small;
+    font-size: small;
 }
 
 h6 {
+    font-size: x-small;
+}
+
+h7 {
     font-size: xx-small;
 }
 

@@ -100,6 +100,81 @@ console.timeEnd(programTimer,"Square It Time");
 	<img class="img-responsive img-circle" src="../images/svg/MMINAIL-Logo-Badge-Original-Registered-Transparent-320-x-320.svg" alt="Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation USPTO Registered Logo Badge" /></a>
 </picture>
 	<br />
+	<hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>The Global Object</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+<p>
+	<span>The global object in the Javascript language, if rendered in a browser, is the browser window.</span>
+</p>
+
+<p>
+	<span>Therefore, when accessing variables and objects placed under the global object simply use the keyword <code>this</code> , as follows:</span>
+</p>
+
+<pre class='flex-box'>
+<p>
+<span>Given: The following global var named 'a' ...</span>
+</p>
+{% highlight html %}
+var a = "Hello There!";
+// From the Terminal prompt $
+a
+// Returns
+"Hello There!"
+// From the Terminal prompt $
+this.a
+// Returns
+"Hello There!"
+// From the Terminal prompt $
+window.a
+// Returns
+"Hello There!"
+{% endhighlight %}
+<p>
+<span>¡<span lang="es" title="English 'Remember' en español">Recuerde</span>! window = this</span>
+</p>
+</pre>
+	
+<p>
+	<span>If we substitute an object, such as a function ( instead of a global var ), the same outcome still applies, as follows:</span>
+</p>
+
+<pre class='flex-box'>
+<p>
+<span>Given: The following function named 'b' ...</span>
+</p>
+{% highlight html %}
+function b() {
+  "use strict";
+}
+// From the Terminal prompt $
+b
+// Returns
+function b() {
+  "use strict";
+}
+// From the Terminal prompt $
+this.b
+// Returns
+function b() {
+  "use strict";
+}
+// From the Terminal prompt $
+window.b
+// Returns
+function b() {
+  "use strict";
+}
+{% endhighlight %}
+<p>
+<span><span lang='en' title="Spanish 'Recuerde' en inglés">Remember</span>! this = window</span>
+</p>
+</pre>
+	<hr class='green-groove' />
 
 <footer class="page-footer center-block">
 	<br />
