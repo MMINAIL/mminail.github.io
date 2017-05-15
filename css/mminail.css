@@ -122,7 +122,7 @@ h2 {
 
 h3 {
     /* font-size: medium; */
-    font-size: 24pt;
+    font-size: 24px;
 }
 
 h4 {
@@ -193,6 +193,27 @@ h7 {
 }
 
 /* Styled Text Classes */
+
+/* Imgage Zoom-out From thumb */
+.icon-thumb {
+    width: 25px;
+    height: auto;
+}
+
+/* The Adjacent Sibling */
+.icon-zoom {
+    position: absolute;
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0s;
+    z-index: 5;
+}
+
+/* Where the "plus" sign represents the adjacent sibling selector in Css3 */
+.icon-thumb:hover + .icon-zoom {
+    width: 100px;
+}
+
 .oblique-text {
     font-family: 'eurostyle';
     /* font-style: oblique; */
@@ -301,7 +322,7 @@ article.main-article {
     position: relative;
     text-align: left;
     /* min-width: 200px; */
-    width: calc(85% - 0px);
+    width: calc(81% - 0px);
     padding-right: 1%;
     padding-bottom: 1%;
     padding-left: 1%;
@@ -325,7 +346,7 @@ aside#navigator {
     position: absolute;
     float: right;
     /* max-width: 27%; */
-    width: calc(15% - 0px);
+    width: calc(19% - 0px);
     /* min-width: 160px; */
     padding: 1%;
     background-color: rgb(155,155,204); /* medium purple */
@@ -509,7 +530,7 @@ ul.none {
     padding: 1%;
     margin: 1% 0% 0% 0%;
     /* bottom: 1%; */
-    width: calc(69% - 0px);
+    width: calc(80% - 0px);
     /* width: calc(100% - 20px); */
     /* max-width: 350px; */
     /* max-width: 630px; */
@@ -521,7 +542,7 @@ ul.none {
 
 /* MEDIA QUERY SECTION */
 
-@media screen and (min-width: 801px), (max-width: 1200px) {
+@media only screen and (max-width: 1200px) and (min-width: 801px)  {
 
 .masthead {
     min-height: 230px;
@@ -547,13 +568,13 @@ h3 {
     }
 
 article.main-article {
-    width: calc(80% - 0px);
+    width: calc(81% - 0px);
     }
 
 aside#navigator {
     /* position: relative; */
     /* max-width: 35%; */
-    width: calc(20% - 0px);
+    width: calc(19% - 0px);
     /* min-width: 120px; */
     }
 
@@ -561,13 +582,13 @@ aside#navigator {
     position: relative;
     margin: 1% 0% 0% 0%;
     /* width: calc(100% - 20px); */
-    width: calc(69% - 0px);
+    width: calc(80% - 0px);
     /* max-width: 350px; */
     /* max-width: 630px; */
     }
 }
 
-@media screen and (min-width: 641px), (max-width: 800px) {
+@media only screen and (max-width: 800px) and (min-width: 641px)  {
 
 .masthead {
     min-height: 230px; 
@@ -612,7 +633,7 @@ aside#navigator {
     }
 }
 
-@media screen and (min-width: 341px), (max-width: 640px) {
+@media only screen and (max-width: 640px) and (min-width: 341px)   {
 
 .masthead {
     min-height: 230px; 
@@ -664,7 +685,7 @@ aside#navigator {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media only screen and (max-width: 360px) {
 
 .masthead {
     min-height: 230px; 
