@@ -68,6 +68,7 @@ body {
     /* overflow: auto; */
 }
 
+/* Set the color of the anchor links */
 a {
     text-decoration: none;
 }
@@ -82,6 +83,7 @@ a[href^="https:"] {
 a[href^="http:"] {
     color: rgb(207,103,75); /* Indian Red */ 
 }
+/* End Setting the color of the anchor links */
 
 /* Set the background color and image for the header masthead */
 .masthead {
@@ -95,7 +97,7 @@ a[href^="http:"] {
     padding-top: .25em;
     /* color: black; */
     color: #000531; 
-    background: rgb(155,155,204) url("../images/svg/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-two-1400-x-230.svg") no-repeat; /* center center */
+    background: rgb(155,155,204) url("../assets/img/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-two-1400-x-230.svg") no-repeat; /* center center */
     background-size: cover;
     /* background-size: contain; */
 }
@@ -544,7 +546,7 @@ ul.none {
 
 /* MEDIA QUERY SECTION */
 
-@media only screen and (max-width: 1200px) and (min-width: 801px)  {
+@media only screen and (max-width: 1200px) and (min-width: 769px)  {
 
 .masthead {
     min-height: 230px;
@@ -590,7 +592,7 @@ aside#navigator {
     }
 }
 
-@media only screen and (max-width: 800px) and (min-width: 641px)  {
+@media only screen and (max-width: 768px) and (min-width: 415px)  {
 
 .masthead {
     min-height: 230px; 
@@ -635,7 +637,7 @@ aside#navigator {
     }
 }
 
-@media only screen and (max-width: 640px) and (min-width: 341px)   {
+@media only screen and (max-width: 414px) and (min-width: 361px)   {
 
 .masthead {
     min-height: 230px; 

@@ -1,6 +1,6 @@
 baseurl: /
 exclude: ['README.md']
-#kramdown y rouge are now the default setting for markdown and highlighter respectively in Jekyll 3.0 and above
+# kramdown y rouge are now the default setting for markdown and highlighter respectively in Jekyll 3.0 and above
 markdown: kramdown
 highlighter: rouge
 kramdown:
@@ -15,3 +15,13 @@ defaults:
       layout: "default"
 timezone: America/Phoenix
 #gems: octopress-date-format
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: "true"
+defaults:
+  - scope:
+      path: "assets/ico"
+    values:
+      image: "true"
