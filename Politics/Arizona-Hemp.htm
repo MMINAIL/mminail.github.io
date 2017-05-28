@@ -274,11 +274,11 @@ title: Arizona Hemp | MMINAIL
 
 <p>
   <span><b>Full Disclosure</b>.</span>
-  <span>Sixteen (16) years ago, in March of #2001 ... State Senator Borrelli was convicted locally of one count of Domestic Violence stemming from an altercation with his now ex-wife.</span>
+  <span>Sixteen (16) years ago, in March of #2001 ... State Senator Borrelli was arrested locally on one count of Domestic Violence stemming from an altercation with his now ex-wife.</span>
 </p>
 
 <p>
-  <span>After pleading guilty to a lesser offense as part of a plea bargain, State Senator Borrelli was sentenced to ten (10) days in jail, of which he served (1) day before being released under a court order of one-year of probation, plus a $400 fine with the stipulation that he successfully undergo Anger Management classes.</span> 
+  <span>After pleading guilty to a lesser offense as part of a plea bargain, State Senator Borrelli was sentenced to ten (10) days in jail, of which he served (1) day before being released under a court ordered supervision of one-year of probation, plus a $400 fine with the stipulation that he successfully undergo Anger Management classes, as well.</span> 
 </p>
 
 <p>
@@ -286,7 +286,11 @@ title: Arizona Hemp | MMINAIL
 </p>
 
 <p>
-  <span>No additional incidence of Domestic Violence alleged or otherwise has been incurred by State Senator Borrelli over the fifteen (15) year period of time since his release and divorce.</span>
+  <span>In the State of Arizona, charges such as these are generally expunged from the record of the individual upon successful mitigation of the events leading up to the incidence.</span>
+</p>
+
+<p>
+  <span>No additional charges of Domestic Violence alleged or otherwise has been incurred by State Senator Borrelli over the fifteen (15) year period of time since his release and divorce.</span>
 </p>
 
 <p>
@@ -746,6 +750,11 @@ title: Arizona Hemp | MMINAIL
   <li>Arizona State Senator <a href="http://www.azleg.gov/MemberRoster/?body=S" title="Click to contact Arizona State Senator Yee" target="_blank">YEE</a>: Yea</li>
   <li>Arizona State Senator <a href="http://www.azleg.gov/MemberRoster/?body=S" title="Click to contact Arizona State Senator Yarbrough" target="_blank">YARBROUGH</a>: Yea</li>
 </ol>
+
+<p>
+  <span><b>Source</b>:</span>
+  <span><a href="http://www.azleg.gov/MemberRoster/?body=S" title="Click to Visit the Arizona State Senate" target="_blank">Arizona State Senate</a></span>
+</p>
   <hr class='green-groove' />
 
 <hgroup class='text-left'>
@@ -793,6 +802,31 @@ title: Arizona Hemp | MMINAIL
 
 <p>
   <span>Not unlike the King of Diamonds when playing cards aka "The Man With The Ax", the Governor of Arizona holds VETO POWER over all legislation that can then itself be overturned by a State Legislature so willing!</span>
+</p>
+  <hr class='green-groove' />
+
+<p>
+  <span>For your perusal, Governor Ducey ... Here is the list of State Representatives from the Arizona House of Representatives that overwhelmingly voted FOR <a href='http://www.azleg.gov/legtext/53leg/1R/bills/sb1337s.pdf' title='Click to Review the Full Text of the Arizona Industrial Hemp Farming Act of 2017' target='_blank'>SB 1337</a>.</span>
+</p>
+
+<ol type="1">
+{% for tab in site.data.tabs.reps %}
+
+<li>{{ 'Arizona State Representative' }} <a href="http://www.azleg.gov/MemberRoster/?body=H" title="Click to contact Arizona State Representative {{ tab.lastName }}" target="_blank">{{ tab.lastName }}</a>: {% if tab.vote == true %}{{'Yea'}}{% else if tab.vote == false %}{{'Nay'}}{% else if vote == nil %}{{'Abstain'}}</li>
+
+{% endif %}
+
+{% else %}{{ 'There are no items to report!' }}
+
+{% endfor %}
+
+{% comment %}Finito!{% endcomment %}
+  
+</ol>
+
+<p>
+  <span><b>Source</b>:</span>
+  <span><a href="http://www.azleg.gov/MemberRoster/?body=H" title="Click to Visit the Arizona House of Representatives" target="_blank">Arizona House of Representatives</a></span>
 </p>
   <hr class='green-groove' />
 
