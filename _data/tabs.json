@@ -3,5 +3,6 @@
   { "lastName" : "Allen", "vote" : true },
   { "lastName" : "Alston", "vote" : true },
   { "lastName" : "Andrade", "vote" : true },
-  { "lastName" : "Barton", "vote" : true }
+  { "lastName" : "Barton", "vote" : true },
+  { "lastName" : "Benally", "vote" : null }
 ]}
