@@ -806,17 +806,15 @@ title: Arizona Hemp | MMINAIL
   <hr class='green-groove' />
 
 <p>
-  <span>For your perusal, Governor Ducey ... Here is the list of State Representatives from the Arizona House of Representatives that overwhelmingly voted FOR <a href='http://www.azleg.gov/legtext/53leg/1R/bills/sb1337s.pdf' title='Click to Review the Full Text of the Arizona Industrial Hemp Farming Act of 2017' target='_blank'>SB 1337</a>.</span>
+  <span>For your perusal, Governor Ducey ... Here is the list of State Representatives from the Arizona House of Representatives that OVERWHELMINGLY voted FOR <a href='http://www.azleg.gov/legtext/53leg/1R/bills/sb1337s.pdf' title='Click to Review the Full Text of the Arizona Industrial Hemp Farming Act of 2017' target='_blank'>SB 1337</a>.</span>
 </p>
 
 <ol type="1">
 {% for tab in site.data.tabs.reps %}
 
-<li>{{ 'Arizona State Representative' }} <a href="http://www.azleg.gov/MemberRoster/?body=H" title="Click to contact Arizona State Representative {{ tab.lastName }}" target="_blank">{{ tab.lastName }}</a>: {% if tab.vote == true %}{{'Yea'}}{% else if tab.vote == false %}{{'Nay'}}{% else if vote == nil %}{{'Abstain'}}</li>
+<li>{{ 'Arizona State Representative' }} <a href="http://www.azleg.gov/MemberRoster/?body=H" title="Click to contact Arizona State Representative {{ tab.lastName }}" target="_blank">{{ tab.lastName }}</a>: {% case tab.vote %} {% when true %}{{'Yea'}}{% when null %}{{'Abstain'}}{% when false %}{{'Nay'}}{% else %}{{ 'There are no items to report!' }}</li>
 
-{% endif %}
-
-{% else %}{{ 'There are no items to report!' }}
+{% endcase %}
 
 {% endfor %}
 
