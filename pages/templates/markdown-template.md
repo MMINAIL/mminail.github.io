@@ -13,4 +13,4 @@ More to come ...
 
 ***
 
-**Source**: [The Cannabis Manifesto: A New Paradigm For Wellness by Steve D'Angelo](https://medmj.us/Cannafesto){:target="_blank"}
+**Source**: [Instructional Jekyll Tips n Vids by Cloud Cannon](https://learn.cloudcannon.com/){:target="_blank"}
