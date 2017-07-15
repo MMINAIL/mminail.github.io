@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Liquid Lesson | MMINAIL
+title: Hybrid Table | MMINAIL
 ---
 <div class="container-fluid">
 	<div class="row-fluid">
@@ -9,18 +9,52 @@ title: Liquid Lesson | MMINAIL
 <article>
 
 <hgroup class="text-left">
-	<h3>Liquid Lesson Article</h3>
+	<h3>Hybrid Table Article</h3>
 </hgroup>
 	<hr class="green-groove" />
 
 <p class="lead">
-	<span>Welcome! This is the Liquid Lesson page of the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr>.</span>
+	<span>Welcome! This is the Hybrid Table page of the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr>.</span>
 </p>
 	<hr class="green-groove" />
 
+
+
 <hgroup class="text-left">
-	<h4>Liquid Lesson Topic</h4>
+	<h4>Hybrid Table</h4>
 </hgroup>
+	<hr class="green-groove" />
+
+<table class="table">
+	<colgroup>
+  	<col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+	</colgroup>
+
+	<thead>
+  	<tr class="header">
+    	<th>English - Fruits</th>
+      <th>Photo</th>
+      <th>Spanish - Frutas</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  	{% for bag in site.data.bags.fruits %}
+    <tr class="center">
+			<td markdown="span">{{ bag.fruitNameEn }}</td>
+			<td markdown="span">
+				<picture>
+					<a href='https://mminail.github.io' title='Click To Review the Home page of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation' target='_blank'>
+					<img class="center" src="{{ bag.photo }}" alt="The USPTO Registered Logo Badge of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation" /></a>
+				</picture>
+			</td>
+			<td markdown="span">{{ bag.fruitNameEs }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 	<hr class="green-groove" />
 
 <p>
