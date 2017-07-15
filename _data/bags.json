@@ -1,0 +1,4 @@
+{"fruits":[
+  { "fruitNameEn" : "Blackberries", "photo" : "../assets/img/raspberry-frambuesa-32-x-32.png", "fruitNameEs" : "Zarzamoras" },
+  { "fruitNameEn" : "Raspberries", "photo" : "../assets/img/raspberry-frambuesa-32-x-32.png", "fruitNameEs" : "Frambuesas" }
+]}
