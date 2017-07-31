@@ -1,0 +1,17 @@
+{"fed-reps":[
+  { "lastName" : "Young", "firstName" : "Don", "party" : "GOP", "state" : "AK", "district" : "00", "sponsor" : true },
+  { "lastName" : "Polis", "firstName" : "Jared", "party" : "DEM", "state" : "CO", "district" : "02", "sponsor" : true },
+  { "lastName" : "Perlmutter", "firstName" : "Ed", "party" : "DEM", "state" : "CO", "district" : "07", "sponsor" : true },
+  { "lastName" : "Gabbard", "firstName" : "Tulsi", "party" : "DEM", "state" : "HI", "district" : "02", "sponsor" : true },
+  { "lastName" : "Massie", "firstName" : "Thomas", "party" : "GOP", "state" : "KY", "district" : "04", "sponsor" : true },
+  { "lastName" : "Barr", "firstName" : "Andy", "party" : "GOP", "state" : "KY", "district" : "06", "sponsor" : true },
+  { "lastName" : "Peterson", "firstName" : "Collin C.", "party" : "DEM", "state" : "MN", "district" : "07", "sponsor" : true },
+  { "lastName" : "Cramer", "firstName" : "Kevin", "party" : "GOP", "state" : "ND", "district" : "00", "sponsor" : true },
+  { "lastName" : "Bonamici", "firstName" : "Suzanne", "party" : "DEM", "state" : "OR", "district" : "01", "sponsor" : true },
+  { "lastName" : "Blumenauer", "firstName" : "Earl", "party" : "DEM", "state" : "OR", "district" : "03", "sponsor" : true },
+  { "lastName" : "DeFazio", "firstName" : "Peter A.", "party" : "DEM", "state" : "OR", "district" : "04", "sponsor" : true },
+  { "lastName" : "Schrader", "firstName" : "Kurt", "party" : "DEM", "state" : "OR", "district" : "05", "sponsor" : true },
+  { "lastName" : "Cohen", "firstName" : "Steve", "party" : "DEM", "state" : "TN", "district" : "09", "sponsor" : true },
+  { "lastName" : "Goodlatte", "firstName" : "Bob", "party" : "GOP", "state" : "VA", "district" : "06", "sponsor" : true },
+  { "lastName" : "Griffith", "firstName" : "H. Morgan", "party" : "GOP", "state" : "VA", "district" : "09", "sponsor" : true }
+]}
