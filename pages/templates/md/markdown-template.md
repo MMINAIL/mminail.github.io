@@ -20,8 +20,7 @@ More to come ...
 
 ```liquid
 {% raw %}
-First Line of Text
->As you can see in the following live rendition, the usage of the "greater than" symbol `>` in this case yields an indented 2nd line of text with a corresponding "thick pipe" drawn preceding Line Number Two.
+`...`
 {% endraw %}
 ```
 
