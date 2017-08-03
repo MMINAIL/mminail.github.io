@@ -194,30 +194,24 @@ h7 {
     font-family: 'trattatello';
 }
 
-/* Styled Text Classes */
+/* -------------------------------
+    Begin Styled Text Classes
+---------------------------------- */
 
-/* Imgage Zoom-out From thumb */
-.icon-thumb {
-    width: 25px;
-    height: auto;
+/* Directional Text Classes */
+.text-left {
+    text-align: left;
 }
 
-/* The Adjacent Sibling */
-.icon-zoom {
-    position: absolute;
-    width: 0px;
-    -webkit-transition: width 0.3s linear 0s;
-    transition: width 0.3s linear 0s;
-    z-index: 5;
+.text-center {
+    text-align: center;
 }
 
-/* Where the "plus" sign represents the adjacent sibling selector in Css3 */
-.icon-thumb:hover + .icon-zoom {
-    width: 100px;
+.right-justify {
+    text-align: right;
 }
 
-/* End Imgage Zoom-out From thumb */
-
+/* Emphasis Text Classes */
 .oblique-text {
     font-family: 'eurostyle';
     /* font-style: oblique; */
@@ -233,18 +227,9 @@ h7 {
     font-family: cursive;
 }
 
-/* Directional Text Classes */
-.text-left {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.right-justify {
-    text-align: right;
-}
+/* -------------------------------
+    End Styled Text Classes
+---------------------------------- */
 
 /* Set the header elements */
 
@@ -481,6 +466,32 @@ mark,
     /* border-radius: 6px; */
     border-radius: 4px;
 }
+
+/* -------------------------------
+    Begin Imgage Zoom-out From thumb
+---------------------------------- */
+.icon-thumb {
+    width: 25px;
+    height: auto;
+}
+
+/* The Adjacent Sibling */
+.icon-zoom {
+    position: absolute;
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0s;
+    z-index: 5;
+}
+
+/* Where the "plus" sign represents the adjacent sibling selector in Css3 */
+.icon-thumb:hover + .icon-zoom {
+    width: 100px;
+}
+
+/* -------------------------------
+    End Imgage Zoom-out From thumb
+---------------------------------- */
 
 /* Set the collapsable Responsive Image 'min-width' */
 img {
