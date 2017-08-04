@@ -16,7 +16,7 @@ Place the introducing line of text ie.) the 'tagline' here ...
 
 More to come ...
 
-### The Code
+## Raw Code
 
 ```liquid
 {% raw %}

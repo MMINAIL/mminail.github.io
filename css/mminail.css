@@ -1,6 +1,8 @@
 /* The main .css file for the mminail.gihub.io Git repo */
 
-/* Set the font-face(s) for the Website */
+/* -------------------------------
+    Set the font-face(s) for the Website
+---------------------------------- */
 
 /*  Note. C=> https://www.google.com/fonts for the entire 'eurostyle' group */
 @font-face {
@@ -68,7 +70,10 @@ body {
     /* overflow: auto; */
 }
 
-/* Set the color of the anchor links */
+/* -------------------------------
+    Begin Styled Anchor Links
+---------------------------------- */
+
 a {
     text-decoration: none;
 }
@@ -83,37 +88,17 @@ a[href^="https:"] {
 a[href^="http:"] {
     color: rgb(207,103,75); /* Indian Red */ 
 }
-/* End Setting the color of the anchor links */
 
-/* Set the background color and image for the header masthead */
-.masthead {
-    min-height: 230px;
-    max-height: 230px;
-    /* max-width: 100%; */
-    width: calc(100% - 0px); 
-    /* padding-right: .5em; */
-    /* padding-bottom: .5em; */
-    /* padding-left: .5em; */
-    padding-top: .25em;
-    /* color: black; */
-    color: #000531; 
-    background: rgb(155,155,204) url("../assets/img/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-two-1400-x-230.svg") no-repeat; /* center center */
-    background-size: cover;
-    /* background-size: contain; */
-}
+/* -------------------------------
+    Begin Styled Titles
+---------------------------------- */
 
-/* Titles */
 h1 {
     text-align: center;
     /* min-width: 480px; */
     width: calc(100% - 20px);
     font-size: x-large;
     margin-top: 0px;
-}
-
-/* Set the double-xx font size for the Immediate tag */
-i.largo {
-    font-size: xx-large;
 }
 
 /* Subtitles */
@@ -143,7 +128,24 @@ h7 {
     font-size: xx-small;
 }
 
-/* Direct Classes */
+/* -------------------------------
+    Begin Styled Text Classes
+---------------------------------- */
+
+/* Set the shadow box class */
+.shadow-box {
+    color: darkcyan;
+    width: 20%;
+    margin-left: 20px;
+    padding-left: 10px;
+    border: 2px solid gray;
+    box-shadow: 10px 10px 5px #0f0f0f;
+}
+
+/* Set the double-xx font size for the Immediate tag */
+i.largo {
+    font-size: xx-large;
+}
 
 .canvas-text {
     position: relative;
@@ -160,7 +162,7 @@ h7 {
     border: 5px red groove;
 }
 
-/* Color Text Classes */
+/* Colorful Text Classes */
 .forest-green-text {
     color: #004B23; /* Forest Green */
 }
@@ -169,7 +171,44 @@ h7 {
     color:lime; /* Neon Green */
 }
 
-/* Typeface Classes */
+/* Directional Text Classes */
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.right-justify {
+    text-align: right;
+}
+
+/* Emphasis Text Classes */
+.oblique-text {
+    font-family: 'eurostyle';
+    /* font-style: oblique; */
+    font-size: 1.25em;
+    color: #CC6600; /* Ashley Gold */
+    /* border: 2px black groove; */
+    letter-spacing: 1px;
+    /* letter-spacing: normal; /* zero length */
+}
+
+.script-text {
+    font-style: italic;
+    font-family: cursive;
+}
+
+.small-caps {
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+/* -------------------------------
+    Begin Styled Font Classes
+---------------------------------- */
+
 .euro {
     font-family: 'eurostyle';
 }
@@ -194,66 +233,42 @@ h7 {
     font-family: 'trattatello';
 }
 
-/* Styled Text Classes */
-
-/* Imgage Zoom-out From thumb */
-.icon-thumb {
-    width: 25px;
-    height: auto;
-}
-
-/* The Adjacent Sibling */
-.icon-zoom {
-    position: absolute;
-    width: 0px;
-    -webkit-transition: width 0.3s linear 0s;
-    transition: width 0.3s linear 0s;
-    z-index: 5;
-}
-
-/* Where the "plus" sign represents the adjacent sibling selector in Css3 */
-.icon-thumb:hover + .icon-zoom {
-    width: 100px;
-}
-
-/* End Imgage Zoom-out From thumb */
-
-.oblique-text {
-    font-family: 'eurostyle';
-    /* font-style: oblique; */
-    font-size: 1.25em;
-    color: #CC6600; /* Ashley Gold */
-    /* border: 2px black groove; */
-    letter-spacing: 1px;
-    /* letter-spacing: normal; /* zero length */
-}
-
-.script-text {
-    font-style: italic;
-    font-family: cursive;
-}
-
-/* Directional Text Classes */
-.text-left {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.right-justify {
-    text-align: right;
-}
+/* -------------------------------
+    Begin Styled Header Classes
+---------------------------------- */
 
 /* Set the header elements */
-
 hgroup {
     text-align: center;
 }
 
-/* Set the basic classes */
+/* Set the background color and image for the header masthead */
+.masthead {
+    min-height: 230px;
+    max-height: 230px;
+    /* max-width: 100%; */
+    width: calc(100% - 0px); 
+    /* padding-right: .5em; */
+    /* padding-bottom: .5em; */
+    /* padding-left: .5em; */
+    padding-top: .25em;
+    /* color: black; */
+    color: #000531; 
+    background: rgb(155,155,204) url("../assets/img/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-two-1400-x-230.svg") no-repeat; /* center center */
+    background-size: cover;
+    /* background-size: contain; */
+}
 
+/* -------------------------------
+    Begin Other Classes
+---------------------------------- */
+
+/* Set the rule for a custom <hr /> 'hard return' tag */
+.green-groove {
+    border: 1px groove green;
+}
+
+/* Set the basic classes */
 .panel-padding {
     padding: 1%;
 }
@@ -261,16 +276,6 @@ hgroup {
 .more-link {
     display: inline-block;
     margin-left: 10px;
-}
-
-/* Set the rule for a custom <hr /> 'hard return' tag */
-.green-groove {
-    border: 1px groove green;
-}
-
-.small-caps {
-    font-variant: small-caps;
-    font-weight: 700;
 }
 
 /* Nav semantic container classes */
@@ -482,7 +487,32 @@ mark,
     border-radius: 4px;
 }
 
-/* Set the collapsable Responsive Image 'min-width' */
+/* -------------------------------
+    Begin Imgage Zoom-out From thumb
+---------------------------------- */
+.icon-thumb {
+    width: 25px;
+    height: auto;
+}
+
+/* The Adjacent Sibling */
+.icon-zoom {
+    position: absolute;
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0s;
+    z-index: 5;
+}
+
+/* Where the "plus" sign represents the adjacent sibling selector in Css3 */
+.icon-thumb:hover + .icon-zoom {
+    width: 100px;
+}
+
+/* -------------------------------
+    Set the collapsable Responsive Image
+---------------------------------- */
+
 img {
     /* min-width: 340px; */
     /* max-width: 100%; */
