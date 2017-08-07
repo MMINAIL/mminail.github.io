@@ -16,6 +16,20 @@ Place the introducing line of text ie.) the 'tagline' here ...
 
 More to come ...
 
+## Ping-back
+
+- Live Link
+
+[Medcoin™ Crypto Currency Project: Ping-back Home Page](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/){:target="_blank"}
+
+- The Code
+
+```liquid
+{% raw %}
+[Medcoin™ Crypto Currency Project: Ping-back Home Page](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/){:target="_blank"}
+{% endraw %}
+```
+
 ## Raw Code
 
 ```liquid
