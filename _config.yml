@@ -1,15 +1,33 @@
 # Site settings
 #
+# Date of this Update to Config-template file ver 07-29-2017
+#
+# github: [metadata]
+# theme: "jekyll-theme-cayman"
+# repository: rwebaz/Markdown-Lessons-Project
+title: "Concept Library"
+tagline: "A GitHub repo of Lessons and Articles that emphasize both the GFM and Kramdown engines"
+description: "A GitHub repo of Lessons and Articles that emphasize both the GFM and Kramdown engines"
+author:
+    name: "Robert Weber, Director"
+    email: "mminail@icloud.com"
+    github_username: "mminail"
+    twitter_username: "mminail"
+twitter:
+    username: "mminail"
+# The 'baseurl' is the subpath of your website, e.g. /blog
 baseurl: "/"
+url: "https://mminail.github.io"
 exclude: ['README.md']
-# kramdown y rouge are now the default setting for markdown and highlighter respectively in Jekyll 3.0 and above
 markdown: "kramdown"
 highlighter: "rouge"
 kramdown:
     input: "GFM"
+    hard_wrap: "false"
     syntax_highlighter: "rouge"
+    math_engine: "mathjax"
 timezone: "America/Phoenix"
-# gems: octopress-date-format
+google_analytics: [UA-44765001-7]
 defaults:
   - scope:
       path: "assets/img"
@@ -23,7 +41,35 @@ defaults:
 defaults:
   - scope:
       path: ""
+    values:
+      image: /assets/ico/apple-icon-120x120.png
+defaults:
+  - scope:
+      path: "" 
       type: "pages"
     values:
       layout: "default"
       author: "Robert Weber, Director"
+defaults:
+  - scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: "default" 
+      author: "Robert Weber, Director"
+collections:
+  collection_CFFP:
+    output: "true"
+defaults:
+  - scope:
+      path: ""
+      type: "collection_LLP"
+    values:
+      layout: "page"
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
