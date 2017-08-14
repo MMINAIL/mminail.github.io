@@ -1,6 +1,6 @@
 # Site settings
 #
-# Date of this Update to Config-template file ver 08-13-2017
+# Date of this Update to Config-template file ver 08-13-2017 PM
 #
 # github: [metadata]
 # theme: "jekyll-theme-cayman"
@@ -67,7 +67,7 @@ defaults:
       type: "collection_LLP"
     values:
       layout: "page"
-plugins:
+plugins_dir:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
