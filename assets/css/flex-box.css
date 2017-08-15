@@ -16,7 +16,7 @@ aside#navigator {
 	}
 
 /* Give the flex item and inflow-child 'article-main-article' of the parent body element a position in the 'body' flex container */
-article.main-article {
+article#main-article {
     -webkit-flex: 2 1 100%;
 	flex: 2 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis */
 	-webkit-order: 2;
@@ -35,16 +35,16 @@ aside#supporting-content {
 footer.page-footer {
 	-webkit-flex: 2 1 100%;
 	flex: 2 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis */
-	-webkit-order: 4;
-	order: 4;
+	-webkit-order: 8;
+	order: 8;
     }
 
 /* Give the flex item and inflow-child 'site-page-footer' of the parent body element a position in the 'body' flex container */
 footer.site-footer {
 	-webkit-flex: 2 1 100%;
 	flex: 2 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis */
-	-webkit-order: 5;
-	order: 5;
+	-webkit-order: 9;
+	order: 9;
     }
 
 /* MEDIA QUERY SECTION */
@@ -68,7 +68,7 @@ aside#navigator {
 	}
 
 /* Give the flex item and inflow-child 'article-main-article' of the parent body element a position in the 'body' flex container */
-article.main-article {
+article#main-article {
     -webkit-flex: 2 1 100%;
 	flex: 2 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis */
 	-webkit-order: 2;
@@ -87,16 +87,16 @@ aside#supporting-content {
 footer.page-footer {
 	-webkit-flex: 2 1 100%;
 	flex: 2 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis */
-	-webkit-order: 4;
-	order: 4;
+	-webkit-order: 8;
+	order: 8;
     }
 
 /* Give the flex item and inflow-child 'site-page-footer' of the parent body element a position in the 'body' flex container */
 footer.site-footer {
 	-webkit-flex: 2 1 100%;
 	flex: 2 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis */
-	-webkit-order: 5;
-	order: 5;
+	-webkit-order: 9;
+	order: 9;
     }
 }
 
@@ -108,25 +108,38 @@ div#main-body {
 	-webkit-flex-flow: row;
 	flex-flow: row;
     flex-direction: row;
-    }
-
-    /* aside#navigator {
-        clear: left;
-    } */
+	}
+	
+	* Give the flex item and inflow-child 'aside-navigator' of the parent body element a position in the 'main-body' flex container */
+	aside#navigator {
+		-webkit-flex: 1 2 50%;
+		flex: 1 2 50%; /* Three values: flex-grow | flex-shrink | flex-basis */
+		-webkit-order: 1;
+		order: 1;
+		}
+	
+	/* Give the flex item and inflow-child 'article-main-article' of the parent body element a position in the 'body' flex container */
+	article#main-article {
+		-webkit-flex: 2 1 100%;
+		flex: 2 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis */
+		-webkit-order: 2;
+		order: 2;
+		}
+	
+	/* Give the flex item and inflow-child 'aside-supporting-content' of the parent body element a position in the 'body' flex container */
+	aside#supporting-content {
+		-webkit-flex: 1 2 50%; 
+		flex: 1 2 50%; /* Three values: flex-grow | flex-shrink | flex-basis */
+		-webkit-order: 3;
+		order: 3;
+		}
 
 .page-footer {
-        /* min-height: 150px; */
         font-size: large;
-        /* max-width: 73%; */
-        /* min-height: 140px; */
-        /* max-height: 100%; */
-        /* height: calc(100%); */
     }
 
 .site-footer {
         font-size: large;
-        min-height: 200px;
-        /* height: calc(100% - 20px); */
     }
 }
 
@@ -146,23 +159,12 @@ div#main-body > aside, article, footer {
 	order: 0;
 	}
 
-    /* aside#navigator {
-        clear: left;
-    } */
-
 .page-footer {
-    /* min-height: 150px; */
     font-size: medium;
-    /* max-width: 73%; */
-    /* min-height: 140px; */
-    /* max-height: 100%; */
-    /* height: calc(100%); */
     }
 
 .site-footer {
     font-size: medium;
-    /* min-height: 200px; */
-    /* height: calc(100% - 20px); */
     }
 }
 
@@ -176,19 +178,22 @@ div#main-body {
     flex-direction: row;
     }
 
-    /* aside#navigator {
-        clear: left;
-    } */
-
 .page-footer {
-        min-height: 200px;
         font-size: small;
+        position: absolute;
+        -webkit-flex: 2 1 100%;
+        flex: 2 1 100%;
+        -webkit-order: 8;
+        order: 8;
     }
 
 .site-footer {
         font-size: small;
-        /* min-height: 200px; */
-        /* height: calc(100% - 20px); */
+        position: absolute;
+        -webkit-flex: 2 1 100%;
+        flex: 2 1 100%;
+        -webkit-order: 9;
+        order: 9;
     }
 }
 

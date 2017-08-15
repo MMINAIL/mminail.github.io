@@ -3,90 +3,56 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>{{ page.title }} | {{ site.title }}</title>
-	<link href="../css/themes/bootstrap.min.css" rel="stylesheet" />
-	<link href="../css/themes/bootstrap.icon-large.min.css" rel="stylesheet" />
-	<link href="../css/full/flex-box.css" rel="stylesheet" />
-	<!-- Comment Out: jQuery Mobile remote css
-	<link href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" /> -->
-	<link href="../css/themes/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
-	<link href="../css/themes/jquery.mobile.icons-1.4.5.min.css" rel="stylesheet" />
-	<link href="../css/full/zocial.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>{{ page.title }} | {{ site.title }}</title>
 	<!-- Comment Out: Highlight js remote css
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css" rel="stylesheet" /> -->
-	<link href="../highlight-js/styles/foundation.css" rel="stylesheet" />
-	<link href="../css/mminail.css" rel="stylesheet" />
-	<!-- Comment Out: Prism css
-	<link href="../css/themes/prism.css" rel="stylesheet" /> -->
+	<link href="/assets/css/foundation.css" rel="stylesheet" />
+	<link href="/assets/css/prism.css" rel="stylesheet" />
+	<link href="/assets/css/zocial.css" rel="stylesheet" />
+	<link href="/assets/css/flex-box.css" rel="stylesheet" />
+	<link href="/assets/css/bs/min/bootstrap.min.css" rel="stylesheet" />
+	<link href="/assets/css/bs/min/bootstrap.icon-large.min.css" rel="stylesheet" />
+	<!-- Comment Out: jQuery Mobile remote css
+	<link href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" /> -->
+	<link href="/assets/css/jq/min/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+	<link href="/assets/css/jq/min/jquery.mobile.icons-1.4.5.min.css" rel="stylesheet" />
+	<!-- Comment Out: Main css -->
+	<link href="/assets/css/mminail.css" rel="stylesheet" />
+	
 	<!-- Add Standard favicon Link -->
 	<link type="image/x-icon" href="/favicon.ico?" rel="shortcut icon" />
 	<!-- Add Fav icon Generator Links -->
-<link rel="apple-touch-icon" sizes="57x57" href="../assets/ico/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="../assets/ico/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../assets/ico/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="../assets/ico/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../assets/ico/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="../assets/ico/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="../assets/ico/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="../assets/ico/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/ico/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="../assets/ico/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/ico/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="../assets/ico/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/ico/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="../assets/ico/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<!-- End Fav icon Generator Links -->
-
-<!-- Google Tag Mgr MAIN Code -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NGX5TCX');</script>
-<!-- End Google Tag Manager -->
-
-<!-- Enable Facebook MAIN Pixel Code 
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1296296867119545', {
-em: 'insert_email_variable'
-});
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1296296867119545&ev=PageView&noscript=1"
-/></noscript> -->
-
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/ico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/ico/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/assets/ico/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- End Fav icon Generator Links -->
 </head>
 
-<!-- Place Additional Facebook Pixel EVENT Code here 
-<script>fbq('track', '<EVENT_NAME>');</script> -->
-
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGX5TCX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<header class="masthead">
-
-	<aside id="navigator">{% include nav.htm %}</aside>
-
-	<!-- Splitting the <h1> tag 50/50 Large/Small -->
-	<h1 class="visible-xs visible-sm visible-md visible-lg">MMINAIL.GitHub.io<br />
-	<small class="forest-green-text">Central Live Repository</small><br />
-	<small class="forest-green-text">Concept Library</small></h1>
-
-</header>
+	<div id="main-body">
+	<header class="masthead">
+		<aside id="navigator">{% include nav.htm %}</aside>
+		<!-- Splitting the <h1> tag 50/50 Large/Small -->
+		<h1 class="visible-xs visible-sm visible-md visible-lg">MMINAIL.GitHub.io<br />
+		<small class="forest-green-text">Central Live Repository</small><br />
+		<small class="forest-green-text">Concept Library</small></h1>
+	</header>
 
 <!-- <div class="container-fluid"> -->
 <!-- <div class="row-fluid"> -->
@@ -94,7 +60,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- <div class="container"> -->
 <!-- <div class="panel panel-primary panel-padding"> -->
 	
-<article class="main-article">
+<article id="main-article" class="main-article">
 
 	{{content}}
 
@@ -118,20 +84,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Place all Javascript Library packages north of the </body> closing tag and after the closing site-footer </footer> tag in order of execution -->
 
-<!-- Comment Out: Jquery Library remote script -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<!-- Comment Out: Jquery Library remote script 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 
-<!-- Comment Out: Jquery Library Local script 
-<script src="../js/jquery.min.js"></script> -->
+<!-- Comment Out: Jquery Library Local script -->
+<script src="/js/jquery.min.js"></script> 
 
 <!-- Comment Out: Jquery Mobile Library remote standard script 
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 
-<!-- Comment Out: Jquery Mobile Library remote secure script -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> 
+<!-- Comment Out: Jquery Mobile Library remote secure script 
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> -->
 
-<!-- Comment Out: Jquery Mobile Library Local script 
-<script src="../js/jquery.mobile-1.4.5.min.js"></script> -->
+<!-- Comment Out: Jquery Mobile Library Local script -->
+<script src="/js/jquery.mobile-1.4.5.min.js"></script> 
 
 <!-- Comment Out: Jquery Cookie Library remote script 
 <script src="#"></script> -->
@@ -145,11 +111,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Comment Out: jQuery URI Library Local script
 <script src="../js/jquery.uri.min.js"></script> -->
 
-<!-- Comment Out: Bootstrap Library remote script -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+<!-- Comment Out: Bootstrap Library remote script 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 
-<!-- Comment Out: Bootstrap Library Local script 
-<script src="../js/bootstrap.min.js"></script> -->
+<!-- Comment Out: Bootstrap Library Local script -->
+<script src="/js/bootstrap.min.js"></script>
 
 <!-- Comment Out: Angularjs Library remote script 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script> -->
@@ -187,11 +153,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Comment Out: Head Library Local script
 <script src="../js/head.js"></script> -->
 
-<!-- Comment Out: Highlighter Library remote script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script> 
+<!-- Comment Out: Highlighter Library remote script 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script> -->
 
-<!-- Comment Out: Highlighter Library Local script 
-<script src="../highlight-js/lib/highlight.js"></script> -->
+<!-- Comment Out: Highlighter Library Local script -->
+<script src="/highlight-js/lib/highlight.js"></script> 
 
 <!-- Comment Out: Indexed DB Library remote script 
 <script src="#"></script> -->
@@ -241,11 +207,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Comment Out: Readmore Library Local script 
 <script src="../js/readmore.js"></script> -->
 
-<!-- Comment Out: Tether Library remote script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> 
+<!-- Comment Out: Tether Library remote script 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> -->
 
-<!-- Comment Out: Tether Library Local script 
-<script src="../js/tether.min.js"></script> -->
+<!-- Comment Out: Tether Library Local script -->
+<script src="/js/tether.min.js"></script> 
 
 <!-- Comment Out: Underscore ( data ) Library remote script 
 <script src="#"></script> -->
@@ -253,20 +219,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Comment Out: Underscore ( data ) Library Local script 
 <script src="../js/underscore.min.js"></script> -->
 
-<!-- Comment Out: Hotjar Tracking Code for https://mminail.github.io 
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:449367,hjsv:5};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-</script> -->
-
 <!-- Comment Out: Dot epub (.mobi) maker -->
 <script type="text/javascript" src="//dotepub.com/p/widget.php?lang=en&amp;img=f"></script>
 
+</div>
 </body>
 </html>
