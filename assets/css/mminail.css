@@ -1,39 +1,39 @@
 /* The main .css file for the mminail.gihub.io Git repo */
 
-/* -------------------------------
+/* -------------------------------------
     Set the font-face(s) for the Website
----------------------------------- */
+------------------------------------- */
 
 /*  Note. C=> https://www.google.com/fonts for the entire 'eurostyle' group */
 @font-face {
     font-family: 'eurostyle';
     /* src: url(‘../fonts/euro/eurostyle.eot’); */
     /* src: url('../fonts/euro/eurostyle.eot?#iefix') format(‘embedded-opentype’), */
-    src: url('../fonts/euro/eurostyle.ttf') format('truetype');
+    src: url('../assets/fonts/euro/eurostyle.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'fontawesome';
-    src: url('../fonts/glyph/fontawesome-webfont.eot');
-    src: url('../fonts/glyph/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/glyph/fontawesome-webfont.woff2') format('woff2'),
-        url('../fonts/glyph/fontawesome-webfont.woff') format('woff'),
-        url('../fonts/glyph/fontawesome-webfont.ttf') format('truetype'),
-        url('../fonts/glyph/fontawesome-webfont.svg') format('svg');
+    src: url('../assets/fonts/awesome/fontawesome-webfont.eot');
+    src: url('../assets/fonts/awesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/awesome/fontawesome-webfont.woff2') format('woff2'),
+        url('../assets/fonts/awesome/fontawesome-webfont.woff') format('woff'),
+        url('../assets/fonts/awesome/fontawesome-webfont.ttf') format('truetype'),
+        url('../assets/fonts/awesome/fontawesome-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'glyphicon-halflings-regular';
-    src: url('../fonts/glyph/glyphicons-halflings-regular.eot');
-    src: url('../fonts/glyph/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-        url('../css/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
-        url('../css/fonts/glyphicons-halflings-regular.woff') format('woff'),
-        url('../css/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-        url('../fonts/glyph/glyphicons-halflings-regular.svg') format('svg');
+    src: url('../assets/fonts/glyph/glyphicons-halflings-regular.eot');
+    src: url('../assets/fonts/glyph/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/glyph/glyphicons-halflings-regular.woff2') format('woff2'),
+        url('../assets/fonts/glyph/glyphicons-halflings-regular.woff') format('woff'),
+        url('../assets/fonts/glyph/glyphicons-halflings-regular.ttf') format('truetype'),
+        url('../assets/fonts/glyph/glyphicons-halflings-regular.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -43,12 +43,53 @@
     font-family: 'trattatello';
     /* src: url(‘../fonts/serif/trattatello.eot’); */
     /* src: url('../fonts/serif/trattatello.eot?#iefix') format(‘embedded-opentype’), */
-    src: url('../fonts/serif/trattatello.ttf') format('truetype');
+    src: url('../assets/fonts/serif/trattatello.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-/* Set the html for the Website */
+/* -------------------------------
+    Begin Styled Font Classes
+---------------------------------- */
+
+.euro {
+    font-family: 'eurostyle';
+}
+
+.text-euro {
+    font-family: 'eurostyle';
+}
+
+.glyph {
+    font-family: 'glyphicon-halflings-regular';
+}
+
+.text-glyph {
+    font-family: 'glyphicon-halflings-regular';
+}
+
+.font-awesome {
+    font-family: 'fontawesome';
+}
+
+.text-trat {
+    font-family: 'trattatello';
+}
+
+/* -------------------------------
+    Begin Immediate Tag Classes
+---------------------------------- */
+
+/* Set the double-xx font size for the Immediate tag */
+i.largo {
+    font-size: xx-large;
+}
+
+/* -------------------------------
+    Begin Page Structure Classes
+---------------------------------- */
+
+/* Set the default html element */
 html {
     margin: 0;
     padding: 0;
@@ -56,7 +97,7 @@ html {
     height: 100%;
 }
 
-/* Set the body for the page */
+/* Set the default body element */
 body {
     font-family: Arial, Helvetica, sans-serif;
     /* font: normal 100%/1.4 Georgia, serif; */
@@ -89,9 +130,50 @@ a[href^="http:"] {
     color: rgb(207,103,75); /* Indian Red */ 
 }
 
+/* ------------------------------------
+    Begin Styled Header Ids and Classes
+------------------------------------ */
+
+/* Set the default header element */
+header {
+    color: #000531;
+    min-height: 210px;
+    max-height: 581px;
+    padding-top: .25em;
+    background-color: #FFF8DC; /* cornsilk; */
+    
+}
+
+/* Set the background color and image for the header masthead */
+header#masthead {
+    width: calc(80% - 0px);
+    background: hsl(220, 80%, 90%) url("../assets/img/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-1306-x-581.svg ") no-repeat; /* center center */
+    /* background-color: hsl(220, 80%, 90%); /* Light Sky Blue */
+    /* background-color: rgb(155,155,204); /* Lavender */
+    /* background-color: #33b5e5; /* Medium Sky Blue */
+    /* background-color: #0099cc; /* Dodger Blue */
+    /* background-color: cornsilk; */
+    /* background-color: lightyellow; */
+    /* background-color: rgb(254,254,205); /* full-moon yellow */
+    /* background-color: lightgoldenrodyellow; */
+    /* background-color: papayawhip; */
+    /* background-color: honeydew; */
+    /* background-color: palegoldenrod; */
+    /* background-color: linen; */
+    background-size: cover;
+    /* background-size: contain; */
+}
+
+/* Set the default hgroup element */
+hgroup {
+    text-align: center;
+}
+
 /* -------------------------------
     Begin Styled Titles
 ---------------------------------- */
+
+/* Primary Title */
 
 h1 {
     text-align: center;
@@ -128,146 +210,17 @@ h7 {
     font-size: xx-small;
 }
 
-/* -------------------------------
-    Begin Styled Text Classes
----------------------------------- */
+/* -----------------------------------
+    Begin Styled Aside Ids and Classes
+----------------------------------- */
 
-/* Set the shadow box class */
-.shadow-box {
-    color: darkcyan;
-    width: 20%;
-    margin-left: 20px;
-    padding-left: 10px;
-    border: 2px solid gray;
-    box-shadow: 10px 10px 5px #0f0f0f;
-}
-
-/* Set the double-xx font size for the Immediate tag */
-i.largo {
-    font-size: xx-large;
-}
-
-.canvas-text {
-    position: relative;
-    /* font-size: x-large; */
-    /* color: darkblue; */
-    /* text-align: center; */
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    border: 5px red groove;
-}
-
-/* Colorful Text Classes */
-.forest-green-text {
-    color: #004B23; /* Forest Green */
-}
-
-.neon-text {
-    color:lime; /* Neon Green */
-}
-
-/* Directional Text Classes */
-.text-left {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.right-justify {
-    text-align: right;
-}
-
-/* Emphasis Text Classes */
-.oblique-text {
-    font-family: 'eurostyle';
-    /* font-style: oblique; */
-    font-size: 1.25em;
-    color: #CC6600; /* Ashley Gold */
-    /* border: 2px black groove; */
-    letter-spacing: 1px;
-    /* letter-spacing: normal; /* zero length */
-}
-
-.script-text {
-    font-style: italic;
-    font-family: cursive;
-}
-
-.small-caps {
-    font-variant: small-caps;
-    font-weight: 700;
-}
-
-/* -------------------------------
-    Begin Styled Font Classes
----------------------------------- */
-
-.euro {
-    font-family: 'eurostyle';
-}
-
-.font-awesome {
-    font-family: 'fontawesome';
-}
-
-.glyph {
-    font-family: 'glyphicon-halflings-regular';
-}
-
-.text-glyph {
-    font-family: 'glyphicon-halflings-regular';
-}
-
-.text-euro {
-    font-family: 'eurostyle';
-}
-
-.text-trat {
-    font-family: 'trattatello';
-}
-
-/* -------------------------------
-    Begin Styled Header Classes
----------------------------------- */
-
-/* Set the header elements */
-header {
-    color: #000531;
-    min-height: 210px;
-    max-height: 581px;
-    padding-top: .25em;
-    background-color: #FFF8DC; /* cornsilk; */
-    /* background-color: rgb(155,155,204); /* Lavender */
-}
-
-/* Set the background color and image for the header masthead */
-.masthead {
-    width: calc(80% - 0px);
-    background: #FFF8DC url("/assets/img/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-1306-x-581.svg ") no-repeat; /* center center */
-    background-size: cover;
-    /* background-size: contain; */
-}
-
-hgroup {
-    text-align: center;
-}
-
-/* -------------------------------
-    Begin Styled Aside Classes
----------------------------------- */
-
+/* Set the default aside element */
 aside {
     width: calc(20% - 0px);
     background-color: #DCF9BE; /* Light Chartreuse */
 }
 
+/* Set the navigator aside */
 aside#navigator {
     top: 0;
     right: 0.10em;
@@ -276,61 +229,8 @@ aside#navigator {
     background-color: rgb(155,155,204); /* Lavender */
 }
 
-aside#supporting-content {
-    text-align: left;
-    /* width: calc(20% - 0px); */
-    padding: 1%;
-    background-color: rgb(189, 155, 204); /* Rose Pink */
-}
-
-/* -------------------------------
-    Begin Styled Article Classes
----------------------------------- */
-
-article {
-    position: relative;
-    text-align: left;
-    width: calc(80% - 0px);
-}
-
-article#main-article {
-    padding-right: 1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
-    padding-top: 1%;
-    /* background: hsl(220, 80%, 90%); /* sky blue */
-    /* background-color: cornsilk; */
-    /* background-color: lightyellow; */
-    /* background-color: rgb(254,254,205); /* full-moon yellow */
-    /* background-color: lightgoldenrodyellow; */
-    /* background-color: papayawhip; */
-    /* background-color: honeydew; */
-    /* background-color: palegoldenrod; */
-    /* background-color: linen; */
-    background-color:rgb(255,255,229); /* moonlight */
-    /* border-right: 2px solid #fff; */
-}
-
-/* -------------------------------
-    Begin Other Classes
----------------------------------- */
-
-/* Set the rule for a custom <hr /> 'hard return' tag */
-.green-groove {
-    border: 1px groove green;
-}
-
-/* Set the basic classes */
-.panel-padding {
-    padding: 1%;
-}
-
-.more-link {
-    display: inline-block;
-    margin-left: 10px;
-}
-
 /* Nav semantic container classes */
+
 .menu {
     text-align: center;
 }
@@ -350,7 +250,6 @@ article#main-article {
     margin-bottom: 1%;
     /* display: inline-block; */
     /* max-width: 50%; /* limit width */
-    /* background-color: #33b5e5 */
     background-color : rgb(155,155,204); /* Medium Purple */
     /* text-align: left; */
     color: #fff;
@@ -361,12 +260,94 @@ article#main-article {
 .menu li:hover {
     background-color: rgb(207,103,75); /* Indian Red */
     /* text-align: left; */
-    /* background-color: #0099cc; /* Dodger Blue */
+    
 }
 
 .dropdown-menu {
     text-align: center;
 }
+
+/* Set the background color for the currently selected Nav tab */
+.currentlySelected {
+    background-color: #000531;
+    color: #fff;
+}
+
+/* Set the supporting content aside */
+aside#supporting-content {
+    text-align: left;
+    padding: 1%;
+    /* width: calc(20% - 0px); */
+    background-color: rgb(189, 155, 204); /* Rose Pink */
+}
+
+/* -------------------------------------
+    Begin Styled Article Ids and Classes
+------------------------------------- */
+
+/* Set the default article element */
+article {
+    position: relative;
+    text-align: left;
+    width: calc(80% - 0px);
+}
+
+/* Set the 'main article' article */
+article#main-article {
+    padding: 1%;
+    background-color:rgb(255,255,229); /* moonlight */
+    /* border-right: 2px solid #fff; */
+}
+
+/* ------------------------------------
+    Begin Styled Footer Ids and Classes
+------------------------------------ */
+
+/* Set the page-footer template for each page */
+footer#page-footer {
+    display: block;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    padding: 1%;
+    left: auto;
+    right: auto;
+    min-width: 340px;
+    min-height: 160px;
+    z-index: 8;
+    /* position: absolute; */
+    /* bottom: 1%; */
+    background-color:rgb(255,255,229); /* moonlight */
+    /* background-color: #eebb55; /* orange-yellow */
+	/* background-color: #ffeebb; /* medium-wheat */
+    border-radius: 7pt;
+    border: 1px solid rgb(155,155,204); /* Medium Purple */
+    }
+
+/* Set the global site-footer for the Website */
+footer#site-footer {
+    position: relative; 
+    /*  position: absolute; */
+    display: block;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    padding: 1%;
+    margin: 1% 0% 0% 0%;
+    /* bottom: 1%; */
+    width: calc(80% - 0px);
+    /* width: calc(100% - 20px); */
+    /* max-width: 350px; */
+    /* max-width: 630px; */
+    /* background-color: linen; */
+    z-index: 10;
+    border-radius: 7pt;
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+    }
+
+/* -------------------------------
+    Begin Container Ids and Classes
+---------------------------------- */
 
 div.container {
     background-color: #fff; /* White */
@@ -382,11 +363,9 @@ div.container-fluid {
     margin-left: auto;
 }
 
-/* Set the background color for the currently selected Nav tab */
-.currentlySelected {
-    background-color: #000531;
-    color: #fff;
-}
+/* --------------------------------
+    Begin Pre Block Ids and Classes
+-------------------------------- */
 
 /* Wordwrap and highlight the lines of code  */
 pre {
@@ -476,6 +455,150 @@ code {
     background: hsl(220, 80%, 90%); /* sky blue */
 }
 
+/* -------------------------------------
+    Set the collapsable Responsive Image
+------------------------------------- */
+
+img {
+    /* min-width: 340px; */
+    /* max-width: 100%; */
+    height: auto;
+    border: 1px solid transparent;
+    /* border: 1px solid red; */
+}
+
+.img-responsive {
+    width: calc(100% - 0px);
+    max-width: 210px;
+    }
+
+ul.none {
+    list-style-type: none;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+/* ---------------------------------
+    Begin Imgage Zoom-out From thumb
+--------------------------------- */
+.icon-thumb {
+    width: 25px;
+    height: auto;
+}
+
+/* The Adjacent Sibling */
+.icon-zoom {
+    position: absolute;
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0s;
+    z-index: 5;
+}
+
+/* Where the "plus" sign represents the adjacent sibling selector in Css3 */
+.icon-thumb:hover + .icon-zoom {
+    width: 100px;
+}
+
+/* --------------------------------
+    Begin Styled Text Classes
+----------------------------------- */
+
+/* Set the shadow box class */
+
+.shadow-box {
+    color: darkcyan;
+    width: 20%;
+    margin-left: 20px;
+    padding-left: 10px;
+    border: 2px solid gray;
+    box-shadow: 10px 10px 5px #0f0f0f;
+}
+
+/* Set the canvas text class */
+
+.canvas-text {
+    position: relative;
+    /* font-size: x-large; */
+    /* color: darkblue; */
+    /* text-align: center; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border: 5px red groove;
+}
+
+/* Colorful Text Classes */
+
+.forest-green-text {
+    color: #004B23; /* Forest Green */
+}
+
+.neon-text {
+    color:lime; /* Neon Green */
+}
+
+/* Directional Text Classes */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.right-justify {
+    text-align: right;
+}
+
+/* Decorative Text Classes */
+
+.small-caps {
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+/* Emphasis Text Classes */
+
+.oblique-text {
+    font-family: 'eurostyle';
+    /* font-style: oblique; */
+    font-size: 1.25em;
+    color: #CC6600; /* Ashley Gold */
+    /* border: 2px black groove; */
+    letter-spacing: 1px;
+    /* letter-spacing: normal; /* zero length */
+}
+
+.script-text {
+    font-style: italic;
+    font-family: cursive;
+}
+
+/* -------------------------------
+    Begin Other Classes
+---------------------------------- */
+
+/* Set the rule for a custom <hr /> 'hard return' tag */
+.green-groove {
+    border: 1px groove green;
+}
+
+/* Set the basic classes */
+.panel-padding {
+    padding: 1%;
+}
+
+.more-link {
+    display: inline-block;
+    margin-left: 10px;
+}
+
 mark,
 .mark {
   /* padding: .2em; */
@@ -497,97 +620,14 @@ mark,
 }
 
 /* -------------------------------
-    Begin Imgage Zoom-out From thumb
+    End Other Classes
 ---------------------------------- */
-.icon-thumb {
-    width: 25px;
-    height: auto;
-}
-
-/* The Adjacent Sibling */
-.icon-zoom {
-    position: absolute;
-    width: 0px;
-    -webkit-transition: width 0.3s linear 0s;
-    transition: width 0.3s linear 0s;
-    z-index: 5;
-}
-
-/* Where the "plus" sign represents the adjacent sibling selector in Css3 */
-.icon-thumb:hover + .icon-zoom {
-    width: 100px;
-}
-
-/* -------------------------------
-    Set the collapsable Responsive Image
----------------------------------- */
-
-img {
-    /* min-width: 340px; */
-    /* max-width: 100%; */
-    height: auto;
-    border: 1px solid transparent;
-    /* border: 1px solid red; */
-}
-
-.img-responsive {
-    width: calc(100% - 0px);
-    max-width: 210px;
-    }
-
-ul.none {
-    list-style-type: none;
-    /* margin: 0; */
-    /* padding: 0; */
-}
-
-/* Set the page-footer template for each page */
-.page-footer {
-    display: block;
-    text-align: center;
-    font-size: small;
-    font-weight: 700;
-    padding: 1%;
-    left: auto;
-    right: auto;
-    min-width: 340px;
-    min-height: 160px;
-    z-index: 8;
-    /* position: absolute; */
-    /* bottom: 1%; */
-    background-color:rgb(255,255,229); /* moonlight */
-    /* background-color: #eebb55; /* orange-yellow */
-	/* background-color: #ffeebb; /* medium-wheat */
-    border-radius: 7pt;
-    border: 1px solid rgb(155,155,204); /* Medium Purple */
-    }
-
-/* Set the global site-footer for the Website */
-.site-footer {
-    position: relative; 
-    /*  position: absolute; */
-    display: block;
-    text-align: center;
-    font-size: small;
-    font-weight: 700;
-    padding: 1%;
-    margin: 1% 0% 0% 0%;
-    /* bottom: 1%; */
-    width: calc(80% - 0px);
-    /* width: calc(100% - 20px); */
-    /* max-width: 350px; */
-    /* max-width: 630px; */
-    /* background-color: linen; */
-    z-index: 10;
-    border-radius: 7pt;
-    border: 1px solid rgb(207,103,75); /* Indian Red */
-    }
 
 /* MEDIA QUERY SECTION */
 
 /* LARGEST MEDIA QUERY BEGIN */
 @media only screen and (max-width: 2200px) and (min-width: 1201px)  {
-    .masthead {
+    header#masthead {
         width: calc(80% - 0px);
     }
 
@@ -602,7 +642,7 @@ ul.none {
 
 @media only screen and (max-width: 1200px) and (min-width: 769px)  {
 
-    .masthead {
+    header#masthead {
         width: calc(80% - 0px);
     }
 
@@ -642,7 +682,7 @@ ul.none {
 
 @media only screen and (max-width: 768px) and (min-width: 415px)  {
 
-    .masthead {
+    header#masthead {
         width: calc(75% - 0px);
     }
 
@@ -683,7 +723,7 @@ ul.none {
 
 @media only screen and (max-width: 414px) and (min-width: 361px)   {
 
-    .masthead {
+    header#masthead {
         width: calc(70% - 0px);
     }
 
@@ -730,7 +770,7 @@ ul.none {
 
 @media only screen and (max-width: 360px) {
 
-    .masthead {
+    header#masthead {
         width: calc(100% - 0px);
     }
 
