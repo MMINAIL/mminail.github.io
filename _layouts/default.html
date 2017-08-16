@@ -11,7 +11,7 @@
 	<link href="../assets/css/foundation.css" rel="stylesheet" />
 	<link href="../assets/css/prism.css" rel="stylesheet" />
 	<link href="../assets/css/zocial.css" rel="stylesheet" />
-	<link href="../assets/css/flex-box.css" rel="stylesheet" />
+	<!-- Comment Out: Bootstrap css -->
 	<link href="../assets/bs/min/bootstrap.min.css" rel="stylesheet" />
 	<link href="../assets/bs/min/bootstrap.icon-large.min.css" rel="stylesheet" />
 	<!-- Comment Out: jQuery Mobile remote css
@@ -20,6 +20,8 @@
 	<link href="/assets/jq/min/jquery.mobile.icons-1.4.5.min.css" rel="stylesheet" />
 	<!-- Comment Out: Main css -->
 	<link href="../assets/css/mminail.css" rel="stylesheet" />
+	<!-- Comment Out: Flex Box css -->
+	<link href="../assets/css/flex-box.css" rel="stylesheet" />
 	
 	<!-- Add Standard favicon Link -->
 	<link type="image/x-icon" href="/favicon.ico?" rel="shortcut icon" />
@@ -46,41 +48,29 @@
 
 <body>
 	<div id="main-body">
-	<header id="masthead">
-		<aside id="navigator">{% include nav.htm %}</aside>
-		<!-- Splitting the <h1> tag 50/50 Large/Small -->
-		<h1 class="visible-xs visible-sm visible-md visible-lg">MMINAIL.GitHub.io<br />
-		<small class="forest-green-text">Central Live Repository</small><br />
-		<small class="forest-green-text">Concept Library</small></h1>
-	</header>
+		<section id="top-row">
+			<header id="masthead">
+				<hgroup>
+					<h1 class="visible-xs visible-sm visible-md visible-lg">MMINAIL.GitHub.io<br />
+						<!-- Splitting the <h1> tag 50/50 Large/Small -->
+						<small class="forest-green-text">Central Live Repository</small><br />
+						<small class="forest-green-text">Concept Library</small>
+					</h1>
+				</hgroup>
+			</header>
 
-<!-- <div class="container-fluid"> -->
-<!-- <div class="row-fluid"> -->
-
-<!-- <div class="container"> -->
-<!-- <div class="panel panel-primary panel-padding"> -->
+			<aside id="navigator">{% include nav.htm %}</aside>
+			<aside id="supporting-content">{% include aside.htm %}</aside>
+		</section>
 	
-<article id="main-article" class="main-article">
-
-	{{content}}
-
-</article>
-
-<footer id="site-footer" class="center-block">
-<!-- <footer class="panel-footer"> -->
-
-<hgroup>
-<!-- <hgroup class="panel-body"> -->
-	<h2 class="visible-xs visible-sm visible-md visible-lg">{{ page.title }}</h2>
-</hgroup>
-
-<p>
-	<span>Powered with</span>
-	<a href="https://www.glyphicons.com/" title="Click to Review Glyphicons" target="_blank">glyphicons<br /><br />	
-	<i class="icon-large icon-snowflake"></i></a>
-</p>
-
-</footer>
+		<section id="bottom-row">
+			<article id="main-article" class="main-article">
+				{{content}}
+			
+				<footer id="page-footer">{% include page-footer.htm %}</footer>
+				<footer id="site-footer">{% include site-footer.htm %}</footer>
+			</article>
+		</section>
 
 <!-- Place all Javascript Library packages north of the </body> closing tag and after the closing site-footer </footer> tag in order of execution -->
 
@@ -221,6 +211,12 @@
 
 <!-- Comment Out: Dot epub (.mobi) maker -->
 <script type="text/javascript" src="//dotepub.com/p/widget.php?lang=en&amp;img=f"></script>
+
+<!-- <div class="container-fluid"> -->
+<!-- <div class="row-fluid"> -->
+
+<!-- <div class="container"> -->
+<!-- <div class="panel panel-primary panel-padding"> -->
 
 </div>
 </body>

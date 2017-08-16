@@ -9,7 +9,7 @@
     font-family: 'eurostyle';
     /* src: url(‘../fonts/euro/eurostyle.eot’); */
     /* src: url('../fonts/euro/eurostyle.eot?#iefix') format(‘embedded-opentype’), */
-    src: url('../assets/fonts/euro/eurostyle.ttf') format('truetype');
+    src: url('/assets/fonts/euro/eurostyle.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -30,9 +30,9 @@
     font-family: 'glyphicon-halflings-regular';
     src: url('../assets/fonts/glyph/glyphicons-halflings-regular.eot');
     src: url('../assets/fonts/glyph/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-        url('../assets/fonts/glyph/glyphicons-halflings-regular.woff2') format('woff2'),
-        url('../assets/fonts/glyph/glyphicons-halflings-regular.woff') format('woff'),
-        url('../assets/fonts/glyph/glyphicons-halflings-regular.ttf') format('truetype'),
+        url('../assets/bs/fonts/glyph/glyphicons-halflings-regular.woff2') format('woff2'),
+        url('../assets/bs/fonts/glyph/glyphicons-halflings-regular.woff') format('woff'),
+        url('../assets/bs/fonts/glyph/glyphicons-halflings-regular.ttf') format('truetype'),
         url('../assets/fonts/glyph/glyphicons-halflings-regular.svg') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -137,8 +137,8 @@ a[href^="http:"] {
 /* Set the default header element */
 header {
     color: #000531;
-    min-height: 210px;
-    max-height: 581px;
+    /* max-height: 581px; */
+    width: calc(80% - 0px);
     padding-top: .25em;
     background-color: #FFF8DC; /* cornsilk; */
     
@@ -146,22 +146,19 @@ header {
 
 /* Set the background color and image for the header masthead */
 header#masthead {
-    width: calc(80% - 0px);
-    background: hsl(220, 80%, 90%) url("../assets/img/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-1306-x-581.svg ") no-repeat; /* center center */
+    background: hsl(220, 80%, 90%) url("/assets/img/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-1306-x-581.svg") no-repeat; /* center center */
+    
     /* background-color: hsl(220, 80%, 90%); /* Light Sky Blue */
     /* background-color: rgb(155,155,204); /* Lavender */
-    /* background-color: #33b5e5; /* Medium Sky Blue */
+    /* background-color: #eebb55; /* orange-yellow */
+	
     /* background-color: #0099cc; /* Dodger Blue */
     /* background-color: cornsilk; */
     /* background-color: lightyellow; */
-    /* background-color: rgb(254,254,205); /* full-moon yellow */
-    /* background-color: lightgoldenrodyellow; */
-    /* background-color: papayawhip; */
-    /* background-color: honeydew; */
     /* background-color: palegoldenrod; */
-    /* background-color: linen; */
-    background-size: cover;
-    /* background-size: contain; */
+
+    /* background-size: cover; */
+    background-size: contain;
 }
 
 /* Set the default hgroup element */
@@ -216,17 +213,24 @@ h7 {
 
 /* Set the default aside element */
 aside {
-    width: calc(20% - 0px);
+    text-align: left;
+    /* top: 0; */
+    right: 0.10em;
+    /* position: absolute; */
+    float: right;
     background-color: #DCF9BE; /* Light Chartreuse */
 }
 
 /* Set the navigator aside */
 aside#navigator {
-    top: 0;
-    right: 0.10em;
-    position: absolute;
-    float: right;
     background-color: rgb(155,155,204); /* Lavender */
+}
+
+/* Set the supporting content aside */
+aside#supporting-content {
+    text-align: left;
+    padding: 1%;
+    background-color: rgb(189, 155, 204); /* Rose Pink */
 }
 
 /* Nav semantic container classes */
@@ -273,14 +277,6 @@ aside#navigator {
     color: #fff;
 }
 
-/* Set the supporting content aside */
-aside#supporting-content {
-    text-align: left;
-    padding: 1%;
-    /* width: calc(20% - 0px); */
-    background-color: rgb(189, 155, 204); /* Rose Pink */
-}
-
 /* -------------------------------------
     Begin Styled Article Ids and Classes
 ------------------------------------- */
@@ -303,6 +299,26 @@ article#main-article {
     Begin Styled Footer Ids and Classes
 ------------------------------------ */
 
+/* Set the alt-footer template for each page */
+footer#alt-footer {
+    display: block;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    padding: 1%;
+    /* margin: 1% 0% 0% 0%; */
+    left: auto;
+    right: auto;
+    /* min-width: 340px; */
+    /* min-height: 160px; */
+    z-index: 8;
+    /* position: absolute; */
+    /* bottom: 1%; */
+    background-color:rgb(255,255,229); /* moonlight */
+    border-radius: 7pt;
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
 /* Set the page-footer template for each page */
 footer#page-footer {
     display: block;
@@ -310,40 +326,38 @@ footer#page-footer {
     font-size: small;
     font-weight: 700;
     padding: 1%;
+    margin: 1% 0% 0% 0%;
     left: auto;
     right: auto;
-    min-width: 340px;
-    min-height: 160px;
+    /* min-width: 340px; */
+    /* min-height: 160px; */
     z-index: 8;
     /* position: absolute; */
     /* bottom: 1%; */
-    background-color:rgb(255,255,229); /* moonlight */
-    /* background-color: #eebb55; /* orange-yellow */
-	/* background-color: #ffeebb; /* medium-wheat */
+    background-color: #E2DCCA; /* Light Wheat */
     border-radius: 7pt;
-    border: 1px solid rgb(155,155,204); /* Medium Purple */
-    }
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
 
 /* Set the global site-footer for the Website */
 footer#site-footer {
-    position: relative; 
-    /*  position: absolute; */
     display: block;
     text-align: center;
     font-size: small;
     font-weight: 700;
     padding: 1%;
     margin: 1% 0% 0% 0%;
+    left: auto;
+    right: auto;
+    /* min-width: 340px; */
+    /* min-height: 160px; */
+    z-index: 8;
+    /* position: absolute; */
     /* bottom: 1%; */
-    width: calc(80% - 0px);
-    /* width: calc(100% - 20px); */
-    /* max-width: 350px; */
-    /* max-width: 630px; */
-    /* background-color: linen; */
-    z-index: 10;
+    background-color: rgb(175,216,205); /* Luster Sky Blue */
     border-radius: 7pt;
     border: 1px solid rgb(207,103,75); /* Indian Red */
-    }
+}
 
 /* -------------------------------
     Begin Container Ids and Classes
@@ -548,7 +562,7 @@ ul.none {
     text-align: left;
 }
 
-.text-center {
+.center-text {
     text-align: center;
 }
 
@@ -623,36 +637,41 @@ mark,
     End Other Classes
 ---------------------------------- */
 
-/* MEDIA QUERY SECTION */
+/* BEGIN MEDIA QUERIES BY LARGEST MEDIA SECTION */
 
-/* LARGEST MEDIA QUERY BEGIN */
 @media only screen and (max-width: 2200px) and (min-width: 1201px)  {
     header#masthead {
         width: calc(80% - 0px);
+        background-color: linen;
     }
 
-    article#main-article {
-        width: calc(80% - 0px);
-    }
-    
     aside#navigator {
         width: calc(20% - 0px);
+        background-color: lightgoldenrodyellow;
+    }
+
+    /* article#main-article {
+        width: calc(80% - 0px);
+    } */
+
+    /* aside#supporting-content {
+        width: calc(20% - 0px);
+    } */
+
+    footer#page-footer {
+        left: 0;
+        right: 0;
+        width: calc(80% - 0px);
+    }
+
+    footer#site-footer {
+        left: 0;
+        right: 0;
+        width: calc(80% - 0px);
     }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 769px)  {
-
-    header#masthead {
-        width: calc(80% - 0px);
-    }
-
-    article#main-article {
-        width: calc(80% - 0px);
-    }
-
-    aside#navigator {
-        width: calc(20% - 0px);
-        }
 
     h1 {
         /* display: inline-block; */
@@ -670,36 +689,43 @@ mark,
         font-size: 20px;
     }
 
-    .site-footer {
-        position: relative;
-        margin: 1% 0% 0% 0%;
-        /* width: calc(100% - 20px); */
+    header#masthead {
         width: calc(80% - 0px);
-        /* max-width: 350px; */
-        /* max-width: 630px; */
+    }
+
+    aside#navigator {
+        width: calc(20% - 0px);
+    }
+
+    /* article#main-article {
+        width: calc(80% - 0px);
+    } */
+
+    /* aside#supporting-content {
+        width: calc(20% - 0px);
+    } */
+
+    footer#page-footer {
+        left: 0;
+        right: 0;
+        width: calc(80% - 0px);
+    }
+
+    footer#site-footer {
+        left: 0;
+        right: 0;
+        width: calc(80% - 0px);
     }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 415px)  {
 
-    header#masthead {
-        width: calc(75% - 0px);
-    }
-
-    article#main-article {
-        width: calc(75% - 0px);
-    }
-
-    aside#navigator {
-        width: calc(25% - 0px);
-    }
-
     h1 {
         /* display: inline-block; */
         /* overflow: hidden; */
         font-size: x-large;
-        text-align: right;
-        width: calc(100% - 00px);
+        text-align: center;
+        width: calc(100% - 0px);
         padding-right: 1%;
     }
 
@@ -711,29 +737,36 @@ mark,
         font-size: 18px;
     }
 
-    .site-footer {
-        position: relative;
-        margin: 2% 0% 0% 0%;
-        /* width: calc(100% - 20px); */
-        width: calc(69% - 0px);
-        /* max-width: 350px; */
-        /* max-width: 620px; */
-    }
-}
-
-@media only screen and (max-width: 414px) and (min-width: 361px)   {
-
     header#masthead {
-        width: calc(70% - 0px);
-    }
-
-    article#main-article {
         width: calc(70% - 0px);
     }
 
     aside#navigator {
         width: calc(30% - 0px);
     }
+
+    /* article#main-article {
+        width: calc(70% - 0px);
+    } */
+
+    /* aside#supporting-content {
+        width: calc(30% - 0px);
+    } */
+
+    footer#page-footer {
+        left: 0;
+        right: 0;
+        width: calc(70% - 0px);
+    }
+
+    footer#site-footer {
+        left: 0;
+        right: 0;
+        width: calc(70% - 0px);
+    }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 361px)   {
 
     h1 {
         width: calc(100% - 20px);
@@ -754,13 +787,32 @@ mark,
         font-size: 16px;
     }
 
-    .site-footer {
-        position: relative;
-        margin: 3% 0% 0% 0%;
-        /* width: calc(100% - 20px); */
-        width: calc(69% - 0px);
-        /* max-width: 350px; */
-        /* max-width: 630px; */
+    header#masthead {
+        width: calc(70% - 0px);
+    }
+
+    aside#navigator {
+        width: calc(30% - 0px);
+    }
+
+    /* article#main-article {
+        width: calc(70% - 0px);
+    } */
+
+    /* aside#supporting-content {
+        width: calc(30% - 0px);
+    } */
+
+    footer#page-footer {
+        left: 0;
+        right: 0;
+        width: calc(70% - 0px);
+    }
+
+    footer#site-footer {
+        left: 0;
+        right: 0;
+        width: calc(70% - 0px);
     }
 
     .btn-med, .btn-group-med > .btn {
@@ -770,31 +822,9 @@ mark,
 
 @media only screen and (max-width: 360px) {
 
-    header#masthead {
-        width: calc(100% - 0px);
-    }
-
-    article#main-article {
-        text-align: left;
-        width: calc(100% - 0px);
-        background-color: #8DD7F6; /* Mild Sky Blue */
-    }
-
-    aside#navigator {
-        text-align: center;
-        width: calc(100% - 0px);
-        background-color: #CCF89F; /* Mild Chartreuse */
-    }
-
-    aside#supporting-content {
-        text-align: left;
-        width: calc(100% - 0px);
-        background-color: rgb(189, 155, 204); /* Rose Pink */
-    }
-
     h1 {
         font-size: large;
-        text-align: center;
+        text-align: right;
         width: calc(100% - 10px);
     }
 
@@ -807,19 +837,51 @@ mark,
     h3 {
         font-size: medium;
         text-align: left;
-        width: calc(100% - 10px);
-    }
-
-    .page-footer {
-        left: 0;
-        right: 0;
         width: calc(100% - 0px);
     }
 
-    .site-footer {
+    header#masthead {
+        width: calc(100% - 0px);
+        min-height: 210px;
+        /* background-size: contain; */
+        background-size: cover;
+    }
+
+    aside#navigator {
+        text-align: center;
+        width: calc(100% - 0px);
+        background-color: #CCF89F; /* Mild Chartreuse */
+    }
+
+    article#main-article {
+        text-align: left;
         left: 0;
         right: 0;
         width: calc(100% - 0px);
+        background-color: #8DD7F6; /* Mild Sky Blue */
+    }
+
+    aside#supporting-content {
+        text-align: left;
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+        background-color: papayawhip;
+    }
+
+    footer#page-footer {
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+        background-color: rgb(254,254,205); /* full-moon yellow */
+    }
+
+    footer#site-footer {
+        text-align: center;
+        left: 0;
+        right: 0;
+        width: calc(100% - 0px);
+        background-color: honeydew;
     }
 
     .btn-med, .btn-group-med > .btn {
