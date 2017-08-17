@@ -2,7 +2,7 @@
 
 /* Set the 'main-body' flex container.
 	For all screens, we shall set the main flex container 'main-body' to a flex-flow of row. */
-	div#main-body {
+	secton#top-row {
 		display: -webkit-flex;
 		display: flex;
 
@@ -14,6 +14,7 @@
 
 		/* -webkit-flex-flow: column nowrap;
 		flex-flow: column nowrap;
+
 		/* This is a consolidated command: flex-direction + flex-wrap */
 		/* flex-direction: row || column || row-reverse || column-reverse */
 		/* flex-wrap: wrap || nowrap || wrap-reverse */
@@ -28,24 +29,29 @@
 	Thus placing the 'header-masthead' id in the default zero normal Html flow order for all screens.
 	The default zero normal Html flow order for a flex-flow 'row-nowrap' is left to right along the main axis. 
 	Note. There are no id(s) above the 'header-masthead' id. */
-	section#top-row {
+	
+	header#masthead {
 		display: -webkit-flex;
 		display: flex;
 
-		-webkit-flex-flow: row wrap;
-		flex-flow: row wrap;
+		-webkit-flex-flow: column nowrap;
+		flex-flow: column nowrap;
 
 		justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
 		align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
 		align-content: flex-start; /* flex-start || stretch || center || flex-end */
-	}
 
-	header#masthead {
 		-webkit-order: 0;
-		order: 0; /* 0 ( zero is the default Html order; the number one (1) will slide the id to the right in a flex direction of row w nowrap ) */
+		order: 0;
+		
+	/* Note. The value of zero (0) represents the default Html order for all flex items. 
 
-		-webkit-flex: 2 1 0;
-		flex: 2 1 0;
+	In other words, how are the IDs stacking up by simply the given Html flow without any flex box intervention?
+	
+	Whereas, a value of one (1) for order will slide the id to the right in a flex direction of row w nowrap ) */
+
+		-webkit-flex: 8 1 0;
+		flex: 8 1 0;
 
 		/* -webkit-flex: 0 1 80%;
 		flex: 0 1 80%; */
@@ -102,11 +108,11 @@
 	Thus placing the 'aside-navigator' id to the right off the above 'header-masthead' id for all screens.
 	The default zero normal Html flow order for a flex-flow 'row-nowrap' is left to right along the main axis. */
 	aside#navigator {
-		-webkit-order: 1;
-		order: 1; /* 0 ( zero is the default Html order; the number one (1) will slide the id to the right in a flex direction of row w nowrap ) */
+		-webkit-order: 0;
+		order: 0; /* 0 ( zero is the default Html order; the number one (1) will slide the id to the right in a flex direction of row w nowrap ) */
 
-		-webkit-flex: 1 1 0;
-		flex: 1 1 0;
+		-webkit-flex: 2 1 0;
+		flex: 2 1 0;
 
 		/* -webkit-flex: 0 1 20%;
 		flex: 0 1 20%; */
@@ -316,35 +322,122 @@ Dilemma
 
 	Note. The default zero normal Html flow order for a flex-flow 'row-nowrap' is left to right along the main axis. */
 
-	/* Disable the other four elements ...
+	/* Disable the other four elements ...*/
 
-	article#main-article {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
+	/* Give the flex item and inflow-child 'aside-supporting-content' a position in the 'body' flex container */
+
+	section#row-two {
+		display: -webkit-flex;
+		display: flex;
+
+		/* -webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		/* This is a consolidated command: flex-direction + flex-wrap */
+		/* flex-direction: row || column || row-reverse || column-reverse */
+		/* flex-wrap: wrap || nowrap || wrap-reverse */
+
+		-webkit-flex-flow: column nowrap;
+		flex-flow: column nowrap;
+
+		/* This is a consolidated command: flex-direction + flex-wrap */
+		/* flex-direction: row || column || row-reverse || column-reverse */
+		/* flex-wrap: wrap || nowrap || wrap-reverse */
+
+		justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+		align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+		align-content: flex-start; /* flex-start || stretch || center || flex-end */
+	}
+
+	aside#supporting-content {
+		-webkit-order: 1;
+		order: 1;
+	
+		-webkit-flex: 2 1 0;
+		flex: 2 1 0;
+		
+		/* Three values: flex-grow | flex-shrink | flex-basis
 		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
 		Whereas, a flex-grow value of one (1) invades the entire row!
 		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 2;
-		order: 2;
-}
+		starts to cave in on it from the right. */
+		
+	}	
 
-/* Give the flex item and inflow-child 'aside-supporting-content' a position in the 'body' flex container
-aside#supporting-content {
-	-webkit-flex: 0 1 50%; 
-	flex: 0 1 50%; /* Three values: flex-grow | flex-shrink | flex-basis
-	Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-	Whereas, a flex-grow value of one (1) invades the entire row!
-	On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-	starts to cave in on it from the right.
-	-webkit-order: 4;
-	order: 4;
-}
+	article#main-article {
+		-webkit-order: -1;
+		order: -1;
+
+		-webkit-flex: 8 1 0;
+		flex: 8 1 0;
+		
+		/* Three values: flex-grow | flex-shrink | flex-basis
+		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
+		Whereas, a flex-grow value of one (1) invades the entire row!
+		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
+		starts to cave in on it from the right. */
+		
+	}
+
+	section#row-three {
+		display: -webkit-flex;
+		display: flex;
+
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		/* This is a consolidated command: flex-direction + flex-wrap */
+		/* flex-direction: row || column || row-reverse || column-reverse */
+		/* flex-wrap: wrap || nowrap || wrap-reverse */
+
+		/* -webkit-flex-flow: column nowrap;
+		flex-flow: column nowrap;
+
+		/* This is a consolidated command: flex-direction + flex-wrap */
+		/* flex-direction: row || column || row-reverse || column-reverse */
+		/* flex-wrap: wrap || nowrap || wrap-reverse */
+
+		justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+		align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+		align-content: flex-start; /* flex-start || stretch || center || flex-end */
+	}
+	
+	/* Give the flex class and inflow-child 'footer-page-footer' a position in the 'body' flex container */
+	footer#page-footer {
+		-webkit-order: 0;
+		order: 0;
+
+		-webkit-flex: 1 1 auto;
+		flex: 1 1 auto;
+		
+		/* Three values: flex-grow | flex-shrink | flex-basis
+		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
+		Whereas, a flex-grow value of one (1) invades the entire row!
+		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
+		starts to cave in on it from the right. */
+		
+	}
+
+	/* Give the flex class and inflow-child 'site-page-footer' a position in the 'body' flex container */
+	footer#site-footer {
+		-webkit-order: 0;
+		order: 0;
+
+		-webkit-flex: 1 1 auto;
+		flex: 1 1 auto;
+
+		/* Three values: flex-grow | flex-shrink | flex-basis
+		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
+		Whereas, a flex-grow value of one (1) invades the entire row!
+
+		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
+		starts to cave in on it from the right. */		
+	}
 
 /* Give the flex class and inflow-child 'footer-page-footer' a position in the 'body' flex container
 footer#page-footer {
 	-webkit-flex: 0 1 100%;
-	flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
+	flex: 0 1 100%;
+	
+	/* Three values: flex-grow | flex-shrink | flex-basis
 	Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
 	Whereas, a flex-grow value of one (1) invades the entire row!
 	On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
@@ -666,36 +759,11 @@ footer#site-footer {
 		starts to cave in on it from the right.
 		-webkit-order: 4;
 		order: 4;
-	}
-	
-	/* Give the flex class and inflow-child 'footer-page-footer' a position in the 'body' flex container
-	footer#page-footer {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 5;
-		order: 5;
-	}
-
-	/* Give the flex class and inflow-child 'site-page-footer' a position in the 'body' flex container
-	footer#site-footer {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 6;
-		order: 6;
-	}
-} */
+	} */
 
 @media only screen and (max-width: 360px) { /* Small Screens */
 /* For small screens, we shall switch the main flex container 'main-body' from a row to a column flex-flow. */
-	div#main-body {
+	main#main-body {
 		/* -webkit-flex-flow: column wrap;
 		flex-flow: column wrap;
 		/* This is a consolidated command: flex-direction + flex-wrap */
