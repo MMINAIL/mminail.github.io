@@ -285,7 +285,7 @@ aside#supporting-content {
 article {
     position: relative;
     text-align: left;
-    width: calc(80% - 0px);
+    width: calc(100% - 0px);
 }
 
 /* Set the 'main article' article */
