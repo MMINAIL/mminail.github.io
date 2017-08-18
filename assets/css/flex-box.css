@@ -430,8 +430,8 @@ Dilemma
 		-webkit-order: 0;
 		order: 0;
 
-		-webkit-flex: 1 1 auto;
-		flex: 1 1 auto;
+		-webkit-flex: 10 1 0;
+		flex: 10 1 0;
 		
 		/* Three values: flex-grow | flex-shrink | flex-basis
 		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
@@ -446,8 +446,8 @@ Dilemma
 		-webkit-order: 0;
 		order: 0;
 
-		-webkit-flex: 1 1 auto;
-		flex: 1 1 auto;
+		-webkit-flex: 10 1 0;
+		flex: 10 1 0;
 
 		/* Three values: flex-grow | flex-shrink | flex-basis
 		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
