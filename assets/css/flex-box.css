@@ -31,16 +31,7 @@
 	Note. There are no id(s) above the 'header-masthead' id. */
 	
 	header#masthead {
-		display: -webkit-flex;
-		display: flex;
-
-		-webkit-flex-flow: column nowrap;
-		flex-flow: column nowrap;
-
-		justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
-		align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
-		align-content: flex-start; /* flex-start || stretch || center || flex-end */
-
+		
 		-webkit-order: 0;
 		order: 0;
 		
@@ -50,8 +41,41 @@
 	
 	Whereas, a value of one (1) for order will slide the id to the right in a flex direction of row w nowrap ) */
 
-		-webkit-flex: 8 1 0;
-		flex: 8 1 0;
+		-webkit-flex: 6 1 0;
+		flex: 6 1 0;
+
+		/* -webkit-flex: 0 1 80%;
+		flex: 0 1 80%; */
+
+		/* -webkit-flex: 1 1 auto;
+		flex: 1 1 auto; */
+		
+		/* Three values: flex-grow | flex-shrink | flex-basis */
+		
+		/* Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
+		Whereas, a flex-grow value of one (1) invades the entire row!
+
+		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window starts to cave in on it from the right.
+
+		Flex-basis, though thirdly reviewed, actually takes precedence BEFORE flex-grow and flex-shrink!
+		Note. The default value for flex-basis is auto || percentages || ems || rems || pixels
+
+		We can set our 'header-masthead' to consume 80% of the first row from the origin point of the id starting left to right for all screens ...
+		By placing a percentage value of 80% for the flex-basis value, as shown above. */
+	}
+
+	hgroup#primary-header-text {
+		-webkit-order: 0;
+		order: 0;
+		
+	/* Note. The value of zero (0) represents the default Html order for all flex items. 
+
+	In other words, how are the IDs stacking up by simply the given Html flow without any flex box intervention?
+	
+	Whereas, a value of one (1) for order will slide the id to the right in a flex direction of row w nowrap ) */
+
+		-webkit-flex: 2 1 0;
+		flex: 2 1 0;
 
 		/* -webkit-flex: 0 1 80%;
 		flex: 0 1 80%; */
@@ -107,6 +131,7 @@
 	In this case, we shall set the id 'aside-navigator' order to one (1).
 	Thus placing the 'aside-navigator' id to the right off the above 'header-masthead' id for all screens.
 	The default zero normal Html flow order for a flex-flow 'row-nowrap' is left to right along the main axis. */
+
 	aside#navigator {
 		-webkit-order: 0;
 		order: 0; /* 0 ( zero is the default Html order; the number one (1) will slide the id to the right in a flex direction of row w nowrap ) */
@@ -367,8 +392,8 @@ Dilemma
 		-webkit-order: -1;
 		order: -1;
 
-		-webkit-flex: 8 1 0;
-		flex: 8 1 0;
+		-webkit-flex: 10 1 0;
+		flex: 10 1 0;
 		
 		/* Three values: flex-grow | flex-shrink | flex-basis
 		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
