@@ -159,496 +159,275 @@ aside#secondary-header {
 
 /* BEGIN MEDIA QUERIES BY LARGEST MEDIA SECTION */
 
-/* Comment out all media queries but small ...
+/* Comment out all media queries but small ... */
 
 @media only screen and (max-width: 2200px) and (min-width: 1201px)  {/* Extra Large Screens */
-/* Give the flex item id and inflow-child 'header-masthead' a position in the 'main-body' flex container.
-	In this case, we shall keep the id 'header-masthead' order to zero (0).
-	Thus placing the 'header-masthead' id in the default zero normal Html flow order for all screens.
-	The default zero normal Html flow order for a flex-flow 'row-nowrap' is left to right along the main axis. 
-	Note. There are no id(s) above the 'header-masthead' id.
-	header#masthead {
-		-webkit-flex: 0 1 80%;
-		flex: 0 1 80%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window starts to cave in on it from the right.
-		Flex-basis, though thirdly reviewed, actually takes precedence BEFORE flex-grow and flex-shrink!
-		The default value for flex-basis is auto || percentages || ems || rems || pixels
-		But, we will set our 'header-masthead' to continue to consume 80% of the first row from the origin point of the id ...
-		starting left to right for extra large screens.
-		-webkit-order: 0;
-		order: 0; /* 0 ( zero is the default Html order )
+
+	/* First, we'll set the background color for the main body ...*/
+
+	main#main-body {
+		background-color:rgb(255,255,229); /* moonlight */
 	}
 
-	/* Give the flex item and inflow-child 'aside-navigator' a position in the 'main-body' flex container
-	aside#navigator {
-		-webkit-flex: 0 1 50%;
-		flex: 0 1 50%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 2;
-		order: 2;
+	/* Next, we'll set the background color for the Section Id 'top-row' ...*/
+
+	section#top-row {
+		background-color: burlywood;
 	}
 
-	/* Give the flex item and inflow-child 'aside-navigator' a position in the 'main-body' flex container
-	article#main-article {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 3;
-		order: 3;
-	}
-
-	/* Give the flex item and inflow-child 'supporting-content' a position in the 'main-body' flex container
-	aside#supporting-content {
-		-webkit-flex: 0 1 50%; 
-		flex: 0 1 50%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 4;
-		order: 4;
-	}
-
-	/* Give the flex class and inflow-child 'page-footer' a position in the 'main-body' flex container
-	footer#page-footer {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 5;
-		order: 5;
-	}
-
-	/* Give the flex class and inflow-child 'site-footer' a position in the 'main-body' flex container
-	footer#site-footer {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 6;
-		order: 6;
-	}
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 769px)  {/* Laptop Screens */
-/* Give the flex item id and inflow-child 'header-masthead' a position in the 'main-body' flex container.
-	In this case, we shall keep the id 'header-masthead' order to zero (0).
-	Thus placing the 'header-masthead' id in the default zero normal Html flow order for all screens.
-	The default zero normal Html flow order for a flex-flow 'row-nowrap' is left to right along the main axis. 
-	Note. There are no id(s) above the 'header-masthead' id.
-	header#masthead {
-		-webkit-flex: 0 1 80%;
-		flex: 0 1 80%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window starts to cave in on it from the right.
-		Flex-basis, though thirdly reviewed, actually takes precedence BEFORE flex-grow and flex-shrink!
-		The default value for flex-basis is auto || percentages || ems || rems || pixels
-		But, we will set our 'header-masthead' to consume 80% of the first row from the origin point of the id ...
-		starting left to right for laptop screens.
-		-webkit-order: 0;
-		order: 0; /* 0 ( zero is the default Html order )
+
+	/* First, we'll set the background color for the main body ...*/
+
+	main#main-body {
+		background-color:rgb(255,255,229); /* moonlight */
 	}
 
-	/* Give the flex item and inflow-child 'aside-navigator' a position in the 'main-body' flex container
-	aside#navigator {
-		-webkit-flex: 0 1 50%;
-		flex: 0 1 50%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 2;
-		order: 2;
+	/* Next, we'll set the background color for the Section Id 'top-row' ...*/
+
+	section#top-row {
+		background-color: burlywood;
 	}
 
-	/* Give the flex item and inflow-child 'article-main-article' a position in the 'main-body' flex container
-	article#main-article {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 3;
-		order: 3;
-	}
-	
-	/* Give the flex item and inflow-child 'aside-supporting-content' a position in the 'body' flex container
-	aside#supporting-content {
-		-webkit-flex: 0 1 50%; 
-		flex: 0 1 50%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 4;
-		order: 4;
-	}
-
-	/* Give the flex class and inflow-child 'footer-page-footer' a position in the 'body' flex container
-	footer#page-footer {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 5;
-		order: 5;
-	}
-
-	/* Give the flex class and inflow-child 'site-page-footer' a position in the 'body' flex container
-	footer#site-footer {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window starts ...
-		to cave in on it from the right.
-		-webkit-order: 6;
-		order: 6;
-	}
 }
 
 @media only screen and (max-width: 768px) and (min-width: 415px)  {/* Large Tablet Screens */
-/* Give the flex item id and inflow-child 'header-masthead' a position in the 'main-body' flex container.
-	In this case, we shall keep the id 'header-masthead' order to zero (0).
-	Thus placing the 'header-masthead' id in the default zero normal Html flow order for all screens.
-	The default zero normal Html flow order for a flex-flow 'row-nowrap' is left to right along the main axis. 
-	Note. There are no id(s) above the 'header-masthead' id.
-	header#masthead {
-		-webkit-flex: 0 1 70%;
-		flex: 0 1 70%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window starts to cave in on it from the right.
-		Flex-basis, though thirdly reviewed, actually takes precendence BEFORE flex-grow and flex-shrink!
-		The default value for flex-basis is auto || percentages || ems || rems || pixels
-		But, we will set our 'header-masthead' to consume 70% of the first row from the origin point of the id ...
-		starting left to right for large tablet screens.
-		-webkit-order: 0;
-		order: 0; /* 0 ( zero is the default Html order )
-	}
 
-	/* Give the flex item and inflow-child 'aside-navigator' a position in the 'main-body' flex container
-	aside#navigator {
-		-webkit-flex: 0 1 50%;
-		flex: 0 1 50%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 2;
-		order: 2;
-	}
+	/* First, we'll set the background color for the main body ...*/
 
-	/* Give the flex item and inflow-child 'article-main-article' a position in the 'main-body' flex container
-	article#main-article {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 3;
-		order: 3;
-	}
-	
-	/* Give the flex item and inflow-child 'aside-supporting-content' a position in the 'body' flex container
-	aside#supporting-content {
-		-webkit-flex: 0 1 50%; 
-		flex: 0 1 50%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 4;
-		order: 4;
-	}
-	
-	/* Give the flex class and inflow-child 'footer-page-footer' a position in the 'body' flex container
-	footer#page-footer {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 5;
-		order: 5;
-	}
-
-	/* Give the flex class and inflow-child 'site-page-footer' a position in the 'body' flex container
-	footer#site-footer {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 6;
-		order: 6;
-	}
-}
-
-@media only screen and (max-width: 414px) and (min-width: 361px) {/* Small Tablet Screens */
-/* Give the flex item id and inflow-child 'header-masthead' a position in the 'main-body' flex container.
-	In this case, we shall keep the id 'header-masthead' order to zero (0).
-	Thus placing the 'header-masthead' id in the default zero normal Html flow order for all screens.
-	The default zero normal Html flow order for a flex-flow 'row-nowrap' is left to right along the main axis. 
-	Note. There are no id(s) above the 'header-masthead' id.
-	header#masthead {
-		-webkit-flex: 0 1 50%;
-		flex: 0 1 50%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window starts to cave in on it from the right.
-		Flex-basis, though thirdly reviewed, actually takes precendence BEFORE flex-grow and flex-shrink!
-		The default value for flex-basis is auto || percentages || ems || rems || pixels
-		But, we will set our 'header-masthead' to consume 50% of the first row from the origin point of the id starting ...
-		left to right for small tablet screens.
-		-webkit-order: 0;
-		order: 0; /* 0 ( zero is the default Html order )
-	} 
-
-	/* Give the flex item and inflow-child 'aside-navigator' a position in the 'main-body' flex container
-	aside#navigator {
-		-webkit-flex: 0 1 50%;
-		flex: 0 1 50%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 2;
-		order: 2;
-	} 
-
-	/* Give the flex item and inflow-child 'article-main-article' a position in the 'main-body' flex container
-	article#main-article {
-		-webkit-flex: 0 1 100%;
-		flex: 0 1 100%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 3;
-		order: 3;
-	}
-	
-	/* Give the flex item and inflow-child 'aside-supporting-content' a position in the 'body' flex container
-	aside#supporting-content {
-		-webkit-flex: 0 1 50%; 
-		flex: 0 1 50%; /* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window ...
-		starts to cave in on it from the right.
-		-webkit-order: 4;
-		order: 4;
-	} */
-
-@media only screen and (max-width: 360px) { /* Small Screens */
-/* For small screens, we shall switch the main flex container 'main-body' from a row to a column flex-flow. */
 	main#main-body {
-		/* -webkit-flex-flow: column wrap;
-		flex-flow: column wrap;
-		/* This is a consolidated command: flex-direction + flex-wrap */
-		/* flex-direction: row || column || row-reverse || column-reverse */
-		/* flex-wrap: wrap || nowrap || wrap-reverse */
-
-		-webkit-flex-flow: row wrap;
-		flex-flow: row wrap;
-		
-		/* This is a consolidated command: flex-direction + flex-wrap */
-		/* flex-direction: column; /* row || column || row-reverse || column-reverse */
-		/* flex-wrap: wrap; /* wrap || nowrap || wrap-reverse */
-
-		justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
-		align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
-		align-content: flex-start; /* flex-start || stretch || center || flex-end */
+		background-color:rgb(255,255,229); /* moonlight */
 	}
-	
-/* Give the flex item id and inflow-child 'header-masthead' a position in the 'main-body' flex container.
-	In this case, we shall keep the id 'header-masthead' order to zero (0).
-	Thus placing the 'header-masthead' id in the default zero normal Html flow order for small screens.
-	The default zero normal Html flow order for a flex-flow of 'column-nowrap' is top to bottom along the cross axis. 
-	Note. There are no id(s) above the 'header-masthead' id. */
+
+	/* Next,  we'll set the background color for the Section Id 'top-row' ...*/
 
 	section#top-row {
-
-		-webkit-flex-flow: column nowrap;
-		flex-flow: column nowrap;
-
-		justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
-		align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
-		align-content: flex-start; /* flex-start || stretch || center || flex-end */
+		background-color: burlywood;
 	}
 
-	header#masthead {
+/* Thirdly, we'll set a **Flex Container** in the Header Id 'masthead' w **Flex Flow** set to column no wrap ...*/
+
+/* Note. The Header Id 'masthead' will NOT receive a **Flex Item** position, only a **Flex Container** designation. */
+
+header#masthead {
+
+	display: -webkit-flex;
+	display: flex;
+
+	/* -webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap; */
+
+	-webkit-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+
+	justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+	align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+	align-content: flex-start; /* flex-start || stretch || center || flex-end */
+
+}
+
+/* Give the **Flex Item** and inflow-child 'primary-image' a position in the 'masthead' flex container */
+
+hgroup#primary-image {
+	
+	-webkit-order: 0;
+	order: 0;
+	
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+	
+	}
+	
+	/* Give the **Flex Item** and inflow-child 'primary-header' a position in the 'masthead' flex container */
+	
+	aside#primary-header {
+	
 		-webkit-order: 0;
 		order: 0;
-		
-		/* Note. Zero (0) is the default Html order for flex items in rows */
-
-		/* -webkit-flex: 1 1 100%;
-		flex: 1 1 100%; */
-
+	
 		-webkit-flex: 1 1 auto;
 		flex: 1 1 auto;
-		
-		/* Three values: flex-grow | flex-shrink | flex-basis
-
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand origin position of the first column.
-		Whereas, a flex-grow value of one (1) invades the entire row of column!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window starts to cave in on it from the right.
-		Flex-basis, though thirdly reviewed, actually takes precedence BEFORE flex-grow and flex-shrink!
-		The default value for flex-basis is auto || percentages || ems || rems || pixels
-		But, we will set our 'header-masthead' to consume 100% of the first column from the origin point of the id starting left to right for small screens. */
-		
+	
 	}
 
-	/* Give the flex item id and inflow-child 'aside-navigator' a position in the 'main-body' flex container.
-		In this case, we shall set the id 'aside-navigator' order to one (1).
-		Thus placing the 'aside-navigator' id below the above 'header-masthead' id for small screens.
-		Note. The default zero normal Html flow order for a flex-flow of 'column-nowrap' is top to bottom along the cross axis. */
+}
+
+@media only screen and (max-width: 360px) { /* Small Screens */
+
+/* First, we'll set the background color for the main body ...*/
+
+main#main-body {
+	background-color:rgb(255,255,229); /* moonlight */
+}
+
+/* Next,  we'll set the background color for the Section Id 'top-row' ...*/
+
+section#top-row {
+	background-color: burlywood;
+}
+
+/* Thirdly, we'll set a **Flex Container** in the Header Id 'masthead' w **Flex Flow** set to column no wrap ...*/
+
+/* Note. The Header Id 'masthead' will NOT receive a **Flex Item** position, only a **Flex Container** designation. */
+
+header#masthead {
+
+	display: -webkit-flex;
+	display: flex;
+
+	/* -webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap; */
+
+	-webkit-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+
+	justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+	align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+	align-content: flex-start; /* flex-start || stretch || center || flex-end */
+
+}
+
+/* Give the **Flex Item** and inflow-child 'primary-image' a position in the 'masthead' flex container */
+
+hgroup#primary-image {
+	
+	-webkit-order: 0;
+	order: 0;
+	
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+	
+	}
+	
+	/* Give the **Flex Item** and inflow-child 'primary-header' a position in the 'masthead' flex container */
+	
+	aside#primary-header {
+	
+		-webkit-order: 0;
+		order: 0;
+	
+		-webkit-flex: 1 1 auto;
+		flex: 1 1 auto;
+	
+	}
+	
+	/* Give the **Flex Item** and inflow-child 'navigator' a position in the 'row-two' **Flex Container** */
+	
 	aside#navigator {
 		-webkit-order: 0;
 		order: 0;
-
-		/* -webkit-flex: 1 1 100%;
-		flex: 1 1 100%; */
-
+	
 		-webkit-flex: 1 1 auto;
 		flex: 1 1 auto;
-
-		/* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window starts to cave in on it from the right.
-		Flex-basis, though thirdly reviewed, actually takes precedence BEFORE flex-grow and flex-shrink!
-		The default value for flex-basis is auto || percentages || ems || rems || pixels
-		But, we will set our 'aside-navigator' to consume 100% of the second column from the origin point of the id starting left to right placed under the id 'header-masthead' for small screens. */
-		
-	}
-
-	/* Give the flex item id and inflow-child 'aside-supporting-content' a position in the 'body' flex container.
-		In this case, we shall set the id 'aside-supporting-content' order to three (3).
-		Thus placing the 'aside-supporting-content' id below the above 'article-main-article' id for small screens.
-		Note. The default zero normal Html flow order for a flex-flow of 'column-nowrap' is top to bottom along the cross axis. */
-
-	aside#supporting-content {
-		-webkit-order: 0;
-		order: 0;
-
-		-webkit-flex: 1 1 auto; 
-		flex: 1 1 auto;
-		
-		/* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window starts to cave in on it from the right.
-		Flex-basis, though thirdly reviewed, actually takes precedence BEFORE flex-grow and flex-shrink!
-		The default value for flex-basis is auto || percentages || ems || rems || pixels
-		But, we will set our 'supporting-content' to consume 100% of the fourth column from the origin point of the id ...
-		starting left to right placed under the id 'main-article' for small screens. */
-		
+	
 	}
 	
-	section#bottom-row {
-
-		-webkit-flex-flow: column nowrap;
-		flex-flow: column nowrap;
-
-		justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
-		align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
-		align-content: flex-start; /* flex-start || stretch || center || flex-end */
+	/* Give the flex item id and inflow-child 'secondary-header' a position in the 'row-two' flex container. */
+	
+	aside#secondary-header {
+		
+			-webkit-order: 0;
+			order: 0;
+		
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+	
 	}
 
-	/* Give the flex item id and inflow-child 'article-main-article' a position in the 'main-body' flex container.
-		In this case, we shall set the id 'article-main-article' order to two (2).
-		Thus placing the 'article-main-article' id below the above 'aside-navigator' id for small screens.
-		Note. The default zero normal Html flow order for a flex-flow of 'column-nowrap' is top to bottom along the cross axis. */
 
-	article#main-article {
-		-webkit-order: 0;
-		order: 0;
+/* Fourthly, we'll set a **Flex Container** in the Header Id 'row-two' w **Flex Flow** set to column no wrap ...*/
 
-		-webkit-flex: 1 1 auto;
-		flex: 1 1 auto;
+/* Note. The Header Id 'row-two' will NOT receive a **Flex Item** position, only a **Flex Container** designation. */
+
+section#row-two {
+	
+			display: -webkit-flex;
+			display: flex;
+	
+			/* -webkit-flex-flow: row nowrap;
+			flex-flow: row nowrap; */
+	
+			-webkit-flex-flow: column nowrap;
+			flex-flow: column nowrap; 
+	
+			/* This is a consolidated command: flex-direction + flex-wrap */
+			/* flex-direction: row || column || row-reverse || column-reverse */
+			/* flex-wrap: wrap || nowrap || wrap-reverse */
+	
+			justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+			align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+			align-content: flex-start; /* flex-start || stretch || center || flex-end */
+		}
 		
-		/* Three values: flex-grow | flex-shrink | flex-basis
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window starts to cave in on it from the right.
-		Flex-basis, though thirdly reviewed, actually takes precedence BEFORE flex-grow and flex-shrink!
-		The default value for flex-basis is auto || percentages || ems || rems || pixels
-		But, we will set our 'main-article' to consume 100% of the third column from the origin point of the id starting ...
-		left to right placed under the id 'aside-navigator' for small screens. */
+		/* Give the **Flex Item** and inflow-child 'main-article' a position in the 'row-two' **Flex Container** */
+	
+		article#main-article {
+	
+			-webkit-order: 1;
+			order: 1;
+	
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+	
+		}
+	
+		/* Give the **Flex Item** and inflow-child 'supporting-content' a position in the 'row-two' **Flex Container** */
+	
+		article#supporting-content {
+			-webkit-order: 1;
+			order: 1;
+				
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+					
+		}
+
+		/* Fifth, we'll set a **Flex Container** in the Header Id 'row-three' w **Flex Flow** set to column no wrap ...*/
+
+		/* Note. The Header Id 'row-two' will NOT receive a **Flex Item** position, only a **Flex Container** designation. */
+	
+		section#row-three {
 		
-	}
+			display: -webkit-flex;
+			display: flex;
+	
+			/*  -webkit-flex-flow: row nowrap;
+			flex-flow: row nowrap; */
+	
+			-webkit-flex-flow: column nowrap;
+			flex-flow: column nowrap; 
+	
+			justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+			align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+			align-content: flex-start; /* flex-start || stretch || center || flex-end */
+		}
 		
-	/* Give the flex id and inflow-child 'footer-page-footer' a position in the 'body' flex container.
-		In this case, we shall set the id 'footer-page-footer' order to four (4).
-		Thus placing the 'footer-page-footer' id below the above 'aside-supporting-content' id for small screens.
-		Note. The default zero normal Html flow order for a flex-flow of 'column-nowrap' is top to bottom along the cross axis. */
+		/* Give the **Flex Item** and inflow-child 'page-footer' a position in the 'row-three' **Flex Container** */
+	
+		footer#page-footer {
+	
+			-webkit-order: 3;
+			order: 3;
+	
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+			
+		}
 
-	footer#page-footer {
-		-webkit-order: 0;
-		order: 0;
-
-		-webkit-flex: 1 1 auto;
-		flex: 1 1 auto;
+		/* Give the **Flex Item** and inflow-child 'secondary-header' a position in the 'row-three' **Flex Container** */
+	
+		aside#secondary-header {
+			
+			
+			-webkit-order: 2;
+			order: 2;
+			
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
 		
-		/* Three values: flex-grow | flex-shrink | flex-basis
-
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window starts to cave in on it from the right.
-		Flex-basis, though thirdly reviewed, actually takes precedence BEFORE flex-grow and flex-shrink!
-		The default value for flex-basis is auto || percentages || ems || rems || pixels
-		But, we will set our 'page-footer' to consume 100% of the fifth column from the origin point of the id starting ...
-		left to right placed under the id 'supporting-content' for small screens. */
-		
-	}
-
-	/* Give the flex id and inflow-child 'site-page-footer' a position in the 'body' flex container.
-		In this case, we shall set the id 'site-page-footer' order to five (5).
-		Thus placing the 'site-page-footer' id below the above 'footer-page-footer' id for small screens.
-		Note. The default zero normal Html flow order for a flex-flow of 'column-nowrap' is top to bottom along the cross axis. */
-
-	footer#site-footer {
-		-webkit-order: 0;
-		order: 0;
-
-		-webkit-flex: 1 1 auto;
-		flex: 1 1 auto
-		
-		/* Three values: flex-grow | flex-shrink | flex-basis
-
-		Note. The default value for flex-grow is zero (0) ie.) the flex item stays put at the default left hand position of the first row.
-		Whereas, a flex-grow value of one (1) invades the entire row!
-		
-		On the obverse, the default value for flex-shrink is one (1) ie.) the flex item shrinks when the browser window starts to cave in on it from the right.
-		Flex-basis, though thirdly reviewed, actually takes precedence BEFORE flex-grow and flex-shrink!
-		The default value for flex-basis is auto || percentages || ems || rems || pixels
-		But, we will set our 'site-footer' to consume 100% of the sixth column from the origin point of the id ...
-		starting left to right placed under the id 'page-footer' for small screens. */
-		
-	} 
+		}
 }
 
 /* END MEDIA QUERIES BY SMALLEST MEDIA SECTION */
