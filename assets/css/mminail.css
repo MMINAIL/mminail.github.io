@@ -799,7 +799,7 @@ mark,
         /* display: inline-block; */
         /* overflow: hidden; */
         text-align: center;
-        width: calc(100% - 00px);
+        width: calc(100% - 0px);
         font-size: x-large;
     }
 
@@ -812,11 +812,11 @@ mark,
     }
 
     header#masthead {
-        width: calc(80% - 0px);
+        width: calc(100% - 0px);
     }
 
     aside#navigator {
-        width: calc(20% - 0px);
+        width: calc(100% - 0px);
     }
 
     /* article#main-article {
@@ -830,13 +830,13 @@ mark,
     footer#page-footer {
         left: 0;
         right: 0;
-        width: calc(80% - 0px);
+        width: calc(100% - 0px);
     }
 
     footer#site-footer {
         left: 0;
         right: 0;
-        width: calc(80% - 0px);
+        width: calc(100% - 0px);
     }
 }
 
@@ -860,11 +860,11 @@ mark,
     }
 
     header#masthead {
-        width: calc(70% - 0px);
+        width: calc(100% - 0px);
     }
 
     aside#navigator {
-        width: calc(30% - 0px);
+        width: calc(100% - 0px);
     }
 
     /* article#main-article {
@@ -878,13 +878,13 @@ mark,
     footer#page-footer {
         left: 0;
         right: 0;
-        width: calc(70% - 0px);
+        width: calc(100% - 0px);
     }
 
     footer#site-footer {
         left: 0;
         right: 0;
-        width: calc(70% - 0px);
+        width: calc(100% - 0px);
     }
 }
 
@@ -892,7 +892,7 @@ mark,
 
     h1 {
         width: calc(100% - 20px);
-        max-width: 70%;
+        /* max-width: 70%; */
         /* display: inline-block; */
         /* overflow: hidden; */
         text-align: center;
@@ -910,11 +910,11 @@ mark,
     }
 
     header#masthead {
-        width: calc(70% - 0px);
+        width: calc(100% - 0px);
     }
 
     aside#navigator {
-        width: calc(30% - 0px);
+        width: calc(100% - 0px);
     }
 
     /* article#main-article {
@@ -928,13 +928,13 @@ mark,
     footer#page-footer {
         left: 0;
         right: 0;
-        width: calc(70% - 0px);
+        width: calc(100% - 0px);
     }
 
     footer#site-footer {
         left: 0;
         right: 0;
-        width: calc(70% - 0px);
+        width: calc(100% - 0px);
     }
 
     .btn-med, .btn-group-med > .btn {
