@@ -138,7 +138,7 @@ a[href^="http:"] {
 header {
     color: #000531;
     /* max-height: 581px; */
-    width: calc(80% - 0px);
+    width: calc(100% - 0px);
     padding-top: .25em;
     background-color: #FFF8DC; /* cornsilk; */
     
@@ -146,16 +146,22 @@ header {
 
 /* Set the background color and image for the header masthead */
 header#masthead {
-    background: hsl(220, 80%, 90%) url("/assets/img/GH-GitHub-Profile-Banner-MMINAIL-Left-Logo-1306-x-581.svg") no-repeat; /* center center */
+    background: hsl(220, 80%, 90%) url("") no-repeat; /* center center */
     
-    /* background-color: hsl(220, 80%, 90%); /* Light Sky Blue */
     /* background-color: rgb(155,155,204); /* Lavender */
-    /* background-color: #eebb55; /* orange-yellow */
-	
     /* background-color: #0099cc; /* Dodger Blue */
+    /* background-color: rgb(175,216,205); /* Luster Sky Blue */
+    /* background-color: hsl(220, 80%, 90%); /* Light Sky Blue */
+
+    /* background-color: #eebb55; /* orange-yellow */
+    /* background-color:rgb(255,255,229); /* moonlight */
     /* background-color: cornsilk; */
     /* background-color: lightyellow; */
     /* background-color: palegoldenrod; */
+    /* background-color: lightgoldenrodyellow; */
+
+    /* background-color: peru; */
+    /* background-color: palevioletred; */
 
     /* background-size: cover; */
     background-size: contain;
@@ -163,7 +169,33 @@ header#masthead {
 
 /* Set the default hgroup element */
 hgroup {
+    position: relative;
+    /* position: absolute; */
     text-align: center;
+    padding: 1%;
+    width: calc(100% - 0px);
+    height: 100%;
+    /* background-color: palevioletred; */
+}
+
+hgroup#primary-image {
+    display: block;
+    
+    font-size: small;
+    font-weight: 700;
+    
+    /* margin: 1% 0% 0% 0%; */
+    left: auto;
+    right: auto;
+    /* min-width: 340px; */
+    /* min-height: 236px; */
+    /* float: right; */
+    z-index: 8;
+    
+    /* bottom: 1%; */
+    background-color: rgb(175,216,205); /* Luster Sky Blue */
+    border-radius: 7pt;
+    border: 1px solid rgb(207,103,75); /* Indian Red */
 }
 
 /* -------------------------------
@@ -213,24 +245,43 @@ h7 {
 
 /* Set the default aside element */
 aside {
-    text-align: left;
-    /* top: 0; */
-    right: 0.10em;
+
+    position: relative;
     /* position: absolute; */
-    float: right;
+    text-align: left;
+    width: calc(100% - 0px);
+    height: 100%;
+    padding: 1%;
+    /* top: 0; */
     background-color: #DCF9BE; /* Light Chartreuse */
+
 }
 
 /* Set the navigator aside */
 aside#navigator {
-    background-color: rgb(155,155,204); /* Lavender */
-}
 
-/* Set the supporting content aside */
-aside#supporting-content {
-    text-align: left;
+    display: block;
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+
     padding: 1%;
-    background-color: rgb(189, 155, 204); /* Rose Pink */
+    left: auto;
+    right: auto;
+    margin: 1% 0% 0% 0%;
+    /* right: 0; */
+    /* right: 0.10em; */
+    /* min-width: 340px; */
+    /* min-height: 236px; */
+    z-index: 8;
+    /* float: right; */
+    /* position: absolute; */
+    /* bottom: 1%; */
+    background-color:rgb(255,255,229); /* moonlight */
+    border-radius: 7pt;
+     /* border-right: 2px solid #fff; */
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+
 }
 
 /* Nav semantic container classes */
@@ -277,6 +328,66 @@ aside#supporting-content {
     color: #fff;
 }
 
+/* Set the 'primary header' for the Website */
+
+aside#primary-header {
+
+    display: block;
+    font-size: small;
+    font-weight: 700;
+    text-align: center;
+    
+    padding: 1%;
+    left: auto;
+    right: auto;
+    /* margin: 1% 0% 0% 0%; */
+    
+    z-index: 8;
+    background-color:rgb(255,255,229); /* moonlight */
+    /* background-color: palevioletred; */
+    border-radius: 7pt;
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
+/* Set the 'secondary header' for the Website */
+
+aside#secondary-header {
+
+    display: block;
+    font-size: small;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 1%;
+    left: auto;
+    right: auto;
+    /* margin: 1% 0% 0% 0%; */
+    
+    z-index: 8;
+    background-color: rgb(175,216,205); /* Luster Sky Blue */
+    border-radius: 7pt;
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
+aside#dot-epub {
+
+    display: block;
+    font-size: small;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 1%;
+    left: auto;
+    right: auto;
+    margin: 1% 0% 0% 0%;
+    
+    z-index: 8;
+    
+    background-color: peru;
+    border-radius: 7pt;
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
 /* -------------------------------------
     Begin Styled Article Ids and Classes
 ------------------------------------- */
@@ -286,75 +397,94 @@ article {
     position: relative;
     text-align: left;
     width: calc(100% - 0px);
+    background-color: rgb(175,216,205); /* Luster Sky Blue */
 }
 
 /* Set the 'main article' article */
 article#main-article {
+    display: block;
+    font-size: medium;
+    font-weight: 500;
     padding: 1%;
+    margin: 1% 0% 0% 0%;
+    left: auto;
+    right: auto;
+    /* right: 0; */
+    /* min-width: 340px; */
+    /* min-height: 236px; */
+    z-index: 8;
+    /* float: right; */
+    /* position: absolute; */
+    /* bottom: 1%; */
     background-color:rgb(255,255,229); /* moonlight */
-    /* border-right: 2px solid #fff; */
+    border-radius: 7pt;
+     /* border-right: 2px solid #fff; */
+    border: 1px solid rgb(207,103,75); /* Indian Red */
+}
+
+article#supporting-content {
+    display: block;
+    font-size: medium;
+    font-weight: 500;
+    padding: 1%;
+    margin: 1% 0% 0% 0%;
+    left: auto;
+    right: auto;
+    /* right: 0; */
+    /* min-width: 340px; */
+    /* min-height: 236px; */
+    z-index: 8;
+    /* float: right; */
+    /* position: absolute; */
+    /* bottom: 1%; */
+    background-color: papayawhip; /* papaya whip */
+    border-radius: 7pt;
+     /* border-right: 2px solid #fff; */
+    border: 1px solid rgb(207,103,75); /* Indian Red */
 }
 
 /* ------------------------------------
     Begin Styled Footer Ids and Classes
 ------------------------------------ */
 
+/* Footer Templates */
+
 /* Set the alt-footer template for each page */
+
 footer#alt-footer {
+
     display: block;
-    text-align: center;
     font-size: small;
     font-weight: 700;
+    text-align: center;
+
     padding: 1%;
-    /* margin: 1% 0% 0% 0%; */
     left: auto;
     right: auto;
-    /* min-width: 340px; */
-    /* min-height: 160px; */
+    /* margin: 1% 0% 0% 0%; */
+
     z-index: 8;
-    /* position: absolute; */
-    /* bottom: 1%; */
     background-color:rgb(255,255,229); /* moonlight */
     border-radius: 7pt;
     border: 1px solid rgb(207,103,75); /* Indian Red */
 }
 
 /* Set the page-footer template for each page */
-footer#page-footer {
-    display: block;
-    text-align: center;
-    font-size: small;
-    font-weight: 700;
-    padding: 1%;
-    margin: 1% 0% 0% 0%;
-    left: auto;
-    right: auto;
-    /* min-width: 340px; */
-    /* min-height: 160px; */
-    z-index: 8;
-    /* position: absolute; */
-    /* bottom: 1%; */
-    background-color: #E2DCCA; /* Light Wheat */
-    border-radius: 7pt;
-    border: 1px solid rgb(207,103,75); /* Indian Red */
-}
 
-/* Set the global site-footer for the Website */
-footer#site-footer {
+footer#page-footer {
+
     display: block;
-    text-align: center;
     font-size: small;
     font-weight: 700;
+    text-align: center;
+
     padding: 1%;
-    margin: 1% 0% 0% 0%;
     left: auto;
     right: auto;
-    /* min-width: 340px; */
-    /* min-height: 160px; */
+    /* margin: 1% 0% 0% 0%; */
+
     z-index: 8;
-    /* position: absolute; */
-    /* bottom: 1%; */
-    background-color: rgb(175,216,205); /* Luster Sky Blue */
+    background-color: #E2DCCA; /* Light Wheat */
     border-radius: 7pt;
     border: 1px solid rgb(207,103,75); /* Indian Red */
 }
@@ -470,7 +600,7 @@ code {
 }
 
 /* -------------------------------------
-    Set the collapsable Responsive Image
+    Set the collapsible Responsive Image
 ------------------------------------- */
 
 img {
@@ -483,8 +613,12 @@ img {
 
 .img-responsive {
     width: calc(100% - 0px);
-    max-width: 210px;
+    /* max-width: 210px; */
     }
+
+.img-logo-badge {
+    width: calc(25% - 0px);
+}
 
 ul.none {
     list-style-type: none;
@@ -493,7 +627,7 @@ ul.none {
 }
 
 /* ---------------------------------
-    Begin Imgage Zoom-out From thumb
+    Begin Image Zoom-out From thumb
 --------------------------------- */
 .icon-thumb {
     width: 25px;
@@ -641,33 +775,21 @@ mark,
 
 @media only screen and (max-width: 2200px) and (min-width: 1201px)  {
     header#masthead {
-        width: calc(80% - 0px);
+        width: calc(100% - 0px);
+        height: 100%;
         background-color: linen;
     }
 
     aside#navigator {
-        width: calc(20% - 0px);
+        width: calc(100% - 0px);
+        height: 100%;
         background-color: lightgoldenrodyellow;
     }
 
-    /* article#main-article {
-        width: calc(80% - 0px);
-    } */
-
-    /* aside#supporting-content {
-        width: calc(20% - 0px);
-    } */
-
     footer#page-footer {
-        left: 0;
-        right: 0;
-        width: calc(80% - 0px);
-    }
-
-    footer#site-footer {
-        left: 0;
-        right: 0;
-        width: calc(80% - 0px);
+        width: calc(100% - 0px);
+        height: 100%;
+        background-color: rgb(255, 255, 229); /* moonlight */
     }
 }
 

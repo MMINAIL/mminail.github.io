@@ -49,29 +49,54 @@
 <body>
 	<main id="main-body">
 		<section id="top-row">
-		<header id="masthead">
-			<hgroup id="primary-header-text" class="visible-xs visible-sm visible-md visible-lg">
-				<h1>MMINAIL.GitHub.io<br />
-					<!-- Splitting the <h1> tag 50/50 Large/Small -->
-					<small class="forest-green-text">Central Live Repository</small><br />
-					<small class="forest-green-text">Concept Library</small>
-				</h1>
-			</hgroup>
-		</header>
+			<header id="masthead">
+				<hgroup id="primary-image" class="center-block">
+					<!-- <hgroup class="panel-body"> -->
+					{% include primary-image.htm %}
+				</hgroup>
 
-			<aside id="navigator">{% include nav.htm %}</aside>
+				<aside id="primary-header" class="center-block">
+					{% include primary-header.htm %}
+				</aside>
+				
+			</header>
 		</section>
 
 		<section id="row-two">
-			<aside id="supporting-content">{% include aside.htm %}</aside>
+			
 			<article id="main-article" class="main-article">
 				{{content}}
+
+				<article id="supporting-content">
+					{% include supporting-content.htm %}
+				</article>
+
 			</article>
+			
+			<aside id="navigator">
+					{% include nav.htm %}
+		
+					<aside id="secondary-header" class="center-block">
+						{% include secondary-header.htm %}
+					</aside>
+					
+			</aside>
+
 		</section>
 
 		<section id="row-three">
-			<footer>{% include page-footer.htm %}</footer>
+			
+			 <!-- <footer class="panel-footer"> -->
+			<footer id="page-footer" class="center-block">
+				{% include page-footer.htm %}
+
+				<aside id="secondary-header" class="center-block">
+					{% include secondary-header.htm %}
+				</aside>
+			
+			</footer>
 		</section>
+		
 <!-- Place all Javascript Library packages north of the </body> closing tag and after the closing site-footer </footer> tag in order of execution -->
 
 <!-- Comment Out: Jquery Library remote script -->
