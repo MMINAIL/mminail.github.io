@@ -613,8 +613,8 @@ img {
 
 .img-responsive {
     width: calc(100% - 0px);
-    /* max-width: 210px; */
-    }
+    
+}
 
 .img-logo-badge {
     width: calc(25% - 0px);
