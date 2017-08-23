@@ -2,10 +2,33 @@
 layout: default
 title: Home Page
 ---
-<div class="container-fluid">
+<div itemscope itemtype="https://schema.org/" class="container-fluid">
 	<div class="row-fluid">
 
-			{% include primary-content.htm %}
-
-</div>
+			<hgroup class="text-left">
+				<h3>MMINAIL <i class="icon-large">
+				<picture><img class='img-responsive img-circle' src='../assets/ico/apple-icon-120x120.png'
+					alt='The USPTO Registered Logo Badge of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation rendered as a Large Icon' />
+				</picture></i></h3>
+			</hgroup>
+				<hr class="green-groove" />
+					
+			<p class="lead">
+				<span>Welcome! This is the Client-facing Home page for the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr> Central Live Repository.</span>
+			</p>
+					<hr class="green-groove" />
+					
+			{% include concept-library.htm %}
+					
+			{% include world-o-coding.htm %}
+					
+			{% include working-donations.htm %}
+					
+			{% include how-to-navigate.htm %}
+				
+			{% include forkit.htm %}
+					
+			{% include alt-footer-cash-me.htm %}
+				
+	</div>
 </div>
