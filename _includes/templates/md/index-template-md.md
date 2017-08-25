@@ -11,14 +11,7 @@ navigation_weight: 1
 
 How do you code this stuff?
 
-## Table O Contents
-
-![MMI™ Flammarion Logo Badge](../assets/img/MMI-Medmj-Org-Got-Tree-Flammarion-Person-Through-Celestial-Sphere-circle-543-x-543.svg){:height="120px" width="120px"}
-
-**Note**. The above **Live** rendition of the **MMI™ Flammarion Logo Badge** `( .svg )` image file is set to the dimensions of 120.00px x 120.00px.
-
-- TOC
-{:toc}
+{% include md-toc.htm %}
 
 ## Issue
 
