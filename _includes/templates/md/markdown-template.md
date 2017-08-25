@@ -49,4 +49,4 @@ Therefore, it is the policy of the **[MMINAIL][1]** to always provide a **Ping B
 
 ### External Sources
 
-- [Project Source Links](https://rwebaz.github.io/Medcoin-Currency-Project/pages/Source-Links.html){:target="_blank"). Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:target="_blank"}
+- [Project Source Links](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/pages/Source-Links.html){:title="Click to Visit the Source Links for the Medcoin Crypto Currency Project"}{:target="_blank"}. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the current Home Page of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
