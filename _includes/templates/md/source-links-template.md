@@ -64,7 +64,7 @@ Place the introducing line of text ie.) the 'tagline' here ...
 {% endraw %}
 ```
 
-**Note**. Please support the authors and publishers who aggregate the **Source Links** for our projects.
+
 
 ***
 
