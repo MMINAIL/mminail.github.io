@@ -1,33 +1,4 @@
----
-title: E Books
-layout: default
-navigation_weight: 9
----
-# Article Title ( From Front Matter Above )
-
-Place the introducing line of text ie.) the 'tagline' here ...
-
-{% include md-toc-flammarion.htm %}
-
-## How To Craft An External Hyperlink In Markdown With Liquid
-
-Place the introducing line of text ie.) the 'tagline' here ...
-
-## Subtitle
-
-Place the introducing line of text ie.) the 'tagline' here ...
-
-## Raw Code
-
-Place the introducing line of text ie.) the 'tagline' here ...
-
-```liquid
-{% raw %}
-`...`
-{% endraw %}
-```
-
-{% include the-flammarion.htm %}
+# Top Level Header
 
 ## Sources and Uses
 
