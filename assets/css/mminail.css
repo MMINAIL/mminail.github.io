@@ -130,6 +130,10 @@ a[href^="http:"] {
     color: rgb(207,103,75); /* Indian Red */ 
 }
 
+.red {
+    color: #DC143C; /* Crimson Red */
+}
+
 /* ------------------------------------
     Begin Styled Header Ids and Classes
 ------------------------------------ */
