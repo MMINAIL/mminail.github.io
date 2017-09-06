@@ -1,19 +1,19 @@
 ---
-title: Text Template
+title: Page Template
 layout: default
 navigation_weight: 9
 ---
 # Article Title ( From Front Matter Above )
 
-Place the introducing line of text ie.) the 'tagline' here ...
+{{ site.tagline }}
 
-{% include md-toc-flammarion.htm %}
+{% include toc-flammarion.md %}
 
 ## Subtitle
 
 Place the introducing line of text ie.) the 'tagline' here ...
 
-{% include sources-and-uses-md.htm %}
+{% include sources-and-uses.md %}
 
 ### External Sources
 

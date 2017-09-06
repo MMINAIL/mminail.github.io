@@ -19,10 +19,6 @@ By clicking on either the red [1] above, or the red [MMINAIL] ...
 
 The reader will be hyperlinked to the bottom of the page directly to the referenced citation.
 
-### Tagline
-
-{{ site.tagline }}
-
 ### Description
 
 {{ site.description }}
