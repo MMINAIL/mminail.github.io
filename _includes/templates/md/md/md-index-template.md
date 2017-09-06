@@ -5,7 +5,7 @@ navigation_weight: 1
 ---
 # Shell Lessons Project Home Page
 
-Place the introducing line of text ie.) the 'tagline' here ...
+{{ site.tagline }}
 
 ## Table O Contents
 
