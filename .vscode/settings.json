@@ -8,5 +8,8 @@
     "angulardoc.fileFilter": [
         "**/!(*.*spec).ts"
     ],
-    "angulardoc.lastSync": 0
+    "angulardoc.lastSync": 0,
+    "cSpell.words": [
+        "universa"
+    ]
 }
