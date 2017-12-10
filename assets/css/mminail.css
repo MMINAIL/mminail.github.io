@@ -16,12 +16,12 @@
 
 @font-face {
     font-family: 'fontawesome';
-    src: url('../assets/fonts/awesome/fontawesome-webfont.eot');
-    src: url('../assets/fonts/awesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../assets/fonts/awesome/fontawesome-webfont.woff2') format('woff2'),
-        url('../assets/fonts/awesome/fontawesome-webfont.woff') format('woff'),
-        url('../assets/fonts/awesome/fontawesome-webfont.ttf') format('truetype'),
-        url('../assets/fonts/awesome/fontawesome-webfont.svg') format('svg');
+    src: url('../fonts/awesome/fontawesome-webfont.eot');
+    src: url('../fonts/awesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/awesome/fontawesome-webfont.woff2') format('woff2'),
+        url('../fonts/awesome/fontawesome-webfont.woff') format('woff'),
+        url('../fonts/awesome/fontawesome-webfont.ttf') format('truetype'),
+        url('../fonts/awesome/fontawesome-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
