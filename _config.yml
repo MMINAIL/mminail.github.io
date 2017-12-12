@@ -1,10 +1,10 @@
 # Site settings
 #
-# Date of this Update to Config-template file ver 08-13-2017 PM
+# Date of this Update to Config-template file ver 12-10-2017
 #
 # github: [metadata]
 # theme: "jekyll-theme-cayman"
-# repository: MMINAIL/mminail.github.io
+# repository: https://www.github.com/MMINAIL/mminail.github.io
 title: "Concept Library | MMINAIL"
 tagline: "A GitHub repo of Lessons and Articles that emphasize both the GFM and Kramdown engines"
 description: "A GitHub repo of Lessons and Articles that emphasize both the GFM and Kramdown engines"
