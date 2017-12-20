@@ -9,9 +9,17 @@ navigation_weight: 9
 
 {% include toc-flammarion.md %}
 
-## Subtitle
+## Subtitle Begin
 
 Place the introducing line of text ie.) the 'tagline' here ...
+
+```liquid
+{% raw %}
+`...`
+{% endraw %}
+```
+
+## Final Subtitle
 
 {% include sources-and-uses.md %}
 

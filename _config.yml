@@ -1,6 +1,6 @@
 # Site settings
 #
-# Date of this Update to Config-template file ver 12-10-2017
+# Date of this Update to Config-template file ver 12-18-2017
 #
 # github: [metadata]
 # theme: "jekyll-theme-cayman"
@@ -36,14 +36,14 @@ defaults:
       image: "true"
 defaults:
   - scope:
-      path: "assets/ico"
+      path: "assets/img/png"
     values:
       image: "true"
 defaults:
   - scope:
-      path: ""
+      path: "assets/img/svg"
     values:
-      image: /assets/img/MMI-Medmj-Org-Got-Tree-Flammarion-Person-Through-Celestial-Sphere-circle-100-x-100.png
+      image: "true"
 defaults:
   - scope:
       path: "" 
