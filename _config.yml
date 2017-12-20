@@ -3,8 +3,13 @@
 # Date of this Update to Config-template file ver 12-18-2017
 #
 # github: [metadata]
+#
+# Uncomment theme for docs folder
+#
 # theme: "jekyll-theme-cayman"
+#
 # repository: https://www.github.com/MMINAIL/mminail.github.io
+# repository: https://www.github.com/rwebaz/Go-Lessons-Project
 title: "Concept Library | MMINAIL"
 tagline: "A GitHub repo of Lessons and Articles that emphasize both the GFM and Kramdown engines"
 description: "A GitHub repo of Lessons and Articles that emphasize both the GFM and Kramdown engines"
