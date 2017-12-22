@@ -1,6 +1,6 @@
 # Site settings
 #
-# Date of this Update to Config-template file ver 12-18-2017
+# Date of this Update to Config-template file ver 12-21-2017 alt
 #
 # github: [metadata]
 #
@@ -20,7 +20,7 @@ author:
     email: "mminail@icloud.com"
     github_username: "rwebaz"
     twitter_username: "rwebaz"
-# The 'baseurl' is the subpath of your designated project, e.g. /Liquid-Lessons-Project
+# The 'baseurl' is the subpath of your designated project, e.g. /Liquid-Lessons-Project or /blog or simply "/"
 baseurl: "/"
 # The 'url' is the parental web address of your designated project, e.g. /https://rwebaz.github.io
 url: "https://mminail.github.io"
