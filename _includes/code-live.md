@@ -1,0 +1,15 @@
+### The Code
+
+Highlight the code ...
+
+```liquid
+{% raw %}
+Ping-back the Home Page of the [Medcoin™ Crypto Currency Project](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/){:title="Click to Visit the Home Page of the Medcoin™ Crypto Currency Project at GitHub pages"}{:target="_blank"}
+{% endraw %}
+```
+
+### Live
+
+Render the code live ...
+
+Ping-back the Home Page of the [Medcoin™ Crypto Currency Project](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/){:title="Click to Visit the Home Page of the Medcoin™ Crypto Currency Project at GitHub pages"}{:target="_blank"}

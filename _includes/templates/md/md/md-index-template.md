@@ -42,19 +42,7 @@ What is the minority view as expressed by the dissent?
 
 The analysis reviews both sides of the legal coin in depth
 
-### The Code
-
-Highlight the code ...
-
-```liquid
-{% raw %}
-[Medcoin™ Crypto Currency Project: Ping-back Home Page](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/){:target="_blank"}
-{% endraw %}
-```
-
-### Live
-
-Render the code live ...
+{% include code-live.md %}
 
 ## Conclusion
 
