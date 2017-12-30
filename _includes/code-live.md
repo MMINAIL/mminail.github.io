@@ -1,10 +1,10 @@
 ### The Code
 
-Highlight the code ...
+Highlight the code for a hyperlink in Markdown ...
 
 ```liquid
 {% raw %}
-Ping-back the Home Page of the [Medcoin™ Crypto Currency Project](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/){:title="Click to Visit the Home Page of the Medcoin™ Crypto Currency Project at GitHub pages"}{:target="_blank"}
+[Medcoin™ Crypto Currency Project](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/){:title="Click to Visit the Home Page of the Medcoin™ Crypto Currency Project at GitHub pages"}{:target="_blank"}
 {% endraw %}
 ```
 
@@ -12,4 +12,4 @@ Ping-back the Home Page of the [Medcoin™ Crypto Currency Project](https://rweb
 
 Render the code live ...
 
-Ping-back the Home Page of the [Medcoin™ Crypto Currency Project](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/){:title="Click to Visit the Home Page of the Medcoin™ Crypto Currency Project at GitHub pages"}{:target="_blank"}
+Ping-back the Home Page of the [Medcoin™ Crypto Currency Project](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/){:title="Click to Visit the Home Page of the Medcoin™ Crypto Currency Project at GitHub pages"}{:target="_blank"}.
