@@ -66,30 +66,6 @@ To render a smaller version of the `( .svg )`, simply append an appropriate heig
 {% endraw %}
 ```
 
-To activate a hyperlink to a new tab in your browser ...
-
-- Append an appropriate title and target to a link, as follows:
-
-```liquid
-{% raw %}
-[Project Source Links]
-(https://mminail.github.io/Shell/Source-Shell-Links.htm)
-{:title="Click to Visit the Source Links page of the Shell Lessons Project at GitHub pages"}{:target="_blank"}
-{% endraw %}
-```
-
-Or,
-
-To activate an hyperlink embedded in an image ...
-
-- More to come
-
-```liquid
-{% raw %}
-More to come ...
-{% endraw %}
-```
-
 #### Presentation Dimensions
 
 The following **Live** rendition of the **MMI™ Flammarion Logo Badge** `( .svg )` image file is set to the dimensions of 500.00 px X 500.00 px, as shown in the following code block:

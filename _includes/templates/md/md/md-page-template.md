@@ -9,7 +9,7 @@ navigation_weight: 9
 
 {% include toc-flammarion.md %}
 
-## Subtitle Begin
+## Subtitle Begin Template Dtd 12-31-17
 
 Place the introducing line of text ie.) the 'tagline' here ...
 
@@ -19,7 +19,17 @@ Place the introducing line of text ie.) the 'tagline' here ...
 {% endraw %}
 ```
 
-## Final Subtitle
+## Brackets IDE
+
+The **Brackets IDE** allows the Javascript developer to display instant changes to both your Javascript program (.js) and your View page (.html) through the Chrome browser window.
+
+**Note**. The Javascript console may also be exposed through Chrome's developer tools.
+
+```liquid
+{% raw %}
+Enjoy the successful output!
+{% endraw %}
+```
 
 {% include sources-and-uses.md %}
 
