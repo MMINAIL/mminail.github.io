@@ -19,7 +19,7 @@ Place the introducing line of text ie.) the 'tagline' here ...
 {% endraw %}
 ```
 
-## Final Subtitle
+## Last Subtitle
 
 Place the introducing line of text ie.) the 'tagline' here ...
 
@@ -29,11 +29,7 @@ Enjoy the successful output!
 {% endraw %}
 ```
 
-## Brackets IDE
-
-The **Brackets IDE** allows the Javascript developer to display instant changes to both your Javascript program (.js) and your View page (.html) through the Chrome browser window.
-
-**Note**. The Javascript console may also be exposed through Chrome's developer tools while viewing the Chrome browser window.
+{% include brackets-ide.md %}
 
 {% include sources-and-uses.md %}
 
