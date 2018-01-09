@@ -8,8 +8,8 @@ Indeed, ping-backs to original sources are welcome by the readers, the authors, 
 
 Therefore, it is the policy of the MMINAIL [[1](#MMINAIL){:.red}] to always provide a **Ping Back** to the original author, or to the publisher of the original publication when citing 3rd party work.
 
-**Note**. Please support the authors and publishers who aggregate the **Source Links** for our projects.
+**Note**. Please support the [co-workers](https://mminail.github.io/Donate/Learn-To-Donate-Now.htm){:title="Click to Donate To the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"} who aggregate the **Source Links** for our projects.
 
 ### Inline References
 
-1. {:#MMINAIL}The [MMINAIL](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"} is an acronym for the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+1. {:#MMINAIL}The [MMINAIL](https://mminail.github.io/Donate/Learn-To-Donate-Now.htm){:title="Click to Donate To the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"} is an acronym for the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Home page of the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.

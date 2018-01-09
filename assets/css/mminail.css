@@ -122,7 +122,9 @@ a {
 a[href^="https:"] {
     font-family: 'eurostyle';
     font-size: 1.25em;
-    color: #004B23; /* Forest Green */
+    color: dodgerblue;
+    /* color: darkturquoise; */
+    /* color: #004B23; /* Forest Green */
     letter-spacing: 1px;
 }
 
@@ -291,7 +293,7 @@ aside#navigator {
 /* Nav semantic container classes */
 
 .lead {
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .menu {
@@ -506,8 +508,9 @@ div.container {
 }
 
 div.container-fluid {
+    background-color: #D1E0F8; /* light powderblue */
     /* background-color: skyblue; */
-    background-color: powderblue;
+    /* background-color: powderblue; */
     /* padding-right: 1%; */
     /* padding-left: 1%; */
     padding: 1%;

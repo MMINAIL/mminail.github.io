@@ -13,12 +13,6 @@ navigation_weight: 9
 
 Place the introducing line of text ie.) the 'tagline' here ...
 
-```liquid
-{% raw %}
-`...`
-{% endraw %}
-```
-
 ## Last Subtitle
 
 Place the introducing line of text ie.) the 'tagline' here ...
