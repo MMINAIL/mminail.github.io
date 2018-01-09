@@ -234,7 +234,8 @@ h4 {
 }
 
 h5 {
-    font-size: small;
+    /* font-size: medium; is standard type size*/
+    font-size: medium;
 }
 
 h6 {
