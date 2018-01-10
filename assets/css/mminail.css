@@ -625,6 +625,7 @@ img {
 
 .img-responsive {
     width: calc(100% - 0px);
+    /* max-width: 300px; */
     
 }
 
