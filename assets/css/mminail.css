@@ -639,9 +639,9 @@ ul.none {
     /* padding: 0; */
 }
 
-/* ---------------------------------
-    Begin Image Zoom-out From thumb
---------------------------------- */
+/* -----------------------------------------
+    Begin Image Zoom-out From Standard thumb
+----------------------------------------- */
 .icon-thumb {
     width: 25px;
     height: auto;
@@ -659,6 +659,20 @@ ul.none {
 /* Where the "plus" sign represents the adjacent sibling selector in Css3 */
 .icon-thumb:hover + .icon-zoom {
     width: 100px;
+}
+
+/* ------------------------------------------
+    Begin Image Zoom-out From Alternative svg
+------------------------------------------ */
+
+.img-logo-badge-icon {
+    width: calc(5% - 0px);
+    height: auto;
+}
+
+/* Where the "plus" sign represents the adjacent sibling selector in Css3 */
+.img-logo-badge-icon:hover + .icon-zoom {
+    width: calc(10% - 0px);
 }
 
 /* --------------------------------
