@@ -1,4 +1,4 @@
-/* The main .css file for the mminail.gihub.io Git repo */
+/* The main .css file for the mminail.github.io Git repo */
 
 /* -------------------------------------
     Set the font-face(s) for the Website
@@ -186,10 +186,8 @@ hgroup {
 
 hgroup#primary-image {
     display: block;
-    
     font-size: small;
     font-weight: 700;
-    
     /* margin: 1% 0% 0% 0%; */
     left: auto;
     right: auto;
@@ -197,7 +195,6 @@ hgroup#primary-image {
     /* min-height: 236px; */
     /* float: right; */
     z-index: 8;
-    
     /* bottom: 1%; */
     background-color: rgb(175,216,205); /* Luster Sky Blue */
     border-radius: 7pt;
@@ -229,20 +226,23 @@ h3 {
 }
 
 h4 {
-    /* font-size: medium; is standard type size*/
-    font-size: 20px;
+    font-size: 21px;
 }
 
 h5 {
+    font-size: 18px;
+}
+
+h6 {
     /* font-size: medium; is standard type size*/
     font-size: medium;
 }
 
-h6 {
+h7 {
     font-size: x-small;
 }
 
-h7 {
+h8 {
     font-size: xx-small;
 }
 
