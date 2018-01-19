@@ -629,6 +629,13 @@ img {
     
 }
 
+.img-photo {
+    width: calc(66% - 0px);
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+ 
 .img-logo-badge {
     width: calc(25% - 0px);
 }
