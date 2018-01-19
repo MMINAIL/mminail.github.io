@@ -1,7 +1,7 @@
 ---
 title: Page Template
 layout: default
-navigation_weight: 9
+navigation_weight: 8
 ---
 # Article Title ( From Front Matter Above )
 
