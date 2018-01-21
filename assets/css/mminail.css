@@ -608,7 +608,18 @@ code {
     /* overflow: auto; */
     text-overflow:  ellipsis;
     /* text-overflow: clip; */
-    background: hsl(220, 80%, 90%); /* sky blue */
+    /* background-color: hsl(220, 80%, 90%); /* sky blue */
+    background-color: whitesmoke;
+    border-radius: 1em;
+    padding: .25em;
+    border-color: hsl(216, 69%, 67%); /* dark sky blue */
+    /* border-color: hsl(220, 80%, 90%); /* light sky blue */
+    border-style: solid;
+    border-width: .25em;
+}
+
+article #supporting-content code {
+    border-color: hsl(220, 80%, 90%); /* sky blue */
 }
 
 /* -------------------------------------
@@ -800,6 +811,18 @@ mark,
     padding: 1%;
     /* border-radius: 6px; */
     border-radius: 4px;
+}
+
+/* Set the Spanish language color and style for Spanish words */
+.lang-es {
+    font-style: italic;
+    color: #004B23; /* Forest Green */
+    background-color: whitesmoke;
+    border-color: #CC3333; /* Tulip Red */
+    border-style: dashed;
+    border-width: .25em;
+    border-radius: 1em;
+    padding: .25em;
 }
 
 /* -------------------------------

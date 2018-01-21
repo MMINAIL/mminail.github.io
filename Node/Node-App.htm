@@ -1,0 +1,192 @@
+---
+layout: default
+title: Node App
+---
+<div itemscope itemtype="https://schema.org/" class="container-fluid">
+	<div class="row-fluid">
+
+{% include welcome-title-zoom-mminail.htm %}
+
+<hgroup class='text-left'>
+  <h4>Pre Blocks</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+  <p>
+	  <span><b>Note</b>.</span>
+	  <span>The following block of <code>&lt;html&gt;...&lt;/html&gt;</code> is a highlighted <code>&lt;pre&gt;</code> tag with a class attribute of <code>flex-box</code>.</span>
+  </p>
+
+<pre class='flex-box'>
+	<span>This is an instructional line above the &lt;code&gt; block followed by a break ...</span>
+		<br />
+	<code class="html">This is text inside of a closed &lt;code&gt; tag with a class attribute of 'html'' using the given highlighter js style foundation.</code>
+{% highlight html linenos %}
+This is a line of highlighted (html) text inside a liquid wrapper with line numbers (linenos) engaged.
+{% endhighlight %}
+	<code class="javascript">This is text inside of a closed &lt;code&gt; tag with a class attribute of javascript using the given highlighter js style foundation.</code>
+		<br />
+	<span>This is a closing line below the &lt;code&gt; block preceded by a break ...</span>
+</pre>
+
+  <p>
+    <span><b>Note</b>.</span>
+	  <span>The following block of code is a highlighted 'pre' tag with a class attribute of 'flex-box'.</span>
+  </p>
+
+<pre class='flex-box'>
+  <span>How To Wrap ALL of the &lt;pre&gt; blocks w CSS3</span>
+    <br />
+  <code class='html'>The following block of code is a css rule inside of a liquid wrapper with the highlighter (highlight) css lang engaged (css) and line numbers enabled (linenos).</code>
+{% highlight css %}
+pre {
+    /* height: 100%; */
+    display: block;
+    /* display: inline; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: monospace; */
+    font-size: small;
+    margin: 1em 0;
+    /* Is the text-wrap selector now deprecated? */
+    /* text-wrap: normal; */
+    /* text-wrap: none; */
+    /* text-wrap: avoid; */
+    white-space: pre-wrap;
+    /* white-space: normal; */
+    /* white-space: nowrap; */
+    /* white-space: pre; */
+    /* white-space: pre-line; */
+    word-break: keep-all;
+    /* word-break: break-all; */
+    word-wrap: normal;
+    /* word-wrap: break-word; */
+    overflow-wrap: normal; /* hyphenate */
+    /* overflow-wrap: break-word; */
+    overflow: hidden;
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    text-overflow:  ellipsis;
+    /* text-overflow: clip; */
+    background-color: rgb(255,255,229); /* light yellow */
+    /* background: hsl(30,80%,90%); /* full moon yellow */
+}
+{% endhighlight %}
+  <code class='css'>This is text inside of a closed &lt;code&gt; tag with a class attribute of css using the given highlighter js style foundation.</code>
+    <br />
+  <span>Solution: The &lt;pre&gt; blocks all now wrap!</span>
+</pre>
+  <hr class='green-groove' />
+
+<hgroup class="text-left">
+	<h4>Solution</h4>
+</hgroup>
+	<hr class="green-groove" />
+
+<pre class='flex-box'>
+  <span>How To Wrap ALL of the &lt;code&gt; blocks w CSS3 ...</span>
+    <br />  
+  <code class='html'><span><b>Note</b>. The following block of code is a css rule for the code selector placed inside of a liquid wrapper with the line numbers disabled (linenos).</span></code>
+    <br />
+  <code class='html'><span>In addition, the highlighter (highlight) css lang (css) has also been engaged.</span></code>
+    <br />
+  <code class='html'><span>Further, the originating Visual Studio code tab is globally set to four (4) characters of width.</span></code>
+{% highlight html %}
+code {
+    /* height: 100%; */
+    /* text-justify: auto */
+    /* text-justify: initial */
+    /* text-justify: inter-word; */
+    /* text-justify: inter-cluster; */
+    /* text-justify: inter-ideograph; */
+    /* text-justify: distribute */
+    /* text-justify: kashida; */
+    /* text-justify: trim */
+    text-align: left;
+    /* Is the text-wrap selector deprecated? */
+    /* text-wrap: normal; */
+    /* text-wrap: none; */
+    /* text-wrap: avoid; */
+    white-space: nowrap;
+    /* white-space: normal; */
+    /* white-space: pre; */
+    /* white-space: pre-line; */
+    /* white-space: pre-wrap; */
+    word-break: keep-all;
+    /* word-break: break-all; */
+    word-wrap: normal;
+    /* word-wrap: break-word; */
+    overflow-wrap: normal; /* hyphenate */
+    /* overflow-wrap: break-word; */
+    overflow: hidden;
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    text-overflow:  ellipsis;
+    /* text-overflow: clip; */
+    background: hsl(220, 80%, 90%); /* sky blue */
+}
+{% endhighlight %}
+  <code class='css'>This is text inside of a closed &lt;code&gt; tag with a class attribute of 'css' using the given highlighter js style foundation.</code>
+    <br />
+  <span><b>Note</b>. The &lt;code&gt; blocks all now wrap!</span>
+</pre>
+  <hr class='green-groove' />
+
+<hgroup class='text-left'>
+	<h4>Code InLine Red</h4>
+</hgroup>
+	<hr class='green-groove' />
+
+  <p>
+	  <span>Though the css for &lt;code&gt; tags for large blocks has been changed via the code selector in the main css file ...</span>
+  </p>
+
+  <p>
+    <span>The default css from less for inline &lt;code&gt; references has not changed.</span>
+  </p>
+
+  <p>
+	  <span>You may witness the prevailing css for an inline &lt;code&gt; reference in Chrome developer tools under the styles tab, as follows:</span>
+  </p>
+
+<pre class='flex-box'>
+  <span>Less rules here ...</span>
+    <br />
+  <code class='html'><span><b>Note</b>.</span>The background-color in less has been commented out <span style="text-decoration: line-through;">background-color: #f9f2f4;</span> in favor of the above default color <span style="text-decoration: hsl(220, 80%, 90%);">background: hsl(220, 80%, 90%);</span> from the css for code blocks, as follows:</code>
+{% highlight html %}
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+{% endhighlight %}
+  <code class='html'><span><b>Note</b>. Unable to render strike-through of text under the liquid wrapper.</span></code>
+    <br />
+  <code class='html'><span><b>The Bottom Line</b>: Both the contents of &lt;code&gt; blocks and the contents of &lt;pre&gt; blocks are responsive, and now wrap!</span></code>
+</pre>
+
+<p>
+  <span><b>Note</b>.</span>
+  <span>The following</span>
+  <span class="lang-es" lang='es' title='Sp. for the English word Finish'>Finito!</span>
+  <span>Is enclosed in a <code>&lt;pre&gt;</code> tag.</span>
+</p>
+
+<pre class="flex-box">
+  <span lang='es' title='Sp. for the English word Finish'>Finito!</span>
+</pre>
+  <hr class='green-groove' />
+
+{% include jquery-library.htm %}
+
+{% include sources-and-uses.htm %}
+
+{% include alt-footer-cash-me.htm %}
+
+  </div>
+</div>
+
+<script src='../js/jquery.min.js'></script>
+<script src="../highlight-js/lib/highlight.js"></script>
+<script src='../js/scripts/corresponding-javascript-file.js'></script>

@@ -5,63 +5,57 @@ title: Learn Node
 <div itemscope itemtype="https://schema.org/" class="container-fluid">
 	<div class="row-fluid">
 
-<main>
-<article>
-
-<hgroup class="text-left">
-	<h3>Learn Node</h3>
-</hgroup>
-	<hr class="green-groove" />
-
-<p class="lead">
-	<span>Welcome! This is the Learn Node page of the <abbr class='oblique-text' title='Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'>MMINAIL</abbr>.</span>
-</p>
-
-<p>
-	<span>Node is a program that understands how to use Javascript outside of the browser ... in the Terminal program of your Mac.</span>
-</p>
-	<hr class="green-groove" />
+{% include welcome-title-zoom-mminail.htm %}
+	
+{% include navigate-it.htm %}
 
 <hgroup class='text-left'>
 	<h4>Installation</h4>
 </hgroup>
 	<hr class='green-groove' />
 
-<p>
-	<span>You can easily download both node and the npm package manager for node libraries in one (1) pre-packaged Binary Installer Package, or</span> 
-	<a href='https://nodejs.org/' title="Click To Download both 'node'' and The 'npm'' Package Manager for Node Libraries In One (1) Pre-packaged Binary" target='_blank'>BIP</a>
-	<span>from <a href='https://nodejs.org/' title="Click To Download both 'node' and The 'npm' Package Manager for Node Libraries In One (1) Pre-packaged Binary" target='_blank'>Nodejs dot org</a>.</span>
-</p>
-	<hr class='green-groove' />
-<p>
-	<span><b>Note</b>.</span>
-	<span>The installation of node defaults to the <code>/usr/local/bin/</code> subdirectory of your development machine.</span>
-</p>
+	<p>
+		<span>Node is a program that understands how to use Javascript outside of the browser ... in the Terminal program of your Mac.</span>
+	</p>
+		<hr class="green-groove" />
 
-<p>
-	<span>That is where the</span> 
-	<a href='https://nodejs.org/' title="Click To Download both 'node'' and The 'npm'' Package Manager for Node Libraries In One (1) Pre-packaged Binary" target='_blank'>BIP</a> 
-	<span>will install the node executable.</span>
-</p>
-	<hr class='green-groove' />
+	<p>
+		<span>You can easily download both node and the npm package manager for node libraries in one (1) pre-packaged Binary Installer Package, or</span> 
+		<a href='https://nodejs.org/' title="Click To Download both 'node'' and The 'npm'' Package Manager for Node Libraries In One (1) Pre-packaged Binary" target='_blank'>BIP</a>
+		<span>from <a href='https://nodejs.org/' title="Click To Download both 'node' and The 'npm' Package Manager for Node Libraries In One (1) Pre-packaged Binary" target='_blank'>Nodejs dot org</a>.</span>
+	</p>
+		<hr class='green-groove' />
 
-<p>
-	<span>Also, the installation of npm defaults to the <code>/usr/local/bin/</code> subdirectory of your development machine, as well.</span>
-</p>
+	<p>
+		<span><b>Note</b>.</span>
+		<span>The installation of node defaults to the <code>/usr/local/bin/</code> subdirectory of your development machine.</span>
+	</p>
 
-<p>
-	<span>That is where the</span> 
-	<a href='https://nodejs.org/' title="Click To Download both 'node'' and The 'npm'' Package Manager for Node Libraries In One (1) Pre-packaged Binary" target='_blank'>BIP</a> 
-	<span>will install the npm executable.</span>
-</p>
-	<hr class='green-groove' />
-<p>
-	<span>Be sure to run an 'echo' from your Terminal prompt in order to ensure the $PATH variable indeed has an export for the default <code>/usr/local/bin/</code> subdirectory location.</span>
-</p>
+	<p>
+		<span>That is where the</span> 
+		<a href='https://nodejs.org/' title="Click To Download both 'node'' and The 'npm'' Package Manager for Node Libraries In One (1) Pre-packaged Binary" target='_blank'>BIP</a> 
+		<span>will install the node executable.</span>
+	</p>
+		<hr class='green-groove' />
 
-<p>
-	<span>Otherwise, when the executables are tapped, you'll get nothing from your install but an error message in your Terminal that reads ...</span>
-</p>
+	<p>
+		<span>Also, the installation of npm defaults to the <code>/usr/local/bin/</code> subdirectory of your development machine, as well.</span>
+	</p>
+
+	<p>
+		<span>That is where the</span> 
+		<a href='https://nodejs.org/' title="Click To Download both 'node'' and The 'npm'' Package Manager for Node Libraries In One (1) Pre-packaged Binary" target='_blank'>BIP</a> 
+		<span>will install the npm executable.</span>
+	</p>
+		<hr class='green-groove' />
+
+	<p>
+	  <span>Be sure to run an 'echo' from your Terminal prompt in order to ensure the $PATH variable indeed has an export for the default <code>/usr/local/bin/</code> subdirectory location.</span>
+  </p>
+
+  <p>
+	  <span>Otherwise, when the executables are tapped, you'll get nothing from your install but an error message in your Terminal that reads ...</span>
+  </p>
 
 <pre class='flex-box'>
 <span>Check your User $PATH variable!</span>
@@ -70,12 +64,12 @@ title: Learn Node
 {% endhighlight %}
 <span>Easy to edit, easy to construct</span>
 </pre>
-<hr class='green-groove' />
+  <hr class='green-groove' />
 	
-<p>
-	<span>If you need assistance constructing a $PATH variable, see ...</span>
-</p>
-	<hr class='green-groove' />
+  <p>
+	  <span>If you need assistance constructing a $PATH variable, see ...</span>
+  </p>
+	  <hr class='green-groove' />
 
 <hgroup class='text-left'>
 	<h4>Check The Version</h4>
@@ -92,7 +86,7 @@ v7.7.4
 {% endhighlight %}
 <span>Shows the now operable version of node.</span>
 </pre>
-<hr class='green-groove' />
+  <hr class='green-groove' />
 
 <pre class='flex-box'>
 <span>To confirm install of npm, from the Terminal prompt $ ...</span>
@@ -104,7 +98,9 @@ npm -v
 {% endhighlight %}
 <span>Shows the now operable version of npm.</span>
 </pre>
-<hr class='green-groove' />
+  <hr class='green-groove' />
+
+{% include external-source-links.htm %}
 	
 <hgroup class="text-left">
 	<h4>Can You Contribute?</h4>
@@ -144,97 +140,16 @@ npm -v
 </p>
     <hr class="green-groove" />
 
-<hgroup class="text-left">
-	<h4>Time Management</h4>
-</hgroup>
-	<hr class="green-groove" />
 
-<p>
-	<span>How much of your coding time are you willing to invest in this project?</span>
-</p>
 
-<p>
-	<span>As we can now decipher the time spent by our functions at the code block level ...</span>
-</p>
+  <p>
+	  <span lang="es" title="Sp. 'For Finish'">Finito!</span>
+  </p>
+	  <hr class="green-groove" />
 
-<pre class="flex-box">
-<span>Setting the time wrapper for the execution of a function ...</span>
-{% highlight html linenos %}
-console.time(programTimer,"Square It Time"); 
-var programTimer; {
-    Execute Function Inside This Code Block
-}
-console.timeEnd(programTimer,"Square It Time");
-{% endhighlight %}
-<span>Keep a-track of your coding time.</span>
-</pre>
+{% include sources-and-uses.htm %}
 
-<p>
-	<span><b>Note</b>.</span>
-	<span>To exit the node.js session ... hit the <kbd>control + c</kbd> key combination twice.</span>
-</p>
-
-<p>
-	<span>Wondering what node libraries have already been installed by npm?</span>
-</p>
-
-<pre class='flex-box'>
-<span>List installed node libraries ...</span>
-{% highlight html linenos %}
-npm ls
-{% endhighlight %}
-<span>A list of installed node libraries appears</span>
-</pre>
-<hr class='green-groove' />
-
-<pre class='flex-box'>
-<span>Update installed node libraries ...</span>
-{% highlight html linenos %}
-npm update
-{% endhighlight %}
-<span>Returns ...</span>
-</pre>
-<hr class='green-groove' />
-
-<p>
-	<span lang="es" title="Sp. 'For Finish'">Finito!</span>&nbsp;...&nbsp;<i class="icon-large icon-flower"></i>
-</p>
-	<hr class="green-groove" />
-
-<p>
-	<span>Thank you for your contribution.</span>
-</p>
-	<hr class="green-groove" />
-
-<p>
-	<span class="script-text">The Management</span>
-</p>
-
-<picture>
-	<a href='https://mminail.github.io' title='Click To Review the Home page of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation' target='_blank'>
-	<img class="img-responsive img-circle" src="../assets/img/svg/MMINAIL-Logo-Badge-Original-Registered-Transparent-320-x-320.svg" alt="Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation USPTO Registered Logo Badge" /></a>
-</picture>
-	<br />
-
-<footer id="page-footer" class="center-block">
-	<br />
-	<p>
-		<span><b>Source</b>:</span>
-    	<a href="https://www.cash.me/$MMINAIL" title="Click to Donate to The Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation via Square Up -  Cash Me" target="_blank">Square Up</a>
-	</p>
-
-	<p>
-		<span>See: <a href="https://www.cash.me/$MMINAIL" title="Click to Donate to The Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation via Square Up -  Cash Me" target="_blank">Cash Me</a>
-		<span>by</span>
-		<a href="https://www.cash.me/$MMINAIL" title="Click to Donate to The Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation via Square Up -  Cash Me" target="_blank">Today</a>
-	</p>
-		<hr class="green-groove" />
-		
-	.
-</footer>
-
-</article>
-</main>
-
-</div>
+{% include alt-footer-cash-me.htm %}
+  
+  </div>
 </div>
