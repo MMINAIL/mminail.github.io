@@ -1,5 +1,9 @@
 # mminail.github.io
 
-Hello: You have reached the Central Working Repo (CWR) of the MMINAIL.
-This Central Working Repo is an expanding Concepts Library.
-The Concepts Library is an open source project so feel free to fork the repo, propose a few edits, and send me a pull request, if you wish. Thank you. Robert.
+The Concepts Library is a hub for over sixty (60) Working Repos under the penumbra of the MMINAIL.
+
+We are constantly expanding our horizon.
+
+The MMINAIL is an open source project.
+
+So, feel free to fork the repo, propose a few edits, and send us a pull request.
