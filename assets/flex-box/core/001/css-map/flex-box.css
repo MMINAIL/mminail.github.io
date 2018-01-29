@@ -1,0 +1,442 @@
+/* Flex-box version 0.0.1
+		- a stylesheet for Html pages that use the Css Flex-box protocol
+		- Robert Weber, Author
+		- Twitter: https://www.twitter.com/rwebaz
+		- Facebook: https://fb.me/Medcoin
+		- Main Website: https://mminail.github.io
+		- License: GNU AFFERO GENERAL PUBLIC LICENSE
+*/
+
+/* First, we'll set the background color for the Section Id 'Top Row' ...*/
+
+	section#top-row {
+		background-color: burlywood;
+	}
+
+/* Next, we'll set the **Flex Container** for the Header Id 'masthead' ...*/
+	
+/* Note. The Header Id 'masthead' will NOT receive a **Flex Item** id position in the 'header-masthead' **Flex Container** ... */
+  
+	header#masthead {
+
+		display: -webkit-flex;
+		display: flex;
+
+		 -webkit-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+
+		/* -webkit-flex-flow: column nowrap;
+		flex-flow: column nowrap; */
+
+		justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+		align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+		align-content: flex-start; /* flex-start || stretch || center || flex-end */
+	
+	}
+
+/* Give the **Flex Item** and inflow-child 'primary-image' a position in the 'masthead' flex container */
+
+hgroup#primary-image {
+
+-webkit-order: 0;
+order: 0;
+
+-webkit-flex: 8 1 0;
+flex: 8 1 0;
+
+}
+
+/* Give the **Flex Item** and inflow-child 'primary-header' a position in the 'masthead' flex container */
+
+aside#primary-header {
+
+	-webkit-order: 0;
+	order: 0;
+
+	-webkit-flex: 2 1 0;
+	flex: 2 1 0;
+
+}
+
+/* Give the **Flex Item** and inflow-child 'navigator' a position in the 'row-two' **Flex Container** */
+
+aside#navigator {
+	-webkit-order: 0;
+	order: 0;
+
+	-webkit-flex: 2 1 0;
+	flex: 2 1 0;
+
+}
+
+/* Give the flex item id and inflow-child 'secondary-header' a position in the 'row-two' flex container. */
+
+aside#secondary-header {
+	
+		-webkit-order: 0;
+		order: 0;
+	
+		-webkit-flex: 2 1 0;
+		flex: 2 1 0;
+
+}
+
+/* Next, we'll set the **Flex Container** for the Section Id 'row-two' ...*/
+	
+/* Note. The Section Id 'row-two' will NOT receive a **Flex Item** id position in the 'header-masthead' **Flex Container** ... */
+
+	section#row-two {
+
+		display: -webkit-flex;
+		display: flex;
+
+		-webkit-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+
+		/* -webkit-flex-flow: column nowrap;
+		flex-flow: column nowrap; */
+
+		/* This is a consolidated command: flex-direction + flex-wrap */
+		/* flex-direction: row || column || row-reverse || column-reverse */
+		/* flex-wrap: wrap || nowrap || wrap-reverse */
+
+		justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+		align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+		align-content: flex-start; /* flex-start || stretch || center || flex-end */
+	}
+	
+	/* Give the **Flex Item** and inflow-child 'main-article' a position in the 'row-two' **Flex Container** */
+
+	article#main-article {
+
+		-webkit-order: 0;
+		order: 0;
+
+		-webkit-flex: 8 1 0;
+		flex: 8 1 0;
+
+	}
+
+	/* Give the **Flex Item** and inflow-child 'supporting-content' a position in the 'row-two' **Flex Container** */
+
+	article#supporting-content {
+		-webkit-order: 0;
+		order: 0;
+			
+		-webkit-flex: 1 1 auto;
+		flex: 8 1 0;
+				
+	}	
+
+	section#row-three {
+	
+		display: -webkit-flex;
+		display: flex;
+
+		-webkit-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+
+		/* -webkit-flex-flow: column nowrap;
+		flex-flow: column nowrap; */
+
+		justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+		align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+		align-content: flex-start; /* flex-start || stretch || center || flex-end */
+	}
+	
+	/* Give the **Flex Item** and inflow-child 'page-footer' a position in the 'row-three' **Flex Container** */
+
+	footer#page-footer {
+
+		-webkit-order: 0;
+		order: 0;
+
+		-webkit-flex: 8 1 0;
+		flex: 8 1 auto;
+		
+	}
+
+	aside#secondary-header {
+		
+		-webkit-order: 0;
+		order: 0;
+		
+		-webkit-flex: 2 1 0;
+		flex: 2 1 0;
+	
+	}
+
+/* BEGIN MEDIA QUERIES BY LARGEST MEDIA SECTION */
+
+/* Comment out all media queries but small ... */
+
+@media only screen and (max-width: 2200px) and (min-width: 1201px)  {/* Extra Large Screens */
+
+	/* First, we'll set the background color for the main body ...*/
+
+	main#main-body {
+		background-color:rgb(255,255,229); /* moonlight */
+	}
+
+	/* Next, we'll set the background color for the Section Id 'top-row' ...*/
+
+	section#top-row {
+		background-color: burlywood;
+	}
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 769px)  {/* Laptop Screens */
+
+	/* First, we'll set the background color for the main body ...*/
+
+	main#main-body {
+		background-color:rgb(255,255,229); /* moonlight */
+	}
+
+	/* Next, we'll set the background color for the Section Id 'top-row' ...*/
+
+	section#top-row {
+		background-color: burlywood;
+	}
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 415px)  {/* Large Tablet Screens */
+
+	/* First, we'll set the background color for the main body ...*/
+
+	main#main-body {
+		background-color:rgb(255,255,229); /* moonlight */
+	}
+
+	/* Next,  we'll set the background color for the Section Id 'top-row' ...*/
+
+	section#top-row {
+		background-color: burlywood;
+	}
+
+/* Thirdly, we'll set a **Flex Container** in the Header Id 'masthead' w **Flex Flow** set to column no wrap ...*/
+
+/* Note. The Header Id 'masthead' will NOT receive a **Flex Item** position, only a **Flex Container** designation. */
+
+header#masthead {
+
+	display: -webkit-flex;
+	display: flex;
+
+	/* -webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap; */
+
+	-webkit-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+
+	justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+	align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+	align-content: flex-start; /* flex-start || stretch || center || flex-end */
+
+}
+
+/* Give the **Flex Item** and inflow-child 'primary-image' a position in the 'masthead' flex container */
+
+hgroup#primary-image {
+	
+	-webkit-order: 0;
+	order: 0;
+	
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+	
+	}
+	
+	/* Give the **Flex Item** and inflow-child 'primary-header' a position in the 'masthead' flex container */
+	
+	aside#primary-header {
+	
+		-webkit-order: 0;
+		order: 0;
+	
+		-webkit-flex: 1 1 auto;
+		flex: 1 1 auto;
+	
+	}
+
+}
+
+@media only screen and (max-width: 360px) { /* Small Screens */
+
+/* First, we'll set the background color for the main body ...*/
+
+main#main-body {
+	background-color:rgb(255,255,229); /* moonlight */
+}
+
+/* Next,  we'll set the background color for the Section Id 'top-row' ...*/
+
+section#top-row {
+	background-color: burlywood;
+}
+
+/* Thirdly, we'll set a **Flex Container** in the Header Id 'masthead' w **Flex Flow** set to column no wrap ...*/
+
+/* Note. The Header Id 'masthead' will NOT receive a **Flex Item** position, only a **Flex Container** designation. */
+
+header#masthead {
+
+	display: -webkit-flex;
+	display: flex;
+
+	/* -webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap; */
+
+	-webkit-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+
+	justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+	align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+	align-content: flex-start; /* flex-start || stretch || center || flex-end */
+
+}
+
+/* Give the **Flex Item** and inflow-child 'primary-image' a position in the 'masthead' flex container */
+
+hgroup#primary-image {
+	
+	-webkit-order: 0;
+	order: 0;
+	
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+	
+	}
+	
+	/* Give the **Flex Item** and inflow-child 'primary-header' a position in the 'masthead' flex container */
+	
+	aside#primary-header {
+	
+		-webkit-order: 0;
+		order: 0;
+	
+		-webkit-flex: 1 1 auto;
+		flex: 1 1 auto;
+	
+	}
+	
+	/* Give the **Flex Item** and inflow-child 'navigator' a position in the 'row-two' **Flex Container** */
+	
+	aside#navigator {
+		-webkit-order: 0;
+		order: 0;
+	
+		-webkit-flex: 1 1 auto;
+		flex: 1 1 auto;
+	
+	}
+	
+	/* Give the flex item id and inflow-child 'secondary-header' a position in the 'row-two' flex container. */
+	
+	aside#secondary-header {
+		
+			-webkit-order: 0;
+			order: 0;
+		
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+	
+	}
+
+
+/* Fourthly, we'll set a **Flex Container** in the Header Id 'row-two' w **Flex Flow** set to column no wrap ...*/
+
+/* Note. The Header Id 'row-two' will NOT receive a **Flex Item** position, only a **Flex Container** designation. */
+
+section#row-two {
+	
+			display: -webkit-flex;
+			display: flex;
+	
+			/* -webkit-flex-flow: row nowrap;
+			flex-flow: row nowrap; */
+	
+			-webkit-flex-flow: column nowrap;
+			flex-flow: column nowrap; 
+	
+			/* This is a consolidated command: flex-direction + flex-wrap */
+			/* flex-direction: row || column || row-reverse || column-reverse */
+			/* flex-wrap: wrap || nowrap || wrap-reverse */
+	
+			justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+			align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+			align-content: flex-start; /* flex-start || stretch || center || flex-end */
+		}
+		
+		/* Give the **Flex Item** and inflow-child 'main-article' a position in the 'row-two' **Flex Container** */
+	
+		article#main-article {
+	
+			-webkit-order: 1;
+			order: 1;
+	
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+	
+		}
+	
+		/* Give the **Flex Item** and inflow-child 'supporting-content' a position in the 'row-two' **Flex Container** */
+	
+		article#supporting-content {
+			-webkit-order: 1;
+			order: 1;
+				
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+					
+		}
+
+		/* Fifth, we'll set a **Flex Container** in the Header Id 'row-three' w **Flex Flow** set to column no wrap ...*/
+
+		/* Note. The Header Id 'row-two' will NOT receive a **Flex Item** position, only a **Flex Container** designation. */
+	
+		section#row-three {
+		
+			display: -webkit-flex;
+			display: flex;
+	
+			/*  -webkit-flex-flow: row nowrap;
+			flex-flow: row nowrap; */
+	
+			-webkit-flex-flow: column nowrap;
+			flex-flow: column nowrap; 
+	
+			justify-content: flex-start; /* flex-start || center || space-between || space-around || flex-end */
+			align-items: flex-start;  /* flex-start || stretch || center || baseline || flex-end ||  */
+			align-content: flex-start; /* flex-start || stretch || center || flex-end */
+		}
+		
+		/* Give the **Flex Item** and inflow-child 'page-footer' a position in the 'row-three' **Flex Container** */
+	
+		footer#page-footer {
+	
+			-webkit-order: 3;
+			order: 3;
+	
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+			
+		}
+
+		/* Give the **Flex Item** and inflow-child 'secondary-header' a position in the 'row-three' **Flex Container** */
+	
+		aside#secondary-header {
+			
+			
+			-webkit-order: 2;
+			order: 2;
+			
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+		
+		}
+}
+
+/* END MEDIA QUERIES BY SMALLEST MEDIA SECTION */
