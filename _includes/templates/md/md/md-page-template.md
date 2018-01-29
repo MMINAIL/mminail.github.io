@@ -5,13 +5,17 @@ navigation_weight: 8
 ---
 # Article Title ( From Front Matter Above )
 
-{{ site.tagline }}
+{{ site.description }}
 
 {% include toc-flammarion.md %}
 
 ## Subtitle Begin Template Dtd 12-31-17
 
 Place the introducing line of text ie.) the 'tagline' here ...
+
+## Import Code
+
+More to come ...
 
 ## Last Subtitle
 

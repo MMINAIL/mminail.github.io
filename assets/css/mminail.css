@@ -403,11 +403,16 @@ aside#dot-epub {
     Begin Styled Article Ids and Classes
 ------------------------------------- */
 
-/* Set the default article element */
-article {
+/* Set the default Main tag */
+main {
     position: relative;
     text-align: left;
+}
+
+/* Set the default Article tag */
+article {
     width: calc(100% - 0px);
+    opacity: 50%;
     background-color: rgb(175,216,205); /* Luster Sky Blue */
 }
 
