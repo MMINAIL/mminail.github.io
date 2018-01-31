@@ -3,36 +3,32 @@
 <html lang="en-US">
 
 <head>
-	<!-- Begin SessionStack Code 
-	<script type="text/javascript">
-		!function(a,b){var c=window;c.SessionStack=a,c[a]=c[a]||function(){
-		c[a].q=c[a].q||[],c[a].q.push(arguments)},c[a].t=b;var d=document.createElement("script");
-		d.async=1,d.src="https://cdn.sessionstack.com/sessionstack.js";
-		var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(d,e);
-		}("sessionstack","714b82de97094c8085bdb9158e719ef8");
-	</script> -->
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="p:domain_verify" content="6a5c3fc78a53419886f8c779ecd56e8a"/>
 	<title>{{ page.title }} | {{ site.title }}</title>
-	<!-- Comment Out: Highlight js Remote Css -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css" rel="stylesheet" />
-	<!-- Comment Out: Foundation js Core Local Css -->
-	<link href="../assets/foundation/core/100/css/foundation-v100.css" rel="stylesheet" />
-	<!-- Comment Out: Prism js Core Local Css -->
-	<link href="../assets/prism/core/001/css/prism.css" rel="stylesheet" />
-	<!-- Comment Out: Zocial js Core Local Css -->
-	<link href="../assets/zocial/core/001/css/zocial-buttons.css" rel="stylesheet" />
-	<!-- Comment Out: Bootstrap Core Local Css -->
-	<link href="../bs/min/core/300/css-map/bootstrap-core-v337.min.css" rel="stylesheet" />
-	<!-- Comment Out: Bootstrap Icon Large Local Css -->
-	<link href="../bs/min/icon-large/000/css-map/bootstrap-icon-large.min.css" rel="stylesheet" /> 
 	<!-- Comment Out: jQuery Mobile Remote Css -->
 	<link href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" /> 
 	<!-- Comment Out: jQuery Mobile Local Css 
 	<link href="../jqm/min/core/145/css-map/jquery-mobile-v145.min.css" rel="stylesheet" /> -->
 	<!-- Comment Out: jQuery Mobile Icons Local Css -->
 	<link href="../jqm/min/icons/145/css-map/jquery-mobile-icons-v145.min.css" rel="stylesheet" />
+	<!-- Comment Out: Bootstrap Core Remote CDN for Css ver 4.0.0 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+	<!-- Comment Out: Bootstrap Core Local Script for Css ver 3.3.7 
+	<link href="../bs/min/core/300/css-map/bootstrap-core-v337.min.css" rel="stylesheet" /> -->
+	<!-- Comment Out: Bootstrap Icon Large Local Css -->
+	<link href="../bs/min/icon-large/000/css-map/bootstrap-icon-large.min.css" rel="stylesheet" /> 
+	<!-- Comment Out: Highlight js Core Remote CDN For Css ver 091000 -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css" rel="stylesheet" /> 
+	<!-- Comment Out: Highlight js Core Local Script For Css ver 091000 
+	<link href="../highlight-js/styles/rainbow.css" rel="stylesheet" /> -->
+	<!-- Comment Out: Foundation js Core Local Css -->
+	<link href="../assets/foundation/core/100/css/foundation-v100.css" rel="stylesheet" />
+	<!-- Comment Out: Prism js Core Local Css -->
+	<link href="../assets/prism/core/001/css/prism.css" rel="stylesheet" />
+	<!-- Comment Out: Zocial js Core Local Css -->
+	<link href="../assets/zocial/core/001/css/zocial-buttons.css" rel="stylesheet" />
 	<!-- Comment Out: Main css -->
 	<link href="../assets/css/mminail.css" rel="stylesheet" />
 	<!-- Comment Out: Flex Box css -->
@@ -113,143 +109,168 @@
 		
 <!-- Place all Javascript Library packages north of the </body> closing tag and after the closing site-footer </footer> tag in order of execution -->
 
-<!-- Comment Out: jQuery Core Library Remote CDN (slim style) ver 3.3.1 -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<!-- Comment Out: jQuery Core Library Remote CDN For Full min js ver 3.3.1 -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
 
-<!-- Comment Out: jQuery Core Library Local Script ver 3.3.1 
+<!-- Comment Out: jQuery Core Library Local Script For Full min js ver 3.3.1 
 <script src="../jq/min/core/331/js/jquery-v331.min.js"></script> -->
 
-<!-- Comment Out: jQuery Color Library Remote CDN ver 2.1.2 
+<!-- Comment Out: jQuery Core Library Remote CDN For Slim min js ver 3.3.1 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script> -->
+
+<!-- Comment Out: jQuery Core Library Remote CDN For Slim min js ver 3.2.1 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+
+<!-- Comment Out: jQuery Mobile Library Remote CDN For Full min js ver 1.4.5 
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> -->
+
+<!-- Comment Out: jQuery Mobile Library Local Script For Full min js ver 1.4.5 -->
+<script src="../jqm/min/core/145/js/jquery-mobile-v145.min.js"></script> 
+
+<!-- Comment Out: jQuery Color Library Remote CDN For Full min js ver 2.1.2 
 <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script> -->
 
-<!-- Comment Out: jQuery Color Library Local Script ver 2.1.2 
+<!-- Comment Out: jQuery Color Library Local Script For Full min js ver 2.1.2 
 <script src="#"></script> -->
 
-<!-- Comment Out: jQuery Mobile Library Remote CDN ver 1.4.5 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> 
-
-<!-- Comment Out: jQuery Mobile Library Local Script ver 1.4.5
-<script src="../jqm/min/core/145/js/jquery-mobile-v145.min.js"></script> -->
-
-<!-- Comment Out: jQuery Cookie Library Remote CDN ver 0.0.0
+<!-- Comment Out: jQuery Cookie Library Remote CDN For Full min js ver 0.0.0
 <script src="#"></script> -->
 
-<!-- Comment Out: jQuery Cookie Library Local Script ver 0.0.0
+<!-- Comment Out: jQuery Cookie Library Local Script For Full min js ver 0.0.0
 <script src="#"></script> -->
 
-<!-- Comment Out: jQuery UI Library Remote CDN ver 011201
+<!-- Comment Out: jQuery UI Library Remote CDN For Full min js ver 011201
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> -->
 
-<!-- Comment Out: jQuery URI Library Local Script ver 011809
+<!-- Comment Out: jQuery URI Library Local Script For Full min js ver 011809
 <script src="../jq/min/uri/011809/js/jquery-uri-v011809.min.js"></script> -->
 
-<!-- Comment Out: Bootstrap Library CDN ver 3.3.7 -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+<!-- Comment Out: Popper Library Remote CDN For Full min js ver 011209 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
 
-<!-- Comment Out: Bootstrap Library Local Script ver 3.3.7
-<script src="../bs/min/core/300/css-map/bootstrap-core-v337.min.js"></script> -->
+<!-- Comment Out: Bootstrap Library CDN For Full min js ver 4.0.0 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 
-<!-- Comment Out: Angularjs Library CDN ver 1.6.0 
+<!-- Comment Out: Bootstrap Library Local Script For Full min js ver 4.0.0
+<script src="../bs/min/core/400/css-map/bootstrap-core-v400.min.js"></script> -->
+
+<!-- Comment Out: Bootstrap Library CDN For Full min js ver 3.3.7 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+<!-- Comment Out: Bootstrap Library Local Script For Full min js ver 3.3.7 
+<script src="../bs/min/core/300/js/bootstrap-core-v337.min.js"></script> -->
+
+<!-- Comment Out: Angularjs Library Remote CDN For Full min js ver 1.6.0 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script> -->
 
-<!-- Comment Out: Angularjs Library Local Script ver 1.6.0
+<!-- Comment Out: Angularjs Library Local Script For Full min js ver 1.6.0 
 <script src="../ng/min/core/160/js-map/angular-v160.min.js"></script> -->
 
-<!-- Comment Out: Animated Enhanced Library remote script 
+<!-- Comment Out: Animated Enhanced Library Remote CDN For Full min js ver 0.0.0
 <script src="#"></script> -->
 
-<!-- Comment Out: Animated Enhanced library Local script 
+<!-- Comment Out: Animated Enhanced library Local Script For Full min js ver 0.0.0
 <script src="../js/jquery.animate-enhanced.js"></script> -->
 
-<!-- Comment Out: Class ( programming ) Library remote script 
+<!-- Comment Out: Class ( programming ) Library Remote CDN For Full min js ver 0.0.0 
 <script src="#"></script> -->
 
-<!-- Comment Out: Class ( programming ) Library Local script 
+<!-- Comment Out: Class ( programming ) Library Local Script For Full min js ver 0.0.0
 <script src="../js/class.js"></script> -->
 
-<!-- Comment Out: Form Validate Library Remote script 
+<!-- Comment Out: Form Validate Library Remote CDN For Full min js ver 0.0.0 
 <script src="#"></script> -->
 
-<!-- Comment Out: Form Validate Library Local script 
+<!-- Comment Out: Form Validate Library Local Script For Full min js ver 0.0.0
 <script src="../js/validate.js"></script> -->
 
-<!-- Comment Out: Head Library Remote CDN ver 099 
+<!-- Comment Out: Head Library Remote CDN For Full min js ver 099 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/headjs/0.99/head.load.min.js"></script> -->
 
-<!-- Comment Out: Head Library Local script ver 099
+<!-- Comment Out: Head Library Local Script For Full min js ver 099
 <script src="../js/head.js"></script> -->
 
-<!-- Comment Out: Highlighter Library Remote CDN ver 091000 -->
+<!-- Comment Out: Highlighter Library Remote CDN For Full min js ver 091000 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script> 
 
-<!-- Comment Out: Highlighter Library Local Script ver 091000
+<!-- Comment Out: Highlighter Library Local Script For Full min js ver 091000 
 <script src="../highlight-js/lib/highlight.js"></script> -->
 
-<!-- Comment Out: Indexed DB Library remote script 
+<!-- Comment Out: Indexed DB Library Remote CDN For Full min js ver 0.0.0 
 <script src="#"></script> -->
 
-<!-- Comment Out: Indexed DB library Local script 
+<!-- Comment Out: Indexed DB library Local script For Full min js ver 0.0.0
 <script src="../js/db.js"></script> -->
 
-<!-- Comment Out: Markdown Library Remote CDN ver 000
+<!-- Comment Out: Markdown Library Remote CDN For Full min js ver 000
 <script src="#"></script> -->
 
-<!-- Comment Out: Markdown Library Local Script ver 000 
+<!-- Comment Out: Markdown Library Local Script For Full min js ver 000 
 <script src="../js/markdown.js"></script> -->
 
-<!-- Comment Out: Mask Input Library Remote CDN ver 000 
+<!-- Comment Out: Mask Input Library Remote CDN For Full min js ver 000 
 <script src="#"></script> -->
 
-<!-- Comment Out: Mask Input Library Local Script ver 000
+<!-- Comment Out: Mask Input Library Local Script For Full min js ver 000
 <script src="../js/jquery.maskedinput.js"></script> -->
 
-<!-- Comment Out: Modernizr Library Remote CDN ver 282 
+<!-- Comment Out: Modernizr Library Remote CDN For Full min js ver 282 
 <script src="#"></script> -->
 
-<!-- Comment Out: Modernizr Library Local Script ver 282
+<!-- Comment Out: Modernizr Library Local Script For Full min js ver 282
 <script src="../js/min/modernizer/core/282/js/modernizer-v282.min.js"></script> -->
 
-<!-- Comment Out: Moment ( time ) Library remote script 
+<!-- Comment Out: Moment ( time ) Library Remote CDN For Full min js ver 000 
 <script src="#"></script> -->
 
-<!-- Comment Out: Moment ( time ) library Local script 
+<!-- Comment Out: Moment ( time ) library Local Script For Full min js ver 000
 <script src="../js/moment.min.js"></script> -->
 
-<!-- Comment Out: Prism Library Remote CDN ver 001 
+<!-- Comment Out: Prism Library Remote CDN For Full min js ver 001 
 <script src=""></script> -->
 
-<!-- Comment Out: Prism Library Local Script ver 001
-<script src="../assets/prism/core/001/js/prism.js"</script> -->
+<!-- Comment Out: Prism Library Local Script For Full min js ver 001 -->
+<script src="../assets/prism/core/001/js/prism.js"></script> 
 
-<!-- Comment Out: QR Code Library remote script 
+<!-- Comment Out: QR Code Library Remote CDN For Full min js ver 020 
 <script src="#"></script> -->
 
-<!-- Comment Out: QR Code library Local script 
-<script src="../js/jquery.qrcode-0.2.min.js"></script> -->
+<!-- Comment Out: QR Code library Local Script For Full min js ver 020 -->
+<script src="../js/min/qr-code/core/020/js/qr-code-v020.min.js"></script> 
 
-<!-- Comment Out: Readmore Library remote script 
+<!-- Comment Out: Readmore Library Remote CDN For Full min js ver 000 
 <script src="#"></script> -->
 
-<!-- Comment Out: Readmore Library Local script 
+<!-- Comment Out: Readmore Library Local Script For Full min js ver 000
 <script src="../js/readmore.js"></script> -->
 
-<!-- Comment Out: Tether Library Remote CDN ver 1.4.0 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> 
+<!-- Comment Out: Tether Library Remote CDN For Full min js ver 1.4.0 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> -->
 
-<!-- Comment Out: Tether Library Local Script ver 1.4.0
-<script src="../assets/tether/core/000/js/tether-v140.js"></script> -->
+<!-- Comment Out: Tether Library Local Script For Full min js ver 1.4.0 -->
+<script src="../js/min/tether/core/140/js/tether-v140.min.js"></script> 
 
-<!-- Comment Out: Underscore ( data ) Library Remote CDN ver 183 
+<!-- Comment Out: Underscore ( data ) Library Remote CDN For Full min js ver 183 
 <script src="#"></script> -->
 
-<!-- Comment Out: Underscore ( data ) Library Local Script ver 183
-<script src="../assets/underscore/core/183/js/underscore-v183.js"></script> -->
+<!-- Comment Out: Underscore ( data ) Library Local Script For Full min js ver 183 -->
+<script src="../assets/underscore/core/183/js/underscore-v183.js"></script> 
 
 <!-- Comment Out: Dot epub (.mobi) maker -->
 <script type="text/javascript" src="//dotepub.com/p/widget.php?lang=en&amp;img=f"></script>
 
 <!-- Comment Out: Font Awesome -->
 <script src="https://use.fontawesome.com/ab044f48cb.js"></script>
+
+<!-- Begin SessionStack Code 
+	<script type="text/javascript">
+		!function(a,b){var c=window;c.SessionStack=a,c[a]=c[a]||function(){
+		c[a].q=c[a].q||[],c[a].q.push(arguments)},c[a].t=b;var d=document.createElement("script");
+		d.async=1,d.src="https://cdn.sessionstack.com/sessionstack.js";
+		var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(d,e);
+		}("sessionstack","714b82de97094c8085bdb9158e719ef8");
+	</script> -->
+<!-- End SessionStack Code -->
 
 <!-- <div itemscope itemtype="https://schema.org/" class="container-fluid"> -->
 <!-- <div class="row-fluid"> -->
