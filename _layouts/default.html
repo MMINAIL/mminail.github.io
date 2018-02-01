@@ -4,21 +4,33 @@
 
 <head>
   <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="p:domain_verify" content="6a5c3fc78a53419886f8c779ecd56e8a"/>
+  <!-- Cannot Use Liquid SEO Tag from Jekyll Theme here -->
+  <!-- {% raw %}{% seo %}{% endraw %} -->
+  <!-- Returns: Liquid Exception: Liquid syntax error (line 7): Unknown tag 'seo' in /_layouts/default.html -->
   <title>{{ page.title }} | {{ site.title }}</title>
+
+  <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="p:domain_verify" content="6a5c3fc78a53419886f8c779ecd56e8a"/>
+  
+  <!-- Add Open Sans Font -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- Add Standard favicon Link -->
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+	<link type="image/x-icon" href="/favicon.ico?" rel="shortcut icon" />
   
 	<!-- Comment Out: Bootstrap Core Remote CDN for Css ver 4.0.0 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   
   <!-- Comment Out: Bootstrap Core Local Script for Css ver 4.0.0 
-  <link href="../bs/min/core/400/css-map/bootstrap-core-v400.min.css" rel="stylesheet" /> -->
+  <link href="../bs/min/core/400/css-map/bootstrap.min.css" rel="stylesheet" /> -->
 
   <!-- Comment Out: Bootstrap Core Remote CDN for Css ver 3.3.7 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- Comment Out: Bootstrap Core Local Script for Css ver 3.3.7 
-  <link href="../bs/min/core/300/css-map/bootstrap-core-v337.min.css" rel="stylesheet" /> -->
+  <link href="../bs/min/core/300/css-map/bootstrap.min.css" rel="stylesheet" /> -->
 
   <!-- Comment Out: Bootstrap Icon Large Remote CDN for Css ver 0.0.0
   <link href="" rel="stylesheet" /> -->
@@ -51,11 +63,11 @@
 	<!-- Comment Out: Zocial js Core Local Css -->
 	<link href="../assets/zocial/core/001/css/zocial-buttons.css" rel="stylesheet" />
 	<!-- Comment Out: Main css -->
-	<link href="../assets/css/mminail.css" rel="stylesheet" />
+  <!-- <link href="../assets/css/mminail.css" rel="stylesheet" /> -->
+  <link href="{{ '/assets/css/mminail.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet" />
 	<!-- Comment Out: Flex Box css -->
 	<link href="../assets/flex-box/core/001/css-map/flex-box.css" rel="stylesheet" />
-	<!-- Add Standard favicon Link -->
-	<link type="image/x-icon" href="/favicon.ico?" rel="shortcut icon" />
+	
 	<!-- Add Fav icon Generator Links -->
 	<link rel="apple-touch-icon" sizes="57x57" href="../assets/ico/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="../assets/ico/apple-icon-60x60.png">
@@ -169,14 +181,14 @@
 <!-- Comment Out: Bootstrap Library Remote CDN For Full min js ver 4.0.0 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
-<!-- Comment Out: Bootstrap Library Local Script For Full min js ver 4.0.0
-<script src="../bs/min/core/400/css-map/bootstrap-core-v400.min.js"></script> -->
+<!-- Comment Out: Bootstrap Library Local Script For Full min js ver 4.0.0 
+<script src="../bs/min/core/400/js-map/bootstrap.min.js"></script> -->
 
 <!-- Comment Out: Bootstrap Library Remote CDN For Full min js ver 3.3.7 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 
 <!-- Comment Out: Bootstrap Library Local Script For Full min js ver 3.3.7 
-<script src="../bs/min/core/300/js/bootstrap-core-v337.min.js"></script> -->
+<script src="../bs/min/core/300/js/bootstrap.min.js"></script> -->
 
 <!-- Comment Out: Angularjs Library Remote CDN For Full min js ver 1.6.0 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script> -->
@@ -272,7 +284,7 @@
 <script src="#"></script> -->
 
 <!-- Comment Out: Underscore ( data ) Library Local Script For Full min js ver 183 -->
-<script src="../assets/underscore/core/183/js/underscore-v183.js"></script> 
+<script src="../js/min/underscore/core/183/js-map/underscore-v183.min.js"></script>
 
 <!-- Comment Out: Dot epub (.mobi) maker -->
 <script type="text/javascript" src="//dotepub.com/p/widget.php?lang=en&amp;img=f"></script>

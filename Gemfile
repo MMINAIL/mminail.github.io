@@ -5,8 +5,8 @@ ruby "2.4.2"
 # Could not find gem 'ruby (= 2.4.2)'
 # In any of the gem sources listed in your Gemfile
 #
-# Date of this Update to Gem-template file ver 01-26-2018
-#
+# Date of this Update to Gem-template file ver 01-31-2018
+# 
 # Hello!
 #
 # This is where you manage which version of the 'Jekyll server' is used to run your GitHub Pages repo.
@@ -170,8 +170,8 @@ gem 'jekyll-docs', '3.6.2'
 # If you do decide to manage the theme of your repo from the config dot yaml page, then comment out both the default and your selected themes here, as follows:
 #
 # gem 'jekyll-theme-cayman', '0.1.0'
-# gem 'jekyll-theme-minimal 0.1.0'
-#
+# gem 'jekyll-theme-minimal', 0.1.0'
+# 
 # Happy Jekyll-ing!
 #
 # Note. To upgrade all, run `bundle update` from the command line.

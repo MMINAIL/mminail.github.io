@@ -1,1 +1,1 @@
-![Page Banner](../assets/img/svg/ghp-git-hub-pages-medmjorg-carbon-free-footprint-project-flammarion-got-tree-final-banner-1050-x-173.svg){:height="173px"}
+![Page Banner](/assets/img/svg/ghp-git-hub-pages-medmjorg-carbon-free-footprint-project-flammarion-got-tree-final-banner-1050-x-173.svg){:height="173px"}
