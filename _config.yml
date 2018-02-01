@@ -1,10 +1,10 @@
 # Site settings
 # 
-# Date of this Update to Config-template file ver 01-01-2018
+# Date of this Update to Config-template file ver 01-31-2018
 #
 # Uncomment theme for docs folder
 # theme: "jekyll-theme-cayman"
-#
+# 
 # There is one main repository as of 12-31-17
 # repository: https://www.github.com/MMINAIL/mminail.github.io
 #
@@ -12,6 +12,7 @@
 # repository: https://www.github.com/rwebaz/Blank-Lessons-Project
 #
 title: "Concept Library | MMINAIL"
+lang: "en-US"
 tagline: "A GitHub repo of Lessons and Articles that emphasize both the GFM and Kramdown development engines"
 description: "The Concept Library of the MMINAIL is a GitHub repo of Lessons and Articles emphasizing both the GFM and Kramdown development engines."
 twitter:

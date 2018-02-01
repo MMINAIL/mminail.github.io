@@ -1,6 +1,11 @@
 /* The main .css file for the mminail.github.io Git repo */
 
 /* -------------------------------------
+    Do NOT Import the Jekyll theme here
+------------------------------------- */
+/* @import 'jekyll-theme-cayman'; */
+
+/* -------------------------------------
     Set the font-face(s) for the Website
 ------------------------------------- */
 
