@@ -1,7 +1,6 @@
 ## Table O Contents
 
-![Medcoin™ Gold Logo Badge]
-(../assets/img/svg/MMINAIL-Medcoin-Logo-Badge-Stitch-Circle-Trnsp-Gold-fede93-543-x-543.svg){:width="120px"}
+![Medcoin™ Gold Logo Badge](../assets/img/svg/MMINAIL-Medcoin-Logo-Badge-Stitch-Circle-Trnsp-Gold-fede93-543-x-543.svg){:width="120px"}
 
 - TOC
 {:toc}
