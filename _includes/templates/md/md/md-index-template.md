@@ -7,16 +7,11 @@ navigation_weight: 1
 
 {{ site.description }}
 
-## Table O Contents
-
-![MMI™ Flammarion Logo Badge](assets/img/svg/MMI-Medmj-Org-Got-Tree-Flammarion-Person-Through-Celestial-Sphere-circle-543-x-543.svg){:width="120px"}
-
-- TOC
-{:toc}
+{% include toc-flammarion.md %}
 
 **Note**. The above **Live** rendition of the **MMI™ Flammarion Logo Badge** ( if visible ) is an `( .svg )` image file set to the dimensions of 120.00 px X 120.00 px.
 
-## Issue Dtd 12-31-17
+## Issue Dtd 02-03-18
 
 The **Issue** of a successful legal argument is prefaced by a concise, to the point coin flip.
 

@@ -1,4 +1,4 @@
-/* The main .css file for the mminail.github.io Git repo */
+/* The main .css file for the mminail.github.io Git repo Dtd 02-03-18 */
 
 /* -------------------------------------
     Do NOT Import the Jekyll theme here
@@ -141,6 +141,14 @@ a[href^="http:"] {
     color: #DC143C; /* Crimson Red */
 }
 
+.indian-red {
+  color: rgb(207,103,75); /* Indian Red */
+}
+
+.light-dodger-blue {
+  color: #337ab7; /* Light Dodger Blue */
+}
+
 /* ------------------------------------
     Begin Styled Header Ids and Classes
 ------------------------------------ */
@@ -213,17 +221,19 @@ hgroup#primary-image {
 /* Primary Title */
 
 h1 {
-    text-align: center;
+    text-align: left;
     /* min-width: 480px; */
     width: calc(100% - 20px);
-    font-size: x-large;
+    /* font-size: large; */
+    /* font-size: x-large; */
+    font-size: 30px;
     margin-top: 0px;
 }
 
 /* Subtitles */
 
 h2 {
-    font-size: large;
+    font-size: 28px;
 }
 
 h3 {

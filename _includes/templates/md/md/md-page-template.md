@@ -1,17 +1,19 @@
 ---
-title: Page Template
+title: Page-Template
 layout: default
+excerpt: Place the introducing line of text ie.) the 'tagline' here ...
 navigation_weight: 8
+categories: template
 ---
 # Article Title ( From Front Matter Above )
 
-{{ site.description }}
+{{ page.excerpt }}
 
 {% include toc-flammarion.md %}
 
-## Subtitle Begin Template Dtd 12-31-17
+## Subtitle Begin Template Dtd 02-03-18
 
-Place the introducing line of text ie.) the 'tagline' here ...
+{{ page.excerpt }}
 
 ## Import Code
 
@@ -19,7 +21,9 @@ More to come ...
 
 ## Last Subtitle
 
-Place the introducing line of text ie.) the 'tagline' here ...
+{{ site.description }}
+
+### Raw Code Block
 
 ```liquid
 {% raw %}
