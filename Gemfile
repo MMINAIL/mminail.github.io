@@ -4,7 +4,7 @@ ruby "2.4.2"
 # ill-formed => gem 'ruby', '2.4.2'
 # Could not find gem 'ruby (= 2.4.2)'
 # In any of the gem sources listed in your Gemfile
-#
+# 
 # Date of this Update to Gem-template file ver 01-31-2018
 # 
 # Hello!
@@ -50,7 +50,7 @@ ruby "2.4.2"
 # To upgrade your version of the 'Gem Bundler' program ...
 # 
 # Type the following command at a local Terminal prompt,
-#
+# 
 # gem update bundler
 #
 # Note. You only need to install the 'Gem Bundler' program once.
@@ -65,10 +65,10 @@ ruby "2.4.2"
 #
 # Note. To avoid the default system Ruby that was factory installed a-way back when you bought your development machine ...
 #
-# Always preface your Terminal sesson with the following Ruby command:
+# Always preface your Terminal session with the following Ruby command:
 #
 # rvm use 2.4.2
-#
+# 
 # Once you have successfully installed 'Ruby ver 2.4.2' to your development machine ...
 #
 # You may now install the local 'Jekyll server' program via the following global Terminal command ...
