@@ -1,6 +1,6 @@
 # Site settings
 # 
-# Date of this Update to Config-template file ver 02-01-2018
+# Date of this Update to Config-template file ver 02-05-2018 pm
 # 
 # Uncomment theme for docs folder
 # theme: "jekyll-theme-cayman"
@@ -10,8 +10,8 @@
 #
 # There are approx sixty auxillary repositories as of 12-31-17
 # repository: https://www.github.com/rwebaz/Blank-Lessons-Project
-#
-title: "Concept Library | MMINAIL"
+# 
+title: "Concepts Library | MMINAIL"
 lang: "en-US"
 tagline: "A GitHub repo of Lessons and Articles that emphasize both the GFM and Kramdown development engines"
 description: "The Concept Library of the MMINAIL is a GitHub repo of Lessons and Articles emphasizing both the GFM and Kramdown development engines."
@@ -54,7 +54,7 @@ defaults:
       image: "true"
 defaults:
   - scope:
-      path: "assets/ico"
+      path: "assets/img/ico"
     values:
       image: "true"
 defaults:
@@ -62,16 +62,14 @@ defaults:
       path: "" 
       type: "pages"
     values:
-      layout: "default"
-      author: "Robert Weber, Director"
+      category: "mminail"
 defaults:
   - scope:
       path: "pages"
       type: "pages"
     values:
-      layout: "default" 
-      author: "Robert Weber, Director"
-excerpt_separator: <!-- this is an excerpt separator -->
+      category: "mminail" 
+excerpt_separator: <!-- this is a literal excerpt separator -->
 collections:
   gists:
     output: "true"
