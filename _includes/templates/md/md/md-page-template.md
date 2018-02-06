@@ -1,19 +1,20 @@
 ---
-title: Page-Template
+title: Page Template
 layout: default
-excerpt: Place the introducing line of text ie.) the 'tagline' here ...
+excerpt: Place the introducing line of text ie.) the 'lead' here ...
 navigation_weight: 8
+version: Markdown Page Template md Dtd 02-05-18 am
 categories: template
 ---
-# Article Title ( From Front Matter Above )
+# {{ page.title }}
 
 {{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
-## Subtitle Begin Template Dtd 02-03-18
+## First Subtitle
 
-{{ page.excerpt }}
+Place the introducing line of text ie.) the 'tagline' here ...
 
 ## Import Code
 
@@ -21,7 +22,7 @@ More to come ...
 
 ## Last Subtitle
 
-{{ site.description }}
+Place the introducing line of text ie.) the 'tagline' here ...
 
 ### Raw Code Block
 

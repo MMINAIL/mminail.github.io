@@ -1,19 +1,39 @@
 ---
-title: The Flammarion
+title: New Title
 layout: default
-excerpt: The Flammarion is an ancient portrait of a medieval man poking his head into the ether ...
-navigation_weight: 9
+excerpt: Place the introducing line of text ie.) the 'tagline' here ...
+navigation_weight: 8
 categories: template
 ---
-# The Flammarion
+# Article Title ( From Front Matter Above )
 
 {{ page.excerpt }}
 
-{% comment %}Flammarion Page Template md Dtd 02-04-18{% endcomment %}
+{% comment %}Gist Page Template md Dtd 02-04-18{% endcomment %}
 
 {% include toc.md %}
 
-{% include flammarion-svg.md %}
+## First Subtitle
+
+{{ page.excerpt }}
+
+## Import Code
+
+More to come ...
+
+## Last Subtitle
+
+Place the introducing line of text ie.) the 'tagline' here ...
+
+### Raw Code Block
+
+```liquid
+{% raw %}
+Enjoy the successful output!
+{% endraw %}
+```
+
+{% include brackets-ide.md %}
 
 {% include sources-and-uses.md %}
 

@@ -1,17 +1,20 @@
 ---
 title: Home Page
 layout: default
+excerpt: Shell tags and Shell statements mimic underlying Javascript methods ...
+version: Markdown Index Template md Dtd 02-05-18
 navigation_weight: 1
+categories: template
 ---
 # Shell Lessons Project Home Page
 
-{{ site.description }}
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% comment %}{{ page.version }}{% endcomment %}
 
-**Note**. The above **Live** rendition of the **MMI™ Flammarion Logo Badge** ( if visible ) is an `( .svg )` image file set to the dimensions of 120.00 px X 120.00 px.
+{% include toc.md %}
 
-## Issue Dtd 02-03-18
+## Issue
 
 The **Issue** of a successful legal argument is prefaced by a concise, to the point coin flip.
 
