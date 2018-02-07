@@ -2,15 +2,15 @@
 title: Home Page
 layout: default
 excerpt: Shell tags and Shell statements mimic underlying Javascript methods ...
-version: Markdown Index Template md Dtd 02-05-18
+version: Index Template md Dtd 02-06-18
 navigation_weight: 1
 categories: template
 ---
+{% comment %}{% raw %}{% include page-banner-blank.md %}{% endcomment %}{% endraw %}
+
 # Shell Lessons Project Home Page
 
 {{ page.excerpt }}
-
-{% comment %}{{ page.version }}{% endcomment %}
 
 {% include toc.md %}
 
@@ -61,3 +61,5 @@ Expound the solution ...
 ### External Sources
 
 - The [Project Source Links](https://mminail.github.io/Shell/Source-Shell-Links.htm){:title="Click to Visit the Source Links page of the Shell Lessons Project at GitHub pages"}{:target="_blank"} page of the Shell Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+
+**Note**. This page crafted with {{ page.version }}.
