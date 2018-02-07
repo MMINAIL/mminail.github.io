@@ -9,9 +9,9 @@ categories: jekyll liquid
 
 {{ page.excerpt }}
 
-<!-- this is an excerpt separator -->
+{% comment %}{{ page.version }}{% endcomment %}
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
 ## Link Construction
 
