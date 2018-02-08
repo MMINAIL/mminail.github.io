@@ -2,20 +2,19 @@
 title: New Title
 layout: default
 excerpt: Place the introducing line of text ie.) the 'tagline' here ...
+version: Gist Page Template md Dtd 02-07-18
 navigation_weight: 8
 categories: template
 ---
-# Article Title ( From Front Matter Above )
+# {{ page.title }}
 
 {{ page.excerpt }}
-
-{% comment %}Gist Page Template md Dtd 02-04-18{% endcomment %}
 
 {% include toc.md %}
 
 ## First Subtitle
 
-{{ page.excerpt }}
+Place the introducing line of text ie.) the 'tagline' here ...
 
 ## Import Code
 
@@ -40,3 +39,5 @@ Enjoy the successful output!
 ### External Sources
 
 - The [Project Source Links](https://mminail.github.io/Shell/Source-Shell-Links.htm){:title="Click to Visit the Source Links page of the Shell Lessons Project at GitHub pages"}{:target="_blank"} page of the Shell Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+
+**Note**. This page crafted with {{ page.version }}.

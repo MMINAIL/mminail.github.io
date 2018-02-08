@@ -1,6 +1,9 @@
 ---
-layout: default
 title: Learn To Donate
+layout: default
+version: Learn To Donate Now Template htm Dtd 02-07-18
+categories: template
+Topic: Donate
 ---
 <div itemscope itemtype="https://schema.org/" class="container-fluid">
 	<div class="row-fluid">
@@ -13,9 +16,18 @@ title: Learn To Donate
 
     {% include external-source-links.htm %}
 
-    {% include coding-community.htm %}
-
     {% include sources-and-uses.htm %}
+
+    <hgroup class="text-left">
+      <h4>Version</h4>
+    </hgroup>
+    <hr class="green-groove" />
+
+    <p>
+      <span>
+        <b>Note</b>.</span>
+      <span>This page crafted with {{ page.version }}.</span>
+    </p>
 
     {% include alt-footer-cash-me.htm %}
 
