@@ -1,25 +1,35 @@
 ---
 title: Learn Shell
 layout: default
-version: Learn Shell Now Template htm Dtd 02-05-18
+version: Learn Shell Now Template htm Dtd 02-07-18
 categories: template
 Topic: Shell
 ---
-<!-- {{ page.version }} -->
 <div itemscope itemtype="https://schema.org/" class="container-fluid">
-	<div class="row-fluid">
-	
-				{% include welcome-title-zoom-mminail.htm %}
-	
-        {% include navigate-it.htm %}
-        
-        {% include learn-topic.htm %}
+  <div class="row-fluid">
 
-				{% include external-source-links.htm %}
+    {% include welcome-title-zoom-mminail.htm %}
+    
+    {% include navigate-it.htm %}
+    
+    {% include learn-topic.htm %}
+    
+    {% include external-source-links.htm %}
+    
+    {% include sources-and-uses.htm %}
 
-				{% include sources-and-uses.htm %}
+    <hgroup class="text-left">
+      <h4>Version</h4>
+    </hgroup>
+    <hr class="green-groove" />
 
-				{% include alt-footer-cash-me.htm %}
+    <p>
+      <span>
+        <b>Note</b>.</span>
+      <span>This page crafted with {{ page.version }}.</span>
+    </p>
 
-	</div>
+    {% include alt-footer-cash-me.htm %}
+
+  </div>
 </div>

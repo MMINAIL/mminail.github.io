@@ -2,11 +2,11 @@
 title: Home Page
 layout: default
 excerpt: Shell tags and Shell statements mimic underlying Javascript methods ...
-version: Index Template md Dtd 02-06-18
+version: Index Template md Dtd 02-07-18
 navigation_weight: 1
 categories: template
 ---
-{% comment %}{% raw %}{% include page-banner-blank.md %}{% endcomment %}{% endraw %}
+{% comment %}{% raw %}{% include page-banner-blank.md %}{% endraw %}{% endcomment %}
 
 # Shell Lessons Project Home Page
 
