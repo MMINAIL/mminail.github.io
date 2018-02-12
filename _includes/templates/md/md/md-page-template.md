@@ -2,7 +2,7 @@
 title: Page Template
 layout: default
 excerpt: Place the introducing line of text ie.) the 'lead' here ...
-version: Page Template md Dtd 02-06-18
+version: Page Template md Dtd 02-10-18
 navigation_weight: 8
 categories: template
 ---
@@ -14,7 +14,7 @@ categories: template
 
 ## First Subtitle
 
-Place the introducing line of text ie.) the 'tagline' here ...
+More to come ...
 
 ## Import Code
 
@@ -22,7 +22,7 @@ More to come ...
 
 ## Last Subtitle
 
-Place the introducing line of text ie.) the 'tagline' here ...
+**Note**. The above synopsis was derived from an article written by Blank [[2](#BLANK){:.red}].
 
 ### Raw Code Block
 

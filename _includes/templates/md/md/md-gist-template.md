@@ -2,7 +2,7 @@
 title: Gist Template
 layout: default
 excerpt: Place the introducing line of text ie.) the 'lead' here ...
-version: Page Template md Dtd 02-06-18
+version: Gist Template md Dtd 02-11-18
 navigation_weight: 8
 categories: template
 ---
@@ -22,7 +22,7 @@ More to come ...
 
 ## Last Subtitle
 
-Place the introducing line of text ie.) the 'tagline' here ...
+**Note**. The above synopsis was derived from an article written by Blank [[2](#BLANK){:.red}].
 
 ### Raw Code Block
 
@@ -33,6 +33,8 @@ Enjoy the successful output!
 ```
 
 {% include sources-and-uses.md %}
+
+1. {:#BLANK}[The Blank Live at The Blank Festival, 2000](https://youtu.be/Blank){:title='Click to Watch the YouTube video of the Blank Live at the The Blank Festival, 2000'}{:target='_blank'}.
 
 ### External Sources
 
