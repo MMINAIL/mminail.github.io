@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Set the base language to English -->
+<html lang="en-US">
+  
+<head>
+  <!-- Declare the title of the page -->
+  <title>Index Page</title>
+  
+  <!-- Set the character set for the page -->
+  <meta charset="utf-8">
+  
+  <!-- Set the viewport for the page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Comment Out: Jquery Mobile Library Local Css ver 1.4.5 Full
+  <link rel="stylesheet" href="../assets/css/jquery.mobile-1.4.5.css" /> -->
+  
+  <!-- Comment Out: Jquery Mobile Library Local Css ver 1.4.5 w Map Minified -->
+  <link rel="stylesheet" href="../assets/css-map/jquery-mobile-v145.min.css" />
+  
+  <!-- Comment Out: Main Local Css ver 0.0.1 -->
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  
+</head>
+
+<body>
+  <div id="page-index" data-role="page">
+
+    <hgroup id="header" data-role="header" class="text-left">
+      <h4 id="title">${this.title}</h4>
+    </hgroup>
+      <hr class='green-groove' />
+
+    <div id="content" data-role="content">
+      
+      <p id="peek">
+        <span>...</span>
+      </p>
+        <hr class="green-groove" />
+      
+      <p id="poo">
+        <span>...</span>
+      </p>
+        <hr class="green-groove" />
+  
+      <p id="clickr-one">
+        
+        <a id="button-one" data-role="button" data-rel="dialog" href="../js/job-one.js" 
+        title="Click To Review the corresponding local Javascript file" 
+        target="_blank">Job-one js: Click to View the Job-one js file</a>
+        
+      </p>
+        <hr class="green-groove" />
+      
+      <p id="clickr-two">
+        
+        <a id="button-two" data-role="button" data-rel="dialog" href="../pages/two.html" 
+        title="Click To Visit the Two page" 
+        target="_self">Page Two: Click to Jump To Page Two</a>
+        
+      </p>
+        <hr class="green-groove" />
+
+    </div>
+  </div>
+  
+<!-- Place all scripts above the closing body tag -->
+  
+  <!-- Comment Out: Jquery Core Library Local Script ver 3.3.1 -->
+  <script src="../js/jquery-3.3.1.js"></script>
+
+  <!-- Comment Out: Mobile Init js -->
+  <script src="../js/mobile-init.js"></script>
+  
+  <!-- Comment Out: Jquery Mobile Library Local Script ver 1.4.5 Full 
+  <script src="../js/jquery-mobile-v145.js"></script> -->
+  
+  <!-- Comment Out: Jquery Mobile Library Local Script ver 1.4.5 w Map Minified -->
+  <script src="../js-map/jquery-mobile-v145.min.js"></script>
+  
+  <!-- Comment Out: Job One js -->
+  <script src="../js/job-one.js"></script>
+                                
+</body>
+</html>

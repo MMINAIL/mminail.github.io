@@ -1,13 +1,78 @@
 <hgroup class="text-left">
-	<h4>jQuery Library</h4>
+  <h4>jQuery Library</h4>
 </hgroup>
-	<hr class="green-groove" />
+<hr class="green-groove" />
 
-	<p>
-		<span>This page has access to the remote jQuery library.</span>
-	</p>
+<p>
+  <span>This page has access to the current jQuery Core library.</span>
+</p>
 
-	<p>
-		<span>This page has access to a corresponding local Javascript <a href="../js/scripts/corresponding-javascript-file.js" title="Click To Review the corresponding local Javascript file" target="_blank">file</a>.</span>
-	</p>
-		<hr class='green-groove' />
+<p>
+  <span>This page also has access to a corresponding local Javascript file.</span>
+</p>
+
+<p>
+  <span>Let's use a jQuery attribute selection to change the behavior of the underlying hyperlinks of this page, as follows:</span>
+</p>
+
+<pre class='flex-box'>
+  {% highlight html %}
+  <a href="../js/scripts/corresponding-javascript-file.js" 
+  role="button"
+  data-role="button"
+  rel="help"  
+  data-rel="dialog" 
+  data-inline="true"
+  title="Click To Review the corresponding local Javascript file"
+  target="_blank">(.js)</a>
+  {% endhighlight %}
+</pre>
+<hr class='green-groove' />
+
+<p>
+  <span>Now that you have seen the code that effects the underlying hyperlinks of the page, let's render the links live ...</span>
+</p>
+
+<p>
+  <span>By placing a corresponding Javascript file <code>&lt;script&gt;</code> tag at the bottom of this page BEFORE the closing <code>&lt;body&gt;</code> tag ...</span>
+</p>
+
+<p>
+  <span>And, by invoking the Javascript <code>document.ready</code> method using a jQuery statement ...</span>
+</p>
+
+<p>
+  <span>We can change the attributes of the selected underlying hyperlinks of this page, or another page.</span>
+</p>
+
+<p>
+  <span>
+    <b>Note</b>.</span>
+  <span>The following live link opens up the corresponding Javascript file in a new browser window for a viewing of the code, as follows:</span>
+</p>
+
+<pre class='flex-box'>
+  {% highlight html %}
+  <a href="../js/scripts/corresponding-javascript-file.js" 
+  role="button"
+  data-role="button"
+  rel="help"  
+  data-rel="dialog" 
+  data-inline="true"
+  title="Click To Review the corresponding local Javascript file"
+  target="_blank">(.js)</a>
+  {% endhighlight %}
+</pre>
+<hr class='green-groove' />
+
+<p>
+  <a href="../js/scripts/corresponding-javascript-file.js" 
+  role="button"
+  data-role="button"
+  rel="help"  
+  data-rel="dialog" 
+  data-inline="true"
+  title="Click To Review the corresponding local Javascript file"
+  target="_blank">(.js)</a>
+</p>
+<hr class="green-groove" />

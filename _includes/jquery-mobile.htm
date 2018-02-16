@@ -1,0 +1,48 @@
+<hgroup class="text-left">
+  <h4>jQuery Mobile</h4>
+</hgroup>
+<hr class="green-groove" />
+
+<p>
+  <span>This page has access to the current jQuery Core and jQuery Mobile libraries.</span>
+</p>
+
+<p>
+  <span>This page also has access to a corresponding local Javascript file.</span>
+</p>
+
+<p>
+  <span>Let's use a jQuery mobile button to access the corresponding local Javascript file, as follows:</span>
+</p>
+
+<pre class='flex-box'>
+  {% highlight html %}
+  <a href="../js/scripts/corresponding-javascript-file.js" 
+  data-role="button" 
+  data-rel="dialog" 
+  title="Click To Review the corresponding local Javascript file" 
+  target="_blank">(.js)</a>
+  {% endhighlight %}
+  </pre>
+<hr class='green-groove' />
+
+<p>
+  <span>Now that you have seen the code that effects the hyperlink, let's render the link live ...</span>
+</p>
+
+<p>
+  <span>
+    <b>Note</b>.</span>
+  <span>The live link opens up a pure Javascript example page in a new browser window.</span>
+</p>
+
+<p>
+  <span>Since we cannot style a pure Javascript file with jQuery Mobile
+    <em>data-*</em>, the pure Javascript file will render as a simple text page, as follows:</span>
+</p>
+
+<p>
+  <a href="../js/scripts/corresponding-javascript-file.js" data-role="button" data-rel="dialog" title="Click To Review the corresponding local Javascript file"
+    target="_blank">(.js)</a>
+</p>
+<hr class="green-groove" />
