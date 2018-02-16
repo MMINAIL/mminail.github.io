@@ -14,7 +14,7 @@ categories: template
 
 ## First Subtitle
 
-More to come ...
+Place the introducing line of text ie.) the 'tagline' here ...
 
 ## Import Code
 
