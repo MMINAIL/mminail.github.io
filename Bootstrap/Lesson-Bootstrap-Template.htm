@@ -1,6 +1,9 @@
 ---
-layout: default
 title: Lesson Template
+layout: default
+version: Bootstrap Lesson Template htm Dtd 02-15-18
+categories: template
+topic: Bootstrap
 ---
 <div itemscope itemtype="https://schema.org/" class="container-fluid">
 	<div class="row-fluid">
@@ -22,7 +25,11 @@ title: Lesson Template
 
 	<p>
 		<span>The language for this container is Html.</span>
-	</p>
+  </p>
+  
+  <p>
+    <span>The type of this container is <em>page</em>.</span>
+  </p>
 		<hr class="green-groove" />
 
 <hgroup class="text-left">
@@ -41,16 +48,27 @@ title: Lesson Template
   <p>
 	  <span>The language for this container is Html.</span>
   </p>
-		<hr class="green-groove" />
-		
-{% include jquery-library.htm %}
 
+  <p>
+    <span>The type of this container is <em>gist</em>.</span>
+  </p>
+  <hr class="green-groove" />
+  
+  <hgroup class="text-left">
+    <h4>Version</h4>
+  </hgroup>
+  <hr class="green-groove" />
+
+  <p>
+    <span>
+      <b>Note</b>.</span>
+    <span>This page crafted with {{ page.version }}.</span>
+  </p>
+  <hr class="green-groove" />
+		
 {% include sources-and-uses.htm %}
 
 {% include alt-footer-cash-me.htm %}
 
   </div>
 </div>
-
-<script src='../jq/min/core/331/js/jquery-v331.min.js'></script>
-<script src='../js/scripts/corresponding-javascript-file.js'></script>

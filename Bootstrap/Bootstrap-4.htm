@@ -1,57 +1,415 @@
 ---
-layout: default
 title: Bootstrap 4
+layout: default
+version: Bootstrap Lesson Template htm Dtd 02-15-18
+categories: ohan
+topic: Bootstrap
 ---
 <div itemscope itemtype="https://schema.org/" class="container-fluid">
-	<div class="row-fluid">
+  <div class="row-fluid">
 
-{% include welcome-title-zoom-mminail.htm %}
+    {% include welcome-title-zoom-mminail.htm %}
 
-<hgroup class="text-left">
-	<h4>Blockquote Footer</h4>
-</hgroup>
-	<hr class="green-groove" />
+    <hgroup class="text-left">
+      <h4>Blockquote Footer</h4>
+    </hgroup>
+    <hr class="green-groove" />
 
-	<p>
-		<span>The blockquote and blockquote-footer classes of Bootstrap 4 take care of the formatting of a block quote in <em>Html</em>, as follows:</span>
-	</p>
+    <p>
+      <span>The blockquote and blockquote-footer classes of Bootstrap 4 take care of the formatting of a block quote in
+        <em>Html</em>, as follows:</span>
+    </p>
 
-<pre class='flex-box'>
-	<span><b>Note</b>.</span>
-	<span>This is an instructional block of text <em>below</em> the opening &lt;pre&gt; tag enclosed in a set of &lt;span&gt; followed by no break.</span>
-	<span>Go ahead and copy and paste this code into your Visual Studio Code, Preferences, User Snippets, language Html.json file under insert Html block, 'Blockquote'.</span>
-	{% highlight html %}
-	<blockquote class='blockquote'>
+    <pre class='flex-box'>
+	  <span><b>Note</b>.</span>
+	  <span>This is an instructional block of text <em>below</em> the opening &lt;pre&gt; tag enclosed in a set of &lt;span&gt; followed by no break.</span>
+	  <span>Go ahead and copy and paste this code into your Visual Studio Code, Preferences, User Snippets, language Html.json file under insert Html block, 'Blockquote'.</span>
+	  {% highlight html %}
+	  <blockquote class='blockquote'>
 		<span>Ohan has written a very nice book!</span>
-			<br />
+		<br />
 		<span class='blockquote-footer'>by ~Ohan Emmanuel</span>
-	</blockquote>
-	{% endhighlight %}
-	<span><b>Note</b>.</span>
-	<span>This is an instructional block of text <em>above</em> the closing &lt;pre&gt; tag enclosed in a set of &lt;span&gt; followed by no break.</span>
-	<span>The above block of code is enclosed in a hidden Liquid statement that highlights Html.</span>
-</pre>
-	<hr class='green-groove' />
+	  </blockquote>
+	  {% endhighlight %}
+	  <span><b>Note</b>.</span>
+	  <span>This is an instructional block of text <em>above</em> the closing &lt;pre&gt; tag enclosed in a set of &lt;span&gt; followed by no break.</span>
+	  <span>The above block of code is enclosed in a hidden Liquid statement that highlights Html.</span>
+    </pre>
+    <hr class='green-groove' />
 
-	<p>
-		<span>Renders ...</span>
-	</p>
+    <p>
+      <span>Renders ...</span>
+    </p>
 
-<blockquote class="blockquote">
-	<span>Ohan has written a very nice book!</span>
-	<br />
-  <span class="blockquote-footer">by ~Ohan Emmanuel</span>
-</blockquote>
-  <hr class="green-groove" />
+    <blockquote class="blockquote">
+      <span>Ohan has written a very nice book!</span>
+      <br />
+      <span class="blockquote-footer">by ~Ohan Emmanuel</span>
+    </blockquote>
+    <hr class="green-groove" />
 
-{% include jquery-library.htm %}
+    <hgroup class='text-left'>
+      <h4>Anchor This</h4>
+    </hgroup>
+    <hr class='green-groove' />
 
-{% include sources-and-uses.htm %}
-  
-{% include alt-footer-cash-me.htm %}
+    <p>
+      <span>The internal anchor path of
+        <em>this</em> page is ... `{{ page.path }}`</span>
+    </p>
+
+    <p>
+      <span>And, the internal anchor path to a
+        <em>target</em> page is `gists/First-Gist.md`</span>
+    </p>
+
+    <p>
+      <span>Thus, the internal anchor path to the
+        <em>target</em> page may be expressed as an internal anchor link from
+        <em>this</em> page, as follows:</span>
+    </p>
+
+    <p>
+      <span>
+        <a href='{% link _gists/First-Gist.md %}'>First-Gist</a>.</span>
+    </p>
+    <hr class='green-groove' />
+
+    <hgroup class='text-left'>
+      <h4>Ping Back</h4>
+    </hgroup>
+    <hr class='green-groove' />
+
+    <p>
+      <span>The external hyperlink path for a
+        <b>Ping Back</b> to
+        <em>this</em> page can be split between its components, as follows:</span>
+    </p>
+
+    <ul>
+      <li>Site Url = {{ site.url }}</li>
+      <br />
+      <li>Site Base Url = {{ site.baseurl }}, and</li>
+      <br />
+      <li>Page Path = {{ page.path }}</li>
+    </ul>
+
+    <p>
+      <span>Thus, the external hyperlink path
+        <em>pinging</em> back to
+        <em>this</em> page may be expressed as an external hyperlink from
+        <em>this</em> page, as well.</span>
+    </p>
+
+    <p>
+      <span>As follows:</span>
+    </p>
+
+    <p>
+      <span>
+        <a href='{{ site.url }}{{ site.baseurl }}/{{ page.path }}' title='Click to Visit the {{ page.title }} page of the Bootstrap Lessons Project at the Concept Library of the MMINAIL'
+          target='_blank'>{{ page.title }}</a>
+      </span>
+    </p>
+
+    <p>
+      <span>{{ site.url }}{{ site.baseurl }}/{{ page.path }}</span>
+    </p>
+    <hr class='green-groove' />
+
+    <hgroup class='text-left'>
+      <h5>Liquid Link</h5>
+    </hgroup>
+    <hr class='green-groove' />
+
+    <p>
+      <span>The above external hyperlink
+        <em>works</em>, but as seen by the color
+        <em>
+          <span style='color:rgb(207,103,75);'>indian red</span>
+        </em> ...</span>
+    </p>
+
+    <p>
+      <span>The link is not secure.</span>
+    </p>
+
+    <p>
+      <span>Nor is the external hyperlink
+        <em>accountable</em> as the
+        <em>
+          <span style='color:#337ab7'>light dodger blue</span>
+        </em> internal anchor is.</span>
+    </p>
+
+    <p>
+      <span>How can this be?</span>
+    </p>
+
+    <p>
+      <span>Well, the first link shown live above ...
+        <em>the internal anchor</em> ...</span>
+    </p>
+
+    <p>
+      <span>Takes advantage of a
+        <b>Liquid Link</b> statement, as follows:</span>
+    </p>
+
+    <pre class='flex-box'>
+    {% highlight html %}
+    <a href='{% raw %}{% link _gists/First-Gist.md %}{% endraw %}'>First Gist</a>
+    {% endhighlight %}
+    </pre>
+
+    <p>
+      <span>Whereas, the second link shown live above ...
+        <em>the external hyperlink</em>...</span>
+    </p>
+
+    <p>
+      <span>Utilizes the
+        <b>Combo Link</b> statement format, as follows:</span>
+    </p>
+
+    <pre class='flex-box'>
+    {% highlight html %}
+    <a href='{% raw %}{{ site.url }}{{ site.baseurl }}/{{ page.path }}{% endraw %} title='Click to Visit the {% raw %}{{ page.title }}{% endraw %} page of the Bootstrap Lessons Project at Concepts Library' target='_blank''>{% raw %}{{ page.title }}{% endraw %}</a>
+    {% endhighlight %}
+    </pre>
+
+    <p>
+      <span>Hence, the identifying color of
+        <em>
+          <span style='color:rgb(207,103,75);'>indian red</span>
+        </em> for the external hyperlink of
+        <a href='{{ site.url }}{{ site.baseurl }}/{{ page.path }}' title='Click to Visit the {{ page.title }} page of the Bootstrap Lessons Project at Concepts Library'
+          target='_blank'>{{ page.title }}</a> and the identifying color of
+        <em>
+          <span style='color:#337ab7'>light dodger blue</span>
+        </em> for the internal anchor of
+        <a href='{% link _gists/First-Gist.md %}'>First-Gist</a>.</span>
+    </p>
+    <hr class='green-groove' />
+
+    <hgroup class='text-left'>
+      <h5>Reduced Functionality</h5>
+    </hgroup>
+    <hr class='green-groove' />
+
+    <p>
+      <span>
+        <b>Note</b>.</span>
+      <span>Liquid
+        <em>filters</em> ie.) the `| relative_url` filter ...</span>
+      <span>cannot be appended via the pipe to
+        <b>Liquid Link</b> tags.</span>
+    </p>
+    <hr class='green-groove' />
+
+    <hgroup class="text-left">
+      <h4>Test Gist</h4>
+    </hgroup>
+    <hr class="green-groove" />
+
+    <p>
+      <span>There are two methods in Jekyll for constructing links.</span>
+    </p>
+
+    <p>
+      <span>One method is best for internal anchor links and the other method is best for external hyperlinks.</span>
+    </p>
+
+    <p>
+      <span>The purpose of this exercise is to decipher which.</span>
+    </p>
+    <hr class="green-groove" />
+
+    <hgroup class="text-left">
+      <h5>Liquid Link Method</h5>
+    </hgroup>
+    <hr class="green-groove" />
+
+    <p>
+      <span>The first method of our Test Gist section deals with a Liquid `for loop`.</span>
+    </p>
+
+    <p>
+      <span>The Liquid `for loop` hunts through the collection of site gists and passes any found to the temporary gist variable.</span>
+    </p>
+
+    <p>
+      <span>Through each iteration of gist found ...</span>
+    </p>
+
+    <p>
+      <span>The temporary gist variable is purged and filled anew with the parameters targeted by the Liquid `for loop` statement.</span>
+    </p>
+
+    <p>
+      <span>Inside the boundaries of the Liquid `for loop` ...</span>
+    </p>
+
+    <p>
+      <span>Display statements written in html, jekyll-moustache, and liquid are rendered upon each iteration through the loop,
+        as follows:</span>
+    </p>
+
+    <ul>
+      {% for gist in site.gists %}
+      <li>
+        <a href="{% link _gists/First-Gist.md %}">{{ gist.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <p>
+      <span>Here, we have an operable `for loop` outputting the internal anchor link for each gist found from inside an unordered
+        list of list items.</span>
+    </p>
+
+    <p>
+      <span>As shown in the following highlighted pre-block ...</span>
+    </p>
+
+    <pre class='flex-box'>
+    {% highlight html %}
+    <ul>
+    {% raw %}{% for gist in site.gists %}{% endraw %}
+    <li>
+    <a href='{% raw %}{% link _gists/First-Gist.md %}{% endraw %}'>{% raw %}{{ gist.title }}{% endraw %}</a>
+    </li>
+    {% raw %}{% endfor %}{% endraw %}
+    </ul>
+    {% endhighlight %}
+    </pre>
+
+    <p>
+      <span>
+        <b>Note</b>.</span>
+      <span>The Liquid `for loop` will take the format of your first gist identified ie.) 'First-Gist.md' and use that format to
+        search the site for other gists.</span>
+    </p>
+
+    <p>
+      <span>Because we are using a Liquid link statement to render the internal anchor links for the found gist ...</span>
+    </p>
+
+    <p>
+      <span>As the page excerpt exclaims ...</span>
+    </p>
+
+    <p>
+      <span>"{{ page.excerpt }}"</span>
+    </p>
+    <hr class="green-groove" />
+
+    <hgroup class="text-left">
+      <h5>Combo Link Method</h5>
+    </hgroup>
+    <hr class="green-groove" />
+
+    <p>
+      <span>The second method of our Test Gist section deals with another Liquid `for loop`.</span>
+    </p>
+
+    <p>
+      <span>However, under this incarnation we will not be using a Liquid link statement to render the captured internal anchor
+        links.
+      </span>
+    </p>
+
+    <p>
+      <span>Rather, we will be using a common Combo Link statement filled with jekyll-moustache calls, as follows:</span>
+    </p>
+
+    <ul>
+      {% for gist in site.gists %}
+      <li>
+        <a href='{{ gist.url | relative_url }}' title='Click to Visit the {{ gist.title }} page of the Bootstrap Lessons Project at Concepts Library'
+          target='_blank'>{{ gist.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <p>
+      <span>Here, we have an operable `for loop` outputting the internal anchor link for each gist found from inside an unordered
+        list of list items as before.</span>
+    </p>
+
+    <p>
+      <span>However, as noted above ...</span>
+    </p>
+
+    <p>
+      <span>We are not restricted to the limited functionality of the Liquid link statement.</span>
+    </p>
+
+    <p>
+      <span>As shown in the following highlighted pre-block ...</span>
+    </p>
+
+    <pre class='flex-box'>
+    {% highlight html %}
+    <ul>
+    {% raw %}{% for gist in site.gists %}{% endraw %}
+    <li>
+    <a href='{% raw %}{{ gist.url | relative_url }}{% endraw %}' 
+    title='Click to Visit the {% raw %}{{ gist.title }}{% endraw %} page of the Bootstrap Lessons Project at Concepts Library' 
+    target='_blank'>{% raw %}{{ gist.title }}{% endraw %}</a>
+    </li>
+    {% raw %}{% endfor %}{% endraw %}
+    </ul>
+    {% endhighlight %}
+    </pre>
+
+    <p>
+      <span>When using the common Combo Link statement to build our hyperlinks instead of the restrictive Liquid link statement
+        ...
+      </span>
+    </p>
+
+    <p>
+      <span>We can add a `title` and a `target` to the hyperlink, as well as our `site.url` and our `site.baseurl` yaml variables
+        without affecting the functionality of the underlying hyperlink.</span>
+    </p>
+
+    <p>
+      <span>In addition, we may apply Liquid filters to the rendering of the gist url through the Unix pipe feature.</span>
+    </p>
+
+    <p>
+      <span>In this case, the captured gist url is piped through the Liquid `relative_url` filter.</span>
+    </p>
+
+    <p>
+      <span>
+        <b>Note</b>.</span>
+      <span>The Liquid `relative_url` filter prepends the subject url with both the `site.url` and `site.baseurl` variables retrieved
+        from the config dot yaml page of the website.</span>
+    </p>
+
+    <p>
+      <span>Contrasting the two methods reveals the first method best for internal anchor links and the second method best for
+        external hyperlinks.</span>
+    </p>
+    <hr class="green-groove" />
+
+    <hgroup class="text-left">
+      <h4>Version</h4>
+    </hgroup>
+    <hr class="green-groove" />
+
+    <p>
+      <span>
+        <b>Note</b>.</span>
+      <span>This page crafted with {{ page.version }}.</span>
+    </p>
+    <hr class="green-groove" /> 
+    
+    {% include sources-and-uses.htm %} 
+    
+    {% include alt-footer-cash-me.htm %}
 
   </div>
 </div>
-
-<script src='../jq/min/core/331/js/jquery-v331.min.js'></script>
-<script src='../js/scripts/corresponding-javascript-file.js'></script>
