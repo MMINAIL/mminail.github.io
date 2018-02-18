@@ -19,7 +19,9 @@
   
 	header#masthead {
 
-		display: -webkit-flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
 		display: flex;
 
 		 -webkit-flex-flow: row nowrap;
