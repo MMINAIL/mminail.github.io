@@ -333,15 +333,14 @@ aside#navigator {
     /* max-width: 50%; /* limit width */
     background-color : rgb(155,155,204); /* Medium Purple */
     /* text-align: left; */
-    color: #fff;
-    /* color: dodgerblue; */
+    color: dodgerblue;
+    /* color: #fff; */
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .menu li:hover {
-    background-color: rgb(207,103,75); /* Indian Red */
+    background-color: rgb(242, 248, 248); /* ice blue */
     /* text-align: left; */
-    
 }
 
 .dropdown-menu {
@@ -831,6 +830,10 @@ mark,
     padding: 1%;
     /* border-radius: 6px; */
     border-radius: 4px;
+}
+
+.btn-fa:hover {
+  background-color: rgb(74, 173, 84); /* Medium Green */
 }
 
 /* Set the Spanish language color and style for Spanish words */
