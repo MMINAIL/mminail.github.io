@@ -1,11 +1,12 @@
 source "https://rubygems.org"
 # ill-formed => gem 'source', 'https://rubygems.org'
-ruby "2.4.2"
+# ruby "2.4.2"
+ruby "2.5.3"
 # ill-formed => gem 'ruby', '2.4.2'
 # Could not find gem 'ruby (= 2.4.2)'
 # In any of the gem sources listed in your Gemfile
 # 
-# Date of this Update to Gem-template file ver 01-31-2018
+# Date of this Update to Gem-template file ver 05-14-2019
 # 
 # Hello!
 #
@@ -85,7 +86,7 @@ ruby "2.4.2"
 # 
 # Then, comment out the following version statement to retain your superior version copy locally
 #
-gem 'jekyll', '3.6.3'
+gem 'jekyll', '3.8.5'
 #
 # Note. The version of 'Jekyll docs' should match the installed version of 'Jekyll' from above.
 # In other words, you should install the 'jekyll-docs' gem version = 3.6.2 to use the 'jekyll docs' command
@@ -105,7 +106,7 @@ gem 'jekyll', '3.6.3'
 #
 # Then, comment out the following version statement to retain your superior version copy locally
 #
-gem 'jekyll-docs', '3.6.3'
+gem 'jekyll-docs', '3.8.5'
 #
 # To run 'Jekyll docs' locally ...
 #
@@ -165,11 +166,10 @@ gem 'jekyll-docs', '3.6.3'
 #
 # jekyll serve --watch --baseurl "" --port 4001 -o
 #
-# The default theme for new Jekyll sites is 'jekyll-theme-minimal 0.1.0'.
+# The default theme for new Jekyll sites is 'jekyll-theme-minimal 0.1.1'.
 # Note. You may change the theme to anything you like via the config dot yaml page located in the `docs` folder of your new repo
 # If you do decide to manage the theme of your repo from the config dot yaml page, then comment out both the default and your selected themes here, as follows:
 #
-# gem 'jekyll-theme-cayman', '0.1.0'
 # gem 'jekyll-theme-minimal', 0.1.0'
 # 
 # Happy Jekyll-ing!
@@ -177,39 +177,67 @@ gem 'jekyll-docs', '3.6.3'
 # Note. To upgrade all, run `bundle update` from the command line.
 #
 # github-pages, 175 requires activesupport, 429
-gem 'activesupport', '4.2.9'
+gem 'activesupport', '4.2.11.1'
 #
-gem 'github-pages', '175'
+gem 'github-pages-health-check', '1.16.1'
+#
+gem 'github-pages', '198'
 #
 # Note. The ''github-markdown' dependency is no longer designated at the online GitHub Pages dependency chart
 # C=> https://pages.github.com/versions/
 # gem 'github-markdown'
 #
-gem 'kramdown', '1.16.2'
+gem 'html-pipeline', '2.11.0'
 #
-gem 'jekyll-gist', '1.4.1'
+gem 'jekyll-avatar', '0.6.0'
 #
-gem 'jekyll-coffeescript', '1.0.2'
+gem 'jekyll-coffeescript', '1.1.1'
+#
+gem 'jekyll-commonmark-ghpages', '0.1.5'
+#
+gem 'jekyll-default-layout', '0.1.4'
+#
+gem 'jekyll-feed', '0.11.0'
+#
+gem 'jekyll-gist', '1.5.0'
+#
+gem 'jekyll-github-metadata', '2.12.1'
+#
+gem 'jekyll-mentions', '1.4.1'
+#
+gem 'jekyll-optional-front-matter', '0.3.0'
 #
 gem 'jekyll-paginate', '1.1.0'
 #
-gem 'jekyll-seo-tag', '2.3.0'
+gem 'jekyll-readme-index', '0.2.0'
 #
-gem 'jekyll-sitemap', '1.1.1'
+gem 'jekyll-redirect-from', '0.14.0'
 #
-gem 'minima', '2.1.1'
+gem 'jekyll-relative-links', '0.6.0'
 #
-gem 'sass', '3.5.5'
+gem 'jekyll-remote-theme', '0.3.1'
 #
-gem 'safe_yaml', '1.0.4'
+gem 'jekyll-sass-converter', '1.5.2'
 #
-gem 'jekyll-titles-from-headings', '0.5.0'
+gem 'jekyll-seo-tag', '2.5.0'
 #
-gem 'jemoji', '0.8.1'
+gem 'jekyll-sitemap', '1.2.0'
+#
+gem 'jekyll-swiss', '0.4.0'
+#
+# gem 'jekyll-theme-cayman', '0.1.1'
+#
+gem 'jekyll-titles-from-headings', '0.5.1'
+#
+gem 'jemoji', '0.10.2'
+#
+gem 'kramdown', '1.17.0'
 #
 gem 'liquid', '4.0.0'
 #
-gem 'listen', '3.0.6'
+gem 'listen', '3.1.5'
+#
+gem 'minima', '2.5.0'
 #
 # Override the GitHub Pages online Dependency Chart Dtd 012418;
 # ver 1.7.2 of the Nokogiri dependency has a Security issue
@@ -217,37 +245,12 @@ gem 'nokogiri', '1.8.5'
 # 
 gem 'rouge', '2.2.1'
 #
-gem 'jekyll-default-layout', '0.1.4'
+gem 'safe_yaml', '1.0.5'
 #
-gem 'jekyll-github-metadata', '2.9.3'
-#
-gem 'jekyll-mentions', '1.2.0'
-#
-gem 'jekyll-optional-front-matter', '0.3.0'
-#
-gem 'jekyll-readme-index', '0.2.0'
-#
-gem 'jekyll-redirect-from', '0.12.1'
-#
-gem 'jekyll-relative-links', '0.5.2'
-#
-gem 'jekyll-remote-theme', '0.2.3'
-#
-gem 'jekyll-sass-converter', '1.5.0'
-#
-gem 'jekyll-swiss', '0.4.0'
-#
-gem 'github-pages-health-check', '1.3.5'
-#
-gem 'html-pipeline', '2.7.1'
-#
-gem 'jekyll-avatar', '0.5.0'
-#
-gem 'jekyll-commonmark-ghpages', '0.1.3'
+gem 'sass', '3.7.4'
 #
 # If you have any other Jekyll plugins, put them here ...
 # group: 'jekyll_plugins' do
-gem 'jekyll-feed', '0.9.2'
 # end
 #
 # Note. Windows does not include zoneinfo files, so bundle the tzinfo-data gem
