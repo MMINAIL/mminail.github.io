@@ -85,7 +85,7 @@ ruby "2.4.2"
 # 
 # Then, comment out the following version statement to retain your superior version copy locally
 #
-gem 'jekyll', '3.6.2'
+gem 'jekyll', '3.6.3'
 #
 # Note. The version of 'Jekyll docs' should match the installed version of 'Jekyll' from above.
 # In other words, you should install the 'jekyll-docs' gem version = 3.6.2 to use the 'jekyll docs' command
@@ -105,7 +105,7 @@ gem 'jekyll', '3.6.2'
 #
 # Then, comment out the following version statement to retain your superior version copy locally
 #
-gem 'jekyll-docs', '3.6.2'
+gem 'jekyll-docs', '3.6.3'
 #
 # To run 'Jekyll docs' locally ...
 #
