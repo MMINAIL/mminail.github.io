@@ -2,6 +2,7 @@
 <!-- Set the base language to English -->
 <html lang="en-US">
 <!-- Default Layout Template Concepts Library html Dtd 02-05-18 pm -->
+
 <head>
   <meta charset="utf-8">
   <!-- Cannot Use Liquid SEO Tag from Jekyll Theme here -->
@@ -9,14 +10,15 @@
   <!-- Returns: Liquid Exception: Liquid syntax error (line 7): Unknown tag 'seo' in /_layouts/default.html -->
   <title>{{ page.title }} | {{ site.title }}</title>
 
-  <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="p:domain_verify" content="6a5c3fc78a53419886f8c779ecd56e8a"/>
+  <meta name="description"
+    content="{{ page.description | default: site.description | default: site.github.project_tagline }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="p:domain_verify" content="6a5c3fc78a53419886f8c779ecd56e8a" />
   <meta name="google-site-verification" content="KtS190rbFSsytwlamrH2kWL1sj5lrtMBblb3KX1YHMQ" />
-  
+
   <!-- Add Open Sans Font -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  
+
   <!-- Add Standard favicon set links -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -30,87 +32,88 @@
 
   <!-- Comment Out: jQuery Mobile Remote CDN for Css ver 1.4.5 
   <link href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" /> -->
-  
-	<!-- Comment Out: jQuery Mobile Local Script for Css ver 1.4.5 
+
+  <!-- Comment Out: jQuery Mobile Local Script for Css ver 1.4.5 
   <link href="../jqm/min/core/145/css-map/jquery-mobile-v145.min.css" rel="stylesheet" /> -->
 
   <!-- Comment Out: jQuery Mobile Icons Remote CDN ver 145 for Css 
   <link href="" rel="stylesheet" /> -->
 
-	<!-- Comment Out: jQuery Mobile Icons Local Script ver 145 for Css 
+  <!-- Comment Out: jQuery Mobile Icons Local Script ver 145 for Css 
   <link href="../jqm/min/icons/145/css-map/jquery-mobile-icons-v145.min.css" rel="stylesheet" /> -->
-  
-	<!-- Comment Out: Bootstrap Core Remote CDN for Css ver 4.0.0 
+
+  <!-- Comment Out: Bootstrap Core Remote CDN for Css ver 4.0.0 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-  
+
   <!-- Comment Out: Bootstrap Core Local Script for Css ver 4.0.0 
   <link href="../bs/min/core/400/css-map/bootstrap.min.css" rel="stylesheet" /> -->
 
   <!-- Comment Out: Bootstrap Icon Large Remote CDN for Css ver 3.0.0 Now Part of Core Remote 
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
-  
-	<!-- Comment Out: Bootstrap Icon Large Local Script for Css ver 3.0.0 -->
-	<link href="../bs/min/icon-large/000/css-map/bootstrap-icon-large.min.css" rel="stylesheet" /> 
+
+  <!-- Comment Out: Bootstrap Icon Large Local Script for Css ver 3.0.0 -->
+  <link href="../bs/min/icon-large/000/css-map/bootstrap-icon-large.min.css" rel="stylesheet" />
 
   <!-- Comment Out: Bootstrap Core Remote CDN for Css ver 3.3.7 -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- Comment Out: Bootstrap Core Local Script for Css ver 3.3.7 
   <link href="../bs/min/core/300/css-map/bootstrap.min.css" rel="stylesheet" /> -->
 
   <!-- Comment Out: Highlight js Core Remote CDN For Css ver 091000 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css" rel="stylesheet" /> -->
-  
-	<!-- Comment Out: Highlight js Core Local Script For Css ver 091000 -->
-  <link href="../highlight-js/styles/rainbow.css" rel="stylesheet" /> 
+
+  <!-- Comment Out: Highlight js Core Local Script For Css ver 091000 -->
+  <link href="../highlight-js/styles/rainbow.css" rel="stylesheet" />
 
   <!-- Comment Out: Foundation js Core Remote CDN for Css ver 100
   <link href="" rel="stylesheet" /> -->
-  
-	<!-- Comment Out: Foundation js Core Local Script for Css ver 100
+
+  <!-- Comment Out: Foundation js Core Local Script for Css ver 100
   <link href="../assets/foundation/core/100/css/foundation-v100.css" rel="stylesheet" /> -->
 
   <!-- Comment Out: Prism js Core Remote CDN for Css ver 001
   <link href="" rel="stylesheet" /> -->
-  
-	<!-- Comment Out: Prism js Core Local Script for Css ver 001
+
+  <!-- Comment Out: Prism js Core Local Script for Css ver 001
   <link href="../assets/prism/core/001/css/prism.css" rel="stylesheet" /> -->
 
   <!-- Comment Out: Zocial js Core Remote CDN for Css ver 001
   <link href="" rel="stylesheet" /> -->
-  
-	<!-- Comment Out: Zocial js Core Local Script for Css ver 001 -->
+
+  <!-- Comment Out: Zocial js Core Local Script for Css ver 001 -->
   <link href="../assets/zocial/core/001/css/zocial-buttons.css" rel="stylesheet" />
 
   <!-- Comment Out: Font Awesome Local Script For Full css ver 050006 -->
   <script defer src="../fa/506/svg-with-js/css/fa-svg-with-js.css"></script>
-  
+
   <!-- Comment Out: Main css -->
   <link href="../assets/css/mminail.css" rel="stylesheet" />
-  
+
   <!-- Comment Out: Flex Box css Note. Flex box css must go last to render @Media queries -->
   <link href="../assets/flex-box/core/001/css-map/flex-box.css" rel="stylesheet" />
-	
-	<!-- Add Fav icon Generator Links from Dan's Tools C=> https://www.favicon-generator.org/ -->
-	<link rel="apple-touch-icon" sizes="57x57" href="../assets/img/ico/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="../assets/img/ico/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="../assets/img/ico/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/ico/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="../assets/img/ico/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="../assets/img/ico/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="../assets/img/ico/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="../assets/img/ico/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/ico/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/ico/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/ico/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="../assets/img/ico/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/ico/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="../assets/img/ico/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+
+  <!-- Add Fav icon Generator Links from Dan's Tools C=> https://www.favicon-generator.org/ -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/ico/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/ico/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/ico/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/ico/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/ico/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/ico/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/ico/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/ico/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/ico/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/ico/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/ico/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/img/ico/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <!-- End Fav icon Generator Links from Dan's Tools -->
-  
+
   <!-- Begin Local Script js -->
 
   <!-- Comment Out: jQuery Core Library Local Script For Full min js ver 3.3.1 
@@ -136,207 +139,211 @@
   <!-- Begin Remote CDN js -->
 
   <!-- Comment Out: jQuery Core Library Remote CDN For Full min js ver 3.3.1 -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
   <!-- Comment Out: jQuery UI Library Remote CDN For Full min js ver 011201 
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> -->
 
   <!-- Comment Out: Bootstrap Library Remote CDN For Full min js ver 3.3.7 -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
 
   <!-- Comment Out: Tether Library Remote CDN For Full min js ver 1.4.0 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 
   <!-- Comment Out: Highlighter Library Remote CDN For Full min js ver 091000 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
 
   <!-- Comment Out: Font Awesome Remote CDN For Full min js ver 050006 -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
   <!-- End Remote CDN js -->
 
 </head>
 
 <body>
-	<main id="main-body" data-role="page">
-		<section id="top-row" data-role="header">
-			<header id="masthead">
-				<hgroup id="primary-image" class="center-block">
-					<!-- <hgroup class="panel-body"> -->
-					{% include primary-image.htm %}
-				</hgroup>
+  <main id="main-body" data-role="page">
+    <section id="top-row" data-role="header">
+      <header id="masthead">
+        <hgroup id="primary-image" class="center-block">
+          <!-- <hgroup class="panel-body"> -->
+          {% include primary-image.htm %}
+        </hgroup>
 
-				<aside id="primary-header" class="center-block">
-					{% include primary-header.htm %}
-				</aside>
-				
-			</header>
-		</section>
+        <aside id="primary-header" class="center-block">
+          {% include primary-header.htm %}
+        </aside>
 
-		<section id="row-two" data-role="content">
-			
-			<article id="main-article" class="main-article">
-				{{content}}
+      </header>
+    </section>
 
-				<article id="supporting-content">
-					{% include supporting-content.htm %}
-				</article>
+    <section id="row-two" data-role="content">
 
-			</article>
-			
-			<aside id="navigator" class="center-block">
-				<aside id="secondary-header" class="center-block">
-					{% include secondary-header-one.htm %}
-				</aside>
+      <article id="main-article" class="main-article">
+        {{content}}
 
-				{% include nav.htm %}
-		
-			</aside>
+        <article id="supporting-content">
+          {% include supporting-content.htm %}
+        </article>
 
-		</section>
+      </article>
 
-		<section id="row-three">
-			
-			 <!-- <footer class="panel-footer"> -->
-			<footer id="page-footer" class="center-block">
-				{% include page-footer.htm %}
+      <aside id="navigator" class="center-block">
+        <aside id="secondary-header" class="center-block">
+          {% include secondary-header-one.htm %}
+        </aside>
 
-				<aside id="secondary-header" class="center-block">
-					{% include secondary-header-two.htm %}
-				</aside>
-			
-			</footer>
-		</section>
+        {% include nav.htm %}
 
-<!-- Begin place all workable remote Javascript Library packages north of the </body> closing tag -->
+      </aside>
 
-<!-- Comment Out: Angularjs Library Remote CDN For Full min js ver 1.6.0 
+    </section>
+
+    <section id="row-three">
+
+      <!-- <footer class="panel-footer"> -->
+      <footer id="page-footer" class="center-block">
+        {% include page-footer.htm %}
+
+        <aside id="secondary-header" class="center-block">
+          {% include secondary-header-two.htm %}
+        </aside>
+
+      </footer>
+    </section>
+
+  </main>
+  <!-- Begin place all workable remote Javascript Library packages north of the </body> closing tag -->
+
+  <!-- Comment Out: Angularjs Library Remote CDN For Full min js ver 1.6.0 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script> -->
 
-<!-- Comment Out: Angularjs Library Local Script For Full min js ver 1.6.0 
+  <!-- Comment Out: Angularjs Library Local Script For Full min js ver 1.6.0 
 <script src="../ng/min/core/160/js-map/angular-v160.min.js"></script> -->
 
-<!-- Comment Out: Animated Enhanced Library Remote CDN For Full min js ver 0.0.0
+  <!-- Comment Out: Animated Enhanced Library Remote CDN For Full min js ver 0.0.0
 <script src="#"></script> -->
 
-<!-- Comment Out: Animated Enhanced library Local Script For Full min js ver 0.0.0
+  <!-- Comment Out: Animated Enhanced library Local Script For Full min js ver 0.0.0
 <script src="../js/jquery.animate-enhanced.js"></script> -->
 
-<!-- Comment Out: Class ( programming ) Library Remote CDN For Full min js ver 0.0.0 
+  <!-- Comment Out: Class ( programming ) Library Remote CDN For Full min js ver 0.0.0 
 <script src="#"></script> -->
 
-<!-- Comment Out: Class ( programming ) Library Local Script For Full min js ver 0.0.0
+  <!-- Comment Out: Class ( programming ) Library Local Script For Full min js ver 0.0.0
 <script src="../js/class.js"></script> -->
 
-<!-- Comment Out: Form Validate Library Remote CDN For Full min js ver 0.0.0 
+  <!-- Comment Out: Form Validate Library Remote CDN For Full min js ver 0.0.0 
 <script src="#"></script> -->
 
-<!-- Comment Out: Form Validate Library Local Script For Full min js ver 0.0.0
+  <!-- Comment Out: Form Validate Library Local Script For Full min js ver 0.0.0
 <script src="../js/validate.js"></script> -->
 
-<!-- Comment Out: Head Library Remote CDN For Full min js ver 099 
+  <!-- Comment Out: Head Library Remote CDN For Full min js ver 099 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/headjs/0.99/head.load.min.js"></script> -->
 
-<!-- Comment Out: Head Library Local Script For Full min js ver 099
+  <!-- Comment Out: Head Library Local Script For Full min js ver 099
 <script src="../js/head.js"></script> -->
 
-<!-- Comment Out: Indexed DB Library Remote CDN For Full min js ver 0.0.0 
+  <!-- Comment Out: Indexed DB Library Remote CDN For Full min js ver 0.0.0 
 <script src="#"></script> -->
 
-<!-- Comment Out: Indexed DB library Local script For Full min js ver 0.0.0
+  <!-- Comment Out: Indexed DB library Local script For Full min js ver 0.0.0
 <script src="../js/db.js"></script> -->
 
-<!-- Comment Out: Markdown Library Remote CDN For Full min js ver 000
+  <!-- Comment Out: Markdown Library Remote CDN For Full min js ver 000
 <script src="#"></script> -->
 
-<!-- Comment Out: Markdown Library Local Script For Full min js ver 000 
+  <!-- Comment Out: Markdown Library Local Script For Full min js ver 000 
 <script src="../js/markdown.js"></script> -->
 
-<!-- Comment Out: Mask Input Library Remote CDN For Full min js ver 000 
+  <!-- Comment Out: Mask Input Library Remote CDN For Full min js ver 000 
 <script src="#"></script> -->
 
-<!-- Comment Out: Mask Input Library Local Script For Full min js ver 000
+  <!-- Comment Out: Mask Input Library Local Script For Full min js ver 000
 <script src="../js/jquery.maskedinput.js"></script> -->
 
-<!-- Comment Out: Modernizr Library Remote CDN For Full min js ver 282 
+  <!-- Comment Out: Modernizr Library Remote CDN For Full min js ver 282 
 <script src="#"></script> -->
 
-<!-- Comment Out: Modernizr Library Local Script For Full min js ver 282
+  <!-- Comment Out: Modernizr Library Local Script For Full min js ver 282
 <script src="../js/min/modernizer/core/282/js/modernizer-v282.min.js"></script> -->
 
-<!-- Comment Out: Moment ( time ) Library Remote CDN For Full min js ver 000 
+  <!-- Comment Out: Moment ( time ) Library Remote CDN For Full min js ver 000 
 <script src="#"></script> -->
 
-<!-- Comment Out: Moment ( time ) library Local Script For Full min js ver 000
+  <!-- Comment Out: Moment ( time ) library Local Script For Full min js ver 000
 <script src="../js/moment.min.js"></script> -->
 
-<!-- Comment Out: Prism Library Remote CDN For Full min js ver 001 
+  <!-- Comment Out: Prism Library Remote CDN For Full min js ver 001 
 <script src=""></script> -->
 
-<!-- Comment Out: Prism Library Local Script For Full min js ver 001 
+  <!-- Comment Out: Prism Library Local Script For Full min js ver 001 
 <script src="../assets/prism/core/001/js/prism.js"></script> -->
 
-<!-- Comment Out: QR Code Library Remote CDN For Full min js ver 020 
+  <!-- Comment Out: QR Code Library Remote CDN For Full min js ver 020 
 <script src="#"></script> -->
 
-<!-- Comment Out: QR Code library Local Script For Full min js ver 020 
+  <!-- Comment Out: QR Code library Local Script For Full min js ver 020 
 <script src="../js/min/qr-code/core/020/js/qr-code-v020.min.js"></script> -->
 
-<!-- Comment Out: Readmore Library Remote CDN For Full min js ver 000 
+  <!-- Comment Out: Readmore Library Remote CDN For Full min js ver 000 
 <script src="#"></script> -->
 
-<!-- Comment Out: Readmore Library Local Script For Full min js ver 000
+  <!-- Comment Out: Readmore Library Local Script For Full min js ver 000
 <script src="../js/readmore.js"></script> -->
 
-<!-- Comment Out: Underscore ( data ) Library Remote CDN For Full min js ver 183 
+  <!-- Comment Out: Underscore ( data ) Library Remote CDN For Full min js ver 183 
 <script src="#"></script> -->
 
-<!-- Comment Out: Underscore ( data ) Library Local Script For Full min js ver 183 
+  <!-- Comment Out: Underscore ( data ) Library Local Script For Full min js ver 183 
 <script src="../js/min/underscore/core/183/js-map/underscore-v183.min.js"></script> -->
 
-<!-- Comment Out: jQuery Mobile Library Remote CDN For Full min js ver 1.4.5 
+  <!-- Comment Out: jQuery Mobile Library Remote CDN For Full min js ver 1.4.5 
 <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> -->
 
-<!-- Comment Out: jQuery Mobile Library Local Script For Full min js ver 1.4.5 
+  <!-- Comment Out: jQuery Mobile Library Local Script For Full min js ver 1.4.5 
 <script src="../jqm/min/core/145/js-map/jquery-mobile-v145.min.js"></script> -->
 
-<!-- Comment Out: jQuery Color Library Remote CDN For Full min js ver 2.1.2 
+  <!-- Comment Out: jQuery Color Library Remote CDN For Full min js ver 2.1.2 
 <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script> -->
 
-<!-- Comment Out: jQuery Color Library Local Script For Full min js ver 2.1.2 
+  <!-- Comment Out: jQuery Color Library Local Script For Full min js ver 2.1.2 
 <script src="#"></script> -->
 
-<!-- Comment Out: jQuery Cookie Library Remote CDN For Full min js ver 0.0.0
+  <!-- Comment Out: jQuery Cookie Library Remote CDN For Full min js ver 0.0.0
 <script src="#"></script> -->
 
-<!-- Comment Out: jQuery Cookie Library Local Script For Full min js ver 0.0.0
+  <!-- Comment Out: jQuery Cookie Library Local Script For Full min js ver 0.0.0
 <script src="#"></script> -->
 
-<!-- Comment Out: jQuery URI Library Local Script For Full min js ver 011809
+  <!-- Comment Out: jQuery URI Library Local Script For Full min js ver 011809
 <script src="../jq/min/uri/011809/js/jquery-uri-v011809.min.js"></script> -->
 
-<!-- Comment Out: Bootstrap Library Remote CDN For Full min js ver 4.0.0 
+  <!-- Comment Out: Bootstrap Library Remote CDN For Full min js ver 4.0.0 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
-<!-- Comment Out: Bootstrap Library Local Script For Full min js ver 4.0.0 
+  <!-- Comment Out: Bootstrap Library Local Script For Full min js ver 4.0.0 
 <script src="../bs/min/core/400/js-map/bootstrap.min.js"></script> -->
 
-<!-- Comment Out: Popper Library Remote CDN For Full min js ver 011209 
+  <!-- Comment Out: Popper Library Remote CDN For Full min js ver 011209 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
 
-<!-- Comment Out: Popper Library Local Script For Full min js ver 011209
+  <!-- Comment Out: Popper Library Local Script For Full min js ver 011209
 <script src=""></script> -->
 
-<!-- Comment Out: Dot epub (.mobi) maker -->
-<script type="text/javascript" src="//dotepub.com/p/widget.php?lang=en&amp;img=f"></script>
+  <!-- Comment Out: Dot epub (.mobi) maker -->
+  <script type="text/javascript" src="//dotepub.com/p/widget.php?lang=en&amp;img=f"></script>
 
-<!-- Register wth Txtpen dot com to engage comments and highlights 
+  <!-- Register wth Txtpen dot com to engage comments and highlights 
 <script src="https://txtpen.com/embed.js?site=<your site name>"></script> -->
 
-<!-- Kramdown w MathJax
+  <!-- Kramdown w MathJax
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> -->
 
-<!-- Begin SessionStack Code 
+  <!-- Begin SessionStack Code 
 	<script type="text/javascript">
 		!function(a,b){var c=window;c.SessionStack=a,c[a]=c[a]||function(){
 		c[a].q=c[a].q||[],c[a].q.push(arguments)},c[a].t=b;var d=document.createElement("script");
@@ -344,16 +351,68 @@
 		var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(d,e);
 		}("sessionstack","714b82de97094c8085bdb9158e719ef8");
 	</script> -->
-<!-- End SessionStack Code -->
+  <!-- End SessionStack Code -->
 
-<!-- <div itemscope itemtype="https://schema.org/" class="container-fluid"> -->
-<!-- <div class="row-fluid"> -->
+  <!-- <div itemscope itemtype="https://schema.org/" class="container-fluid"> -->
+  <!-- <div class="row-fluid"> -->
 
-<!-- <div class="container"> -->
-<!-- <div class="panel panel-primary panel-padding"> -->
+  <!-- <div class="container"> -->
+  <!-- <div class="panel panel-primary panel-padding"> -->
 
-<!-- End place all workable remote Javascript Library packages north of the </body> closing tag --> 
+  <!-- End place all workable remote Javascript Library packages north of the </body> closing tag -->
 
-</main>
+  <!-- Install this code above the ending body tag for each page you wish to be enabled for the Twitter Platform feature -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <!-- Note. After a regular link a question mark may be assigned to designate certain delimiters ie) ?text=Check%20out%20this%20webpage! 
+  But, in this case ... the a-hyperlink tag is either automatically generically pulling from the location.href attribute of the page DOM, or from the designated link tags
+-->
+
+  <script>
+    (function () {
+      if (window.__twitterIntentHandler) return;
+      var intentRegex = /twitter\.com\/intent\/(\w+)/,
+        windowOptions = 'scrollbars=yes,resizable=yes,toolbar=no,location=yes',
+        width = 550,
+        height = 420,
+        winHeight = screen.height,
+        winWidth = screen.width;
+
+      function handleIntent(e) {
+        e = e || window.event;
+        var target = e.target || e.srcElement,
+          m, left, top;
+
+        while (target && target.nodeName.toLowerCase() !== 'a') {
+          target = target.parentNode;
+        }
+
+        if (target && target.nodeName.toLowerCase() === 'a' && target.href) {
+          m = target.href.match(intentRegex);
+          if (m) {
+            left = Math.round((winWidth / 2) - (width / 2));
+            top = 0;
+
+            if (winHeight > height) {
+              top = Math.round((winHeight / 2) - (height / 2));
+            }
+
+            window.open(target.href, 'intent', windowOptions + ',width=' + width +
+              ',height=' + height + ',left=' + left + ',top=' + top);
+            e.returnValue = false;
+            e.preventDefault && e.preventDefault();
+          }
+        }
+      }
+
+      if (document.addEventListener) {
+        document.addEventListener('click', handleIntent, false);
+      } else if (document.attachEvent) {
+        document.attachEvent('onclick', handleIntent);
+      }
+      window.__twitterIntentHandler = true;
+    }());
+  </script>
 </body>
+
 </html>
