@@ -308,6 +308,10 @@ aside#navigator {
 
 /* Nav semantic container classes */
 
+.disc {
+  list-style-type: disc;
+}
+
 .lead {
     margin-left: 3%;
 }
