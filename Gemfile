@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 # ill-formed => gem 'source', 'https://rubygems.org'
 # ruby "2.4.2"
-ruby "2.5.3"
+ruby "2.6.5"
 # ill-formed => gem 'ruby', '2.4.2'
 # Could not find gem 'ruby (= 2.4.2)'
 # In any of the gem sources listed in your Gemfile
