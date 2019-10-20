@@ -241,13 +241,15 @@ gem 'minima', '2.5.0'
 #
 # Override the GitHub Pages online Dependency Chart Dtd 012418;
 # ver 1.7.2 of the Nokogiri dependency has a Security issue
-gem 'nokogiri', '1.8.5'
+gem 'nokogiri', '1.10.4'
 # 
 gem 'rouge', '2.2.1'
 #
 gem 'safe_yaml', '1.0.5'
 #
 gem 'sass', '3.7.4'
+#
+gem 'rubyzip', '2.0.0'
 #
 # If you have any other Jekyll plugins, put them here ...
 # group: 'jekyll_plugins' do
