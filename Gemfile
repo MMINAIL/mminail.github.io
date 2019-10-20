@@ -241,7 +241,7 @@ gem 'minima', '2.5.0'
 #
 # Override the GitHub Pages online Dependency Chart Dtd 012418;
 # ver 1.7.2 of the Nokogiri dependency has a Security issue
-gem 'nokogiri', '1.8.5'
+gem 'nokogiri', '1.10.4'
 # 
 gem 'rouge', '2.2.1'
 #
