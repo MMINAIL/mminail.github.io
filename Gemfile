@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 # ill-formed => gem 'source', 'https://rubygems.org'
-# ruby "2.4.2"
+# ruby "2.5.3"
 ruby "2.6.5"
 # ill-formed => gem 'ruby', '2.4.2'
 # Could not find gem 'ruby (= 2.4.2)'
@@ -181,19 +181,19 @@ gem 'activesupport', '4.2.11.1'
 #
 gem 'github-pages-health-check', '1.16.1'
 #
-gem 'github-pages', '198'
+gem 'github-pages', '201'
 #
 # Note. The ''github-markdown' dependency is no longer designated at the online GitHub Pages dependency chart
 # C=> https://pages.github.com/versions/
 # gem 'github-markdown'
 #
-gem 'html-pipeline', '2.11.0'
+gem 'html-pipeline', '2.12.0'
 #
 gem 'jekyll-avatar', '0.6.0'
 #
 gem 'jekyll-coffeescript', '1.1.1'
 #
-gem 'jekyll-commonmark-ghpages', '0.1.5'
+gem 'jekyll-commonmark-ghpages', '0.1.6'
 #
 gem 'jekyll-default-layout', '0.1.4'
 #
@@ -215,7 +215,7 @@ gem 'jekyll-redirect-from', '0.14.0'
 #
 gem 'jekyll-relative-links', '0.6.0'
 #
-gem 'jekyll-remote-theme', '0.3.1'
+gem 'jekyll-remote-theme', '0.4.0'
 #
 gem 'jekyll-sass-converter', '1.5.2'
 #
@@ -243,7 +243,7 @@ gem 'minima', '2.5.0'
 # ver 1.7.2 of the Nokogiri dependency has a Security issue
 gem 'nokogiri', '1.10.4'
 # 
-gem 'rouge', '2.2.1'
+gem 'rouge', '3.11.0'
 #
 gem 'safe_yaml', '1.0.5'
 #
