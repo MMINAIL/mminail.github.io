@@ -26,7 +26,11 @@
         url('../fonts/awesome/fontawesome-webfont.woff2') format('woff2'),
         url('../fonts/awesome/fontawesome-webfont.woff') format('woff'),
         url('../fonts/awesome/fontawesome-webfont.ttf') format('truetype'),
-        url('../fonts/awesome/fontawesome-webfont.svg') format('svg');
+        url('../fonts/awesome/fontawesome-webfont.svg') format('svg'),
+        url('../fonts/awesome/fontawesome.otf') format('otf'),
+        url('../fonts/awesome/font-awesome-5-brands-regular-400.otf') format('otf'),
+        url('../fonts/awesome/font-awesome-5-free-regular-400.otf') format('otf'),
+        url('../fonts/awesome/font-awesome-5-free-solid-900.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
