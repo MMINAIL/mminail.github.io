@@ -3,80 +3,94 @@ layout: default
 title: Learn Node
 ---
 <div itemscope itemtype="https://schema.org/" class="container-fluid">
-	<div class="row-fluid">
+  <div class="row-fluid">
 
-{% include welcome-title-zoom-mminail.htm %}
-	
-{% include navigate-it.htm %}
+    {% include welcome-title-zoom-mminail.htm %}
 
-<hgroup class='text-left'>
-	<h4>Installation</h4>
-</hgroup>
-	<hr class='green-groove' />
+    {% include navigate-it.htm %}
 
-	<p>
-		<span>Node is a program that understands how to use Javascript outside of the browser ... in the Terminal program of your Mac.</span>
-	</p>
-		<hr class="green-groove" />
+    <hgroup class='text-left'>
+      <h4>Installation</h4>
+    </hgroup>
+    <hr class='green-groove' />
 
-	<p>
-		<span>You can easily download both node and the npm package manager for node libraries in one (1) pre-packaged Binary Installer Package, or</span> 
-		<a href='https://nodejs.org/' title="Click To Download both 'node'' and The 'npm'' Package Manager for Node Libraries In One (1) Pre-packaged Binary" target='_blank'>BIP</a>
-		<span>from <a href='https://nodejs.org/' title="Click To Download both 'node' and The 'npm' Package Manager for Node Libraries In One (1) Pre-packaged Binary" target='_blank'>Nodejs dot org</a>.</span>
-	</p>
-		<hr class='green-groove' />
+    <p>
+      <span>Node is a program that understands how to use Javascript outside of the browser ... in the Terminal program
+        of your Mac.</span>
+    </p>
+    <hr class="green-groove" />
 
-	<p>
-		<span><b>Note</b>.</span>
-		<span>The installation of node defaults to the <code>/usr/local/bin/</code> subdirectory of your development machine.</span>
-	</p>
+    <p>
+      <span>You can easily download both node and the npm package manager for node libraries in one (1) pre-packaged
+        Binary Installer Package, or</span>
+      <a href='https://nodejs.org/'
+        title="Click To Download both 'node'' and The 'npm'' Package Manager for Node Libraries In One (1) Pre-packaged Binary"
+        target='_blank'>BIP</a>
+      <span>from <a href='https://nodejs.org/'
+          title="Click To Download both 'node' and The 'npm' Package Manager for Node Libraries In One (1) Pre-packaged Binary"
+          target='_blank'>Nodejs dot org</a>.</span>
+    </p>
+    <hr class='green-groove' />
 
-	<p>
-		<span>That is where the</span> 
-		<a href='https://nodejs.org/' title="Click To Download both 'node'' and The 'npm'' Package Manager for Node Libraries In One (1) Pre-packaged Binary" target='_blank'>BIP</a> 
-		<span>will install the node executable.</span>
-	</p>
-		<hr class='green-groove' />
+    <p>
+      <span><b>Note</b>.</span>
+      <span>The installation of node defaults to the <code>/usr/local/bin/</code> subdirectory of your development
+        machine.</span>
+    </p>
 
-	<p>
-		<span>Also, the installation of npm defaults to the <code>/usr/local/bin/</code> subdirectory of your development machine, as well.</span>
-	</p>
+    <p>
+      <span>That is where the</span>
+      <a href='https://nodejs.org/'
+        title="Click To Download both 'node'' and The 'npm'' Package Manager for Node Libraries In One (1) Pre-packaged Binary"
+        target='_blank'>BIP</a>
+      <span>will install the node executable.</span>
+    </p>
+    <hr class='green-groove' />
 
-	<p>
-		<span>That is where the</span> 
-		<a href='https://nodejs.org/' title="Click To Download both 'node'' and The 'npm'' Package Manager for Node Libraries In One (1) Pre-packaged Binary" target='_blank'>BIP</a> 
-		<span>will install the npm executable.</span>
-	</p>
-		<hr class='green-groove' />
+    <p>
+      <span>Also, the installation of npm defaults to the <code>/usr/local/bin/</code> subdirectory of your development
+        machine, as well.</span>
+    </p>
 
-	<p>
-	  <span>Be sure to run an 'echo' from your Terminal prompt in order to ensure the $PATH variable indeed has an export for the default <code>/usr/local/bin/</code> subdirectory location.</span>
-  </p>
+    <p>
+      <span>That is where the</span>
+      <a href='https://nodejs.org/'
+        title="Click To Download both 'node'' and The 'npm'' Package Manager for Node Libraries In One (1) Pre-packaged Binary"
+        target='_blank'>BIP</a>
+      <span>will install the npm executable.</span>
+    </p>
+    <hr class='green-groove' />
 
-  <p>
-	  <span>Otherwise, when the executables are tapped, you'll get nothing from your install but an error message in your Terminal that reads ...</span>
-  </p>
+    <p>
+      <span>Be sure to run an 'echo' from your Terminal prompt in order to ensure the $PATH variable indeed has an
+        export for the default <code>/usr/local/bin/</code> subdirectory location.</span>
+    </p>
 
-<pre class='flex-box'>
+    <p>
+      <span>Otherwise, when the executables are tapped, you'll get nothing from your install but an error message in
+        your Terminal that reads ...</span>
+    </p>
+
+    <pre class='flex-box'>
 <span>Check your User $PATH variable!</span>
 {% highlight html linenos %}
 -bash: node: command not found
 {% endhighlight %}
 <span>Easy to edit, easy to construct</span>
 </pre>
-  <hr class='green-groove' />
-	
-  <p>
-	  <span>If you need assistance constructing a $PATH variable, see ...</span>
-  </p>
-	  <hr class='green-groove' />
+    <hr class='green-groove' />
 
-<hgroup class='text-left'>
-	<h4>Check The Version</h4>
-</hgroup>
-	<hr class='green-groove' />
+    <p>
+      <span>If you need assistance constructing a $PATH variable, see ...</span>
+    </p>
+    <hr class='green-groove' />
 
-<pre class='flex-box'>
+    <hgroup class='text-left'>
+      <h4>Check The Version</h4>
+    </hgroup>
+    <hr class='green-groove' />
+
+    <pre class='flex-box'>
 <span>To confirm install of node, from the Terminal prompt $ ...</span>
 {% highlight html linenos %}
 //Type the following node command
@@ -86,9 +100,9 @@ v7.7.4
 {% endhighlight %}
 <span>Shows the now operable version of node.</span>
 </pre>
-  <hr class='green-groove' />
+    <hr class='green-groove' />
 
-<pre class='flex-box'>
+    <pre class='flex-box'>
 <span>To confirm install of npm, from the Terminal prompt $ ...</span>
 {% highlight html linenos %}
 //Type the following npm command
@@ -98,58 +112,65 @@ npm -v
 {% endhighlight %}
 <span>Shows the now operable version of npm.</span>
 </pre>
-  <hr class='green-groove' />
+    <hr class='green-groove' />
 
-{% include external-source-links.htm %}
-	
-<hgroup class="text-left">
-	<h4>Can You Contribute?</h4>
-</hgroup>
-	<hr class="green-groove" />
+    {% include external-source-links.htm %}
 
-<p>
-	<span>In the <code>aside</code> section of this website ➡️ , you will find a navigation column.</span>
-</p>
+    <hgroup class="text-left">
+      <h4>Can You Contribute?</h4>
+    </hgroup>
     <hr class="green-groove" />
 
-<p>
-    <span>When the end-user clicks on a topic of interest, the menu explodes vertically to reveal several Sub-menu choices.</span>
-</p>
-
-<p>
-    <span>There is a 'Learn-Topic' selection just north of the <kbd>Home</kbd> page divider for each topic of interest.</span>
-</p>
-
-<p>
-    <span>You, as the current end-user, are now at one of those 'Learn-Topic' pages, specifically the {title} ( Learn Node ) page.</span>
-</p>
+    <p>
+      <span>In the <code>aside</code> section of this website ➡️ , you will find a navigation column.</span>
+    </p>
     <hr class="green-groove" />
 
-<p>
-	<span>If you are an expert in your field of specialty, then I suggest you</span>
-	<a href='https://github.com/MMINAIL/mminail.github.io' title='Click To Fork the MMINAIL Central Working Repo (CWR) at GitHub' target='_blank'>fork the working repo</a>
-	<span>of this Website and create a Sub-menu choice of your choosing.</span>
-</p>
+    <p>
+      <span>When the end-user clicks on a topic of interest, the menu explodes vertically to reveal several Sub-menu
+        choices.</span>
+    </p>
 
-<p>
-	<span>As we rely heavily upon contributions from the coding community, your contribution of either</span>
-	<a href='https://www.cash.me/MMINAIL' title='Click to Donate To The Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation via Square Up - Cash Me' target='_blank'>cash</a>
-	<span>or</span>
-	<a href='https://github.com/MMINAIL/mminail.github.io' title='Click To Fork the MMINAIL Central Working Repo (CWR) at GitHub' target='_blank'>code</a>
-	<span>will be greatly appreciated.</span>
-</p>
+    <p>
+      <span>There is a 'Learn-Topic' selection just north of the <kbd>Home</kbd> page divider for each topic of
+        interest.</span>
+    </p>
+
+    <p>
+      <span>You, as the current end-user, are now at one of those 'Learn-Topic' pages, specifically the {title} ( Learn
+        Node ) page.</span>
+    </p>
+    <hr class="green-groove" />
+
+    <p>
+      <span>If you are an expert in your field of specialty, then I suggest you</span>
+      <a href='https://github.com/MMINAIL/mminail.github.io'
+        title='Click To Fork the MMINAIL Central Working Repo (CWR) at GitHub' target='_blank'>fork the working repo</a>
+      <span>of this Website and create a Sub-menu choice of your choosing.</span>
+    </p>
+
+    <p>
+      <span>As we rely heavily upon contributions from the coding community, your contribution of either</span>
+      <a href='https://www.cash.me/MMINAIL'
+        title='Click to Donate To The Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation via Square Up - Cash Me'
+        target='_blank'>cash</a>
+      <span>or</span>
+      <a href='https://github.com/MMINAIL/mminail.github.io'
+        title='Click To Fork the MMINAIL Central Working Repo (CWR) at GitHub' target='_blank'>code</a>
+      <span>will be greatly appreciated.</span>
+    </p>
     <hr class="green-groove" />
 
 
 
-  <p>
-	  <span lang="es" title="Sp. 'For Finish'">Finito!</span>
-  </p>
-	  <hr class="green-groove" />
+    <p>
+      <span lang="es" title="Sp. 'For Finish'">Finito!</span>
+    </p>
+    <hr class="green-groove" />
 
-{% include sources-and-uses.htm %}
+    {% include sources-and-uses.htm %}
 
-{% include alt-footer-cash-me.htm %}
-  
+    {% include alt-footer-cash-me.htm %}
+
   </div>
 </div>

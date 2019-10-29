@@ -430,7 +430,7 @@ article {
     position: relative;
     text-align: left;
     width: calc(100% - 0px);
-    opacity: 50%;
+    /* opacity: 50%; */
     background-color: rgb(175,216,205); /* Luster Sky Blue */
 }
 
