@@ -6,6 +6,11 @@
 /* @import 'jekyll-theme-cayman'; */
 
 /* -------------------------------------
+    Import the Rouge theme here
+------------------------------------- */
+@import 'rainbow-rouge.css';
+
+/* -------------------------------------
     Set the font-face(s) for the Website
 ------------------------------------- */
 

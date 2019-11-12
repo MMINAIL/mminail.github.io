@@ -1,0 +1,18 @@
+<hgroup class="text-left">
+	<h4>How to Disable a Markdown-lint flag in a Jekyll include</h4>
+</hgroup>
+  <hr class="green-groove" />
+  
+{% highlight liquid linenos %}
+{% raw %}
+{% comment %}
+## How to Disable a Markdown-lint flag in a Jekyll include
+1.) Set up a dot markdownlint dot json file `.markdownlint.json` within the underscore includes subdirectory `_includes` in either the repo root directory or within the `docs` folder of your repo dependent up your repo GitHub pages setting preference
+2.) Disable any markdownlint flag by code, as follows:
+`{
+  "MD013": false,
+  "MD041": false
+}`
+{% endcomment %}
+{% endraw %}
+{% endhighlight %}
