@@ -3,7 +3,6 @@
 # underscore Config dot yaml (_config.yml) template ver 11-11-2019
 # 
 # Un-comment the theme for the `docs` folder [only] in satellite repos
-#
 # theme: "jekyll-theme-cayman"
 # 
 # There is one main repository as of 11-11-19
@@ -44,7 +43,7 @@ url: "https://mminail.github.io"
 source: "https://mminail.github.io"
 #
 # GitHub Pages Mandatory Defaults
-#
+# 
 # GitHub pages default (A)
 # Do NOT produce an index for related posts
 # suggested. lsi: "false" or Boolean "0";
@@ -117,13 +116,15 @@ defaults:
       path: "" 
       type: "pages"
     values:
-      category: "mminail"
+      layout: "default"
+      author: "Robert Weber, Director"
 defaults:
   - scope:
       path: "pages"
       type: "pages"
     values:
-      category: "mminail" 
+      ayout: "default" 
+      author: "Robert Weber, Director" 
 excerpt_separator: <!-- this is a literal excerpt separator -->
 collections:
   gists:
@@ -141,3 +142,4 @@ plugins_dir:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - Gemfile.old
