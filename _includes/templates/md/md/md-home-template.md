@@ -1,11 +1,11 @@
 ---
-title: Page Template
+title: Home Page
 layout: default
 excerpt: Place the introducing line of text ie.) the 'lead' here ...
 description: Lay out a more in-depth descriptive paragraph of the page here ...
 repo: Shell Lessons Project 
 ver_date: 11-10-19
-navigation_weight: 8
+navigation_weight: 1
 categories: template
 ---
 {{ page.excerpt }}
@@ -14,7 +14,14 @@ categories: template
 
 {{ page.description }}
 
-{% include toc.md %}
+## Table O Contents
+
+![Flammarion Logo Badge](assets/img/svg/MMI-Medmj-Org-Got-Tree-Flammarion-Person-Through-Celestial-Sphere-circle-543-x-543.svg){:width="120px"}
+
+- TOC
+{:toc}
+
+**Note**. The above **Live** rendition of the **Flammarion Logo Badge** is an `( .svg )` image file set to the dimensions of 120.00 px X 120.00 px.
 
 ## IRAC
 
@@ -22,17 +29,7 @@ categories: template
 
 {% include raw-code-anchors.md %}
 
-{% include brackets-ide.md %}
-
 {% include sources-and-uses.md %}
-
-## New Topic
-
-**Note**. The above synopsis was derived from an article written by Blank [[2](#BLANK){:.red}].
-
-1. {:#BLANK}[The Blank Live at The Blank Festival, 2000](https://youtu.be/Blank){:title='Click to Watch the YouTube video of the Blank Live at the The Blank Festival, 2000'}{:target='_blank'}.
-
-- {:#SOURCELINKS}The [Project Source Links](https://mminail.github.io/Shell/Source-Shell-Links.htm){:title='Click to Visit the Source Links page of the Shell Lessons Project at Concepts Library'}{:target='_blank'} page of the Shell Lessons Project at Concepts Library. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title='Click to Visit the Home Page of the Concepts Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'}{:target='_blank'}.
 
 ### External Sources
 

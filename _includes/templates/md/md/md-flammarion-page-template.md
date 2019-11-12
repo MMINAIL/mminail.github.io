@@ -6,7 +6,7 @@ version: Flammarion Page Template md Dtd 02-06-18 pm
 navigation_weight: 9
 categories: template
 ---
-# {{ page.title }}
+## {{ page.title }}
 
 {{ page.excerpt }}
 

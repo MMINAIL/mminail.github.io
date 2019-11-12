@@ -1,15 +1,19 @@
 # Site settings
 # 
-# Date of this Update to Config-template file ver 05-14-2019
+# underscore Config dot yaml (_config.yml) template ver 11-11-2019
 # 
-# Uncomment theme for docs folder
+# Un-comment the theme for the `docs` folder [only] in satellite repos
+#
 # theme: "jekyll-theme-cayman"
 # 
-# There is one main repository as of 12-31-17
-# repository: https://www.github.com/MMINAIL/mminail.github.io
+# There is one main repository as of 11-11-19
+# repository: https://www.github.com/mminail/mminail.github.io
 #
-# There are approx sixty auxillary repositories as of 12-31-17
-# repository: https://www.github.com/rwebaz/Blank-Lessons-Project
+# There are approx seventy satellite repositories as of 11-11-19
+# repository: https://www.github.com/rwebaz/rwebaz.github.io
+#
+# There is also one new repository as of 11-11-19
+# repository: https://www.github.com/exvivospace/exvivospace.github.io
 # 
 lang: "en-US"
 title: "Concepts Library | MMINAIL"
@@ -22,20 +26,71 @@ author:
     email: "mminail@icloud.com"
     github_username: "rwebaz"
     twitter_username: "rwebaz"
+#
+# Set the North American default time zone for the repo
+timezone: "America/Phoenix"
+#
+# Exclude the default `README.md` file when rendering Jekyll
+exclude: ['README.md']
+#
 # The 'baseurl' is the subpath of your designated project, e.g. /Blank-Lessons-Project or /blog or simply "/"
 baseurl: "/"
-# The 'url' is the parental web address of your designated project, e.g. /https://rwebaz.github.io
+#
+# The `url` is the parental web address of your designated project, e.g. /https://rwebaz.github.io
+# Note. Has the element `url` been deprecated in favor of `source`?
+# old.
 url: "https://mminail.github.io"
-exclude: ['README.md']
-markdown: "kramdown"
+# new.
+source: "https://mminail.github.io"
+#
+# GitHub Pages Mandatory Defaults
+#
+# GitHub pages default (A)
+# Do NOT produce an index for related posts
+# suggested. lsi: "false" or Boolean "0";
+# Produces an index for related posts when enabled "true" or Boolean "1";
+# Requires the `classifier-reborn` plugin
+# Note. When uncommenting a Yaml statement, remove the enveloping quotations
+lsi: false
+#
+# GitHub pages default (B)
+# Disable all custom plugins
+# suggested. safe: "true"; disables all custom plugins
+# Note. When uncommenting a Yaml statement, remove the enveloping quotations
+safe: true
+#
+# GitHub pages default (C)
+# Set the properties for `Gist`
+# suggested. noscript: "false"; unknown
+# Note. When uncommenting a Yaml statement, remove the enveloping quotations
+# Warming. Property `gist` is not allowed
+gist:
+  noscript: "false"
+#
+# GitHub pages default (C)
+# Disable the `Experimental Incremental Build Feature` or `EIBF`
+# suggested. incremental: "false"; disables the `EIBF` Why? [may break site generation in some cases]
+# Note. When uncommenting a Yaml statement, remove the enveloping quotations
+# Warning. Author not disabling this feature nor enabling this feature
+# incremental: false
+#
+# Set the default `highlighter` mechanism to `Rouge`
 highlighter: "rouge"
+#
+# Set the default `markdown` engine to `Kramdown`
+markdown: "kramdown"
+#
+# Set the properties for `Kramdown`
 kramdown:
     input: "GFM"
-    hard_wrap: "false"
-    syntax_highlighter: "rouge"
+    syntax_highlighter: rouge
     math_engine: "mathjax"
-timezone: "America/Phoenix"
+    hard_wrap: false
+#
+# Set the code for `Goodle Analytics`
+# Warning. Property `google_analytics` is not allowed
 google_analytics: [UA-44765001-7]
+#
 # Settings For Default Keys: Use a scope/values pair
 defaults:
   - scope:
@@ -86,4 +141,3 @@ plugins_dir:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - Gemfile.old
