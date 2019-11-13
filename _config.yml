@@ -13,8 +13,10 @@
 #
 # There is also one new repository as of 11-11-19
 # repository: https://www.github.com/exvivospace/exvivospace.github.io
-# 
+#
+name: ""
 lang: "en-US"
+encoding: UTF-8
 title: "Concepts Library | MMINAIL"
 tagline: "A GitHub repo of Lessons and Articles that emphasize both the GFM and Kramdown development engines"
 description: "The Concept Library of the MMINAIL is a GitHub repo of Lessons and Articles emphasizing both the GFM and Kramdown development engines."
@@ -36,11 +38,12 @@ exclude: ['README.md']
 baseurl: "/"
 #
 # The `url` is the parental web address of your designated project, e.g. /https://rwebaz.github.io
-# Note. Has the element `url` been deprecated in favor of `source`?
-# old.
 url: "https://mminail.github.io"
-# new.
-source: "https://mminail.github.io"
+#
+# The `source` tells the Jekyll engine where to locate the opening `index` file.
+# In this case, the `source` of the `index.htm` is the `root` folder of the repo.
+# Because this GitHub pages website is being served remotely from the `root` of the repo, the location of the `index` file is the `root`.
+# source: "mminail.github.io"
 #
 # GitHub Pages Mandatory Defaults
 # 
@@ -84,7 +87,7 @@ kramdown:
     input: "GFM"
     syntax_highlighter: rouge
     math_engine: "mathjax"
-    hard_wrap: false
+    hard_wrap: "false"
 #
 # Set the code for `Goodle Analytics`
 # Warning. Property `google_analytics` is not allowed
