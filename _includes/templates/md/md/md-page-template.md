@@ -4,13 +4,13 @@ layout: default
 excerpt: Place the introducing line of text ie.) the 'lead' here ...
 description: Lay out a more in-depth descriptive paragraph of the page here ...
 repo: Shell Lessons Project 
-ver_date: 11-10-19
+ver_date: 11-11-19
 navigation_weight: 8
 categories: template
 ---
-{{ page.excerpt }}
+# {{ page.title }} | {{ page.repo }} Dtd {{ page.ver_date }}
 
-{{ page.title }} | {{ page.repo }} Dtd {{ page.ver_date }}
+{{ page.excerpt }}
 
 {{ page.description }}
 

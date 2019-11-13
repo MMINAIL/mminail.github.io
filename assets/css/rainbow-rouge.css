@@ -7,22 +7,74 @@
   color: transparent;
 }
 
-/* All of the (.css) copy n paste'd from the native css file repo for the `Native` Pygments (Rouge) theme at GitHub
+/* Colorful Text Classes */
+
+.crimson-red-text {
+  color: #DC143C; /* Crimson Red */
+}
+
+.indian-red-text {
+  color: rgb(207,103,75); /* Indian Red */
+}
+
+.light-dodger-blue-text {
+  color: #337ab7; /* Light Dodger Blue */
+}
+
+.forest-green-text {
+  color: #004B23; /* Forest Green */
+}
+
+.medium-green-text {
+  color: #6ab825; /* Medium Green */
+}
+
+.neon-text {
+  color:lime; /* Neon Green */
+}
+
+.black-text {
+  color: #000000; /* Jet Black */
+}
+
+/* Colorful Background Colors */
+
+.white {
+  color: #ffffff; /* All White */
+}
+
+.moonlight {
+  background-color: rgb(255,255,229);
+}
+
+.light-green {
+  background-color: rgb(175, 216, 205);
+  }
+
+.charcoal {
+  background-color: rgb(64, 64, 64);
+}
+
+.light-grey {
+  background-color: rgb(153, 153, 153);
+}
+
+/* All of the (.css) copy n paste from the `native` css file repo for the Native Pygments (Rouge) theme at GitHub
 C=> https://github.com/jwarby/jekyll-pygments-themes/blob/master/native.css
 Note. All `Pygments` css files are compatible w Rouge */
 
-.highlight pre { background-color: #404040 }
-.highlight .hll { background-color: #404040 }
-.highlight .c { color: #999999; font-style: italic } /* Comment */
-.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight pre { background-color: rgb(175, 216, 205) } /* Highlight Pre-Block Background Color Light Green  */
+.highlight .hll { background-color: rgb(255, 255, 229) } /* Highlight dot hll Background Color Moonlight */
+.highlight .c { color: #000000; font-style: normal } /* Comment Message Text (Single-line) Black  */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error Message Background Color */
 .highlight .g { color: #d0d0d0 } /* Generic */
-.highlight .k { color: #6ab825; font-weight: bold } /* Keyword */
+.highlight .k { color: #004B23; font-weight: 900 } /* Keyword Forest Green */
 .highlight .l { color: #d0d0d0 } /* Literal */
 .highlight .n { color: #d0d0d0 } /* Name */
 .highlight .o { color: #d0d0d0 } /* Operator */
 .highlight .x { color: #d0d0d0 } /* Other */
 .highlight .p { color: #d0d0d0 } /* Punctuation */
-.highlight .cm { color: #999999; font-style: italic } /* Comment.Multiline */
+.highlight .cm { color: #999999; font-style: italic } /* Comment Message Text (Multi-line) Default Light Gray #999999 */
 .highlight .cp { color: #cd2828; font-weight: bold } /* Comment.Preproc */
 .highlight .c1 { color: #999999; font-style: italic } /* Comment.Single */
 .highlight .cs { color: #e50808; font-weight: bold; background-color: #520000 } /* Comment.Special */

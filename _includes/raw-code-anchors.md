@@ -1,8 +1,21 @@
-## Raw Code and Anchors
+{% comment %}Raw Code Anchors ver Dtd 11-11-19 {% endcomment %}
+
+### Raw Code
 
 Place the introducing line of text ie.) the 'tagline' here ...
 
-### Raw Code
+#### Anchors
+
+This is a test sentence for the internal page anchor #1 in red => MMINAIL [[1](#MMINAIL){:.red}].
+
+The reference points to the first internal [[MMINAIL](#MMINAIL){:.red}] citation below.
+
+By clicking on either the red [1] above, or the red [MMINAIL] ...
+{:.red}
+
+The reader will be hyperlinked to the bottom of the page directly to the referenced citation.
+
+#### Code Fencing
 
 Place the code inside a set of Liquid raw tags, as follows:
 
@@ -13,14 +26,3 @@ Blank [[2](#BLANK){:.red}]
 ```
 
 **Note**. The above synopsis was derived from an article written by Blank [[2](#BLANK){:.red}].
-
-### Anchors
-
-This is a test sentence for the internal page anchor #1 in red => MMINAIL [[1](#MMINAIL){:.red}].
-
-The reference points to the first internal [[MMINAIL](#MMINAIL){:.red}] citation below.
-
-By clicking on either the red [1] above, or the red [MMINAIL] ...
-{:.red}
-
-The reader will be hyperlinked to the bottom of the page directly to the referenced citation.

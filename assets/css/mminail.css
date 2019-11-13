@@ -128,7 +128,6 @@ body {
 /* -------------------------------
     Begin Styled Anchor Links
 ---------------------------------- */
-
 a {
     text-decoration: none;
 }
@@ -146,16 +145,11 @@ a[href^="http:"] {
     color: rgb(207,103,75); /* Indian Red */ 
 }
 
-.red {
-    color: #DC143C; /* Crimson Red */
-}
-
-.indian-red {
-  color: rgb(207,103,75); /* Indian Red */
-}
-
-.light-dodger-blue {
-  color: #337ab7; /* Light Dodger Blue */
+/* ---------------------------------------------------
+    Set the rule for a custom <hr /> 'hard return' tag
+------------------------------------------------------ */
+.green-groove {
+  border: 1px groove green;
 }
 
 /* ------------------------------------
@@ -758,16 +752,6 @@ ul.none {
     
 }
 
-/* Colorful Text Classes */
-
-.forest-green-text {
-    color: #004B23; /* Forest Green */
-}
-
-.neon-text {
-    color:lime; /* Neon Green */
-}
-
 /* Directional Text Classes */
 
 .text-left {
@@ -809,11 +793,6 @@ ul.none {
 /* -------------------------------
     Begin Other Classes
 ---------------------------------- */
-
-/* Set the rule for a custom <hr /> 'hard return' tag */
-.green-groove {
-    border: 1px groove green;
-}
 
 /* Set the basic classes */
 .panel-padding {
