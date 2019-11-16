@@ -1,14 +1,16 @@
+#
+# Gemfile ver 111619
+#
+# frozen_string_literal: true
+#
 source "https://rubygems.org"
-# ill-formed => gem 'source', 'https://rubygems.org'
-# ruby "2.5.3"
+#
 ruby "2.6.5"
-# Gemfile ver 110719
-# ill-formed => gem 'ruby', '2.4.2'
-# Could not find gem 'ruby (= 2.4.2)'
-# In any of the gem sources listed in your Gemfile
-# 
-# Date of this Update to Gem-template file ver 05-14-2019
-# 
+#
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+#
+# gem "rails"
+#
 # Hello!
 #
 # This is where you manage which version of the 'Jekyll server' is used to run your GitHub Pages repo.
@@ -168,7 +170,9 @@ gem 'jekyll-docs', '3.8.5'
 # jekyll serve --watch --baseurl "" --port 4001 -o
 #
 # The default theme for new Jekyll sites is 'jekyll-theme-minimal 0.1.1'.
-# Note. You may change the theme to anything you like via the config dot yaml page located in the `docs` folder of your new repo
+#
+# Note. You may change the theme to anything you like via the config dot yaml page located in the `docs` folder of your new repo.
+#
 # If you do decide to manage the theme of your repo from the config dot yaml page, then comment out both the default and your selected themes here, as follows:
 #
 # gem 'jekyll-theme-minimal', 0.1.0'
@@ -226,6 +230,7 @@ gem 'jekyll-sitemap', '1.2.0'
 #
 gem 'jekyll-swiss', '0.4.0'
 #
+# Do not uncomment for main repo
 # gem 'jekyll-theme-cayman', '0.1.1'
 #
 gem 'jekyll-titles-from-headings', '0.5.1'
