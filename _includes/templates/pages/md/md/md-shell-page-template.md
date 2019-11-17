@@ -1,14 +1,14 @@
 ---
-title: Shell Gist
+title: Shell Page
 layout: default
-excerpt: Place the introducing line of text ie.) the 'tagline' here ...
+excerpt: Place the introducing line of text ie.) the 'lead' here ...
 description: Place the intro paragraph ie.) the 'synopsis' here ...
-repo: Shell Lessons Project
+repo: Shell Lessons Project 
 ver_date: 11-17-19
-navigation_weight: 9
+navigation_weight: 8
 categories: template
 ---
-# {{ page.title }} | {{ page.repo }} Dtd {{ page.ver_date }}
+# {{ page.title }} | Table O Contents
 
 {{ page.excerpt }}
 

@@ -1,21 +1,3 @@
----
-title: Shell Gist
-layout: default
-excerpt: Place the introducing line of text ie.) the 'tagline' here ...
-description: Place the intro paragraph ie.) the 'synopsis' here ...
-repo: Shell Lessons Project
-ver_date: 11-17-19
-navigation_weight: 9
-categories: template
----
-# {{ page.title }} | {{ page.repo }} Dtd {{ page.ver_date }}
-
-{{ page.excerpt }}
-
-{% include toc.md %}
-
-{{ page.description }}
-
 #### External Sources
 
 To view a list of aggregate external links for this project, visit the [Home Page](https://mminail.github.io/){:title='Click to Visit the Home Page of the Concepts Library at MMINAIL'}{:target='_blank'} of the MMINAIL concept library and scroll the navigator until you see the `Shell` section.
