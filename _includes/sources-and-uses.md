@@ -1,4 +1,4 @@
-{% comment %}Sources and Uses ver Dtd 11-11-19 {% endcomment %}
+{% comment %}Sources and Uses ver Dtd 11-17-19 {% endcomment %}
 
 ### Sources and Uses
 
@@ -18,4 +18,4 @@ Therefore, it is the policy of the MMINAIL [[1](#MMINAIL){:.red}] to always prov
 
 1. {:#MMINAIL}The [MMINAIL](https://mminail.github.io/Donate/Learn-To-Donate-Now.htm){:title="Click to Donate To the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"} is an acronym for the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation.
 
-2. {:#COPYRIGHT}Published © 2000 - 2020 by [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Home page of the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+2. {:#COPYRIGHT}Published © 2015 - 2020 by [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Home page of the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
