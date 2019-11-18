@@ -22,6 +22,6 @@ To view a list of aggregate external links for this project, visit the [Home Pag
 
 In the sub-menu of the `Shell` section you will find a hyperlink to the source links for this project, as follows:
 
-- [Shell Source Links](../Shell/Shell-Source-Links.htm){:title="Click to Visit the Shell Source Links page of the Shell Lessons Project at the Concept Library"}{:target="_self"}
+- [Shell Source Links](https://mminail.github.io/Shell/Shell-Source-Links.htm){:title="Click to Visit the Shell Source Links page of the Shell Lessons Project at the Concept Library"}{:target="_self"}
 
 {% include patreon-link.md %}
