@@ -1,4 +1,4 @@
-{% comment %}Patreon Link ver Dtd 11-11-19 {% endcomment %}
+{% comment %}Patreon Link ver Dtd 11-17-19 {% endcomment %}
 
 #### Support
 
@@ -6,4 +6,4 @@ Please support the [co-workers](https://mminail.github.io/Donate/Learn-To-Donate
 
 #### Patreon
 
-Like what you see in this project? If so, then support the authors and `*machine-elves*` who aggregate the source links and pages for our projects via [Patreon](https://www.patreon.com/MMINAIL){:title='Click to Visit the Landing page for our Patreon account'}{:target='_blank'}.
+Like what you see in this project? If so, then support the authors and `machine-elves` who aggregate the source links and pages for our projects via [Patreon](https://www.patreon.com/MMINAIL){:title='Click to Visit the Landing page for our Patreon account'}{:target='_blank'}.
