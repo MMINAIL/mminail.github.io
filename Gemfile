@@ -1,5 +1,5 @@
 #
-# Gemfile ver 111619 Main Repo
+# Gemfile ver 111819 Main Repo
 #
 # frozen_string_literal: true
 #
@@ -168,6 +168,12 @@ gem 'jekyll-docs', '3.8.5'
 # Type the following variation of the command at your Terminal prompt:
 #
 # jekyll serve --watch --baseurl "" --port 4001 -o
+#
+# Other switches can be added to trace a cache and the `bundle exec` prefix can be added to the `jekyll serve` command as above, as follows:
+#
+# bundle exec jekyll serve --watch --trace --baseurl "" --port 4003 -o
+#
+# The final `-o` switch in the above Terminal command auto opens the browser
 #
 # The default theme for new Jekyll sites is 'jekyll-theme-minimal 0.1.1'.
 #
