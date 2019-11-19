@@ -4,7 +4,7 @@ layout: default
 excerpt: Place the introducing line of text ie.) the 'lead' here ...
 description: Place the intro paragraph ie.) the 'synopsis' here ...
 repo: Shell-Lessons-Project 
-ver_date: 11-17-19
+ver_date: 11-19-19
 navigation_weight: 8
 categories: template
 ---
