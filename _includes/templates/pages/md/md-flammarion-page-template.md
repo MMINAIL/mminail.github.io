@@ -11,6 +11,10 @@ categories: template
 
 {% include toc.md %}
 
+## Deep Origins
+
+> **Hint**. {{ page.hint }}
+
 {% include flammarion-svg.md %}
 
 {% include patreon-link.md %}
