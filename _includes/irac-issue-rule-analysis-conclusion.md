@@ -1,4 +1,4 @@
-{% comment %}IRAC Issue Rule Analysis Conclusion ver Dtd 11-12-19 {% endcomment %}
+{% comment %}IRAC Issue Rule Analysis Conclusion ver Dtd 11-20-19 {% endcomment %}
 
 ## {{ page.description_one }}
 
@@ -26,7 +26,7 @@ What is the minority view as expressed by the dissent?
 
 ### Analysis
 
-More to come ...
+The analysis reviews both sides of the legal coin in depth.
 
 #### Depth
 
