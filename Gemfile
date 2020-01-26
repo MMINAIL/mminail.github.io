@@ -1,5 +1,5 @@
 #
-# Gemfile ver 111819 Main Repo
+# Gemfile ver 120419 Main Repo
 #
 # frozen_string_literal: true
 #
@@ -187,12 +187,16 @@ gem 'jekyll-docs', '3.8.5'
 #
 # Note. To upgrade all, run `bundle update` from the command line.
 #
-# github-pages, 175 requires activesupport, 429
-gem 'activesupport', '4.2.11.1'
+# github-pages, 175 requires activesupport
+# gem 'activesupport', '4.2.11.1'
+gem 'activesupport', '6.0.2.1'
+#
+# github-pages, 200 requires rubyzip
+gem 'rubyzip', '2.0.0'
 #
 gem 'github-pages-health-check', '1.16.1'
 #
-gem 'github-pages', '201'
+gem 'github-pages', '203'
 #
 # Note. The ''github-markdown' dependency is no longer designated at the online GitHub Pages dependency chart
 # C=> https://pages.github.com/versions/
@@ -200,7 +204,7 @@ gem 'github-pages', '201'
 #
 gem 'html-pipeline', '2.12.0'
 #
-gem 'jekyll-avatar', '0.6.0'
+gem 'jekyll-avatar', '0.7.0'
 #
 gem 'jekyll-coffeescript', '1.1.1'
 #
@@ -208,60 +212,60 @@ gem 'jekyll-commonmark-ghpages', '0.1.6'
 #
 gem 'jekyll-default-layout', '0.1.4'
 #
-gem 'jekyll-feed', '0.11.0'
+gem 'jekyll-feed', '0.13.0'
 #
 gem 'jekyll-gist', '1.5.0'
 #
 gem 'jekyll-github-metadata', '2.12.1'
 #
-gem 'jekyll-mentions', '1.4.1'
+gem 'jekyll-mentions', '1.5.1'
 #
-gem 'jekyll-optional-front-matter', '0.3.0'
+gem 'jekyll-optional-front-matter', '0.3.2'
 #
 gem 'jekyll-paginate', '1.1.0'
 #
-gem 'jekyll-readme-index', '0.2.0'
+gem 'jekyll-readme-index', '0.3.0'
 #
-gem 'jekyll-redirect-from', '0.14.0'
+gem 'jekyll-redirect-from', '0.15.0'
 #
-gem 'jekyll-relative-links', '0.6.0'
+gem 'jekyll-relative-links', '0.6.1'
 #
-gem 'jekyll-remote-theme', '0.4.0'
+gem 'jekyll-remote-theme', '0.4.1'
 #
 gem 'jekyll-sass-converter', '1.5.2'
 #
-gem 'jekyll-seo-tag', '2.5.0'
+gem 'jekyll-seo-tag', '2.6.1'
 #
-gem 'jekyll-sitemap', '1.2.0'
+gem 'jekyll-sitemap', '1.4.0'
 #
-gem 'jekyll-swiss', '0.4.0'
+gem 'jekyll-swiss', '1.0.0'
 #
 # Do not uncomment for main repo
 # gem 'jekyll-theme-cayman', '0.1.1'
 #
-gem 'jekyll-titles-from-headings', '0.5.1'
+gem 'jekyll-titles-from-headings', '0.5.3'
 #
-gem 'jemoji', '0.10.2'
+gem 'jemoji', '0.11.1'
 #
 gem 'kramdown', '1.17.0'
 #
-gem 'liquid', '4.0.0'
+gem 'liquid', '4.0.3'
 #
-gem 'listen', '3.1.5'
+# github-pages, 200 requires listen
+# gem 'listen', '3.1.5'
+gem 'listen', '3.2.1'
 #
-gem 'minima', '2.5.0'
+gem 'minima', '2.5.1'
 #
 # Override the GitHub Pages online Dependency Chart Dtd 012418;
 # ver 1.7.2 of the Nokogiri dependency has a Security issue
-gem 'nokogiri', '1.10.4'
+gem 'nokogiri', '1.10.6'
 # 
-gem 'rouge', '3.11.0'
+gem 'rouge', '3.13.0'
 #
 gem 'safe_yaml', '1.0.5'
 #
 gem 'sass', '3.7.4'
-#
-gem 'rubyzip', '2.0.0'
 #
 # If you have any other Jekyll plugins, put them here ...
 # group: 'jekyll_plugins' do
@@ -269,4 +273,4 @@ gem 'rubyzip', '2.0.0'
 #
 # Note. Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-#
+# 
