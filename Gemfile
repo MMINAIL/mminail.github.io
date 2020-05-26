@@ -189,7 +189,7 @@ gem 'jekyll-docs', '3.8.5'
 #
 # github-pages, 175 requires activesupport
 # gem 'activesupport', '4.2.11.1'
-gem 'activesupport', '6.0.2.1'
+gem 'activesupport', '6.0.3.1'
 #
 # github-pages, 200 requires rubyzip
 gem 'rubyzip', '2.0.0'
