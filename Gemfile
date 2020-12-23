@@ -108,7 +108,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # 
 # Then, comment out the following version statement to retain your superior version copy locally
 #
-gem 'jekyll', '3.8.5'
+gem 'jekyll', '3.9.0'
 #
 # Note. The version of 'Jekyll docs' should match the installed version of 'Jekyll' from above.
 # In other words, you should install the 'jekyll-docs' gem version = 3.6.2 to use the 'jekyll docs' command
@@ -128,7 +128,7 @@ gem 'jekyll', '3.8.5'
 #
 # Then, comment out the following version statement to retain your superior version copy locally
 #
-gem 'jekyll-docs', '3.8.5'
+gem 'jekyll-docs', '3.9.0'
 #
 # To run 'Jekyll docs' locally ...
 #
@@ -234,7 +234,7 @@ gem 'jekyll-feed', '0.15.1'
 #
 gem 'jekyll-gist', '1.5.0'
 #
-gem 'jekyll-github-metadata', '2.12.1'
+gem 'jekyll-github-metadata', '2.13.0'
 #
 gem 'jekyll-mentions', '1.6.0'
 #
@@ -267,7 +267,7 @@ gem 'jemoji', '0.12.0'
 #
 gem 'kramdown-parser-gfm', '1.1.0'
 #
-gem 'kramdown', '1.17.0'
+gem 'kramdown', '2.3.0'
 #
 gem 'liquid', '4.0.3'
 #
@@ -276,7 +276,6 @@ gem 'minima', '2.5.1'
 gem 'nokogiri', '1.10.10'
 #
 gem 'rouge', '3.23.0'
-#
 #
 gem 'safe_yaml', '1.0.5'
 #
