@@ -284,9 +284,8 @@ gem 'sass', '3.7.4'
 #
 # The following gems are not listed at: https://pages.github.com/versions/
 #
+# gem 'rubyzip', '2.0.0'
 gem 'listen', '3.1.5'
-#
-gem 'rubyzip', '2.0.0'
 #
 # If you have any other Jekyll plugins, put them here ...
 # group: 'jekyll_plugins' do
