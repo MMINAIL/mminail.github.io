@@ -216,7 +216,8 @@ gem 'github-pages-health-check', '1.16.1'
 #
 gem 'github-pages', '209'
 #
-# Note. The ''github-markdown' dependency is no longer designated at the online GitHub Pages dependency chart
+# Note. The `github-markdown` dependency is no longer designated
+# at the online GitHub Pages dependency chart
 # C=> https://pages.github.com/versions/
 # gem 'github-markdown'
 #
