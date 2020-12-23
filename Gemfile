@@ -206,6 +206,9 @@ gem 'jekyll-docs', '3.9.0'
 #
 # Note. To upgrade all, run `bundle update` from the command line.
 #
+# github-pages, 200 requires rubyzip
+gem 'rubyzip', '2.0.0'
+#
 # github-pages, 175 requires activesupport, 429
 gem 'activesupport', '6.0.3.1'
 #
