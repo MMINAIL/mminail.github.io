@@ -212,9 +212,9 @@ gem 'rubyzip', '2.0.0'
 # github-pages, 175 requires activesupport, 429
 gem 'activesupport', '6.0.3.1'
 #
-gem 'github-pages-health-check', '1.16.1'
+gem 'github-pages-health-check', '1.17.2'
 #
-gem 'github-pages', '209'
+gem 'github-pages', '215'
 #
 # Note. The `github-markdown` dependency is no longer designated
 # at the online GitHub Pages dependency chart
@@ -249,11 +249,11 @@ gem 'jekyll-redirect-from', '0.16.0'
 #
 gem 'jekyll-relative-links', '0.6.1'
 #
-gem 'jekyll-remote-theme', '0.4.2'
+gem 'jekyll-remote-theme', '0.4.3'
 #
 gem 'jekyll-sass-converter', '1.5.2'
 #
-gem 'jekyll-seo-tag', '2.6.1'
+gem 'jekyll-seo-tag', '2.7.1'
 #
 gem 'jekyll-sitemap', '1.4.0'
 #
@@ -268,7 +268,7 @@ gem 'jemoji', '0.12.0'
 #
 gem 'kramdown-parser-gfm', '1.1.0'
 #
-gem 'kramdown', '2.3.0'
+gem 'kramdown', '2.3.1'
 #
 gem 'liquid', '4.0.3'
 #
@@ -276,7 +276,7 @@ gem 'minima', '2.5.1'
 #
 gem 'nokogiri', '1.11.0'
 #
-gem 'rouge', '3.23.0'
+gem 'rouge', '3.26.0'
 #
 gem 'safe_yaml', '1.0.5'
 #
