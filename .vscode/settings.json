@@ -23,5 +23,6 @@
       "subtopical",
       "totipotent",
       "universa"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
   }

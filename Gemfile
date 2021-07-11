@@ -1,12 +1,14 @@
 #
-# Gemfile ver 122220 Main Repo
+# Gemfile ver 071121 Main Repo
 #
 # frozen_string_literal: true
 #
 source "https://rubygems.org"
 #
-ruby "2.7.2"
-#
+# ruby "2.6.3"
+# ruby "2.7.3"
+ruby "3.0.2"
+# 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
 # gem "rails"
@@ -37,10 +39,6 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
 # From the global Terminal prompt, run the following command statement:
 #
-# Note. The current version of `Bundler` is: 2.2.2
-#
-# However, the working version for most of the repos here is: 1.16.1
-#
 # gem install bundler
 #
 # Note. You only need to install the 'Gem Bundler' program once.
@@ -50,6 +48,10 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # You may then run the following command from a Terminal prompt to check the current version of 'Gem Bundler', as follows:
 # 
 # bundler --version
+#
+# Note. The current version of `Bundler` is: 2.2.23
+#
+# However, the working version for most of the repos here is: 1.16.1#
 #
 # You may also run the following command from a Terminal prompt to check the location of your new 'Gem Bundler' version, as follows:
 #
@@ -64,7 +66,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
 # or,
 # 
-# gem update bundler: 2.2.2
+# gem update bundler: 2.2.23
 #
 # or,
 #
@@ -98,6 +100,12 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
 # gem install jekyll
 #
+# Hint: To see where your copy of the Jekyll program resides type:
+#
+# which jekyll
+#
+# /usr/local/bin/jekyll
+#
 # Note. Designating the version of the 'Jekyll server' when installing via Bundle update, or via the initial Bundle install ...
 # 
 # Will not survive the 'Jekyll-docs' installation
@@ -109,6 +117,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # Then, comment out the following version statement to retain your superior version copy locally
 #
 gem 'jekyll', '3.9.0'
+# gem 'jekyll', '4.2.0'
 #
 # Note. The version of 'Jekyll docs' should match the installed version of 'Jekyll' from above.
 # In other words, you should install the 'jekyll-docs' gem version = 3.6.2 to use the 'jekyll docs' command
@@ -129,6 +138,7 @@ gem 'jekyll', '3.9.0'
 # Then, comment out the following version statement to retain your superior version copy locally
 #
 gem 'jekyll-docs', '3.9.0'
+# gem 'jekyll-docs', '4.0.0'
 #
 # To run 'Jekyll docs' locally ...
 #
@@ -170,7 +180,7 @@ gem 'jekyll-docs', '3.9.0'
 #
 # Optionally, you may run the following command from the Terminal prompt to ensure your copy of the 'Jekyll server' is up and running.
 #
-# bundle exec jekyll serve
+# bundle exec jekyll serve --livereload
 #
 # To start a local 'Jekyll server' instance ...
 #
@@ -178,7 +188,7 @@ gem 'jekyll-docs', '3.9.0'
 #
 # Next, type the following command at the 'Integrated Terminal View' of Visual Studio Code:
 #
-# jekyll serve --watch --baseurl "" -o
+# bundle exec jekyll serve --watch --baseurl "" -o
 #
 # The Jekyll server will auto-navigate to the default local URL http://localhost:4000/ at your Chrome browser and display your new repo locally.
 #
@@ -212,9 +222,14 @@ gem 'rubyzip', '2.0.0'
 # github-pages, 175 requires activesupport, 429
 gem 'activesupport', '6.0.3.1'
 #
-gem 'github-pages-health-check', '1.16.1'
+gem 'github-pages-health-check', '1.17.2'
 #
-gem 'github-pages', '209'
+gem 'github-pages', '215'
+#
+gem 'i18n', '0.9.5'
+#
+# gem 'webrick', '1.7.0'
+gem 'webrick', '~> 1.7.0'
 #
 # Note. The `github-markdown` dependency is no longer designated
 # at the online GitHub Pages dependency chart
@@ -249,11 +264,12 @@ gem 'jekyll-redirect-from', '0.16.0'
 #
 gem 'jekyll-relative-links', '0.6.1'
 #
-gem 'jekyll-remote-theme', '0.4.2'
+gem 'jekyll-remote-theme', '0.4.3'
 #
 gem 'jekyll-sass-converter', '1.5.2'
 #
-gem 'jekyll-seo-tag', '2.6.1'
+# gem 'jekyll-seo-tag', '2.6.1'
+gem 'jekyll-seo-tag', '2.7.1'
 #
 gem 'jekyll-sitemap', '1.4.0'
 #
@@ -268,15 +284,20 @@ gem 'jemoji', '0.12.0'
 #
 gem 'kramdown-parser-gfm', '1.1.0'
 #
-gem 'kramdown', '2.3.0'
+# gem 'kramdown', '2.3.0'
+# gem "kramdown", ">= 2.3.1"
+gem 'kramdown', '2.3.1'
 #
 gem 'liquid', '4.0.3'
 #
 gem 'minima', '2.5.1'
 #
-gem 'nokogiri', '1.11.0'
+# gem 'nokogiri', '1.10.10'
+# gem 'nokogiri', '>= 1.11.4'
+gem 'nokogiri', '1.11.7'
 #
-gem 'rouge', '3.23.0'
+# gem 'rouge', '3.23.0'
+gem 'rouge', '3.26.0'
 #
 gem 'safe_yaml', '1.0.5'
 #
@@ -285,7 +306,7 @@ gem 'sass', '3.7.4'
 # The following gems are not listed at: https://pages.github.com/versions/
 #
 # gem 'rubyzip', '2.0.0'
-gem 'listen', '3.1.5'
+# gem 'listen', '3.1.5'
 #
 # If you have any other Jekyll plugins, put them here ...
 # group: 'jekyll_plugins' do
