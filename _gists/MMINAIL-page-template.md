@@ -1,9 +1,12 @@
 ---
-title: First-Gist
+title: MMINAIL Gist
 layout: default
-excerpt: Liquid filters cannot be appended via the pipe to Liquid link statements ...
+excerpt: Place the introducing line of text ie.) the 'tagline' here ...
+hint: Place the intro paragraph ie.) the 'hypothesis' here ...
+repo: Elixir-Lessons-Project
+ver_date: 08-25-21
 navigation_weight: 8
-categories: jekyll liquid
+categories: page
 ---
 # First Gist
 
@@ -25,11 +28,11 @@ categories: jekyll liquid
 
 The internal anchor path of this page is `{{ page.path }}`.
 
-And, the internal anchor path to a *target* page is `gists/First-Gist.md`.
+And, the internal anchor path to a *target* page is `gists/MMINAIL-page-template.md`.
 
 Thus, the internal anchor path to the *target* page may be expressed as an internal anchor link from *this* page, as follows:
 
-- [{{ page.title }}]({% link _gists/First-Gist.md %}){:title="Click to Visit the {{ page.title }} page of the Carbon Free Footprint Project at the Concept Library of the MMINAIL"}{:target="_blank"}
+- [{{ page.title }}]({% link _gists/MMINAIL-page-template.md %}){:title="Click to Visit the {{ page.title }} page of the Carbon Free Footprint Project at the Concept Library of the MMINAIL"}{:target="_blank"}
 
 ### Ping Back
 
@@ -123,7 +126,7 @@ Takes advantage of a **Liquid Link** statement, as follows:
 
 ```liquid
 {% raw %}
-- [First Gist]({% link _gists/First-Gist.md %})
+- [First Gist]({% link _gists/MMINAIL-page-template.md %})
 {% endraw %}
 ```
 
@@ -141,7 +144,7 @@ Hence, the identifying color of [[1](#*indian red*){:.indian-red}] for the exter
 
 [{{ page.title }}]({{ site.url }}{{ site.baseurl }}/{{ page.path }}{:title='Click to Visit the {{ page.title }} page of the Bootstrap Lessons Project at Concepts Library'}{:target='_blank'}) ...
  
-And, the identifying color of [[1](#*light dodger blue*){:.light-dodger-blue}] for the internal anchor of [First-Gist]({% link _gists/First-Gist.md %}).
+And, the identifying color of [[1](#*light dodger blue*){:.light-dodger-blue}] for the internal anchor of [First-Gist]({% link _gists/MMINAIL-page-template.md %}).
 
 ### Reduced Functionality
 
@@ -171,7 +174,7 @@ Display statements written in html, jekyll-moustache, and liquid are rendered up
 
 {% for gist in site.gists %}
 
-- [{{ gist.title }}]({% link _gists/First-Gist.md %})
+- [{{ gist.title }}]({% link _gists/MMINAIL-page-template.md %})
 
 {% endfor %}
 
@@ -182,12 +185,12 @@ As shown in the following highlighted pre-block ...
 {% highlight liquid %}
 {% raw %}{% for gist in site.gists %}{% endraw %}
 
-- [{% raw %}{{ gist.title }}{% endraw %}]({% raw %}{% link _gists/First-Gist.md %}{% endraw %})
+- [{% raw %}{{ gist.title }}{% endraw %}]({% raw %}{% link _gists/MMINAIL-page-template.md %}{% endraw %})
 
 {% raw %}{% endfor %}{% endraw %}
 {% endhighlight %}
 
-**Note**. The Liquid `for loop` will take the format of your first gist identified ie.) 'First-Gist.md' and use that format to search the site for other gists.
+**Note**. The Liquid `for loop` will take the format of your first gist identified ie.) 'MMINAIL-page-template.md' and use that format to search the site for other gists.
 
 Because we are using a Liquid link statement to render the internal anchor links for the found gist ...
 
