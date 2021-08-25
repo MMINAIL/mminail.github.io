@@ -60,7 +60,7 @@ topic: Bootstrap
 
     <p>
       <span>And, the internal anchor path to a
-        <em>target</em> page is `gists/First-Gist.md`</span>
+        <em>target</em> page is `gists/MMINAIL-page-template.md`</span>
     </p>
 
     <p>
@@ -71,7 +71,7 @@ topic: Bootstrap
 
     <p>
       <span>
-        <a href='{% link _gists/First-Gist.md %}'>First-Gist</a>.</span>
+        <a href='{% link _gists/MMINAIL-page-template.md %}'>First-Gist</a>.</span>
     </p>
     <hr class='green-groove' />
 
@@ -158,7 +158,7 @@ topic: Bootstrap
 
     <pre class='flex-box'>
     {% highlight html %}
-    <a href='{% raw %}{% link _gists/First-Gist.md %}{% endraw %}'>First Gist</a>
+    <a href='{% raw %}{% link _gists/MMINAIL-page-template.md %}{% endraw %}'>First Gist</a>
     {% endhighlight %}
     </pre>
 
@@ -188,7 +188,7 @@ topic: Bootstrap
         <em>
           <span style='color:#337ab7'>light dodger blue</span>
         </em> for the internal anchor of
-        <a href='{% link _gists/First-Gist.md %}'>First-Gist</a>.</span>
+        <a href='{% link _gists/MMINAIL-page-template.md %}'>First-Gist</a>.</span>
     </p>
     <hr class='green-groove' />
 
@@ -258,7 +258,7 @@ topic: Bootstrap
     <ul>
       {% for gist in site.gists %}
       <li>
-        <a href="{% link _gists/First-Gist.md %}">{{ gist.title }}</a>
+        <a href="{% link _gists/MMINAIL-page-template.md %}">{{ gist.title }}</a>
       </li>
       {% endfor %}
     </ul>
@@ -277,7 +277,7 @@ topic: Bootstrap
     <ul>
     {% raw %}{% for gist in site.gists %}{% endraw %}
     <li>
-    <a href='{% raw %}{% link _gists/First-Gist.md %}{% endraw %}'>{% raw %}{{ gist.title }}{% endraw %}</a>
+    <a href='{% raw %}{% link _gists/MMINAIL-page-template.md %}{% endraw %}'>{% raw %}{{ gist.title }}{% endraw %}</a>
     </li>
     {% raw %}{% endfor %}{% endraw %}
     </ul>
@@ -287,7 +287,7 @@ topic: Bootstrap
     <p>
       <span>
         <b>Note</b>.</span>
-      <span>The Liquid `for loop` will take the format of your first gist identified ie.) 'First-Gist.md' and use that format to
+      <span>The Liquid `for loop` will take the format of your first gist identified ie.) 'MMINAIL-page-template.md' and use that format to
         search the site for other gists.</span>
     </p>
 

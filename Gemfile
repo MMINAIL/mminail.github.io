@@ -1,12 +1,19 @@
 #
-# Gemfile ver 071121 Main Repo
+# Gemfile ver 082521 Main Repo
 #
 # frozen_string_literal: true
 #
 source "https://rubygems.org"
 #
-# ruby "2.6.3"
+# Script by Parker C=> https://byparker.com/blog/2014/stay-up-to-date-with-the-latest-github-pages-gem/
+# require 'json'
+# require 'open-uri'
+# versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+# gem 'github-pages', versions['github-pages']
+# ruby versions["ruby"]
+#
 # ruby "2.7.3"
+# ruby "3.0.1"
 ruby "3.0.2"
 # 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
@@ -39,6 +46,10 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
 # From the global Terminal prompt, run the following command statement:
 #
+# Note. The current version of `Bundler` is: 2.2.16
+#
+# However, the working version for most of the repos here is (was): 1.16.1
+#
 # gem install bundler
 #
 # Note. You only need to install the 'Gem Bundler' program once.
@@ -51,8 +62,8 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
 # Note. The current version of `Bundler` is: 2.2.23
 #
-# However, the working version for most of the repos here is: 1.16.1#
-#
+# However, the working version for most of the repos here is: 1.16.1
+# 
 # You may also run the following command from a Terminal prompt to check the location of your new 'Gem Bundler' version, as follows:
 #
 # which bundler
@@ -62,21 +73,21 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # 
 # To upgrade your version of the 'Gem Bundler' program ...
 # 
-# Type the following command at a local Terminal prompt,
+# Type either of the following command(s) at a local Terminal prompt, as follows:
 #
-# or,
-# 
 # gem update bundler: 2.2.23
 #
 # or,
-#
+# 
 # gem install bundler:1.16.1
 #
-# or,
+# Or, 
 #
-# # bundle update --bundler
+# Type the following command at a global Terminal prompt, as follows:
 #
-# It is not necessary to install the 'Gem Bundler' program every time you create a separate repo. 
+# bundle update --bundler
+#
+# Note. It is not necessary to install the 'Gem Bundler' program every time you create a separate repo. 
 #
 # To instantiate an instance of the 'Jekyll server' on your development machine ...
 #
@@ -184,11 +195,21 @@ gem 'jekyll-docs', '3.9.0'
 #
 # To start a local 'Jekyll server' instance ...
 #
-# Open up the /docs directory of your repo from inside Visual Studio Code.
+# For satellite repos that do use the `docs` subdirectory to run GitHub pages ...
+#
+# Note. Open up the /docs directory of your repo from inside Visual Studio Code from the Terminal prompt, as follows:
+#
+# cd docs
+#
+# For main repos that do NOT use the `docs` subdirectory to run GitHub pages ...
+#
+# Note. Open up the /root directory of your repo from inside Visual Studio Code for a Terminal prompt, as follows:
+#
+# Terminal: New Terminal
 #
 # Next, type the following command at the 'Integrated Terminal View' of Visual Studio Code:
 #
-# bundle exec jekyll serve --watch --baseurl "" -o
+# jekyll serve --watch --baseurl "" -o
 #
 # The Jekyll server will auto-navigate to the default local URL http://localhost:4000/ at your Chrome browser and display your new repo locally.
 #
@@ -199,6 +220,8 @@ gem 'jekyll-docs', '3.9.0'
 # jekyll serve --watch --baseurl "" --port 4001 -o
 #
 # Other switches can be added to trace a cache and the `bundle exec` prefix can be added to the `jekyll serve` command as above, as follows:
+#
+# bundle exec jekyll serve --watch --trace --baseurl "" --port 4002 -o
 #
 # bundle exec jekyll serve --watch --trace --baseurl "" --port 4003 -o
 #
@@ -224,17 +247,17 @@ gem 'activesupport', '6.0.3.1'
 #
 gem 'github-pages-health-check', '1.17.2'
 #
-gem 'github-pages', '215'
+gem 'github-pages', '217'
+#
+# Note. The `github-markdown` dependency is no longer
+# designated at the online GitHub Pages dependency chart
+# C=> https://pages.github.com/versions/
+# gem 'github-markdown'
 #
 gem 'i18n', '0.9.5'
 #
 # gem 'webrick', '1.7.0'
 gem 'webrick', '~> 1.7.0'
-#
-# Note. The `github-markdown` dependency is no longer designated
-# at the online GitHub Pages dependency chart
-# C=> https://pages.github.com/versions/
-# gem 'github-markdown'
 #
 gem 'html-pipeline', '2.14.0'
 #
@@ -275,7 +298,7 @@ gem 'jekyll-sitemap', '1.4.0'
 #
 gem 'jekyll-swiss', '1.0.0'
 #
-# Uncomment for all satellite repos
+# Uncomment for all satellite repos (this is a "main" repo)
 # gem 'jekyll-theme-cayman', '0.1.1'
 #
 gem 'jekyll-titles-from-headings', '0.5.3'
@@ -293,6 +316,7 @@ gem 'liquid', '4.0.3'
 gem 'minima', '2.5.1'
 #
 # gem 'nokogiri', '1.10.10'
+# gem 'nokogiri', '1.11.2'
 # gem 'nokogiri', '>= 1.11.4'
 gem 'nokogiri', '1.11.7'
 #
