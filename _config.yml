@@ -1,6 +1,6 @@
 # Site settings
 # 
-# underscore Config dot yaml (_config.yml) template ver 11-11-2019
+# underscore Config dot yaml (_config.yml) template ver 08-25-21
 # 
 # Un-comment the theme for the `docs` folder [only] in satellite repos
 # theme: "jekyll-theme-cayman"
@@ -26,7 +26,7 @@ author:
     name: "Robert Weber, Director"
     email: "mminail@icloud.com"
     github_username: "rwebaz"
-    twitter_username: "rwebaz"
+    twitter_username: "mminail"
 #
 # Set the North American default time zone for the repo
 timezone: "America/Phoenix"

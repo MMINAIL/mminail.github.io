@@ -6,7 +6,7 @@ The Concepts Library at MMINAIL is a `main hub` for over sixty (60) Working Repo
 
 We are constantly expanding our horizon.
 
-The MMINAIL is an open source project.
+The MMINAIL is an open source project with a public repo.
 
 So, feel free to fork the repo, propose a few edits, and send us a pull request.
 
