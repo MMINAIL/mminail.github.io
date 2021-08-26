@@ -46,10 +46,6 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
 # From the global Terminal prompt, run the following command statement:
 #
-# Note. The current version of `Bundler` is: 2.2.16
-#
-# However, the working version for most of the repos here is (was): 1.16.1
-#
 # gem install bundler
 #
 # Note. You only need to install the 'Gem Bundler' program once.
