@@ -5,7 +5,8 @@
 #
 source "https://rubygems.org"
 #
-# Script by Parker C=> https://byparker.com/blog/2014/stay-up-to-date-with-the-latest-github-pages-gem/
+# Script by Parker
+# C=> https://byparker.com/blog/2014/stay-up-to-date-with-the-latest-github-pages-gem/
 # require 'json'
 # require 'open-uri'
 # versions = JSON.parse(open('https://pages.github.com/versions.json').read)
@@ -241,9 +242,9 @@ gem 'rubyzip', '2.0.0'
 # github-pages, 175 requires activesupport, 429
 gem 'activesupport', '6.0.3.1'
 #
-gem 'github-pages-health-check', '1.17.2'
+gem 'github-pages-health-check', '1.17.7'
 #
-gem 'github-pages', '217'
+gem 'github-pages', '219'
 #
 # Note. The `github-markdown` dependency is no longer
 # designated at the online GitHub Pages dependency chart
