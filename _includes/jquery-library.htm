@@ -15,6 +15,7 @@
   <span>Let's use a jQuery attribute selection to change the behavior of the underlying hyperlinks of this page, as follows:</span>
 </p>
 
+{%- comment -%}
 <pre class='flex-box'>
   {% highlight html %}
   <a href="../js/scripts/corresponding-javascript-file.js" 
@@ -28,6 +29,7 @@
   {% endhighlight %}
 </pre>
 <hr class='green-groove' />
+{%- endcomment -%}
 
 <p>
   <span>Now that you have seen the code that effects the underlying hyperlinks of the page, let's render the links live ...</span>
@@ -51,6 +53,7 @@
   <span>The following live link opens up the corresponding Javascript file in a new browser window for a viewing of the code, as follows:</span>
 </p>
 
+{%- comment -%}
 <pre class='flex-box'>
   {% highlight html %}
   <a href="../js/scripts/corresponding-javascript-file.js" 
@@ -64,7 +67,9 @@
   {% endhighlight %}
 </pre>
 <hr class='green-groove' />
+{%- endcomment -%}
 
+{%- comment -%}
 <p>
   <a href="../js/scripts/corresponding-javascript-file.js" 
   role="button"
@@ -76,3 +81,4 @@
   target="_blank">(.js)</a>
 </p>
 <hr class="green-groove" />
+{%- endcomment -%}
