@@ -315,7 +315,7 @@ gem 'minima', '2.5.1'
 # gem 'nokogiri', '1.10.10'
 # gem 'nokogiri', '1.11.2'
 # gem 'nokogiri', '>= 1.11.4'
-gem 'nokogiri', '1.12.5'
+gem 'nokogiri', '1.13.2'
 #
 # gem 'rouge', '3.23.0'
 gem 'rouge', '3.26.0'
