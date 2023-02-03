@@ -48,6 +48,8 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
 # From the global Terminal prompt, run the following command statement:
 #
+# Note. The current version of `Bundler` is: 2.4.6
+# 
 # gem install bundler
 #
 # Note. You only need to install the 'Gem Bundler' program once.
@@ -58,15 +60,14 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # 
 # bundler --version
 #
-# Note. The current version of `Bundler` is: 2.2.23
-#
-# However, the working version for most of the repos here is: 1.16.1
-# 
 # You may also run the following command from a Terminal prompt to check the location of your new 'Gem Bundler' version, as follows:
 #
 # which bundler
 #
-# The 'Gem Bundler' program will notify you via the Terminal at the next update operation ...
+# Returns; /usr/local/bin/bundler
+#
+# The 'Gem Bundler' program will notify you via the Terminal ...
+# at the next update operation ...
 # if an upgrade to your version of the 'Gem Bundler' program is available.
 # 
 # To upgrade your version of the 'Gem Bundler' program ...
@@ -125,6 +126,7 @@ gem 'jekyll', '3.9.3'
 # gem 'jekyll', '4.2.0'
 #
 # Note. The version of 'Jekyll docs' should match the installed version of 'Jekyll' from above.
+# 
 # In other words, you should install the 'jekyll-docs' gem version = 3.6.2 to use the 'jekyll docs' command
 #
 # However, when attempting ...
@@ -183,7 +185,8 @@ gem 'jekyll', '3.9.3'
 #
 # The 'Gem Bundler' program will then install the 'Jekyll server' version you have indicated.
 #
-# Optionally, you may run the following command from the Terminal prompt to ensure your copy of the 'Jekyll server' is up and running.
+# Optionally, you may run the following command from the Terminal prompt ...
+# to ensure your copy of the 'Jekyll server' is up and running.
 #
 # bundle exec jekyll serve --livereload
 #
@@ -213,7 +216,9 @@ gem 'jekyll', '3.9.3'
 #
 # jekyll serve --watch --baseurl "" --port 4001 -o
 #
-# Other switches can be added to trace a cache and the `bundle exec` prefix can be added to the `jekyll serve` command as above, as follows:
+# Other switches can be added to trace a cache ...
+# and the `bundle exec` prefix can be added to the `jekyll serve` command ...
+# as above, as follows:
 #
 # bundle exec jekyll serve --watch --trace --baseurl "" --port 4002 -o
 #
@@ -249,10 +254,15 @@ gem 'github-pages', '228'
 # C=> https://pages.github.com/versions/
 # gem 'github-markdown'
 #
-gem 'i18n', '0.9.5'
+# gem 'i18n', '0.9.5'
+gem 'i18n', '< 2.0'
 #
 # gem 'webrick', '1.7.0'
 gem 'webrick', '~> 1.7.0'
+#
+# https://pages.github.com/versions/
+#
+# gem 'github-markdown'
 #
 gem 'html-pipeline', '2.14.3'
 #
@@ -294,8 +304,8 @@ gem 'jekyll-sitemap', '1.4.0'
 #
 gem 'jekyll-swiss', '1.0.0'
 #
-# Uncomment for all satellite repos (this is a "main" repo)
-# gem 'jekyll-theme-cayman', '0.1.1'
+# Uncomment this in for all satellite repos (this is a "main" repo)
+# gem 'jekyll-theme-cayman', '0.2.0'
 #
 gem 'jekyll-titles-from-headings', '0.5.3'
 #
