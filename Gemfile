@@ -1,5 +1,5 @@
 #
-# Gemfile ver 082521 Main Repo
+# Gemfile ver 020223 Main Repo
 #
 # frozen_string_literal: true
 #
@@ -13,9 +13,10 @@ source "https://rubygems.org"
 # gem 'github-pages', versions['github-pages']
 # ruby versions["ruby"]
 #
-# ruby "2.7.3"
+# ruby "2.7.4"
 # ruby "3.0.1"
-ruby "3.0.2"
+# ruby "3.0.2"
+ruby "3.1.1"
 # 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
@@ -72,11 +73,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # 
 # Type either of the following command(s) at a local Terminal prompt, as follows:
 #
-# gem update bundler: 2.2.23
-#
-# or,
-# 
-# gem install bundler:1.16.1
+# gem update bundler: 2.4.6
 #
 # Or, 
 #
@@ -124,7 +121,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # 
 # Then, comment out the following version statement to retain your superior version copy locally
 #
-gem 'jekyll', '3.9.0'
+gem 'jekyll', '3.9.3'
 # gem 'jekyll', '4.2.0'
 #
 # Note. The version of 'Jekyll docs' should match the installed version of 'Jekyll' from above.
@@ -145,7 +142,7 @@ gem 'jekyll', '3.9.0'
 #
 # Then, comment out the following version statement to retain your superior version copy locally
 #
-gem 'jekyll-docs', '3.9.0'
+# gem 'jekyll-docs', '3.9.0'
 # gem 'jekyll-docs', '4.0.0'
 #
 # To run 'Jekyll docs' locally ...
@@ -242,9 +239,9 @@ gem 'rubyzip', '2.0.0'
 # github-pages, 175 requires activesupport, 429
 gem 'activesupport', '6.0.3.1'
 #
-gem 'github-pages-health-check', '1.17.7'
+gem 'github-pages-health-check', '1.17.9'
 #
-gem 'github-pages', '219'
+gem 'github-pages', '228'
 #
 # Note. The `github-markdown` dependency is no longer
 # designated at the online GitHub Pages dependency chart
@@ -256,13 +253,13 @@ gem 'i18n', '0.9.5'
 # gem 'webrick', '1.7.0'
 gem 'webrick', '~> 1.7.0'
 #
-gem 'html-pipeline', '2.14.0'
+gem 'html-pipeline', '2.14.3'
 #
 gem 'jekyll-avatar', '0.7.0'
 #
 gem 'jekyll-coffeescript', '1.1.1'
 #
-gem 'jekyll-commonmark-ghpages', '0.1.6'
+gem 'jekyll-commonmark-ghpages', '0.4.0'
 #
 gem 'jekyll-default-layout', '0.1.4'
 #
@@ -271,6 +268,8 @@ gem 'jekyll-feed', '0.15.1'
 gem 'jekyll-gist', '1.5.0'
 #
 gem 'jekyll-github-metadata', '2.13.0'
+#
+gem 'jekyll-include-cache', '0.2.1'
 #
 gem 'jekyll-mentions', '1.6.0'
 #
@@ -288,8 +287,7 @@ gem 'jekyll-remote-theme', '0.4.3'
 #
 gem 'jekyll-sass-converter', '1.5.2'
 #
-# gem 'jekyll-seo-tag', '2.6.1'
-gem 'jekyll-seo-tag', '2.7.1'
+gem 'jekyll-seo-tag', '2.8.0'
 #
 gem 'jekyll-sitemap', '1.4.0'
 #
@@ -304,18 +302,14 @@ gem 'jemoji', '0.12.0'
 #
 gem 'kramdown-parser-gfm', '1.1.0'
 #
-# gem 'kramdown', '2.3.0'
 # gem "kramdown", ">= 2.3.1"
-gem 'kramdown', '2.3.1'
+gem 'kramdown', '2.3.2'
 #
-gem 'liquid', '4.0.3'
+gem 'liquid', '4.0.4'
 #
 gem 'minima', '2.5.1'
 #
-# gem 'nokogiri', '1.10.10'
-# gem 'nokogiri', '1.11.2'
-# gem 'nokogiri', '>= 1.11.4'
-gem 'nokogiri', '1.12.5'
+gem 'nokogiri', '1.14.1'
 #
 # gem 'rouge', '3.23.0'
 gem 'rouge', '3.26.0'
